@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
+import Survivor from './views/Survivor.vue'
 
 Vue.use(Router)
 
