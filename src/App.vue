@@ -30,7 +30,8 @@ export default {
     body {
         font-family: $font-family-default;
         line-height: 1.4;
-        background: $color-background;
+        background: $color-background url("../public/img/background_1.jpg") no-repeat center center fixed;
+        background-size: cover;
         color: $color-text;
     }
 

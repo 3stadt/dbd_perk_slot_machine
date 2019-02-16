@@ -27,7 +27,7 @@ export default {
 
     .button {
         display: inline-block;
-        padding: 5px 20px;
+        padding: 8px 35px;
         color: $color-text;
         background-color: $color-primary;
         border: 0 none;
@@ -35,6 +35,9 @@ export default {
         border-radius: $border-radius-default;
         font-family: $font-family-default;
         font-size: $font-size-default;
+        text-transform: uppercase;
+        overflow: hidden;
+        white-space: nowrap;
         text-align: center;
     }
 </style>

@@ -44,15 +44,17 @@ export default {
     @import "../design/main";
 
     .perk-switch {
-        border: 1px solid $color-border;
-        border-radius: $border-radius-default;
-        background: lighten($color-background, 8%);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        background-color: rgba(0, 0, 0, 0.2);
         transition: all .15s ease-in-out;
         transform: scale(1);
 
         &:hover {
             transform: scale(1.1);
-            background-color: $color-primary;
+            // background-color: $color-primary;
+            border-color: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 0 5px rgba(255, 255, 255, 0.6);
+            background-color: rgba(0, 0, 0, 0.4);
             cursor: pointer;
         }
 
@@ -73,6 +75,10 @@ export default {
             width: 128px; /* set window to see sprite through */
             height: 128px; /* set window to see sprite through */
             background: var(--slotBg); /* custom property is generated in cssProps() and bound in dov with class card*/
+        }
+
+        input[type="checkbox"] {
+            visibility: hidden;
         }
     }
 </style>
