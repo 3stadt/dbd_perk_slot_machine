@@ -55,7 +55,7 @@ export default {
 </script>
 
 <style lang="scss">
-    @import "../deisgn/main";
+    @import "../design/main";
 
     .perk-overview {
         margin-bottom: 30px;

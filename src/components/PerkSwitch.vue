@@ -32,7 +32,7 @@ export default {
 </script>
 
 <style lang="scss">
-    @import "../deisgn/main";
+    @import "../design/main";
 
     .perk-switch {
         border: 1px solid $color-border;

@@ -19,7 +19,7 @@ export default {
 </script>
 
 <style lang="scss">
-    @import "deisgn/main";
+    @import "design/main";
 
     * {
         box-sizing: border-box;
