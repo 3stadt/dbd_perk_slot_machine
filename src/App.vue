@@ -1,26 +1,41 @@
 <template>
     <div id="app">
         <div id="nav">
-            <router-link to="/killers.html">Killer Roulette</router-link>
-            |
-            <router-link to="/survivors.html">Survivor Roulette</router-link>
+            <UiButton :routerLink="{ name: 'killers' }">Killer Roulette</UiButton>
+            <UiButton :routerLink="{ name: 'survivor' }">Survivor Roulette</UiButton>
         </div>
         <router-view/>
     </div>
 </template>
 
+<script>
+import UiButton from './components/UiButton'
+
+export default {
+  components: {
+    UiButton
+  }
+}
+</script>
+
 <style lang="scss">
+    @import "deisgn/main";
+
     * {
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
         box-sizing: border-box;
         margin: 0;
         padding: 0;
     }
 
     body {
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: $font-family-default;
         line-height: 1.4;
-        background: dimgrey;
+        background: $color-background;
+        color: $color-text;
+    }
+
+    #app {
+        max-width: 1024px;
+        margin: 0 auto;
     }
 </style>
