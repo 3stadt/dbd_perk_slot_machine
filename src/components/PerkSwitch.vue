@@ -17,14 +17,23 @@ export default {
       default () {
         return []
       }
+    },
+    type: {
+      type: String,
+      default: '',
+      required: true
     }
   },
 
   computed: {
+    imageFileName () {
+      return this.type === 'Survivor' ? 'perkslotsSurvSmall.png' : 'perkslotsKillSmall.png'
+    },
+
     cssProps () {
       let idx = this.perk.index
       return {
-        '--slotBg': `url('/img/perkslotsSurvSmall.png') 0 ${idx === 0 ? 0 : (128 * idx * -1) + 'px'}`
+        '--slotBg': `url('/img/${this.imageFileName}') 0 ${idx === 0 ? 0 : (128 * idx * -1) + 'px'}`
       }
     }
   }
