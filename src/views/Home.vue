@@ -1,8 +1,7 @@
 <template>
     <div class="home">
-        <PerkOverview v-bind:perks="perks.survivors" v-bind:type="'Survivor'"/>
-        <hr>
-        <PerkOverview v-bind:perks="perks.killers" v-bind:type="'Killer'"/>
+        <PerkOverview :perks="perks.survivors" type="Survivor" />
+        <PerkOverview :perks="perks.killers" type="Killer" />
     </div>
 </template>
 
