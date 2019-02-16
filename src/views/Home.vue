@@ -7,10 +7,12 @@
 
 <script>
 import PerkOverview from '../components/PerkOverview.vue'
+import UiCheckbox from '../components/UiCheckbox'
 
 export default {
   name: 'home',
   components: {
+    UiCheckbox,
     PerkOverview
   },
   data () {

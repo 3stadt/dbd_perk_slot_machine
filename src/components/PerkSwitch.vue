@@ -1,16 +1,18 @@
 <template>
     <div class="perk-switch" :style="cssProps">
-        <div class="perk-switch__name">{{perk.name}}</div>
+        <UiCheckbox class="perk-checkbox"></UiCheckbox>
         <div class="perk-switch__image-container">
             <div class="perk-switch__image" :class="[perk.cls]" role="img"></div>
         </div>
-        <input type="checkbox" :checked="perk.checked">
+        <div class="perk-switch__name">{{perk.name}}</div>
     </div>
 </template>
 
 <script>
+import UiCheckbox from './UiCheckbox'
 export default {
   name: 'PerkSwitch',
+  components: { UiCheckbox },
   props: {
     perk: {
       type: Object,
@@ -42,6 +44,9 @@ export default {
 
 <style lang="scss">
     @import "../design/main";
+    .perk-checkbox {
+        margin: 5px
+    }
 
     .perk-switch {
         border: 1px solid $color-border;
