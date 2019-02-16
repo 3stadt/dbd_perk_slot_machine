@@ -48,7 +48,7 @@ export default {
 
   methods: {
     toggleCollapsed () {
-      this.isCollapsed = !this.isCollapsed;
+      this.isCollapsed = !this.isCollapsed
     }
   }
 }
