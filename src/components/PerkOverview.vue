@@ -2,7 +2,7 @@
     <div class="perk-overview" :class="classes">
         <h2 class="perk-overview__toggle" @click="toggleCollapsed">{{type}} Perk Configuration</h2>
         <div v-if="isCollapsed" class="perk-overview__grid">
-            <PerkSwitch :key="perk.index" v-for="perk in perks" :perk="perk" />
+            <PerkSwitch :key="perk.index" v-for="perk in perks" :perk="perk" :type="type" />
         </div>
     </div>
 </template>
