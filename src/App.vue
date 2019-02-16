@@ -1,8 +1,8 @@
 <template>
     <div id="app">
-        <div id="nav">
-            <UiButton :routerLink="{ name: 'killers' }">Killer Roulette</UiButton>
-            <UiButton :routerLink="{ name: 'survivor' }">Survivor Roulette</UiButton>
+        <div class="nav">
+            <UiButton class="nav__killers" :routerLink="{ name: 'killers' }">Killer Roulette</UiButton>
+            <UiButton class="nav__survivors" :routerLink="{ name: 'survivor' }">Survivor Roulette</UiButton>
         </div>
         <router-view/>
     </div>
@@ -37,5 +37,15 @@ export default {
     #app {
         max-width: 1024px;
         margin: 0 auto;
+        padding: 10px;
+    }
+
+    .nav {
+        padding: 30px 0;
+        display: flex;
+    }
+
+    .nav__survivors {
+        margin-left: auto;
     }
 </style>
