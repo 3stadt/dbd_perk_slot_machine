@@ -1,9 +1,16 @@
 <template>
     <div class="perk-overview" :class="classes">
-        <h2 class="perk-overview__toggle" @click="toggleCollapsed">{{type}} Perk Configuration</h2>
-        <div v-if="isCollapsed" class="perk-overview__grid">
-            <PerkSwitch :key="perk.index" v-for="perk in perks" :perk="perk" />
-        </div>
+        <h2 class="perk-overview__toggle" @click="toggleCollapsed">
+            <span class="perk-overview__icon-holder">
+                <img :src="`/img/icon_${type}.png`" :alt="type">
+            </span>
+            <span class="perk-overview__title">{{type}} Perk Configuration</span>
+        </h2>
+        <transition name="fade">
+            <div v-if="isCollapsed" class="perk-overview__grid">
+                <PerkSwitch :key="perk.index" v-for="perk in perks" :perk="perk" />
+            </div>
+        </transition>
     </div>
 </template>
 
@@ -61,25 +68,52 @@ export default {
         margin-bottom: 30px;
 
         .perk-overview__toggle {
-            border: 1px dashed $color-border;
-            padding: 30px;
-            font-size: 30px;
-            font-weight: 300;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            background-color: rgba(0, 0, 0, 0.2);
+            padding: 10px 20px;
+            font-size: 25px;
+            font-weight: 500;
             cursor: pointer;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
 
             &:hover {
-                background-color: lighten($color-background, 10%);
+                border: 1px solid rgba(255, 255, 255, 0.3);
+                background-color: rgba(0, 0, 0, 0.3);
+            }
+        }
+
+        .perk-overview__icon-holder {
+            display: block;
+            margin-right: 20px;
+            width: 120px;
+            flex-shrink: 0;
+
+            img {
+                display: block;
+                max-width: 100%;
             }
         }
 
         .perk-overview__grid {
-            border-bottom: 1px dashed $color-border;
-            border-left: 1px dashed $color-border;
-            border-right: 1px dashed $color-border;
-            padding: 30px;
+            padding: 30px 0;
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
             grid-gap: 30px;
+        }
+
+        .fade-enter-active,
+        .fade-leave-active {
+            transition: all .2s ease-in-out;
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        .fade-enter,
+        .fade-leave-to {
+            transform: translateY(-50px);
+            opacity: 0;
         }
     }
 </style>
