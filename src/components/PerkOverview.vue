@@ -8,7 +8,7 @@
         </h2>
         <transition name="fade">
             <div v-if="isCollapsed" class="perk-overview__grid">
-                <PerkSwitch :key="perk.index" v-for="perk in perks" :perk="perk" />
+                <PerkSwitch :key="perk.index" v-for="perk in perks" :perk="perk" :type="type" />
             </div>
         </transition>
     </div>
