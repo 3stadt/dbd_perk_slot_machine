@@ -1,10 +1,12 @@
 <template>
-    <div class="perk-switch" @click="onClickPerk" :style="cssProps">
-        <UiCheckbox v-model="currentPerk.checked" class="perk-checkbox"></UiCheckbox>
-        <div class="perk-switch__image-container">
-            <div class="perk-switch__image" :class="[currentPerk.cls]" role="img"></div>
+    <div :class="['perk-switch-container', {'perk-checked': this.currentPerk.checked}]" :style="cssProps">
+        <div class="perk-switch" @click="onClickPerk" :style="cssProps">
+            <UiCheckbox v-model="currentPerk.checked" class="perk-checkbox"></UiCheckbox>
+            <div class="perk-switch__image-container">
+                <div class="perk-switch__image" :class="[currentPerk.cls, {'dim-image': !this.currentPerk.checked}]" role="img"></div>
+            </div>
+            <div class="perk-switch__name">{{ currentPerk.name }}</div>
         </div>
-        <div class="perk-switch__name">{{ currentPerk.name }}</div>
     </div>
 </template>
 
@@ -65,25 +67,42 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
     @import "../design/main";
+
     .perk-checkbox {
         margin: 5px
     }
 
+    .perk-switch-container {
+        border: 10px solid rgba(255, 255, 255, 0.2);
+        border-image: url(/img/border_black.png) 10% round;
+
+        &:hover {
+            transform: scale(1.2);
+            border-image: url(/img/border_red.png) 10% round;
+            cursor: pointer;
+        }
+
+    }
+
+    .dim-image {
+        filter: brightness(0.7);
+    }
+
+    .perk-checked {
+        border-image: url(/img/border_white.png) 10% round;
+    }
+
     .perk-switch {
-        border: 1px solid rgba(255, 255, 255, 0.2);
         background-color: rgba(0, 0, 0, 0.2);
         transition: all .15s ease-in-out;
         transform: scale(1);
+        padding-top: 1%;
+        height: 100%;
 
         &:hover {
-            transform: scale(1.1);
-            // background-color: $color-primary;
-            border-color: rgba(255, 255, 255, 0.8);
-            box-shadow: 0 0 5px rgba(255, 255, 255, 0.6);
             background-color: rgba(0, 0, 0, 0.4);
-            cursor: pointer;
         }
 
         .perk-switch__name {
@@ -108,5 +127,6 @@ export default {
         input[type="checkbox"] {
             visibility: hidden;
         }
+
     }
 </style>

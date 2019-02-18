@@ -2,7 +2,7 @@
     <div class="perk-overview" :class="classes">
         <h2 class="perk-overview__toggle" @click="toggleCollapsed">
             <span class="perk-overview__icon-holder">
-                <img :src="`/img/icon_${type}.png`" :alt="type">
+                <img :src="`/img/icon_${type.toLowerCase()}.png`" :alt="type">
             </span>
             <span class="perk-overview__title">{{type}} Perk Configuration</span>
         </h2>
