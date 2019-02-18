@@ -1,16 +1,23 @@
 <template>
-    <div class="perk-switch" :style="cssProps">
-        <div class="perk-switch__name">{{perk.name}}</div>
+    <div class="perk-switch" @click="onClickPerk" :style="cssProps">
+        <UiCheckbox v-model="currentPerk.checked" class="perk-checkbox"></UiCheckbox>
         <div class="perk-switch__image-container">
-            <div class="perk-switch__image" :class="[perk.cls]" role="img"></div>
+            <div class="perk-switch__image" :class="[currentPerk.cls]" role="img"></div>
         </div>
-        <input type="checkbox" :checked="perk.checked">
+        <div class="perk-switch__name">{{ currentPerk.name }}</div>
     </div>
 </template>
 
 <script>
+import UiCheckbox from './UiCheckbox'
+
 export default {
   name: 'PerkSwitch',
+
+  components: {
+    UiCheckbox
+  },
+
   props: {
     perk: {
       type: Object,
@@ -18,11 +25,22 @@ export default {
         return []
       }
     },
+
     type: {
       type: String,
       default: '',
       required: true
     }
+  },
+
+  data () {
+    return {
+      currentPerk: {}
+    }
+  },
+
+  created () {
+    this.currentPerk = this.perk
   },
 
   computed: {
@@ -36,12 +54,22 @@ export default {
         '--slotBg': `url('/img/${this.imageFileName}') 0 ${idx === 0 ? 0 : (128 * idx * -1) + 'px'}`
       }
     }
+  },
+
+  methods: {
+    // @TODO: Just a workaround to check checkbox when clicking whole box
+    onClickPerk () {
+      this.currentPerk.checked = !this.currentPerk.checked
+    }
   }
 }
 </script>
 
 <style lang="scss">
     @import "../design/main";
+    .perk-checkbox {
+        margin: 5px
+    }
 
     .perk-switch {
         border: 1px solid rgba(255, 255, 255, 0.2);
