@@ -96,6 +96,16 @@ export default {
             }
         }
 
+        @media screen and (max-width: 500px) {
+            .perk-overview__toggle {
+                font-size: 18px;
+            }
+
+            .perk-overview__icon-holder {
+                width: 50px;
+            }
+        }
+
         .perk-overview__grid {
             padding: 30px 0;
             display: grid;
