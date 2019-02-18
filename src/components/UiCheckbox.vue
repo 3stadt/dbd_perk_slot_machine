@@ -1,6 +1,9 @@
 <template>
     <span class="ui-checkbox">
-        <input type="checkbox" class="ui-checkbox__element">
+        <input type="checkbox"
+               @change="$emit('change', $event.target.checked)"
+               class="ui-checkbox__element"
+               :checked="value">
         <span class="ui-checkbox__indicator"></span>
     </span>
 </template>
@@ -8,7 +11,12 @@
 <script>
 export default {
   name: 'UiCheckbox',
-  props: {}
+
+  props: {
+    value: {
+      required: false
+    }
+  }
 }
 </script>
 
