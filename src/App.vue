@@ -1,8 +1,14 @@
 <template>
     <div id="app">
         <div class="nav">
-            <UiButton class="nav__killers" :routerLink="{ name: 'killers' }">Killer Roulette</UiButton>
-            <UiButton class="nav__survivors" :routerLink="{ name: 'survivor' }">Survivor Roulette</UiButton>
+            <UiButton class="nav__killers" :routerLink="{ name: 'killers' }">
+                <img src="/img/icon_killer.png" slot="icon" alt="Killer">
+                Killer Roulette
+            </UiButton>
+            <UiButton class="nav__survivors" :routerLink="{ name: 'survivor' }">
+                <img src="/img/icon_survivor.png" slot="icon" alt="Survivor">
+                Survivor Roulette
+            </UiButton>
         </div>
         <router-view/>
     </div>
@@ -44,6 +50,15 @@ export default {
     .nav {
         padding: 30px 0;
         display: flex;
+
+        @media screen and (max-width: 650px) {
+            display: block;
+
+            .ui-button {
+                margin-bottom: 15px;
+                width: 100%;
+            }
+        }
     }
 
     .nav__survivors {
