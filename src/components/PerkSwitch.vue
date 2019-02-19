@@ -3,7 +3,8 @@
         <div class="perk-switch" @click="onClickPerk" :style="cssProps">
             <UiCheckbox v-model="currentPerk.checked" class="perk-checkbox"></UiCheckbox>
             <div class="perk-switch__image-container">
-                <div class="perk-switch__image" :class="[currentPerk.cls, {'dim-image': !this.currentPerk.checked}]" role="img"></div>
+                <div class="perk-switch__image" :class="[currentPerk.cls, {'dim-image': !this.currentPerk.checked}]"
+                     role="img"></div>
             </div>
             <div class="perk-switch__name">{{ currentPerk.name }}</div>
         </div>
@@ -78,10 +79,12 @@ export default {
         border: 10px solid rgba(255, 255, 255, 0.2);
         border-image: url(/img/border_black.png) 10% round;
 
-        &:hover {
-            transform: scale(1.2);
-            border-image: url(/img/border_red.png) 10% round;
-            cursor: pointer;
+        @media screen and (min-width: 992px) {
+            &:hover {
+                transform: scale(1.2);
+                border-image: url(/img/border_red.png) 10% round;
+                cursor: pointer;
+            }
         }
 
     }
@@ -101,8 +104,10 @@ export default {
         padding-top: 1%;
         height: 100%;
 
-        &:hover {
-            background-color: rgba(0, 0, 0, 0.4);
+        @media screen and (min-width: 992px) {
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.4);
+            }
         }
 
         .perk-switch__name {
