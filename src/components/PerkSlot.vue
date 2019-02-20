@@ -15,17 +15,17 @@ export default {
     return {
       slots: [],
       active: false,
-      inViewPort: 0
+      inViewPort: 0,
+      lKey: -1,
+      speed: 0,
+      maxSpeed: 150,
+      acceleration: 2,
+      currentShifting: 0,
+      animationStart: null,
+      animationCount: 0
     }
   },
   props: {
-    speed: {
-      type: Number,
-      required: false,
-      default: function () {
-        return 1
-      }
-    },
     type: {
       type: String,
       required: true
@@ -40,34 +40,59 @@ export default {
   },
   computed: {},
   methods: {
-    roll: function (times) {
-      this.doRoll(times, this)
+    roll: function (animationCount) {
+      if (this.active) return
+      this.animationCount = animationCount
+      window.requestAnimationFrame(this._doRoll)
     },
-    doRoll: function (times, me) {
-      times--
-      window.requestAnimationFrame(function () {
-        let lKey = me.inViewPort - 1
-        if (me.inViewPort === 0) {
-          lKey = me.slots.length - 1
+    _doRoll: function (timestamp) {
+      console.info('_doRoll')
+      if (!this.animationStart) {
+        this.animationStart = timestamp
+      }
+      let progress = timestamp - this.animationStart
+      if (progress === 0) {
+        // set bottom element at top
+        this.animationCount--
+        this.lKey = this.inViewPort - 1
+        if (this.inViewPort === 0) {
+          this.lKey = this.slots.length - 1
         }
-        me.slots[lKey].visible = false
-        me.slots[lKey].translate = (lKey * 256 * -1) - 256
-        window.requestAnimationFrame(function () {
-          me.active = true
-          me.slots[lKey].visible = true
-          for (let key = 0, len = me.slots.length; key < len; key++) {
-            me.slots[key].translate += 256
-          }
-          me.inViewPort = me.inViewPort === me.slots.length ? 0 : lKey
-          if (times > 0) {
-            window.requestAnimationFrame(function () {
-              me.doRoll(times, me)
-            })
-          } else {
-            me.active = false
-          }
-        })
-      })
+        this.slots[this.lKey].visible = false
+        this.slots[this.lKey].translate = (this.lKey * 256 * -1) - 256
+      }
+      window.requestAnimationFrame(this._moveSlots)
+    },
+    _moveSlots: function (timestamp) {
+      // let progress = timestamp - this.animationStart
+      console.info('_moveSlots')
+      if (this.speed + this.acceleration < this.maxSpeed) {
+        this.speed += this.acceleration
+      }
+      let speed = this.speed
+      this.active = true
+      this.slots[this.lKey].visible = true
+      if (this.currentShifting + 10 > 256) {
+        speed = 256 - this.currentShifting
+      }
+      for (let key = 0, len = this.slots.length; key < len; key++) {
+        this.slots[key].translate += speed
+      }
+      this.currentShifting += speed
+      if (this.currentShifting === 256) {
+        this.inViewPort = this.inViewPort === this.slots.length ? 0 : this.lKey
+        this.animationCount--
+        this.animationStart = null
+        this.currentShifting = 0
+        if (this.animationCount > 0) {
+          window.requestAnimationFrame(this._doRoll)
+        } else {
+          this.speed = 0
+          this.active = false
+        }
+        return
+      }
+      window.requestAnimationFrame(this._doRoll)
     },
     getTranslate: function (key) {
       if (!this.slots[key]) {
@@ -84,7 +109,7 @@ export default {
     getBgImage: function (id, key) {
       let pos = 256 * id * -1 + 'px'
       return {
-        'background': `url("/img/perkslots${this.type}${this.active ? '_blur' : ''}.png") 0 ${pos}`,
+        'background': `url("/img/perkslots${this.type}${this.active && this.speed > 50 ? '_blur' : ''}.png") 0 ${pos}`,
         'transform': `translateY(${this.getTranslate(key)}px)`
       }
     },
@@ -111,10 +136,6 @@ export default {
         overflow: hidden;
         position: relative;
         float: left;
-    }
-
-    .smoothAnimation {
-        transition: transform .2s ease-in-out;
     }
 
     .hidden {
