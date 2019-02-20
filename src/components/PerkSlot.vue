@@ -123,6 +123,8 @@ export default {
     for (let key = 0, len = this.ids.length; key < len; key++) {
       this.slots.push({ 'id': this.ids[key], 'translate': 0, 'visible': true })
     }
+    let preload = new Image()
+    preload.src = `/img/perkslots${this.type}_blur.png`
   }
 }
 </script>
