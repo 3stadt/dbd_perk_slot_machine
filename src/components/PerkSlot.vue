@@ -1,9 +1,9 @@
 <template>
     <div>
-        <div class="slotMachineContainer">
-            <div class="perk-slot" :id="'slot-'+id" ref="slots" :key="key" v-for="(id, key) in ids"
+        <div class="slotMachineContainer" :class="[{blurred: active && speed > 50}]">
+            <div class="perk-slot" ref="slots" :key="key" v-for="(id, key) in ids"
                  :style="getBgImage(id, key)"
-                 :class="['smoothAnimation', hidden(key)]"></div>
+                 :class="['slot'+type+'-'+id, hidden(key)]"></div>
         </div>
     </div>
 </template>
@@ -107,9 +107,9 @@ export default {
       return !this.slots[key].visible
     },
     getBgImage: function (id, key) {
-      let pos = 256 * id * -1 + 'px'
+      // let pos = 256 * id * -1 + 'px'
       return {
-        'background': `url("/img/perkslots${this.type}${this.active && this.speed > 50 ? '_blur' : ''}.png") 0 ${pos}`,
+        // 'background': `url("/img/perkslots${this.type}${this.active && this.speed > 50 ? '_blur' : ''}.png") 0 ${pos}`,
         'transform': `translateY(${this.getTranslate(key)}px)`
       }
     },
@@ -131,6 +131,8 @@ export default {
 
 <style lang="scss" scoped>
     @import "../design/main";
+    @import "../design/slots/Kill";
+    @import "../design/slots/Surv";
 
     .slotMachineContainer {
         width: 256px;
