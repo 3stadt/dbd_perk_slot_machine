@@ -125,6 +125,14 @@ export default {
     }
     let preload = new Image()
     preload.src = `/img/perkslots${this.type}_blur.png`
+  },
+  encodeConfig: function (confString) { // For future use
+    // eslint-disable-next-line
+      return LZString.compressToEncodedURIComponent(confString)
+  },
+  decodeConfig: function (comp) { // For future use
+    // eslint-disable-next-line
+        return LZString.decompressFromEncodedURIComponent(comp)
   }
 }
 </script>
