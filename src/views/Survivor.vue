@@ -20,9 +20,9 @@ export default {
   methods: {
     randomize: function () {
       this.$refs.slot1.roll(10)
-      this.$refs.slot2.roll(7)
+      this.$refs.slot2.roll(12)
       this.$refs.slot3.roll(15)
-      this.$refs.slot4.roll(3)
+      this.$refs.slot4.roll(9)
     },
     getIds: function () {
       return [22, 23, 24, 25, 26]

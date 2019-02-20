@@ -2,8 +2,8 @@
     <div>
         <div class="slotMachineContainer" :class="[{blurred: active && speed > 50}]">
             <div class="perk-slot" ref="slots" :key="key" v-for="(id, key) in ids"
-                 :style="getBgImage(id, key)"
-                 :class="['slot'+type+'-'+id, hidden(key)]"></div>
+                 :style="styleTransform(id, key)"
+                 :class="['slot'+type+'-'+id, classHidden(key)]"></div>
         </div>
     </div>
 </template>
@@ -22,7 +22,8 @@ export default {
       acceleration: 2,
       currentShifting: 0,
       animationStart: null,
-      animationCount: 0
+      animationCount: 0,
+      animationCountInitial: 0
     }
   },
   props: {
@@ -43,10 +44,10 @@ export default {
     roll: function (animationCount) {
       if (this.active) return
       this.animationCount = animationCount
+      this.animationCountInitial = animationCount
       window.requestAnimationFrame(this._doRoll)
     },
     _doRoll: function (timestamp) {
-      console.info('_doRoll')
       if (!this.animationStart) {
         this.animationStart = timestamp
       }
@@ -63,11 +64,14 @@ export default {
       }
       window.requestAnimationFrame(this._moveSlots)
     },
-    _moveSlots: function (timestamp) {
-      // let progress = timestamp - this.animationStart
-      console.info('_moveSlots')
-      if (this.speed + this.acceleration < this.maxSpeed) {
+    _moveSlots: function () {
+      if (this.speed + this.acceleration < this.maxSpeed && this.animationCountInitial / this.animationCount <= 3.5) {
         this.speed += this.acceleration
+      } else if (this.animationCountInitial / this.animationCount > 3.5) {
+        this.speed -= this.speed / 4
+        if (this.speed < 8) {
+          this.speed = 8
+        }
       }
       let speed = this.speed
       this.active = true
@@ -106,14 +110,12 @@ export default {
       }
       return !this.slots[key].visible
     },
-    getBgImage: function (id, key) {
-      // let pos = 256 * id * -1 + 'px'
+    styleTransform: function (id, key) {
       return {
-        // 'background': `url("/img/perkslots${this.type}${this.active && this.speed > 50 ? '_blur' : ''}.png") 0 ${pos}`,
         'transform': `translateY(${this.getTranslate(key)}px)`
       }
     },
-    hidden: function (key) {
+    classHidden: function (key) {
       return {
         'hidden': this.getHidden(key)
       }
