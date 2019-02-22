@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="slotMachineContainer" :class="[{blurred: active && speed > 50}]">
+        <div class="slotMachineContainer" :class="[{blurred: blurReel && speed > 50}]">
             <div class="perk-slot" ref="slots" :key="key" v-for="(id, key) in ids"
                  :style="styleTransform(id, key)"
                  :class="['slot'+type+'-'+id, classHidden(key)]"></div>
@@ -14,16 +14,13 @@ export default {
   data: function () {
     return {
       slots: [],
-      active: false,
-      inViewPort: 0,
-      lKey: -1,
-      speed: 0,
-      maxSpeed: 150,
-      acceleration: 2,
-      currentShifting: 0,
-      animationStart: null,
-      animationCount: 0,
-      animationCountInitial: 0
+      blurReel: false,
+      reelMoving: false,
+      reelSteps: [],
+      breakPointSpeedUp: null,
+      breakPointSpeedDown: null,
+      currentStep: null,
+      inViewPort: null
     }
   },
   props: {
@@ -41,64 +38,36 @@ export default {
   },
   computed: {},
   methods: {
-    roll: function (animationCount) {
-      if (this.active) return
-      this.animationCount = animationCount
-      this.animationCountInitial = animationCount
-      window.requestAnimationFrame(this._doRoll)
+    roll: function (moveToId) {
+      this.reelSteps = this.ids.length * 3 + this._getIdKey(moveToId) // spin reel 3 times, land on desired perk. One step per image, each step will have multiple frames
+      this.breakPointSpeedUp = Math.floor(this.reelSteps / 4) // The first 25% will be used to speed up
+      this.breakPointSpeedDown = this.reelSteps - this.breakPointSpeedUp // the last 25% will be used to speed down
+      this.currentStep = 1
+      if (this.inViewPort === null) {
+        this.inViewPort = 0
+      }
+      window.requestAnimationFrame(this._moveReel)
     },
-    _doRoll: function (timestamp) {
-      if (!this.animationStart) {
-        this.animationStart = timestamp
+    _moveReel: function () {
+      // set bottom element at top
+      let bottomEl = this.inViewPort - 1
+      if (bottomEl < 0) {
+        bottomEl = this.ids.length - 1
       }
-      let progress = timestamp - this.animationStart
-      if (progress === 0) {
-        // set bottom element at top
-        this.animationCount--
-        this.lKey = this.inViewPort - 1
-        if (this.inViewPort === 0) {
-          this.lKey = this.slots.length - 1
-        }
-        this.slots[this.lKey].visible = false
-        this.slots[this.lKey].translate = (this.lKey * 256 * -1) - 256
-      }
-      window.requestAnimationFrame(this._moveSlots)
+      this.slots[bottomEl].translate = (bottomEl * 256 * -1) - 256
+      this.inViewPort++ /// TODO ...
+      console.info(this.inViewPort)
     },
-    _moveSlots: function () {
-      if (this.speed + this.acceleration < this.maxSpeed && this.animationCountInitial / this.animationCount <= 3.5) {
-        this.speed += this.acceleration
-      } else if (this.animationCountInitial / this.animationCount > 3.5) {
-        this.speed -= this.speed / 4
-        if (this.speed < 8) {
-          this.speed = 8
-        }
-      }
-      let speed = this.speed
-      this.active = true
-      this.slots[this.lKey].visible = true
-      if (this.currentShifting + 10 > 256) {
-        speed = 256 - this.currentShifting
-      }
-      for (let key = 0, len = this.slots.length; key < len; key++) {
-        this.slots[key].translate += speed
-      }
-      this.currentShifting += speed
-      if (this.currentShifting === 256) {
-        this.inViewPort = this.inViewPort === this.slots.length ? 0 : this.lKey
-        this.animationCount--
-        this.animationStart = null
-        this.currentShifting = 0
-        if (this.animationCount > 0) {
-          window.requestAnimationFrame(this._doRoll)
-        } else {
-          this.speed = 0
-          this.active = false
-        }
-        return
-      }
-      window.requestAnimationFrame(this._doRoll)
+    _acceleration: function (step) {
+      return Math.pow(2, step)
     },
-    getTranslate: function (key) {
+    _getIdKey (id) {
+      for (let i = 0; i < this.ids.length; i++) {
+        if (this.ids[i] === id) { return i }
+      }
+      return false
+    },
+    _getTranslate: function (key) {
       if (!this.slots[key]) {
         return 0
       }
@@ -112,7 +81,7 @@ export default {
     },
     styleTransform: function (id, key) {
       return {
-        'transform': `translateY(${this.getTranslate(key)}px)`
+        'transform': `translateY(${this._getTranslate(key)}px)`
       }
     },
     classHidden: function (key) {
@@ -130,11 +99,11 @@ export default {
   },
   encodeConfig: function (confString) { // For future use
     // eslint-disable-next-line
-      return LZString.compressToEncodedURIComponent(confString)
+            return LZString.compressToEncodedURIComponent(confString)
   },
   decodeConfig: function (comp) { // For future use
     // eslint-disable-next-line
-        return LZString.decompressFromEncodedURIComponent(comp)
+            return LZString.decompressFromEncodedURIComponent(comp)
   }
 }
 </script>
@@ -147,7 +116,7 @@ export default {
     .slotMachineContainer {
         width: 256px;
         height: 256px;
-        overflow: hidden;
+        /*overflow: hidden;*/
         position: relative;
         float: left;
     }
