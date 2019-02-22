@@ -2,6 +2,7 @@
     <div>
         <button v-on:click.stop.prevent="randomize" style="margin-left: 800px;">Randomize!</button>
         <h1>Survivor Roulette</h1>
+        <p>{{ randId }}</p>
         <slot1 ref="slot1" type="Surv" />
         <!--<slot1 ref="slot1" type="Surv" />-->
         <!--<slot1 ref="slot2" type="Surv" />-->
@@ -20,9 +21,16 @@ export default {
     // 'slot': PerkSlot,
     'slot1': DDDSlot
   },
+  data: function () {
+    return {
+      randId: 0
+    }
+  },
   methods: {
     randomize: function () {
-      this.$refs.slot1.rollWheel(5)
+      this.randId = this.randId === 0 ? 1 : 0
+
+      this.$refs.slot1.rollWheel(this.randId)
       // this.$refs.slot2.roll(12)
       // this.$refs.slot3.roll(15)
       // this.$refs.slot4.roll(9)
