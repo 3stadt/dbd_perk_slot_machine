@@ -1,16 +1,20 @@
 <template>
     <div id="app">
-        <div class="nav">
-            <UiButton class="nav__killers" :routerLink="{ name: 'killers' }">
-                <img src="/img/icon_killer.png" slot="icon" alt="Killer">
-                Killer Roulette
-            </UiButton>
-            <UiButton class="nav__survivors" :routerLink="{ name: 'survivor' }">
-                <img src="/img/icon_survivor.png" slot="icon" alt="Survivor">
-                Survivor Roulette
-            </UiButton>
+        <div class="header">
+            <div class="nav container">
+                <UiButton class="nav__killers" :routerLink="{ name: 'killers' }">
+                    <img src="/img/icon_killer.png" slot="icon" alt="Killer">
+                    Killer Roulette
+                </UiButton>
+                <UiButton class="nav__survivors" :routerLink="{ name: 'survivor' }">
+                    <img src="/img/icon_survivor.png" slot="icon" alt="Survivor">
+                    Survivor Roulette
+                </UiButton>
+            </div>
         </div>
-        <router-view/>
+        <div class="perk-config container">
+            <router-view/>
+        </div>
     </div>
 </template>
 
@@ -42,20 +46,43 @@ export default {
     }
 
     #app {
+        margin: 0 auto;
+        padding: 0.1px;
+    }
+
+    .header {
+        z-index: 1;
+        position: fixed;
+        width: 100%;
+
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .container {
         max-width: 1024px;
         margin: 0 auto;
-        padding: 10px;
+    }
+
+    .perk-config {
+        padding: 150px 30px;
+        z-index: 2;
+
+        @media screen and (max-width: 650px) {
+            padding: 175px 30px;
+        }
     }
 
     .nav {
-        padding: 30px 0;
+        padding: 30px 30px;
         display: flex;
 
         @media screen and (max-width: 650px) {
             display: block;
+            padding: 0 30px;
 
             .ui-button {
-                margin-bottom: 15px;
+                margin: 15px 0;
                 width: 100%;
             }
         }

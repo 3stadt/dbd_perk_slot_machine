@@ -1,12 +1,12 @@
 <template>
     <div :class="['perk-switch-container', {'perk-checked': this.currentPerk.checked}]" :style="cssProps">
         <div class="perk-switch" @click="onClickPerk" :style="cssProps">
-            <UiCheckbox v-model="currentPerk.checked" class="perk-checkbox"></UiCheckbox>
+            <UiCheckbox v-model="currentPerk.checked" class="perk-checkbox" :class="[{'dim-image': !this.currentPerk.checked}]"></UiCheckbox>
             <div class="perk-switch__image-container">
                 <div class="perk-switch__image" :class="[currentPerk.cls, {'dim-image': !this.currentPerk.checked}]"
                      role="img"></div>
             </div>
-            <div class="perk-switch__name">{{ currentPerk.name }}</div>
+            <div class="perk-switch__name" :class="[{'dim-image': !this.currentPerk.checked}]">{{ currentPerk.name }}</div>
         </div>
     </div>
 </template>
@@ -72,7 +72,7 @@ export default {
     @import "../design/main";
 
     .perk-checkbox {
-        margin: 5px
+        position: absolute;
     }
 
     .perk-switch-container {
@@ -86,11 +86,10 @@ export default {
                 cursor: pointer;
             }
         }
-
     }
 
     .dim-image {
-        filter: brightness(0.7);
+        filter: brightness(0.5);
     }
 
     .perk-checked {
@@ -101,7 +100,7 @@ export default {
         background-color: rgba(0, 0, 0, 0.2);
         transition: all .15s ease-in-out;
         transform: scale(1);
-        padding-top: 1%;
+        padding: 5%;
         height: 100%;
 
         @media screen and (min-width: 992px) {
@@ -111,7 +110,7 @@ export default {
         }
 
         .perk-switch__name {
-            padding: 10px;
+            position: relative;
             text-align: center;
         }
 
@@ -127,10 +126,6 @@ export default {
             width: 128px; /* set window to see sprite through */
             height: 128px; /* set window to see sprite through */
             background: var(--slotBg); /* custom property is generated in cssProps() and bound in dov with class card*/
-        }
-
-        input[type="checkbox"] {
-            visibility: hidden;
         }
 
     }
