@@ -1,25 +1,24 @@
 <template>
     <div>
         <button v-on:click.stop.prevent="randomize" style="margin-left: 800px;">Randomize!</button>
-        <h1>Survivor Roulette</h1>
-        <p>{{ randId }}</p>
+        <h1>Survivor Roulette ({{ randId }})</h1>
         <slot1 ref="slot1" type="Surv" />
-        <!--<slot1 ref="slot1" type="Surv" />-->
-        <!--<slot1 ref="slot2" type="Surv" />-->
-        <!--<slot1 ref="slot3" type="Surv" />-->
-        <!--<slot1 ref="slot4" type="Surv" />-->
+        <slot2 ref="slot2" type="Surv" />
+        <slot3 ref="slot3" type="Surv" />
+        <slot4 ref="slot4" type="Surv" />
     </div>
 </template>
 
 <script>
-// import PerkSlot from '../components/PerkSlot'
 import DDDSlot from '../components/DDDSlot'
 
 export default {
   name: 'Survivor',
   components: {
-    // 'slot': PerkSlot,
-    'slot1': DDDSlot
+    'slot1': DDDSlot,
+    'slot2': DDDSlot,
+    'slot3': DDDSlot,
+    'slot4': DDDSlot
   },
   data: function () {
     return {
@@ -28,12 +27,10 @@ export default {
   },
   methods: {
     randomize: function () {
-      this.randId = this.randId === 0 ? 1 : 0
-
-      this.$refs.slot1.rollWheel(this.randId)
-      // this.$refs.slot2.roll(12)
-      // this.$refs.slot3.roll(15)
-      // this.$refs.slot4.roll(9)
+      this.$refs.slot1.rollWheel(0, 2.5, 0.2)
+      this.$refs.slot2.rollWheel(12, 3, 0.4)
+      this.$refs.slot3.rollWheel(44, 3.5, 0.15)
+      this.$refs.slot4.rollWheel(19, 4, 0.55)
     }
   }
 }
