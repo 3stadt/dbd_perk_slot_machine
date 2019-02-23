@@ -1,6 +1,6 @@
 <template>
     <div class="slot">
-        <img class="perk" src="/img/perkBg.gif" alt="">
+        <img class="perk" src="/img/perkBg.png" alt="">
         <template v-for="(n, i) in  (maxId + 1)">
             <img :key="n" ref="perks" class="perk" :class="[ 'perk-'+ i ]" :src="_isBlurred()" alt="">
         </template>
