@@ -4,11 +4,14 @@
             <span class="perk-overview__icon-holder">
                 <img :src="`/img/icon_${type.toLowerCase()}.png`" :alt="type">
             </span>
-            <span class="perk-overview__title">{{type}} Perk Configuration</span>
+            <span class="perk-overview__title">{{type}} {{title}}</span>
         </h2>
         <transition name="fade">
-            <div v-if="isCollapsed" class="perk-overview__grid">
+            <div v-if="perkCondition" class="perk-overview__grid">
                 <PerkSwitch :key="perk.index" v-for="perk in perks" :perk="perk" :type="type" />
+            </div>
+            <div v-if="infoCondition" class="perk-overview__box">
+                <InfoText />
             </div>
         </transition>
     </div>
@@ -16,19 +19,24 @@
 
 <script>
 import PerkSwitch from './PerkSwitch.vue'
+import InfoText from './InfoText.vue'
 
 export default {
-  name: 'PerkOverview',
+  name: 'MenuItem',
 
   props: {
     perks: {
       type: Array,
       default () {
         return []
-      },
-      required: true
+      }
     },
     type: {
+      type: String,
+      default: '',
+      required: true
+    },
+    title: {
       type: String,
       default: '',
       required: true
@@ -42,7 +50,8 @@ export default {
   },
 
   components: {
-    PerkSwitch
+    PerkSwitch,
+    InfoText
   },
 
   computed: {
@@ -50,6 +59,12 @@ export default {
       return {
         'is--collapsed': this.isCollapsed
       }
+    },
+    perkCondition () {
+      return this.perks.length > 0 && this.isCollapsed
+    },
+    infoCondition () {
+      return this.type === 'Info' && this.isCollapsed
     }
   },
 
@@ -82,6 +97,15 @@ export default {
                 border: 1px solid rgba(255, 255, 255, 0.3);
                 background-color: rgba(0, 0, 0, 0.3);
             }
+        }
+
+        .perk-overview__box {
+            margin-top: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            background-color: rgba(0, 0, 0, 0.2);
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
         }
 
         .perk-overview__icon-holder {

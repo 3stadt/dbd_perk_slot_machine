@@ -65,7 +65,7 @@ export default {
     }
 
     .perk-config {
-        padding: 150px 30px;
+        padding: 105px 30px;
         z-index: 2;
 
         @media screen and (max-width: 650px) {
@@ -74,7 +74,7 @@ export default {
     }
 
     .nav {
-        padding: 30px 30px;
+        padding: 10px 30px;
         display: flex;
 
         @media screen and (max-width: 650px) {

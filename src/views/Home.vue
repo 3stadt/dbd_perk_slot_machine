@@ -1,17 +1,18 @@
 <template>
     <div class="home">
-        <PerkOverview :perks="perks.survivors" type="Survivor" />
-        <PerkOverview :perks="perks.killers" type="Killer" />
+        <MenuItem :content=content.text type="Info" title="/ Attribution" />
+        <MenuItem :perks="perks.survivors" type="Survivor" :title=content.title />
+        <MenuItem :perks="perks.killers" type="Killer" :title=content.title />
     </div>
 </template>
 
 <script>
-import PerkOverview from '../components/PerkOverview.vue'
+import MenuItem from '../components/MenuItem.vue'
 
 export default {
   name: 'home',
   components: {
-    PerkOverview
+    MenuItem
   },
   data () {
     return {
@@ -164,8 +165,8 @@ export default {
             'checked': true
           }, { 'name': 'WINDOWS OF OPPORTUNITY', 'index': '58', 'cls': 'slotSurv-58', 'checked': true }
         ],
-        'killers': [{
-          'name': 'AGITATION',
+        'killers': [
+          { 'name': 'AGITATION',
           'index': '0',
           'cls': 'slotKill-0',
           'checked': true
@@ -420,6 +421,9 @@ export default {
           'cls': 'slotKill-52',
           'checked': true
         }, { 'name': 'WHISPERS', 'index': '53', 'cls': 'slotKill-53', 'checked': true }]
+      },
+      content: {
+        title: 'Perk Configuration'
       }
     }
   }
