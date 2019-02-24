@@ -12,7 +12,7 @@
                 </UiButton>
             </div>
         </div>
-        <div class="perk-config container">
+        <div class="container">
             <router-view/>
         </div>
     </div>
@@ -43,6 +43,7 @@ export default {
         background: $color-background url("../public/img/background_1.jpg") no-repeat center center fixed;
         background-size: cover;
         color: $color-text;
+        top: 0;
     }
 
     #app {
@@ -62,10 +63,8 @@ export default {
     .container {
         max-width: 1024px;
         margin: 0 auto;
-    }
 
-    .perk-config {
-        padding: 105px 30px;
+        padding: 105px 0;
         z-index: 2;
 
         @media screen and (max-width: 650px) {
@@ -74,7 +73,7 @@ export default {
     }
 
     .nav {
-        padding: 10px 30px;
+        padding: 10px 0;
         display: flex;
 
         @media screen and (max-width: 650px) {
