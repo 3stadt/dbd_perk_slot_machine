@@ -1,5 +1,5 @@
 <template>
-    <div class="home">
+    <div class="perk-config home">
         <MenuItem type="Info" title="/ Attribution" />
         <MenuItem :perks="perks.survivors" type="Survivor" title="Perk Configuration" />
         <MenuItem :perks="perks.killers" type="Killer" title="Perk Configuration" />
