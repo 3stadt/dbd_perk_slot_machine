@@ -154,6 +154,7 @@ export default {
         width: #{$item-width}px;
         position: relative;
         overflow: hidden;
+        clip-path: polygon(50% 4%, 96% 50%, 50% 96%, 4% 50%);
     }
 
     .perk {
