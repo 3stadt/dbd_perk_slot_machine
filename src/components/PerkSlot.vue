@@ -2,7 +2,7 @@
     <div style="display: inline-block">
         <div class="slot">
             <img class="perk" src="/img/perkBg.png" alt="">
-            <img class="perk" ref="placeholder" src="/img/placeholder.png" alt="">
+            <img class="perk" ref="placeholder" :src="'/img/placeholder_' + type + '.png'" alt="">
             <template v-for="perk in perkData">
                 <img :key="perk.index" ref="perks" class="perk" :class="[ 'perk'+type+'-'+ perk.index ]" :src="_getBg()" alt="">
             </template>
