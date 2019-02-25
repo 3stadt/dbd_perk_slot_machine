@@ -4,7 +4,8 @@
             <img class="perk" src="/img/perkBg.png" alt="">
             <img class="perk" ref="placeholder" :src="'/img/placeholder_' + type + '.png'" alt="">
             <template v-for="perk in perkData">
-                <img :key="perk.index" ref="perks" class="perk" :class="[ 'perk'+type+'-'+ perk.index ]" :src="_getBg()" alt="">
+                <img :key="perk.index" ref="perks" class="perk" :class="[ 'perk'+type+'-'+ perk.index ]" :src="_getBg()"
+                     alt="">
             </template>
         </div>
         <div class="perk-name" :class="{visible: perkNameVisible}">{{ perkName }}</div>
@@ -33,7 +34,6 @@ export default {
         targetPerkReveal: false, // used to show the final target perk
         targetPerkId: 0,
         rollDuration: 2, // how many seconds before revealing/stopping
-        blurPerks: false,
         disappearingPerk: {
           id: 0,
           position: 0
@@ -136,9 +136,6 @@ export default {
         roll.currentPerksStartTime = timestamp
       }
 
-      // Calculate if the images should be blurred. Occurs between first and last quarter of animation
-      this.blurPerks = animationTime > this.roll.rollDuration / 4 && animationTime < this.rollDuration - (this.roll.rollDuration / 4)
-
       // Calculate new positions according to elapsed animation time and speed.
       // Speed determines how much time a perk should be visible in the viewport.
       let speed = roll.speed
@@ -174,9 +171,6 @@ export default {
       return prevId
     },
     _getBg: function () {
-      if (this.blurPerks) {
-        return '/img/perkslots' + this.type + '_blur.png'
-      }
       return '/img/perkslots' + this.type + '.png'
     }
   }
