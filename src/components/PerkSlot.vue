@@ -4,7 +4,7 @@
             <img class="perk" src="/img/perkBg.png" alt="">
             <img class="perk" ref="placeholder" src="/img/placeholder.png" alt="">
             <template v-for="perk in perkData">
-                <img :key="perk.index" ref="perks" class="perk" :class="[ 'perk-'+ perk.index ]" :src="_getBg()" alt="">
+                <img :key="perk.index" ref="perks" class="perk" :class="[ 'perk'+type+'-'+ perk.index ]" :src="_getBg()" alt="">
             </template>
         </div>
         <div class="perk-name" :class="{visible: perkNameVisible}">{{ perkName }}</div>
@@ -13,13 +13,14 @@
 
 <script>
 export default {
-  name: 'DDDSlot',
+  name: 'PerkSlot',
   data: function () {
-    let maxId = 58
+    let perkData = this.type === 'Surv' ? require('./../resources/perks-survivor.json') : require('./../resources/perks-killer.json')
+    let maxId = perkData.length - 1
     return {
       maxId: maxId,
       elementHeight: 256,
-      perkData: require('./../resources/perks-survivor.json'),
+      perkData: perkData,
       perkName: '',
       firstRoll: true,
       perkNameVisible: false,
@@ -43,6 +44,13 @@ export default {
         }
       },
       roll: null
+    }
+  },
+  props: {
+    type: {
+      type: String,
+      default: '',
+      required: true
     }
   },
   methods: {
@@ -167,9 +175,9 @@ export default {
     },
     _getBg: function () {
       if (this.blurPerks) {
-        return '/img/perkslotsSurv_blur.png'
+        return '/img/perkslots' + this.type + '_blur.png'
       }
-      return '/img/perkslotsSurv.png'
+      return '/img/perkslots' + this.type + '.png'
     }
   }
 }
@@ -207,9 +215,17 @@ export default {
         left: 0;
     }
 
-    @for $i from 0 through $n {
+    @for $i from 0 through $nSurv {
         $pos: $i * $item-width * -1;
-        .perk-#{$i} {
+        .perkSurv-#{$i} {
+            object-position: 0 #{$pos}px;
+            transform: translateY(-#{$item-width}px);
+        }
+    }
+
+    @for $i from 0 through $nKill {
+        $pos: $i * $item-width * -1;
+        .perkKill-#{$i} {
             object-position: 0 #{$pos}px;
             transform: translateY(-#{$item-width}px);
         }

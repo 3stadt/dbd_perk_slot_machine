@@ -2,7 +2,7 @@
     <div id="app">
         <div class="header">
             <div class="nav container">
-                <UiButton class="nav__killers" :routerLink="{ name: 'killers' }">
+                <UiButton class="nav__killers" :routerLink="{ name: 'killer' }">
                     <img src="/img/icon_killer.png" slot="icon" alt="Killer">
                     Killer Roulette
                 </UiButton>

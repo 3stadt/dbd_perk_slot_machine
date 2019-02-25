@@ -1,10 +1,10 @@
 <template>
     <div>
         <button v-on:click.stop.prevent="randomize" style="margin-left: 800px;">Randomize!</button>
-        <slot1 ref="slot1" type="Surv"/>
-        <slot2 ref="slot2" type="Surv"/>
-        <slot3 ref="slot3" type="Surv"/>
-        <slot4 ref="slot4" type="Surv"/>
+        <slot1 ref="slot1" type="Kill"/>
+        <slot2 ref="slot2" type="Kill"/>
+        <slot3 ref="slot3" type="Kill"/>
+        <slot4 ref="slot4" type="Kill"/>
     </div>
 </template>
 
@@ -12,7 +12,7 @@
 import PerkSlot from '../components/PerkSlot'
 
 export default {
-  name: 'Survivor',
+  name: 'Killer',
   components: {
     'slot1': PerkSlot,
     'slot2': PerkSlot,
@@ -21,7 +21,7 @@ export default {
   },
   data: function () {
     return {
-      perkData: require('./../resources/perks-survivor.json')
+      perkData: require('./../resources/perks-killer.json')
     }
   },
   methods: {
