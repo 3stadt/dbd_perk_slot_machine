@@ -32,6 +32,29 @@ export default {
       this.$refs.slot2.rollWheel(random[1].index, 3, 0.2)
       this.$refs.slot3.rollWheel(random[2].index, 3.5, 0.22)
       this.$refs.slot4.rollWheel(random[3].index, 3.5, 0.4)
+    },
+    _getRandomData: function () {
+      let avPerks = []
+      let avPerkData = []
+      if (this.$route.query.sids) {
+        avPerks = this.$route.query.sids.split(',').map(function (item) {
+          return parseInt(item, 10)
+        })
+      }
+      let avLen = avPerks.length
+      if (avLen >= 4) {
+        for (let i = 0, pLen = this.perkData.length; i < pLen; i++) {
+          if (this.perkData[i].index === i && avPerks.indexOf(i) >= 0) {
+            avPerkData.push(this.perkData[i])
+          }
+          if (avPerkData.length === avLen) {
+            break
+          }
+        }
+      }
+
+      avPerkData = avPerkData.length >= 4 ? avPerkData : this.perkData
+      return avPerkData.sort(() => 0.5 - Math.random()).slice(0, 4)
     }
   }
 }
