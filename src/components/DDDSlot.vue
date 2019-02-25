@@ -2,10 +2,12 @@
     <div style="display: inline-block">
         <div class="slot">
             <img class="perk" src="/img/perkBg.png" alt="">
-            <template v-for="(n, i) in  (maxId + 1)">
-                <img :key="n" ref="perks" class="perk" :class="[ 'perk-'+ i ]" :src="_isBlurred()" alt="">
+            <img class="perk" ref="placeholder" src="/img/placeholder.png" alt="">
+            <template v-for="perk in perkData">
+                <img :key="perk.index" ref="perks" class="perk" :class="[ 'perk-'+ perk.index ]" :src="_getBg()" alt="">
             </template>
         </div>
+        <div class="perk-name" :class="{visible: perkNameVisible}">{{ perkName }}</div>
     </div>
 </template>
 
@@ -17,14 +19,20 @@ export default {
     return {
       maxId: maxId,
       elementHeight: 256,
+      perkData: require('./../resources/perks-survivor.json'),
+      perkName: '',
+      firstRoll: true,
+      perkNameVisible: false,
       rollTemplate: {
         active: false,
         startTime: null,
         currentPerksStartTime: null,
         speed: 0.8, // how many seconds a perk needs to travel through the viewport
+        minimalSpeed: this.speed / 4,
         targetPerkReveal: false, // used to show the final target perk
         targetPerkId: 0,
         rollDuration: 2, // how many seconds before revealing/stopping
+        blurPerks: false,
         disappearingPerk: {
           id: 0,
           position: 0
@@ -39,6 +47,9 @@ export default {
   },
   methods: {
     rollWheel: function (targetId, rollDuration, speed) {
+      if (!this.roll) {
+        this.roll = this.rollTemplate
+      }
       if (this.roll.active) {
         return false
       }
@@ -46,10 +57,20 @@ export default {
       this.roll.startTime = null
       this.roll.currentPerksStartTime = null
       this.roll.targetPerkId = targetId
+      this.perkNameVisible = false
+      this.perkName = this._getTargetPerkName(targetId)
       if (rollDuration) this.roll.rollDuration = rollDuration * 1000
       if (speed) this.roll.speed = speed
       window.requestAnimationFrame(this._doRollWheel)
       return true
+    },
+    _getTargetPerkName: function (targetPerkId) {
+      for (let i = 0, pLen = this.perkData.length; i < pLen; i++) {
+        if (targetPerkId === this.perkData[i].index) {
+          return this.perkData[i].name
+        }
+      }
+      return 'target perk not found'
     },
     _doRollWheel: function (timestamp) {
       let roll = this.roll
@@ -66,7 +87,8 @@ export default {
       // The appearing perk becomes the disappearing perk, a new perk becomes the appearing one.
       // The position of the old disappearing perk is reset
       if (roll.appearingPerk.position >= 0) {
-        if (roll.targetPerkReveal && roll.appearingPerk.id === roll.targetPerkId) { // target perk is in view
+        // Animation is finished! Cleanup.
+        if (roll.targetPerkReveal && roll.appearingPerk.id === roll.targetPerkId) {
           this.$refs.perks[roll.targetPerkId].setAttribute('style', 'transform: translateY(0px);')
           this.$refs.perks[roll.disappearingPerk.id].removeAttribute('style')
           this.roll = this.rollTemplate
@@ -78,11 +100,16 @@ export default {
           this.roll.startTime = null
           this.roll.targetPerkReveal = null
           this.roll.active = false
-          console.info(this.roll)
+          this.perkNameVisible = true
           return
         }
-        // reset disappearing perk image
-        this.$refs.perks[roll.disappearingPerk.id].removeAttribute('style')
+        // reset disappearing perk image, on first roll just hide placeholder
+        if (!this.firstRoll) {
+          this.$refs.perks[roll.disappearingPerk.id].removeAttribute('style')
+        } else {
+          this.firstRoll = false
+          this.$refs.placeholder.setAttribute('style', 'opacity: 0;')
+        }
 
         // set next perk position to currently appearing
         let nextAppearingPerk = this._previousPerkId(roll.appearingPerk.id)
@@ -101,10 +128,22 @@ export default {
         roll.currentPerksStartTime = timestamp
       }
 
+      // Calculate if the images should be blurred. Occurs between first and last quarter of animation
+      this.blurPerks = animationTime > this.roll.rollDuration / 4 && animationTime < this.rollDuration - (this.roll.rollDuration / 4)
+
       // Calculate new positions according to elapsed animation time and speed.
       // Speed determines how much time a perk should be visible in the viewport.
+      let speed = roll.speed
+      if (animationTime < this.roll.rollDuration / 2) { // Ramp speed up in first half
+        speed = speed * ((this.roll.rollDuration / 2) / animationTime)
+      } else if (animationTime > this.roll.rollDuration / 2) { // Slow down in second half, but keep speed for the final reveal
+        speed = speed / ((this.roll.rollDuration / 2) / animationTime)
+        if (speed < this.minimalSpeed) {
+          speed = this.minimalSpeed
+        }
+      }
       let currentPerkAnimationTime = timestamp - roll.currentPerksStartTime
-      let stepPixels = this.elementHeight * (currentPerkAnimationTime / (roll.speed * 1000))
+      let stepPixels = this.elementHeight * (currentPerkAnimationTime / (speed * 1000))
 
       // Position is different for the disappearing perk and the appearing one, by 1 elem height
       roll.appearingPerk.position = this.elementHeight * -1 + stepPixels
@@ -112,8 +151,13 @@ export default {
 
       // apply the new position
       this.$refs.perks[roll.appearingPerk.id].setAttribute('style', 'transform: translateY(' + roll.appearingPerk.position + 'px);')
-      this.$refs.perks[roll.disappearingPerk.id].setAttribute('style', 'transform: translateY(' + roll.disappearingPerk.position + 'px);')
+      if (this.firstRoll) {
+        this.$refs.placeholder.setAttribute('style', 'object-position: 0 ' + roll.disappearingPerk.position + 'px;')
+      } else {
+        this.$refs.perks[roll.disappearingPerk.id].setAttribute('style', 'transform: translateY(' + roll.disappearingPerk.position + 'px);')
+      }
 
+      // Animation not finished yet, we need another frame.
       window.requestAnimationFrame(this._doRollWheel)
     },
     _previousPerkId: function (curId) {
@@ -121,27 +165,12 @@ export default {
       if (prevId < 0) prevId = this.maxId
       return prevId
     },
-    _initSlot: function () {
-      let randId = this._getRandomInt(0, this.maxId)
-      this.$refs.perks[randId].setAttribute('style', 'transform: translateY(0px);')
-      this.roll = this.rollTemplate
-      this.roll.disappearingPerk.id = randId
-      this.roll.appearingPerk.id = this._previousPerkId(randId)
-    },
-    _getRandomInt: function (min, max) {
-      min = Math.ceil(min)
-      max = Math.floor(max)
-      return Math.floor(Math.random() * (max - min + 1)) + min
-    },
-    _isBlurred: function () {
-      // if (this.roll.speed > this.roll.maxSpeed * 0.25) {
-      //   return '/img/perkslotsSurv_blur.png'
-      // }
+    _getBg: function () {
+      if (this.blurPerks) {
+        return '/img/perkslotsSurv_blur.png'
+      }
       return '/img/perkslotsSurv.png'
     }
-  },
-  mounted: function () {
-    this._initSlot()
   }
 }
 </script>
@@ -149,12 +178,23 @@ export default {
 <style lang="scss" scoped>
     @import '../design/perkData';
 
+    .perk-name {
+        text-align: center;
+        background: rgba(0, 0, 0, 0.5);
+        margin: 0 10px 0 10px;
+        opacity: 0;
+    }
+
+    .visible {
+        opacity: 1;
+    }
+
     .slot {
         height: #{$item-width}px;
         width: #{$item-width}px;
         position: relative;
         overflow: hidden;
-        clip-path: polygon(50% 4%, 96% 50%, 50% 96%, 4% 50%);
+        clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
     }
 
     .perk {
