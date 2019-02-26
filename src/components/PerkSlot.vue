@@ -215,7 +215,7 @@ export default {
         left: 0;
     }
 
-    @for $i from 0 through $nSurv {
+    @for $i from 0 through $n-surv {
         $pos: $i * $item-width * -1;
         .perkSurv-#{$i} {
             object-position: 0 #{$pos}px;
@@ -223,7 +223,7 @@ export default {
         }
     }
 
-    @for $i from 0 through $nKill {
+    @for $i from 0 through $n-kill {
         $pos: $i * $item-width * -1;
         .perkKill-#{$i} {
             object-position: 0 #{$pos}px;
