@@ -8,7 +8,7 @@
                      :alt="perk.name.toLowerCase()">
             </template>
         </div>
-        <div class="perk-name" :class="{visible: perkNameVisible}">{{ perkName }}</div>
+        <div class="perk-name" ref="perkName">{{ perkName }}</div>
     </div>
 </template>
 
@@ -24,7 +24,6 @@ export default {
       perkData: perkData,
       perkName: '',
       firstRoll: true,
-      perkNameVisible: false,
       rollTemplate: {
         active: false,
         startTime: null,
@@ -71,7 +70,6 @@ export default {
       this.roll.startTime = null
       this.roll.currentPerksStartTime = null
       this.roll.targetPerkId = targetId
-      this.perkNameVisible = false
       this.perkName = this._getTargetPerkName(targetId)
       if (rollDuration) this.roll.rollDuration = rollDuration * 1000
       if (speed) this.roll.speed = speed
@@ -85,6 +83,20 @@ export default {
         }
       }
       return 'target perk not found'
+    },
+    _revealPerkName: function () {
+      // eslint-disable-next-line
+      anime.timeline({ loop: false })
+        .add({
+          targets: this.$refs.perkName,
+          scale: [2, 1],
+          opacity: [0, 1],
+          easing: 'easeOutCirc',
+          duration: 800,
+          delay: function (el, i) {
+            return 800 * i
+          }
+        })
     },
     _doRollWheel: function (timestamp) {
       let roll = this.roll
@@ -114,7 +126,7 @@ export default {
           this.roll.startTime = null
           this.roll.targetPerkReveal = null
           this.roll.active = false
-          this.perkNameVisible = true
+          this._revealPerkName()
           return
         }
         // reset disappearing perk image, on first roll just hide placeholder
@@ -191,10 +203,6 @@ export default {
         background: rgba(0, 0, 0, 0.5);
         margin: 0 10px 0 10px;
         opacity: 0;
-    }
-
-    .visible {
-        opacity: 1;
     }
 
     .slot {
