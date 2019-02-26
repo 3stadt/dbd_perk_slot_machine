@@ -53,12 +53,12 @@ export default {
   },
   methods: {
     /**
-             *
-             * @param targetId int The perk id that sill be shown at the end
-             * @param rollDuration float How many seconds the roll should last before revealing the final perk
-             * @param speed float How long each perk needs to travel through the viewport at maximum speed
-             * @returns {boolean}
-             */
+     *
+     * @param targetId int The perk id that sill be shown at the end
+     * @param rollDuration float How many seconds the roll should last before revealing the final perk
+     * @param speed float How long each perk needs to travel through the viewport at maximum speed
+     * @returns {boolean}
+     */
     rollWheel: function (targetId, rollDuration, speed) {
       if (!this.roll) this.roll = this.rollTemplate
       if (this.roll.active) return false
@@ -135,7 +135,7 @@ export default {
         let nextAppearingPerk = this._previousPerkId(roll.appearingPerk.id)
         if (roll.targetPerkReveal) nextAppearingPerk = roll.targetPerkId
         let nextAppearingPerkPosition = this.elementHeight * -1 + roll.appearingPerk.position
-        this.$refs.perks[nextAppearingPerk].setAttribute('style', 'transform: translateY(' + nextAppearingPerkPosition + 'px);')
+        this.$refs.perks[nextAppearingPerk].setAttribute('style', `transform: translateY(${nextAppearingPerkPosition}px);`)
 
         // switch appearing perk to be the disappearing one
         roll.disappearingPerk = roll.appearingPerk
@@ -165,11 +165,11 @@ export default {
       roll.disappearingPerk.position = stepPixels
 
       // apply the new position
-      this.$refs.perks[roll.appearingPerk.id].setAttribute('style', 'transform: translateY(' + roll.appearingPerk.position + 'px);')
+      this.$refs.perks[roll.appearingPerk.id].setAttribute('style', `transform: translateY(${roll.appearingPerk.position}px);`)
       if (this.firstRoll) {
-        this.$refs.placeholder.setAttribute('style', 'object-position: 0 ' + roll.disappearingPerk.position + 'px;')
+        this.$refs.placeholder.setAttribute('style', `object-position: 0 ${roll.disappearingPerk.position}px;`)
       } else {
-        this.$refs.perks[roll.disappearingPerk.id].setAttribute('style', 'transform: translateY(' + roll.disappearingPerk.position + 'px);')
+        this.$refs.perks[roll.disappearingPerk.id].setAttribute('style', `transform: translateY(${roll.disappearingPerk.position}px);`)
       }
 
       // Animation not finished yet, we need another frame.
@@ -181,7 +181,7 @@ export default {
       return prevId
     },
     _getBg: function () {
-      return '/img/perkslots' + this.type + '.png'
+      return `/img/perkslots${this.type}.png`
     }
   }
 }
