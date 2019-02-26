@@ -53,19 +53,16 @@ export default {
   },
   methods: {
     /**
-    *
-    * @param targetId int The perk id that sill be shown at the end
-    * @param rollDuration float How many seconds the roll should last before revealing the final perk
-    * @param speed float How long each perk needs to travel through the viewport at maximum speed
-    * @returns {boolean}
-    */
+             *
+             * @param targetId int The perk id that sill be shown at the end
+             * @param rollDuration float How many seconds the roll should last before revealing the final perk
+             * @param speed float How long each perk needs to travel through the viewport at maximum speed
+             * @returns {boolean}
+             */
     rollWheel: function (targetId, rollDuration, speed) {
-      if (!this.roll) {
-        this.roll = this.rollTemplate
-      }
-      if (this.roll.active) {
-        return false
-      }
+      if (!this.roll) this.roll = this.rollTemplate
+      if (this.roll.active) return false
+
       this.roll.active = true
       this.roll.startTime = null
       this.roll.currentPerksStartTime = null
@@ -78,15 +75,13 @@ export default {
     },
     _getTargetPerkName: function (targetPerkId) {
       for (let i = 0, pLen = this.perkData.length; i < pLen; i++) {
-        if (targetPerkId === this.perkData[i].index) {
-          return this.perkData[i].name
-        }
+        if (targetPerkId === this.perkData[i].index) return this.perkData[i].name
       }
       return 'target perk not found'
     },
     _revealPerkName: function () {
       // eslint-disable-next-line
-      anime.timeline({ loop: false })
+                anime.timeline({loop: false})
         .add({
           targets: this.$refs.perkName,
           scale: [2, 1],
@@ -105,9 +100,8 @@ export default {
       roll.currentPerksStartTime = roll.currentPerksStartTime || timestamp
 
       let animationTime = timestamp - roll.startTime
-      if (animationTime >= this.roll.rollDuration) { // We've reached the reveal phase
-        roll.targetPerkReveal = true
-      }
+      // We've reached the reveal phase
+      if (animationTime >= this.roll.rollDuration) roll.targetPerkReveal = true
 
       // If the appearing perk is fully in the viewport, get the next one ready
       // The appearing perk becomes the disappearing perk, a new perk becomes the appearing one.
@@ -161,9 +155,7 @@ export default {
         speed = speed * ((this.roll.rollDuration / 2) / animationTime)
       } else if (animationTime > this.roll.rollDuration / 2) { // Slow down in second half, but keep speed for the final reveal
         speed = speed / ((this.roll.rollDuration / 2) / animationTime)
-        if (speed < this.minimalSpeed) {
-          speed = this.minimalSpeed
-        }
+        if (speed < this.minimalSpeed) speed = this.minimalSpeed
       }
       let currentPerkAnimationTime = timestamp - roll.currentPerksStartTime
       let stepPixels = this.elementHeight * (currentPerkAnimationTime / (speed * 1000))

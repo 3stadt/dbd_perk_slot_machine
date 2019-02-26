@@ -43,12 +43,8 @@ export default {
       let avLen = avPerks.length
       if (avLen >= 4) {
         for (let i = 0, pLen = this.perkData.length; i < pLen; i++) {
-          if (this.perkData[i].index === i && avPerks.indexOf(i) >= 0) {
-            avPerkData.push(this.perkData[i])
-          }
-          if (avPerkData.length === avLen) {
-            break
-          }
+          if (this.perkData[i].index === i && avPerks.indexOf(i) >= 0) avPerkData.push(this.perkData[i])
+          if (avPerkData.length === avLen) break
         }
       }
 
