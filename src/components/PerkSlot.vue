@@ -67,6 +67,7 @@ export default {
       this.roll.startTime = null
       this.roll.currentPerksStartTime = null
       this.roll.targetPerkId = targetId
+      this.$refs.perkName.removeAttribute('style')
       this.perkName = this._getTargetPerkName(targetId)
       if (rollDuration) this.roll.rollDuration = rollDuration * 1000
       if (speed) this.roll.speed = speed
@@ -81,7 +82,7 @@ export default {
     },
     _revealPerkName: function () {
       // eslint-disable-next-line
-                anime.timeline({loop: false})
+      anime.timeline({loop: false})
         .add({
           targets: this.$refs.perkName,
           scale: [2, 1],
