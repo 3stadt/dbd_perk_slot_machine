@@ -2,10 +2,10 @@
     <div style="display: inline-block">
         <div class="slot">
             <img class="perk" src="/img/perkBg.png" alt="">
-            <img class="perk" ref="placeholder" :src="'/img/placeholder_' + type + '.png'" alt="">
+            <img class="perk" ref="placeholder" :src="'/img/placeholder_' + type + '.png'" :alt="'Slot type: ' + type">
             <template v-for="perk in perkData">
                 <img :key="perk.index" ref="perks" class="perk" :class="[ 'perk'+type+'-'+ perk.index ]" :src="_getBg()"
-                     alt="">
+                     :alt="perk.name.toLowerCase()">
             </template>
         </div>
         <div class="perk-name" :class="{visible: perkNameVisible}">{{ perkName }}</div>
@@ -49,11 +49,17 @@ export default {
   props: {
     type: {
       type: String,
-      default: '',
       required: true
     }
   },
   methods: {
+    /**
+    *
+    * @param targetId int The perk id that sill be shown at the end
+    * @param rollDuration float How many seconds the roll should last before revealing the final perk
+    * @param speed float How long each perk needs to travel through the viewport at maximum speed
+    * @returns {boolean}
+    */
     rollWheel: function (targetId, rollDuration, speed) {
       if (!this.roll) {
         this.roll = this.rollTemplate

@@ -27,7 +27,6 @@ export default {
   methods: {
     randomize: function () {
       let random = this.perkData.sort(() => 0.5 - Math.random()).slice(0, 4)
-      // targetId, rollDuration, speed
       this.$refs.slot1.rollWheel(random[0].index, 2, 0.2)
       this.$refs.slot2.rollWheel(random[1].index, 3, 0.2)
       this.$refs.slot3.rollWheel(random[2].index, 3.5, 0.22)
@@ -59,7 +58,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss" scoped>
-
-</style>
