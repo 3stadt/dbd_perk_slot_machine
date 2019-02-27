@@ -3,7 +3,6 @@
         <div class="slot" id="slot-1">
 
         </div>
-        <div class="perk-name" ref="perkName">{{ perkName }}</div>
     </div>
 </template>
 
@@ -21,6 +20,7 @@ export default {
       resources: PIXI.loader.resources,
       Sprite: PIXI.Sprite,
       Container: PIXI.Container,
+      Text: PIXI.Text,
       reels: [],
       tweening: [],
       reelContainer: null,
@@ -28,8 +28,9 @@ export default {
       maxId: maxId,
       elementHeight: 256,
       perkData: perkData,
-      perkName: '',
-      targetPerkId: null
+      perkNames: [],
+      targetPerkId: null,
+      rcs: []
     }
   },
   props: {
@@ -41,8 +42,30 @@ export default {
   methods: {
     _reelsComplete: function () {
       this.active = false
+      let style = new PIXI.TextStyle({
+        fontWeight: 'bold',
+        fontSize: 16,
+        fontFamily: 'Arial',
+        fill: '#FFFFFF',
+        align: 'center',
+        wordWrap: true,
+        wordWrapWidth: 256
+      })
       for (let i = 0; i < 4; i++) {
-        console.log(this.reels[i].symbols[this.targetPerkIds[i].index].name, this.targetPerkIds[i].name)
+        let tCont = new this.Container()
+
+        let perkText = new this.Text(this.targetPerkIds[i].name, style)
+        perkText.x = this.rcs[i].width / 2
+        perkText.y = 220
+        perkText.anchor.x = 0.5
+
+        let mask = new PIXI.Graphics().beginFill(0x000000, 0.5).drawRect(0, 206, 256, 50).endFill()
+
+        tCont.addChild(mask)
+        tCont.addChild(perkText)
+
+        this.perkNames[i] = tCont
+        this.rcs[i].addChild(this.perkNames[i])
       }
     },
     rollWheel: function (targetIds) {
@@ -51,12 +74,15 @@ export default {
       if (me.active) return
       me.tweening = []
       me.active = true
+      for (let i = 0, pn = me.rcs.length; i < pn; i++) {
+        this.rcs[i].removeChild(this.perkNames[i])
+      }
       for (let i = 0; i < me.reels.length; i++) {
         let r = me.reels[i]
         me._tweenTo(r,
           'position',
           60 - targetIds[i].index,
-          2000,
+          4000,
           me.backout(0.6),
           null,
           i === me.reels.length - 1 ? me._reelsComplete : null
@@ -103,12 +129,12 @@ export default {
       this.reels = []
       this.reelContainer = new this.Container()
       for (let i = 0; i < 4; i++) {
-        let rc = new this.Container()
-        rc.x = i * REEL_WIDTH
-        this.reelContainer.addChild(rc)
+        this.rcs[i] = new this.Container()
+        this.rcs[i].x = i * REEL_WIDTH
+        this.reelContainer.addChild(this.rcs[i])
 
         let reel = {
-          container: rc,
+          container: this.rcs[i],
           symbols: [],
           position: 0,
           previousPosition: 0,
@@ -116,14 +142,14 @@ export default {
         }
         reel.blur.blurX = 0
         reel.blur.blurY = 0
-        rc.filters = [reel.blur]
+        this.rcs[i].filters = [reel.blur]
 
         // Build the symbols
         for (let [name, perk] of Object.entries(this.perkTextures)) {
           let symbol = new this.Sprite(perk)
           symbol.name = name
           reel.symbols.push(symbol)
-          rc.addChild(symbol)
+          this.rcs[i].addChild(symbol)
         }
         this.reels.push(reel)
       }

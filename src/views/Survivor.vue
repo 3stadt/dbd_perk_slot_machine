@@ -1,6 +1,6 @@
 <template>
     <div>
-        <button v-on:click="randomize" style="margin-left: 800px;">Randomize!</button>
+        <button v-on:click="randomize">Randomize!</button>
         <perkslots ref="perkslots" type="Surv"/>
     </div>
 </template>
@@ -15,13 +15,21 @@ export default {
   },
   data: function () {
     return {
-      perkData: require('./../resources/perks-survivor.json')
+      perkData: require('./../resources/perks-survivor.json'),
+      lastRun: [0, 0, 0, 0]
     }
   },
   methods: {
-    randomize: function () {
+    _getRandomWithDistance: function (distance) {
       let random = this.perkData.sort(() => 0.5 - Math.random()).slice(0, 4)
-      console.log('>>>>>>>>', random[0].name, random[1].name, random[2].name, random[3].name)
+      for (let i = 0; i < random.length; i++) {
+        if (Math.abs(random[i].index - this.lastRun[i].index) < distance) return this._getRandomWithDistance(distance)
+      }
+      return random
+    },
+    randomize: function () {
+      let random = this._getRandomWithDistance(10)
+      this.lastRun = random
       this.$refs.perkslots.rollWheel(random)
     },
     _getRandomData: function () {
