@@ -1,9 +1,9 @@
 <template>
     <div>
-        <perkslot0 @reRollRequested="randomize" ref="perkslot0" type="Kill"/>
-        <perkslot1 @reRollRequested="randomize" ref="perkslot1" type="Kill"/>
-        <perkslot2 @reRollRequested="randomize" ref="perkslot2" type="Kill"/>
-        <perkslot3 @reRollRequested="randomize" ref="perkslot3" type="Kill"/>
+        <perkslot0 @reRollRequested="randomize" ref="perkslot0" type="Kill" :colorized="col"/>
+        <perkslot1 @reRollRequested="randomize" ref="perkslot1" type="Kill" :colorized="col"/>
+        <perkslot2 @reRollRequested="randomize" ref="perkslot2" type="Kill" :colorized="col"/>
+        <perkslot3 @reRollRequested="randomize" ref="perkslot3" type="Kill" :colorized="col"/>
     </div>
 </template>
 
@@ -22,7 +22,8 @@ export default {
   data: function () {
     return {
       perkData: require('./../resources/perks-killer.json'),
-      lastPos: []
+      lastPos: [],
+      col: !!this.$route.query.color
     }
   },
   methods: {

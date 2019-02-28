@@ -34,6 +34,10 @@ export default {
     type: {
       type: String,
       required: true
+    },
+    colorized: {
+      type: Boolean,
+      default: false
     }
   },
   methods: {
@@ -115,7 +119,7 @@ export default {
   mounted () {
     let me = this
     this.$refs.slot.appendChild(this.appStage.view)
-    this.loader.add('atlas', `/sprites/${this.type.toLowerCase()}.json`)
+    this.loader.add('atlas', `/sprites/${this.type.toLowerCase()}${this.colorized ? 'color' : ''}.json`)
     this.loader.load((loader, resources) => {
       this.perkTextures = resources.atlas.textures
       this.reelContainer = new this.Container()
