@@ -1,9 +1,10 @@
 let rand = {
-  getRandomData: function (n, query, perkData) {
+  getRandomData: function rand (nOrg, limitIds, perkData, lastPos) {
     let avPerks = []
     let avPerkData = []
-    if (query.kids) {
-      avPerks = query.kids.split(',').map(function (item) {
+    let n = nOrg
+    if (limitIds) {
+      avPerks = limitIds.split(',').map(function (item) {
         return parseInt(item, 10)
       })
     }
@@ -29,7 +30,12 @@ let rand = {
       result[n] = avPerkData[x in taken ? taken[x] : x]
       taken[x] = --len in taken ? taken[len] : len
     }
-    return result
+    for (let i = 0, l = lastPos.length; i < l; i++) {
+      // make sure it's not the same perk again
+      if (lastPos[i].index === result[i].index) return rand(nOrg, limitIds, perkData, lastPos)
+    }
+
+    return result // TODO make sure there is some distance to the last roll
   }
 }
 

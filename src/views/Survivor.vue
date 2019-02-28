@@ -21,12 +21,14 @@ export default {
   },
   data: function () {
     return {
-      perkData: require('./../resources/perks-survivor.json')
+      perkData: require('./../resources/perks-survivor.json'),
+      lastPos: []
     }
   },
   methods: {
     randomize: function () {
-      let random = rand.getRandomData(4, this.$route.query, this.perkData)
+      let random = rand.getRandomData(4, this.$route.query.sids, this.perkData, this.lastPos)
+      this.lastPos = random
       this.$refs.perkslot0.rollWheel(random[0])
       this.$refs.perkslot1.rollWheel(random[1])
       this.$refs.perkslot2.rollWheel(random[2])
