@@ -20,6 +20,8 @@ export default {
       reel: null,
       tweening: [],
       reelContainer: null,
+      bgContainer: null,
+      placeholderContainer: null,
       perkTextures: null,
       maxId: maxId,
       elementHeight: 256,
@@ -69,6 +71,7 @@ export default {
       let me = this
       if (me.active) return
       me.targetPerkId = targetId
+      me.placeholderContainer.visible = false
       me.reelContainer.visible = true
       me.tweening = []
       me.active = true
@@ -107,9 +110,6 @@ export default {
 
       this.tweening.push(tween)
       return tween
-    },
-    _getBg: function () {
-      return `/img/perkslots${this.type}.png`
     }
   },
   mounted () {
@@ -119,8 +119,14 @@ export default {
     this.loader.load((loader, resources) => {
       this.perkTextures = resources.atlas.textures
       this.reelContainer = new this.Container()
+      this.placeholderContainer = new this.Container()
+      this.bgContainer = new this.Container()
       this.reelContainer.visible = false
       this.reelContainer.interactive = true
+      this.placeholderContainer.interactive = true
+      this.placeholderContainer.on('pointerdown', function () {
+        me.$emit('reRollRequested')
+      })
       this.reelContainer.on('pointerdown', function () {
         me.$emit('reRollRequested')
       })
@@ -144,7 +150,13 @@ export default {
         this.reelContainer.addChild(symbol)
       }
       this.reel = reel
+      let ph = this.Sprite.fromImage(`/img/placeholder_${this.type}.png`)
+      let bg = this.Sprite.fromImage('/img/perkBg.png')
+      this.placeholderContainer.addChild(ph)
+      this.bgContainer.addChild(bg)
+      this.appStage.stage.addChild(this.bgContainer)
       this.appStage.stage.addChild(this.reelContainer)
+      this.appStage.stage.addChild(this.placeholderContainer)
 
       this.appStage.ticker.add(function (delta) {
         // Update the slots.
