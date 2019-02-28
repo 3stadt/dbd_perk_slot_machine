@@ -1,23 +1,22 @@
 <template>
     <div>
-        <button v-on:click.stop.prevent="randomize" style="margin-left: 800px;">Randomize!</button>
-        <slot1 ref="slot1" type="Kill"/>
-        <slot2 ref="slot2" type="Kill"/>
-        <slot3 ref="slot3" type="Kill"/>
-        <slot4 ref="slot4" type="Kill"/>
+        <perkslot0 @reRollRequested="randomize" ref="perkslot0" type="Kill"/>
+        <perkslot1 @reRollRequested="randomize" ref="perkslot1" type="Kill"/>
+        <perkslot2 @reRollRequested="randomize" ref="perkslot2" type="Kill"/>
+        <perkslot3 @reRollRequested="randomize" ref="perkslot3" type="Kill"/>
     </div>
 </template>
 
 <script>
-import PerkSlot from '../components/PerkSlot'
+import PixiPerkSlot from '../components/PixiPerkSlot'
 
 export default {
   name: 'Killer',
   components: {
-    'slot1': PerkSlot,
-    'slot2': PerkSlot,
-    'slot3': PerkSlot,
-    'slot4': PerkSlot
+    'perkslot0': PixiPerkSlot,
+    'perkslot1': PixiPerkSlot,
+    'perkslot2': PixiPerkSlot,
+    'perkslot3': PixiPerkSlot
   },
   data: function () {
     return {
@@ -26,13 +25,13 @@ export default {
   },
   methods: {
     randomize: function () {
-      let random = this._getRandomData()
-      this.$refs.slot1.rollWheel(random[0].index, 2, 0.2)
-      this.$refs.slot2.rollWheel(random[1].index, 3, 0.2)
-      this.$refs.slot3.rollWheel(random[2].index, 3.5, 0.22)
-      this.$refs.slot4.rollWheel(random[3].index, 3.5, 0.4)
+      let random = this._getRandomData(4)
+      this.$refs.perkslot0.rollWheel(random[0])
+      this.$refs.perkslot1.rollWheel(random[1])
+      this.$refs.perkslot2.rollWheel(random[2])
+      this.$refs.perkslot3.rollWheel(random[3])
     },
-    _getRandomData: function () {
+    _getRandomData: function (n) {
       let avPerks = []
       let avPerkData = []
       if (this.$route.query.kids) {
@@ -49,7 +48,18 @@ export default {
       }
 
       avPerkData = avPerkData.length >= 4 ? avPerkData : this.perkData
-      return avPerkData.sort(() => 0.5 - Math.random()).slice(0, 4)
+
+      let result = new Array(n)
+      let len = avPerkData.length
+      let taken = new Array(len)
+      // https://stackoverflow.com/a/19270021
+      if (n > len) { throw new RangeError('getRandom: more elements taken than available') }
+      while (n--) {
+        let x = Math.floor(Math.random() * len)
+        result[n] = avPerkData[x in taken ? taken[x] : x]
+        taken[x] = --len in taken ? taken[len] : len
+      }
+      return result
     }
   }
 }

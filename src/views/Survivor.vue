@@ -1,7 +1,9 @@
 <template>
     <div>
-        <button v-on:click="randomize">Randomize!</button>
-        <perkslots ref="perkslots" type="Surv"/>
+        <perkslot0 @reRollRequested="randomize" ref="perkslot0" type="Surv"/>
+        <perkslot1 @reRollRequested="randomize" ref="perkslot1" type="Surv"/>
+        <perkslot2 @reRollRequested="randomize" ref="perkslot2" type="Surv"/>
+        <perkslot3 @reRollRequested="randomize" ref="perkslot3" type="Surv"/>
     </div>
 </template>
 
@@ -11,26 +13,23 @@ import PixiPerkSlot from '../components/PixiPerkSlot'
 export default {
   name: 'Survivor',
   components: {
-    'perkslots': PixiPerkSlot
+    'perkslot0': PixiPerkSlot,
+    'perkslot1': PixiPerkSlot,
+    'perkslot2': PixiPerkSlot,
+    'perkslot3': PixiPerkSlot
   },
   data: function () {
     return {
-      perkData: require('./../resources/perks-survivor.json'),
-      lastRun: [0, 0, 0, 0]
+      perkData: require('./../resources/perks-survivor.json')
     }
   },
   methods: {
-    _getRandomWithDistance: function (distance) {
-      let random = this.perkData.sort(() => 0.5 - Math.random()).slice(0, 4)
-      for (let i = 0; i < random.length; i++) {
-        if (Math.abs(random[i].index - this.lastRun[i].index) < distance) return this._getRandomWithDistance(distance)
-      }
-      return random
-    },
     randomize: function () {
-      let random = this._getRandomWithDistance(10)
-      this.lastRun = random
-      this.$refs.perkslots.rollWheel(random)
+      let random = this._getRandomData()
+      this.$refs.perkslot0.rollWheel(random[0])
+      this.$refs.perkslot1.rollWheel(random[1])
+      this.$refs.perkslot2.rollWheel(random[2])
+      this.$refs.perkslot3.rollWheel(random[3])
     },
     _getRandomData: function () {
       let avPerks = []

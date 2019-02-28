@@ -1,9 +1,5 @@
 <template>
-    <div style="display: inline-block">
-        <div class="slot" id="slot-1">
-
-        </div>
-    </div>
+    <div class="slot" ref="slot"></div>
 </template>
 
 <script>
@@ -15,22 +11,21 @@ export default {
     let perkData = this.type === 'Surv' ? require('./../resources/perks-survivor.json') : require('./../resources/perks-killer.json')
     let maxId = perkData.length - 1
     return {
-      appStage: new PIXI.Application(1024, 256, { transparent: true }),
+      appStage: new PIXI.Application(256, 256, { transparent: true }),
       loader: new PIXI.loaders.Loader(),
       resources: PIXI.loader.resources,
       Sprite: PIXI.Sprite,
       Container: PIXI.Container,
       Text: PIXI.Text,
-      reels: [],
+      reel: null,
       tweening: [],
       reelContainer: null,
       perkTextures: null,
       maxId: maxId,
       elementHeight: 256,
       perkData: perkData,
-      perkNames: [],
-      targetPerkId: null,
-      rcs: []
+      perkName: '',
+      targetPerkId: null
     }
   },
   props: {
@@ -40,7 +35,7 @@ export default {
     }
   },
   methods: {
-    _reelsComplete: function () {
+    _reelComplete: function () {
       this.active = false
       let style = new PIXI.TextStyle({
         fontWeight: 'bold',
@@ -49,45 +44,44 @@ export default {
         fill: '#FFFFFF',
         align: 'center',
         wordWrap: true,
-        wordWrapWidth: 256
+        wordWrapWidth: 250
       })
-      for (let i = 0; i < 4; i++) {
-        let tCont = new this.Container()
 
-        let perkText = new this.Text(this.targetPerkIds[i].name, style)
-        perkText.x = this.rcs[i].width / 2
-        perkText.y = 220
-        perkText.anchor.x = 0.5
+      let tCont = new this.Container({ height: 256, width: 256 })
 
-        let mask = new PIXI.Graphics().beginFill(0x000000, 0.5).drawRect(0, 206, 256, 50).endFill()
+      let perkText = new this.Text(this.targetPerkId.name, style)
+      perkText.x = this.reelContainer.width / 2
+      perkText.y = 233
+      perkText.anchor.x = 0.5
 
-        tCont.addChild(mask)
-        tCont.addChild(perkText)
+      let mask = new PIXI.Graphics({
+        height: 256,
+        width: 256
+      }).beginFill(0x000000, 0.5).drawRect(3, 230, 250, 26).endFill()
 
-        this.perkNames[i] = tCont
-        this.rcs[i].addChild(this.perkNames[i])
-      }
+      tCont.addChild(mask)
+      tCont.addChild(perkText)
+
+      this.perkName = tCont
+      this.reelContainer.addChild(this.perkName)
     },
-    rollWheel: function (targetIds) {
+    rollWheel: function (targetId) {
       let me = this
-      me.targetPerkIds = targetIds
       if (me.active) return
+      me.targetPerkId = targetId
+      me.reelContainer.visible = true
       me.tweening = []
       me.active = true
-      for (let i = 0, pn = me.rcs.length; i < pn; i++) {
-        this.rcs[i].removeChild(this.perkNames[i])
-      }
-      for (let i = 0; i < me.reels.length; i++) {
-        let r = me.reels[i]
-        me._tweenTo(r,
-          'position',
-          60 - targetIds[i].index,
-          4000,
-          me.backout(0.6),
-          null,
-          i === me.reels.length - 1 ? me._reelsComplete : null
-        )
-      }
+      me.reelContainer.removeChild(this.perkName)
+      me._tweenTo(me.reel,
+        'position',
+        (me.perkData.length + 1) - targetId.index,
+        4000,
+        me.backout(0.6),
+        null,
+        me._reelComplete
+      )
+
       return true
     },
     lerp: function (a1, a2, t) {
@@ -120,54 +114,51 @@ export default {
   },
   mounted () {
     let me = this
-    document.getElementById('slot-1').appendChild(this.appStage.view)
-    this.loader.add('atlas', '/sprites/surv.json')
+    this.$refs.slot.appendChild(this.appStage.view)
+    this.loader.add('atlas', `/sprites/${this.type.toLowerCase()}.json`)
     this.loader.load((loader, resources) => {
-      let SYMBOL_SIZE = 256
-      let REEL_WIDTH = 256
       this.perkTextures = resources.atlas.textures
-      this.reels = []
       this.reelContainer = new this.Container()
-      for (let i = 0; i < 4; i++) {
-        this.rcs[i] = new this.Container()
-        this.rcs[i].x = i * REEL_WIDTH
-        this.reelContainer.addChild(this.rcs[i])
+      this.reelContainer.visible = false
+      this.reelContainer.interactive = true
+      this.reelContainer.on('pointerdown', function () {
+        me.$emit('reRollRequested')
+      })
 
-        let reel = {
-          container: this.rcs[i],
-          symbols: [],
-          position: 0,
-          previousPosition: 0,
-          blur: new PIXI.filters.BlurFilter()
-        }
-        reel.blur.blurX = 0
-        reel.blur.blurY = 0
-        this.rcs[i].filters = [reel.blur]
-
-        // Build the symbols
-        for (let [name, perk] of Object.entries(this.perkTextures)) {
-          let symbol = new this.Sprite(perk)
-          symbol.name = name
-          reel.symbols.push(symbol)
-          this.rcs[i].addChild(symbol)
-        }
-        this.reels.push(reel)
+      let reel = {
+        container: this.reelContainer,
+        symbols: [],
+        position: 0,
+        previousPosition: 0,
+        blur: new PIXI.filters.BlurFilter()
       }
+      reel.blur.blurX = 0
+      reel.blur.blurY = 0
+      this.reelContainer.filters = [reel.blur]
+
+      // Build the symbols
+      for (let [name, perk] of Object.entries(this.perkTextures)) {
+        let symbol = new this.Sprite(perk)
+        symbol.name = name
+        reel.symbols.push(symbol)
+        this.reelContainer.addChild(symbol)
+      }
+      this.reel = reel
       this.appStage.stage.addChild(this.reelContainer)
+
       this.appStage.ticker.add(function (delta) {
         // Update the slots.
-        for (let i = 0; i < me.reels.length; i++) {
-          let r = me.reels[i]
-          // Update blur filter y amount based on speed.
-          // This would be better if calculated with time in mind also. Now blur depends on frame rate.
-          r.blur.blurY = (r.position - r.previousPosition) * 8
-          r.previousPosition = r.position
 
-          // Update symbol positions on reel.
-          for (let j = 0; j < r.symbols.length; j++) {
-            let s = r.symbols[j]
-            s.y = (r.position + j) % r.symbols.length * SYMBOL_SIZE - SYMBOL_SIZE
-          }
+        let r = me.reel
+        // Update blur filter y amount based on speed.
+        // This would be better if calculated with time in mind also. Now blur depends on frame rate.
+        r.blur.blurY = (r.position - r.previousPosition) * 8
+        r.previousPosition = r.position
+
+        // Update symbol positions on reel.
+        for (let j = 0; j < r.symbols.length; j++) {
+          let s = r.symbols[j]
+          s.y = (r.position + j) % r.symbols.length * 256 - 256
         }
       })
     })
@@ -199,18 +190,12 @@ export default {
 <style lang="scss" scoped>
     @import '../design/perkData';
 
-    .perk-name {
-        text-align: center;
-        background: rgba(0, 0, 0, 0.5);
-        margin: 0 10px 0 10px;
-        opacity: 0;
-    }
-
     .slot {
         height: #{$item-width}px;
-        width: #{$item-width * 4}px;
+        width: #{$item-width}px;
         position: relative;
-        overflow: hidden;
+        /*overflow: hidden;*/
+        display: inline-block;
     }
 
     .perk {
@@ -221,21 +206,5 @@ export default {
         position: absolute;
         top: 0;
         left: 0;
-    }
-
-    @for $i from 0 through $n-surv {
-        $pos: $i * $item-width * -1;
-        .perkSurv-#{$i} {
-            object-position: 0 #{$pos}px;
-            transform: translateY(-#{$item-width}px);
-        }
-    }
-
-    @for $i from 0 through $n-kill {
-        $pos: $i * $item-width * -1;
-        .perkKill-#{$i} {
-            object-position: 0 #{$pos}px;
-            transform: translateY(-#{$item-width}px);
-        }
     }
 </style>
