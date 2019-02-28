@@ -9,6 +9,7 @@
 
 <script>
 import PixiPerkSlot from '../components/PixiPerkSlot'
+import rand from '@/lib/randomize'
 
 export default {
   name: 'Killer',
@@ -25,41 +26,11 @@ export default {
   },
   methods: {
     randomize: function () {
-      let random = this._getRandomData(4)
+      let random = rand.getRandomData(4, this.$route.query, this.perkData)
       this.$refs.perkslot0.rollWheel(random[0])
       this.$refs.perkslot1.rollWheel(random[1])
       this.$refs.perkslot2.rollWheel(random[2])
       this.$refs.perkslot3.rollWheel(random[3])
-    },
-    _getRandomData: function (n) {
-      let avPerks = []
-      let avPerkData = []
-      if (this.$route.query.kids) {
-        avPerks = this.$route.query.kids.split(',').map(function (item) {
-          return parseInt(item, 10)
-        })
-      }
-      let avLen = avPerks.length
-      if (avLen >= 4) {
-        for (let i = 0, pLen = this.perkData.length; i < pLen; i++) {
-          if (this.perkData[i].index === i && avPerks.indexOf(i) >= 0) avPerkData.push(this.perkData[i])
-          if (avPerkData.length === avLen) break
-        }
-      }
-
-      avPerkData = avPerkData.length >= 4 ? avPerkData : this.perkData
-
-      let result = new Array(n)
-      let len = avPerkData.length
-      let taken = new Array(len)
-      // https://stackoverflow.com/a/19270021
-      if (n > len) { throw new RangeError('getRandom: more elements taken than available') }
-      while (n--) {
-        let x = Math.floor(Math.random() * len)
-        result[n] = avPerkData[x in taken ? taken[x] : x]
-        taken[x] = --len in taken ? taken[len] : len
-      }
-      return result
     }
   }
 }
