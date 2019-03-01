@@ -1,4 +1,4 @@
-let rand = {
+export default {
   getRandomData: function rand (nOrg, limitIds, perkData, lastPos) {
     let avPerks = []
     let avPerkData = []
@@ -18,9 +18,9 @@ let rand = {
 
     avPerkData = avPerkData.length >= 4 ? avPerkData : perkData
 
-    let result = new Array(n)
+    const result = new Array(n)
     let len = avPerkData.length
-    let taken = new Array(len)
+    const taken = new Array(len)
     // https://stackoverflow.com/a/19270021
     if (n > len) {
       throw new RangeError('getRandom: more elements taken than available')
@@ -38,5 +38,3 @@ let rand = {
     return result // TODO make sure there is some distance to the last roll
   }
 }
-
-export default rand

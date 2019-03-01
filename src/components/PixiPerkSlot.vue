@@ -8,8 +8,8 @@ import * as PIXI from 'pixi.js'
 export default {
   name: 'PixiPerkSlot',
   data: function () {
-    let perkData = this.type === 'Surv' ? require('./../resources/perks-survivor.json') : require('./../resources/perks-killer.json')
-    let maxId = perkData.length - 1
+    const perkData = this.type === 'Surv' ? require('./../resources/perks-survivor.json') : require('./../resources/perks-killer.json')
+    const maxId = perkData.length - 1
     return {
       appStage: new PIXI.Application(256, 256, { transparent: true }),
       loader: new PIXI.loaders.Loader(),
@@ -43,7 +43,7 @@ export default {
   methods: {
     _reelComplete: function () {
       this.active = false
-      let style = new PIXI.TextStyle({
+      const style = new PIXI.TextStyle({
         fontWeight: 'bold',
         fontSize: 16,
         fontFamily: 'Arial',
@@ -53,14 +53,14 @@ export default {
         wordWrapWidth: 250
       })
 
-      let tCont = new this.Container({ height: 256, width: 256 })
+      const tCont = new this.Container({ height: 256, width: 256 })
 
-      let perkText = new this.Text(this.targetPerkId.name, style)
+      const perkText = new this.Text(this.targetPerkId.name, style)
       perkText.x = this.reelContainer.width / 2
       perkText.y = 233
       perkText.anchor.x = 0.5
 
-      let mask = new PIXI.Graphics({
+      const mask = new PIXI.Graphics({
         height: 256,
         width: 256
       }).beginFill(0x000000, 0.5).drawRect(3, 230, 250, 26).endFill()
@@ -72,22 +72,22 @@ export default {
       this.reelContainer.addChild(this.perkName)
     },
     rollWheel: function (targetId) {
-      let me = this
-      if (me.active) return
-      me.targetPerkId = targetId
-      me.placeholderContainer.visible = false
-      me.reelContainer.visible = true
-      me.tweening = []
-      me.active = true
-      me.reelContainer.removeChild(this.perkName)
-      me._tweenTo(me.reel,
-        'position',
-        (me.perkData.length + 1) - targetId.index,
-        4000,
-        me.backout(0.6),
-        null,
-        me._reelComplete
-      )
+      if (this.active) return
+      this.targetPerkId = targetId
+      this.placeholderContainer.visible = false
+      this.reelContainer.visible = true
+      this.tweening = []
+      this.active = true
+      this.reelContainer.removeChild(this.perkName)
+      this._tweenTo({
+        object: this.reel,
+        property: 'position',
+        target: (this.perkData.length + 1) - targetId.index,
+        time: 4000,
+        easing: this.backout(0.6),
+        onchange: null,
+        oncomplete: this._reelComplete
+      })
 
       return true
     },
@@ -95,12 +95,19 @@ export default {
       return a1 * (1 - t) + a2 * t
     },
     backout: function (amount) {
-      return function (t) {
+      return (t) => {
         return (--t * t * ((amount + 1) * t + amount) + 1)
       }
     },
-    _tweenTo: function (object, property, target, time, easing, onchange, oncomplete) {
-      let tween = {
+    /**
+     *
+     * @param config {object, property, target, time, easing, onchange, oncomplete}
+     * @returns {{propertyBeginValue: *, change: *, property: *, start: number, time: *, complete: *, easing: *, object: *, target: *}}
+     * @private
+     */
+    _tweenTo: function (config) {
+      const { object, property, target, time, easing, onchange, oncomplete } = config
+      const tween = {
         object: object,
         property: property,
         propertyBeginValue: object[property],
@@ -117,7 +124,6 @@ export default {
     }
   },
   mounted () {
-    let me = this
     this.$refs.slot.appendChild(this.appStage.view)
     this.loader.add('atlas', `/sprites/${this.type.toLowerCase()}${this.colorized ? 'color' : ''}.json`)
     this.loader.load((loader, resources) => {
@@ -128,14 +134,14 @@ export default {
       this.reelContainer.visible = false
       this.reelContainer.interactive = true
       this.placeholderContainer.interactive = true
-      this.placeholderContainer.on('pointerdown', function () {
-        me.$emit('reRollRequested')
+      this.placeholderContainer.on('pointerdown', () => {
+        this.$emit('reRollRequested')
       })
-      this.reelContainer.on('pointerdown', function () {
-        me.$emit('reRollRequested')
+      this.reelContainer.on('pointerdown', () => {
+        this.$emit('reRollRequested')
       })
 
-      let reel = {
+      const reel = {
         container: this.reelContainer,
         symbols: [],
         position: 0,
@@ -148,24 +154,24 @@ export default {
 
       // Build the symbols
       for (let [name, perk] of Object.entries(this.perkTextures)) {
-        let symbol = new this.Sprite(perk)
+        const symbol = new this.Sprite(perk)
         symbol.name = name
         reel.symbols.push(symbol)
         this.reelContainer.addChild(symbol)
       }
       this.reel = reel
-      let ph = this.Sprite.fromImage(`/img/placeholder_${this.type}.png`)
-      let bg = this.Sprite.fromImage('/img/perkBg.png')
+      const ph = this.Sprite.fromImage(`/img/placeholder_${this.type}.png`)
+      const bg = this.Sprite.fromImage('/img/perkBg.png')
       this.placeholderContainer.addChild(ph)
       this.bgContainer.addChild(bg)
       this.appStage.stage.addChild(this.bgContainer)
       this.appStage.stage.addChild(this.reelContainer)
       this.appStage.stage.addChild(this.placeholderContainer)
 
-      this.appStage.ticker.add(function (delta) {
+      this.appStage.ticker.add(delta => {
         // Update the slots.
 
-        let r = me.reel
+        const r = this.reel
         // Update blur filter y amount based on speed.
         // This would be better if calculated with time in mind also. Now blur depends on frame rate.
         r.blur.blurY = (r.position - r.previousPosition) * 8
@@ -173,19 +179,19 @@ export default {
 
         // Update symbol positions on reel.
         for (let j = 0; j < r.symbols.length; j++) {
-          let s = r.symbols[j]
+          const s = r.symbols[j]
           s.y = (r.position + j) % r.symbols.length * 256 - 256
         }
       })
     })
-    this.appStage.ticker.add(function (delta) {
-      let now = Date.now()
-      let remove = []
-      for (let i = 0; i < me.tweening.length; i++) {
-        let t = me.tweening[i]
-        let phase = Math.min(1, (now - t.start) / t.time)
+    this.appStage.ticker.add(delta => {
+      const now = Date.now()
+      const remove = []
+      for (let i = 0; i < this.tweening.length; i++) {
+        const t = this.tweening[i]
+        const phase = Math.min(1, (now - t.start) / t.time)
 
-        t.object[t.property] = me.lerp(t.propertyBeginValue, t.target, t.easing(phase))
+        t.object[t.property] = this.lerp(t.propertyBeginValue, t.target, t.easing(phase))
         if (t.change) t.change(t)
         if (phase === 1) {
           t.object[t.property] = t.target
@@ -196,7 +202,7 @@ export default {
         }
       }
       for (let i = 0; i < remove.length; i++) {
-        me.tweening.splice(me.tweening.indexOf(remove[i]), 1)
+        this.tweening.splice(this.tweening.indexOf(remove[i]), 1)
       }
     })
   }
