@@ -216,7 +216,6 @@ export default {
         height: #{$item-width}px;
         width: #{$item-width}px;
         position: relative;
-        /*overflow: hidden;*/
         display: inline-block;
     }
 
