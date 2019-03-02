@@ -1,55 +1,39 @@
 <template>
     <div>
-        <button v-on:click.stop.prevent="randomize" style="margin-left: 800px;">Randomize!</button>
-        <slot1 ref="slot1" type="Kill"/>
-        <slot2 ref="slot2" type="Kill"/>
-        <slot3 ref="slot3" type="Kill"/>
-        <slot4 ref="slot4" type="Kill"/>
+        <perkslot0 @reRollRequested="randomize" ref="perkslot0" type="Kill" :colorized="col"/>
+        <perkslot1 @reRollRequested="randomize" ref="perkslot1" type="Kill" :colorized="col"/>
+        <perkslot2 @reRollRequested="randomize" ref="perkslot2" type="Kill" :colorized="col"/>
+        <perkslot3 @reRollRequested="randomize" ref="perkslot3" type="Kill" :colorized="col"/>
     </div>
 </template>
 
 <script>
-import PerkSlot from '../components/PerkSlot'
+import PixiPerkSlot from '../components/PixiPerkSlot'
+import rand from '@/lib/randomize'
 
 export default {
   name: 'Killer',
   components: {
-    'slot1': PerkSlot,
-    'slot2': PerkSlot,
-    'slot3': PerkSlot,
-    'slot4': PerkSlot
+    'perkslot0': PixiPerkSlot,
+    'perkslot1': PixiPerkSlot,
+    'perkslot2': PixiPerkSlot,
+    'perkslot3': PixiPerkSlot
   },
   data: function () {
     return {
-      perkData: require('./../resources/perks-killer.json')
+      perkData: require('./../resources/perks-killer.json'),
+      lastPos: [],
+      col: !!this.$route.query.color
     }
   },
   methods: {
     randomize: function () {
-      let random = this._getRandomData()
-      this.$refs.slot1.rollWheel(random[0].index, 2, 0.2)
-      this.$refs.slot2.rollWheel(random[1].index, 3, 0.2)
-      this.$refs.slot3.rollWheel(random[2].index, 3.5, 0.22)
-      this.$refs.slot4.rollWheel(random[3].index, 3.5, 0.4)
-    },
-    _getRandomData: function () {
-      let avPerks = []
-      let avPerkData = []
-      if (this.$route.query.kids) {
-        avPerks = this.$route.query.kids.split(',').map(function (item) {
-          return parseInt(item, 10)
-        })
-      }
-      let avLen = avPerks.length
-      if (avLen >= 4) {
-        for (let i = 0, pLen = this.perkData.length; i < pLen; i++) {
-          if (this.perkData[i].index === i && avPerks.indexOf(i) >= 0) avPerkData.push(this.perkData[i])
-          if (avPerkData.length === avLen) break
-        }
-      }
-
-      avPerkData = avPerkData.length >= 4 ? avPerkData : this.perkData
-      return avPerkData.sort(() => 0.5 - Math.random()).slice(0, 4)
+      let random = rand.getRandomData(4, this.$route.query.kids, this.perkData, this.lastPos)
+      this.lastPos = random
+      this.$refs.perkslot0.rollWheel(random[0])
+      this.$refs.perkslot1.rollWheel(random[1])
+      this.$refs.perkslot2.rollWheel(random[2])
+      this.$refs.perkslot3.rollWheel(random[3])
     }
   }
 }
