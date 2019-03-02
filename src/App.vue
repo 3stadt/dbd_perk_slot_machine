@@ -83,7 +83,7 @@ export default {
         z-index: 2;
 
         @media screen and (max-width: 650px) {
-            padding: 175px 30px;
+            padding: 175px 0;
         }
     }
 

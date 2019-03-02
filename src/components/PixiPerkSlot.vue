@@ -1,5 +1,5 @@
 <template>
-    <div class="slot" ref="slot"></div>
+    <div class="slot" ref="slot" :style="cssProps"></div>
 </template>
 
 <script>
@@ -24,10 +24,17 @@ export default {
       placeholderContainer: null,
       perkTextures: null,
       maxId: maxId,
-      elementLength: null,
       perkData: perkData,
       perkName: '',
       targetPerkId: null
+    }
+  },
+  computed: {
+    cssProps () {
+      return {
+        '--elementlength': this.elementLength,
+        '--containerpadding': `${this.elementLength}px`
+      }
     }
   },
   props: {
@@ -38,6 +45,10 @@ export default {
     colorized: {
       type: Boolean,
       default: false
+    },
+    elementLength: {
+      type: Number,
+      required: true
     }
   },
   methods: {
@@ -128,7 +139,7 @@ export default {
     }
   },
   mounted () {
-    this.elementLength = 256
+    // this.elementLength = 256
     this.appStage = new PIXI.Application(this.elementLength, this.elementLength, { transparent: true })
     this.$refs.slot.appendChild(this.appStage.view)
     this.loader = new PIXI.loaders.Loader()
@@ -230,8 +241,8 @@ export default {
     @import '../design/perkData';
 
     .slot {
-        height: #{$item-width}px;
-        width: #{$item-width}px;
+        height: var(--elementlength)px;
+        width: var(--elementlength)px;
         position: relative;
         display: inline-block;
     }
@@ -239,8 +250,8 @@ export default {
     .perk {
         object-fit: none;
         object-position: 0 0;
-        width: #{$item-width}px;
-        height: #{$item-width}px;
+        width: var(--elementlength)px;
+        height: var(--elementlength)px;
         position: absolute;
         top: 0;
         left: 0;

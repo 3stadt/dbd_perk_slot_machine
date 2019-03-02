@@ -1,10 +1,10 @@
 <template>
     <div>
         <div>
-            <perkslot0 @reRollRequested="randomize" ref="perkslot0" type="Surv" :colorized="col"/>
-            <perkslot1 @reRollRequested="randomize" ref="perkslot1" type="Surv" :colorized="col"/>
-            <perkslot2 @reRollRequested="randomize" ref="perkslot2" type="Surv" :colorized="col"/>
-            <perkslot3 @reRollRequested="randomize" ref="perkslot3" type="Surv" :colorized="col"/>
+            <perkslot0 @reRollRequested="randomize" ref="perkslot0" type="Surv" :elementLength="elementLength" :colorized="col"/>
+            <perkslot1 @reRollRequested="randomize" ref="perkslot1" type="Surv" :elementLength="elementLength" :colorized="col"/>
+            <perkslot2 @reRollRequested="randomize" ref="perkslot2" type="Surv" :elementLength="elementLength" :colorized="col"/>
+            <perkslot3 @reRollRequested="randomize" ref="perkslot3" type="Surv" :elementLength="elementLength" :colorized="col"/>
         </div>
         <div v-if="hintVisible" class="hint-text">
             <img src="/img/icon_shortinfo.png" slot="icon" alt="Survivor" class="info-icon">
@@ -16,6 +16,7 @@
 <script>
 import PixiPerkSlot from '../components/PixiPerkSlot'
 import rand from '@/lib/randomize'
+import vp from '@/lib/viewport'
 
 export default {
   name: 'Survivor',
@@ -31,7 +32,8 @@ export default {
       lastPos: [],
       col: !!this.$route.query.color,
       message: 'Click on any perk slot to start',
-      hintVisible: true
+      hintVisible: true,
+      elementLength: vp.getElementLength()
     }
   },
   methods: {
@@ -45,6 +47,14 @@ export default {
       this.$refs.perkslot2.rollWheel(random[2])
       this.$refs.perkslot3.rollWheel(random[3])
     }
+  },
+  mounted: function () {
+    window.addEventListener('orientationchange', function () {
+      let o = window.orientation
+      if (o === 90 || o === -90 || o === 0) {
+        window.location.reload()
+      }
+    })
   }
 }
 </script>
