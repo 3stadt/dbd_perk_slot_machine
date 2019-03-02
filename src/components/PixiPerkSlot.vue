@@ -11,12 +11,12 @@ export default {
     const perkData = this.type === 'Surv' ? require('./../resources/perks-survivor.json') : require('./../resources/perks-killer.json')
     const maxId = perkData.length - 1
     return {
-      appStage: new PIXI.Application(256, 256, { transparent: true }),
-      loader: new PIXI.loaders.Loader(),
-      resources: PIXI.loader.resources,
-      Sprite: PIXI.Sprite,
-      Container: PIXI.Container,
-      Text: PIXI.Text,
+      appStage: null,
+      loader: null,
+      resources: null,
+      Sprite: null,
+      Container: null,
+      Text: null,
       reel: null,
       tweening: [],
       reelContainer: null,
@@ -24,7 +24,7 @@ export default {
       placeholderContainer: null,
       perkTextures: null,
       maxId: maxId,
-      elementHeight: 256,
+      elementLength: null,
       perkData: perkData,
       perkName: '',
       targetPerkId: null
@@ -45,25 +45,29 @@ export default {
       this.active = false
       const style = new PIXI.TextStyle({
         fontWeight: 'bold',
-        fontSize: 16,
+        fontSize: 16 * (1 / (256 / this.elementLength)),
         fontFamily: 'Arial',
         fill: '#FFFFFF',
         align: 'center',
         wordWrap: true,
-        wordWrapWidth: 250
+        wordWrapWidth: this.elementLength * 0.967
       })
 
-      const tCont = new this.Container({ height: 256, width: 256 })
+      const tCont = new this.Container({ height: this.elementLength, width: this.elementLength })
 
       const perkText = new this.Text(this.targetPerkId.name, style)
       perkText.x = this.reelContainer.width / 2
-      perkText.y = 233
+      perkText.y = this.elementLength * 0.91
       perkText.anchor.x = 0.5
 
+      const textBoxBorder = this.elementLength * 0.012
+      const textBoxY = this.elementLength * 0.9
+      const textBoxWidth = this.elementLength * 0.967
+      const textBoxHeight = this.elementLength * 0.1
       const mask = new PIXI.Graphics({
-        height: 256,
-        width: 256
-      }).beginFill(0x000000, 0.5).drawRect(3, 230, 250, 26).endFill()
+        height: this.elementLength,
+        width: this.elementLength
+      }).beginFill(0x000000, 0.5).drawRect(textBoxBorder, textBoxY, textBoxWidth, textBoxHeight).endFill()
 
       tCont.addChild(mask)
       tCont.addChild(perkText)
@@ -100,11 +104,11 @@ export default {
       }
     },
     /**
-     *
-     * @param config {object, property, target, time, easing, onchange, oncomplete}
-     * @returns {{propertyBeginValue: *, change: *, property: *, start: number, time: *, complete: *, easing: *, object: *, target: *}}
-     * @private
-     */
+    *
+    * @param config {object, property, target, time, easing, onchange, oncomplete}
+    * @returns {{propertyBeginValue: *, change: *, property: *, start: number, time: *, complete: *, easing: *, object: *, target: *}}
+    * @private
+    */
     _tweenTo: function (config) {
       const { object, property, target, time, easing, onchange, oncomplete } = config
       const tween = {
@@ -124,7 +128,14 @@ export default {
     }
   },
   mounted () {
+    this.elementLength = 256
+    this.appStage = new PIXI.Application(this.elementLength, this.elementLength, { transparent: true })
     this.$refs.slot.appendChild(this.appStage.view)
+    this.loader = new PIXI.loaders.Loader()
+    this.resources = PIXI.loader.resources
+    this.Sprite = PIXI.Sprite
+    this.Container = PIXI.Container
+    this.Text = PIXI.Text
     this.loader.add('atlas', `/sprites/${this.type.toLowerCase()}${this.colorized ? 'color' : ''}-hd.json`)
     this.loader.load((loader, resources) => {
       this.perkTextures = resources.atlas.textures
@@ -155,13 +166,19 @@ export default {
       // Build the symbols
       for (let [name, perk] of Object.entries(this.perkTextures)) {
         const symbol = new this.Sprite(perk)
+        symbol.width = this.elementLength
+        symbol.height = this.elementLength
         symbol.name = name
         reel.symbols.push(symbol)
         this.reelContainer.addChild(symbol)
       }
       this.reel = reel
       const ph = this.Sprite.fromImage(`/img/placeholder_${this.type}.png`)
+      ph.width = this.elementLength
+      ph.height = this.elementLength
       const bg = this.Sprite.fromImage('/img/perkBg.png')
+      bg.width = this.elementLength
+      bg.height = this.elementLength
       this.placeholderContainer.addChild(ph)
       this.bgContainer.addChild(bg)
       this.appStage.stage.addChild(this.bgContainer)
@@ -180,7 +197,7 @@ export default {
         // Update symbol positions on reel.
         for (let j = 0; j < r.symbols.length; j++) {
           const s = r.symbols[j]
-          s.y = (r.position + j) % r.symbols.length * 256 - 256
+          s.y = (r.position + j) % r.symbols.length * this.elementLength - this.elementLength
         }
       })
     })
