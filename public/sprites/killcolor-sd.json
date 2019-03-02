@@ -1,0 +1,444 @@
+{"frames": {
+
+"IconPerks_agitation":
+{
+	"frame": {"x":311,"y":44,"w":43,"h":38},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":11,"y":15,"w":43,"h":38},
+	"sourceSize": {"w":64,"h":64}
+},
+"IconPerks_aNursesCalling":
+{
+	"frame": {"x":215,"y":46,"w":43,"h":35},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":11,"y":14,"w":43,"h":35},
+	"sourceSize": {"w":64,"h":64}
+},
+"IconPerks_bamboozle":
+{
+	"frame": {"x":706,"y":1,"w":48,"h":44},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":8,"y":13,"w":48,"h":44},
+	"sourceSize": {"w":64,"h":64}
+},
+"IconPerks_barbecueAndChilli":
+{
+	"frame": {"x":344,"y":1,"w":40,"h":52},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":11,"y":8,"w":40,"h":52},
+	"sourceSize": {"w":64,"h":64}
+},
+"IconPerks_beastOfPrey":
+{
+	"frame": {"x":487,"y":53,"w":44,"h":40},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":14,"y":13,"w":44,"h":40},
+	"sourceSize": {"w":64,"h":64}
+},
+"IconPerks_bitterMurmur":
+{
+	"frame": {"x":306,"y":84,"w":43,"h":42},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":8,"y":14,"w":43,"h":42},
+	"sourceSize": {"w":64,"h":64}
+},
+"IconPerks_bloodhound":
+{
+	"frame": {"x":581,"y":51,"w":35,"h":41},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":13,"y":12,"w":35,"h":41},
+	"sourceSize": {"w":64,"h":64}
+},
+"IconPerks_bloodWarden":
+{
+	"frame": {"x":503,"y":1,"w":50,"h":48},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":6,"y":10,"w":50,"h":48},
+	"sourceSize": {"w":64,"h":64}
+},
+"IconPerks_brutalStrength":
+{
+	"frame": {"x":167,"y":46,"w":46,"h":35},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":8,"y":14,"w":46,"h":35},
+	"sourceSize": {"w":64,"h":64}
+},
+"IconPerks_coulrophobia":
+{
+	"frame": {"x":605,"y":1,"w":48,"h":47},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":9,"w":48,"h":47},
+	"sourceSize": {"w":64,"h":64}
+},
+"IconPerks_deerstalker":
+{
+	"frame": {"x":48,"y":80,"w":33,"h":47},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":16,"y":10,"w":33,"h":47},
+	"sourceSize": {"w":64,"h":64}
+},
+"IconPerks_discordance":
+{
+	"frame": {"x":902,"y":1,"w":33,"h":48},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":15,"y":6,"w":33,"h":48},
+	"sourceSize": {"w":64,"h":64}
+},
+"IconPerks_distressing":
+{
+	"frame": {"x":618,"y":50,"w":44,"h":38},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":11,"y":13,"w":44,"h":38},
+	"sourceSize": {"w":64,"h":64}
+},
+"IconPerks_dyingLight":
+{
+	"frame": {"x":747,"y":47,"w":40,"h":42},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":12,"y":11,"w":40,"h":42},
+	"sourceSize": {"w":64,"h":64}
+},
+"IconPerks_enduring":
+{
+	"frame": {"x":704,"y":91,"w":36,"h":46},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":13,"y":9,"w":36,"h":46},
+	"sourceSize": {"w":64,"h":64}
+},
+"IconPerks_fireUp":
+{
+	"frame": {"x":231,"y":1,"w":38,"h":56},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":12,"y":3,"w":38,"h":56},
+	"sourceSize": {"w":64,"h":64}
+},
+"IconPerks_franklinsDemise":
+{
+	"frame": {"x":350,"y":84,"w":43,"h":42},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":10,"y":9,"w":43,"h":42},
+	"sourceSize": {"w":64,"h":64}
+},
+"IconPerks_hangmansTrick":
+{
+	"frame": {"x":62,"y":46,"w":51,"h":32},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":15,"w":51,"h":32},
+	"sourceSize": {"w":64,"h":64}
+},
+"IconPerks_hexDevourHope":
+{
+	"frame": {"x":839,"y":82,"w":37,"h":40},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":15,"y":14,"w":37,"h":40},
+	"sourceSize": {"w":64,"h":64}
+},
+"IconPerks_hexHauntedGround":
+{
+	"frame": {"x":1,"y":62,"w":45,"h":57},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":10,"y":3,"w":45,"h":57},
+	"sourceSize": {"w":64,"h":64}
+},
+"IconPerks_hexHuntressLullaby":
+{
+	"frame": {"x":756,"y":1,"w":46,"h":44},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":8,"y":6,"w":46,"h":44},
+	"sourceSize": {"w":64,"h":64}
+},
+"IconPerks_hexNoOneEscapesDeath":
+{
+	"frame": {"x":356,"y":43,"w":40,"h":37},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":13,"y":12,"w":40,"h":37},
+	"sourceSize": {"w":64,"h":64}
+},
+"IconPerks_hexRuin":
+{
+	"frame": {"x":658,"y":48,"w":42,"h":42},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":13,"y":11,"w":42,"h":42},
+	"sourceSize": {"w":64,"h":64}
+},
+"IconPerks_hexTheThirdSeal":
+{
+	"frame": {"x":855,"y":45,"w":35,"h":43},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":15,"y":10,"w":35,"h":43},
+	"sourceSize": {"w":64,"h":64}
+},
+"IconPerks_hexThrillOfTheHunt":
+{
+	"frame": {"x":262,"y":80,"w":42,"h":45},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":11,"y":12,"w":42,"h":45},
+	"sourceSize": {"w":64,"h":64}
+},
+"IconPerks_insidious":
+{
+	"frame": {"x":130,"y":83,"w":42,"h":44},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":11,"y":6,"w":42,"h":44},
+	"sourceSize": {"w":64,"h":64}
+},
+"IconPerks_ironGrasp":
+{
+	"frame": {"x":260,"y":44,"w":49,"h":34},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":6,"y":12,"w":49,"h":34},
+	"sourceSize": {"w":64,"h":64}
+},
+"IconPerks_ironMaiden":
+{
+	"frame": {"x":881,"y":91,"w":34,"h":42},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":15,"y":8,"w":34,"h":42},
+	"sourceSize": {"w":64,"h":64}
+},
+"IconPerks_knockOut":
+{
+	"frame": {"x":804,"y":45,"w":34,"h":49},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":15,"y":10,"w":34,"h":49},
+	"sourceSize": {"w":64,"h":64}
+},
+"IconPerks_lightborn":
+{
+	"frame": {"x":436,"y":94,"w":48,"h":33},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":16,"w":48,"h":33},
+	"sourceSize": {"w":64,"h":64}
+},
+"IconPerks_madGrit":
+{
+	"frame": {"x":1,"y":1,"w":59,"h":59},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":4,"w":59,"h":59},
+	"sourceSize": {"w":64,"h":64}
+},
+"IconPerks_makeYourChoice":
+{
+	"frame": {"x":752,"y":91,"w":36,"h":42},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":15,"y":13,"w":36,"h":42},
+	"sourceSize": {"w":64,"h":64}
+},
+"IconPerks_monitorAndAbuse":
+{
+	"frame": {"x":62,"y":1,"w":59,"h":43},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":9,"w":59,"h":43},
+	"sourceSize": {"w":64,"h":64}
+},
+"IconPerks_monstrousShrine":
+{
+	"frame": {"x":177,"y":1,"w":43,"h":52},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":10,"y":0,"w":43,"h":52},
+	"sourceSize": {"w":64,"h":64}
+},
+"IconPerks_overcharge":
+{
+	"frame": {"x":854,"y":1,"w":42,"h":46},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":12,"y":11,"w":42,"h":46},
+	"sourceSize": {"w":64,"h":64}
+},
+"IconPerks_overwhelmingPresence":
+{
+	"frame": {"x":555,"y":1,"w":48,"h":48},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":8,"y":8,"w":48,"h":48},
+	"sourceSize": {"w":64,"h":64}
+},
+"IconPerks_playWithYourFood":
+{
+	"frame": {"x":174,"y":83,"w":42,"h":44},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":11,"y":11,"w":42,"h":44},
+	"sourceSize": {"w":64,"h":64}
+},
+"IconPerks_popGoesTheWeasel":
+{
+	"frame": {"x":289,"y":1,"w":41,"h":53},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":12,"y":6,"w":41,"h":53},
+	"sourceSize": {"w":64,"h":64}
+},
+"IconPerks_predator":
+{
+	"frame": {"x":398,"y":1,"w":51,"h":50},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":7,"w":51,"h":50},
+	"sourceSize": {"w":64,"h":64}
+},
+"IconPerks_rancor":
+{
+	"frame": {"x":451,"y":1,"w":50,"h":50},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":7,"w":50,"h":50},
+	"sourceSize": {"w":64,"h":64}
+},
+"IconPerks_rememberMe":
+{
+	"frame": {"x":83,"y":83,"w":44,"h":45},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":10,"y":9,"w":44,"h":45},
+	"sourceSize": {"w":64,"h":64}
+},
+"IconPerks_saveTheBestForLast":
+{
+	"frame": {"x":804,"y":1,"w":42,"h":48},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":11,"y":11,"w":42,"h":48},
+	"sourceSize": {"w":64,"h":64}
+},
+"IconPerks_shadowborn":
+{
+	"frame": {"x":486,"y":95,"w":48,"h":31},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":16,"w":48,"h":31},
+	"sourceSize": {"w":64,"h":64}
+},
+"IconPerks_sloppyButcher":
+{
+	"frame": {"x":900,"y":51,"w":38,"h":35},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":13,"y":15,"w":38,"h":35},
+	"sourceSize": {"w":64,"h":64}
+},
+"IconPerks_spiesFromTheShadows":
+{
+	"frame": {"x":658,"y":92,"w":44,"h":35},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":17,"w":44,"h":35},
+	"sourceSize": {"w":64,"h":64}
+},
+"IconPerks_spiritFury":
+{
+	"frame": {"x":436,"y":53,"w":49,"h":39},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":12,"w":49,"h":39},
+	"sourceSize": {"w":64,"h":64}
+},
+"IconPerks_stridor":
+{
+	"frame": {"x":123,"y":1,"w":52,"h":43},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":8,"y":6,"w":52,"h":43},
+	"sourceSize": {"w":64,"h":64}
+},
+"IconPerks_surveillance":
+{
+	"frame": {"x":115,"y":46,"w":35,"h":50},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":16,"y":9,"w":35,"h":50},
+	"sourceSize": {"w":64,"h":64}
+},
+"IconPerks_territorialImperative":
+{
+	"frame": {"x":533,"y":51,"w":41,"h":46},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":10,"y":10,"w":41,"h":46},
+	"sourceSize": {"w":64,"h":64}
+},
+"IconPerks_thanatophobia":
+{
+	"frame": {"x":394,"y":82,"w":40,"h":45},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":12,"y":9,"w":40,"h":45},
+	"sourceSize": {"w":64,"h":64}
+},
+"IconPerks_tinkerer":
+{
+	"frame": {"x":796,"y":81,"w":41,"h":40},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":12,"y":7,"w":41,"h":40},
+	"sourceSize": {"w":64,"h":64}
+},
+"IconPerks_unnervingPresence":
+{
+	"frame": {"x":218,"y":83,"w":42,"h":44},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":12,"y":7,"w":42,"h":44},
+	"sourceSize": {"w":64,"h":64}
+},
+"IconPerks_unrelenting":
+{
+	"frame": {"x":702,"y":48,"w":41,"h":43},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":13,"y":10,"w":41,"h":43},
+	"sourceSize": {"w":64,"h":64}
+},
+"IconPerks_whispers":
+{
+	"frame": {"x":655,"y":1,"w":45,"h":49},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":11,"y":11,"w":45,"h":49},
+	"sourceSize": {"w":64,"h":64}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "killcolor-sd.png",
+	"format": "RGBA8888",
+	"size": {"w":936,"h":128},
+	"scale": "0.25",
+	"smartupdate": "$TexturePacker:SmartUpdate:1c572efc6d11889c9ad4a9810dd2f641:562b7d8d0cdb7b4b53fbc890b472be1f:650f46fd279506cd9826f00f3a8fe00b$"
+}
+}

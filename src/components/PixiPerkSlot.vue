@@ -125,7 +125,7 @@ export default {
   },
   mounted () {
     this.$refs.slot.appendChild(this.appStage.view)
-    this.loader.add('atlas', `/sprites/${this.type.toLowerCase()}${this.colorized ? 'color' : ''}.json`)
+    this.loader.add('atlas', `/sprites/${this.type.toLowerCase()}${this.colorized ? 'color' : ''}-hd.json`)
     this.loader.load((loader, resources) => {
       this.perkTextures = resources.atlas.textures
       this.reelContainer = new this.Container()
