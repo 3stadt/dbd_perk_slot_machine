@@ -139,7 +139,6 @@ export default {
     }
   },
   mounted () {
-    // this.elementLength = 256
     this.appStage = new PIXI.Application(this.elementLength, this.elementLength, { transparent: true })
     this.$refs.slot.appendChild(this.appStage.view)
     this.loader = new PIXI.loaders.Loader()
