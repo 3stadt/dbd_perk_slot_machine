@@ -1,9 +1,15 @@
 <template>
     <div>
-        <perkslot0 @reRollRequested="randomize" ref="perkslot0" type="Kill" :colorized="col"/>
-        <perkslot1 @reRollRequested="randomize" ref="perkslot1" type="Kill" :colorized="col"/>
-        <perkslot2 @reRollRequested="randomize" ref="perkslot2" type="Kill" :colorized="col"/>
-        <perkslot3 @reRollRequested="randomize" ref="perkslot3" type="Kill" :colorized="col"/>
+        <div>
+            <perkslot0 @reRollRequested="randomize" ref="perkslot0" type="Kill" :colorized="col"/>
+            <perkslot1 @reRollRequested="randomize" ref="perkslot1" type="Kill" :colorized="col"/>
+            <perkslot2 @reRollRequested="randomize" ref="perkslot2" type="Kill" :colorized="col"/>
+            <perkslot3 @reRollRequested="randomize" ref="perkslot3" type="Kill" :colorized="col"/>
+        </div>
+        <div v-if="hintVisible" class="hint-text">
+            <img src="/img/icon_shortinfo.png" slot="icon" alt="Survivor" class="info-icon">
+            <span>{{ message }}</span>
+        </div>
     </div>
 </template>
 
@@ -23,12 +29,16 @@ export default {
     return {
       perkData: require('./../resources/perks-killer.json'),
       lastPos: [],
-      col: !!this.$route.query.color
+      col: !!this.$route.query.color,
+      message: 'Click on any perk slot to start',
+      hintVisible: true
     }
   },
   methods: {
     randomize: function () {
       let random = rand.getRandomData(4, this.$route.query.kids, this.perkData, this.lastPos)
+      this.hintVisible = false
+
       this.lastPos = random
       this.$refs.perkslot0.rollWheel(random[0])
       this.$refs.perkslot1.rollWheel(random[1])
