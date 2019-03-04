@@ -2,11 +2,21 @@
     <div id="app">
         <div class="header">
             <div class="nav container">
-                <UiButton class="nav__killers" :routerLink="{ name: 'killer' }">
+                <template v-if="routerName === 'killer' || routerName === 'survivor'">
+                    <UiButton class="nav__left" :routerLink="{ name: 'home' }">
+                        <img src="/img/icon_exit.png" slot="icon" alt="Survivor">
+                        Home
+                    </UiButton>
+                </template>
+                <UiButton v-if="routerName !== 'killer'  && routerName === 'home'" class="nav__left" :routerLink="{ name: 'killer' }">
                     <img src="/img/icon_killer.png" slot="icon" alt="Killer">
                     Killer Roulette
                 </UiButton>
-                <UiButton class="nav__survivors" :routerLink="{ name: 'survivor' }">
+                <UiButton v-if="routerName !== 'killer' && routerName !== 'home'" class="nav__right" :routerLink="{ name: 'killer' }">
+                    <img src="/img/icon_killer.png" slot="icon" alt="Killer">
+                    Killer Roulette
+                </UiButton>
+                <UiButton v-if="routerName !== 'survivor'" class="nav__right" :routerLink="{ name: 'survivor' }">
                     <img src="/img/icon_survivor.png" slot="icon" alt="Survivor">
                     Survivor Roulette
                 </UiButton>
@@ -24,6 +34,11 @@ import UiButton from './components/UiButton'
 export default {
   components: {
     UiButton
+  },
+  computed: {
+    routerName () {
+      return this.$route.name;
+    }
   }
 }
 </script>
@@ -87,7 +102,7 @@ export default {
         }
     }
 
-    .nav__survivors {
+    .nav__right {
         margin-left: auto;
     }
 </style>
