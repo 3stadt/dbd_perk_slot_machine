@@ -2,29 +2,29 @@
     <div>
         <div>
             <perkslot0 @reRollRequested="randomize"
-                   ref="perkslot0"
-                   type="Kill"
-                   :elementLength="elementLength"
+                       ref="perkslot0"
+                       type="Kill"
+                       :elementLength="elementLength"
                        :colorized="col"
-        />
+            />
             <perkslot1 @reRollRequested="randomize"
-                   ref="perkslot1"
-                   type="Kill"
-                   :elementLength="elementLength"
+                       ref="perkslot1"
+                       type="Kill"
+                       :elementLength="elementLength"
                        :colorized="col"
-        />
+            />
             <perkslot2 @reRollRequested="randomize"
-                   ref="perkslot2"
-                   type="Kill"
-                   :elementLength="elementLength"
+                       ref="perkslot2"
+                       type="Kill"
+                       :elementLength="elementLength"
                        :colorized="col"
-        />
+            />
             <perkslot3 @reRollRequested="randomize"
-                   ref="perkslot3"
-                   type="Kill"
-                   :elementLength="elementLength"
+                       ref="perkslot3"
+                       type="Kill"
+                       :elementLength="elementLength"
                        :colorized="col"
-        />
+            />
         </div>
         <div v-if="hintVisible" class="hint-text">
             <img src="/img/icon_shortinfo.png" slot="icon" alt="Survivor" class="info-icon">

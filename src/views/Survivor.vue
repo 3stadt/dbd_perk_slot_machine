@@ -2,29 +2,29 @@
     <div>
         <div>
             <perkslot0 @reRollRequested="randomize"
-                   ref="perkslot0"
-                   type="Surv"
-                   :elementLength="elementLength"
-                   :colorized="col"
-        />
+                       ref="perkslot0"
+                       type="Surv"
+                       :elementLength="elementLength"
+                       :colorized="col"
+            />
             <perkslot1 @reRollRequested="randomize"
-                   ref="perkslot1"
-                   type="Surv"
-                   :elementLength="elementLength"
-                   :colorized="col"
-        />
+                       ref="perkslot1"
+                       type="Surv"
+                       :elementLength="elementLength"
+                       :colorized="col"
+            />
             <perkslot2 @reRollRequested="randomize"
-                   ref="perkslot2"
-                   type="Surv"
-                   :elementLength="elementLength"
-                   :colorized="col"
-        />
+                       ref="perkslot2"
+                       type="Surv"
+                       :elementLength="elementLength"
+                       :colorized="col"
+            />
             <perkslot3 @reRollRequested="randomize"
-                   ref="perkslot3"
-                   type="Surv"
-                   :elementLength="elementLength"
-                   :colorized="col"
-        />
+                       ref="perkslot3"
+                       type="Surv"
+                       :elementLength="elementLength"
+                       :colorized="col"
+            />
         </div>
         <div v-if="hintVisible" class="hint-text">
             <img src="/img/icon_shortinfo.png" slot="icon" alt="Survivor" class="info-icon">
@@ -94,6 +94,7 @@ export default {
             margin: 0 10%;
         }
     }
+
     .info-icon {
         width: 30px;
         margin: 0 10px;
