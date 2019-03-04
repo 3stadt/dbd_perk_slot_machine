@@ -1,8 +1,9 @@
 export default {
-  getRandomData: function rand (nOrg, limitIds, perkData, lastPos) {
+  getRandomData: function rand (nOrg, limitIds, perkData, lastRoll, recursion) {
     let avPerks = []
     let avPerkData = []
     let n = nOrg
+    if (!recursion) recursion = 0
     if (limitIds) {
       avPerks = limitIds.split(',').map(function (item) {
         return parseInt(item, 10)
@@ -25,16 +26,29 @@ export default {
     if (n > len) {
       throw new RangeError('getRandom: more elements taken than available')
     }
+
     while (n--) {
       let x = Math.floor(Math.random() * len)
       result[n] = avPerkData[x in taken ? taken[x] : x]
       taken[x] = --len in taken ? taken[len] : len
     }
-    for (let i = 0, l = lastPos.length; i < l; i++) {
-      // make sure it's not the same perk again
-      if (lastPos[i].index === result[i].index) return rand(nOrg, limitIds, perkData, lastPos)
-    }
 
-    return result // TODO make sure there is some distance to the last roll
+    // make sure the new perks are at least 1/3 away from last roll for aesthetic reasons
+    if (!this.equalized(result, lastRoll, perkData.length)) {
+      recursion++
+      if (recursion >= 100) return result // give up after 100 tries. Luck is not on your side today
+      return this.getRandomData(nOrg, limitIds, perkData, lastRoll, recursion)
+    }
+    return result
+  },
+  equalized: function eq (curRoll, prevRoll, maxLen) {
+    if (prevRoll.length === 0 || curRoll.length === 0 || curRoll >= maxLen / 3) return curRoll
+    const minDist = Math.floor((maxLen - 1) / 3)
+    for (let i = 0; i < curRoll.length; i++) {
+      if (curRoll.includes(prevRoll[i]) || Math.abs(curRoll[i].index - prevRoll[i].index) < minDist) {
+        return false
+      }
+    }
+    return true
   }
 }
