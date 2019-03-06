@@ -3,20 +3,20 @@
         <div class="header">
             <div class="nav container">
                 <template v-if="routerName === 'killer' || routerName === 'survivor'">
-                    <UiButton class="nav__left" :routerLink="{ name: 'home' }">
+                    <UiButton class="nav__left" :routerLink="{ name: 'home', query: $route.query }">
                         <img src="/img/icon_exit.png" slot="icon" alt="Survivor">
                         Home
                     </UiButton>
                 </template>
-                <UiButton v-if="routerName !== 'killer'  && routerName === 'home'" class="nav__left" :routerLink="{ name: 'killer' }">
+                <UiButton v-if="routerName !== 'killer'  && routerName === 'home'" class="nav__left" :routerLink="{ name: 'killer', query: $route.query }">
                     <img src="/img/icon_killer.png" slot="icon" alt="Killer">
                     Killer Roulette
                 </UiButton>
-                <UiButton v-if="routerName !== 'killer' && routerName !== 'home'" class="nav__right" :routerLink="{ name: 'killer' }">
+                <UiButton v-if="routerName !== 'killer' && routerName !== 'home'" class="nav__right" :routerLink="{ name: 'killer', query: $route.query }">
                     <img src="/img/icon_killer.png" slot="icon" alt="Killer">
                     Killer Roulette
                 </UiButton>
-                <UiButton v-if="routerName !== 'survivor'" class="nav__right" :routerLink="{ name: 'survivor' }">
+                <UiButton v-if="routerName !== 'survivor'" class="nav__right" :routerLink="{ name: 'survivor', query: $route.query }">
                     <img src="/img/icon_survivor.png" slot="icon" alt="Survivor">
                     Survivor Roulette
                 </UiButton>

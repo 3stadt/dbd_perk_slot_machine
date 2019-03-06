@@ -46,10 +46,30 @@ export default {
     'perkslot2': PixiPerkSlot,
     'perkslot3': PixiPerkSlot
   },
+  props: {
+    col: {
+      type: Boolean,
+      default: false,
+      required: false
+    },
+    sids: {
+      type: Array,
+      default: function () {
+        return []
+      },
+      required: false
+    },
+    kids: {
+      type: Array,
+      default: function () {
+        return []
+      },
+      required: false
+    }
+  },
   data: function () {
     return {
       perkData: require('./../resources/perks-survivor.json'),
-      col: !!this.$route.query.color,
       message: 'Click on any perk slot to start',
       hintVisible: true,
       elementLength: vp.getElementLength(),
@@ -59,7 +79,7 @@ export default {
   methods: {
     randomize: function () {
       if (!this.lastRoll) this.lastRoll = [this.perkData[0], this.perkData[0], this.perkData[0], this.perkData[0]]
-      let random = rand.getRandomData(4, this.$route.query.kids, this.perkData, this.lastRoll)
+      let random = rand.getRandomData(4, this.sids, this.perkData, this.lastRoll)
       this.hintVisible = false
 
       this.lastRoll = random

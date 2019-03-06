@@ -44,7 +44,8 @@ export default {
     },
     colorized: {
       type: Boolean,
-      default: false
+      default: false,
+      required: false
     },
     elementLength: {
       type: Number,

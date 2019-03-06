@@ -1,7 +1,6 @@
 <template>
     <span class="ui-checkbox">
         <input type="checkbox"
-               @change="$emit('change', $event.target.checked)"
                class="ui-checkbox__element"
                :checked="value">
         <span class="ui-checkbox__indicator"></span>

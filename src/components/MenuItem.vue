@@ -8,7 +8,8 @@
         </h2>
         <transition name="fade">
             <div v-if="perkCondition" class="perk-overview__grid">
-                <PerkSwitch :key="perk.index" v-for="perk in perks" :perk="perk" :type="type" />
+                <a href="#" @click.stop.prevent="$emit('resetPerks', type)">Switch all Perks on/off</a>
+                <PerkSwitch :key="perk.index" @change="perkChange" v-for="perk in perks" :perk="perk" :type="type" />
             </div>
             <div v-if="infoCondition" class="perk-overview__box">
                 <InfoText />
@@ -33,12 +34,10 @@ export default {
     },
     type: {
       type: String,
-      default: '',
       required: true
     },
     title: {
       type: String,
-      default: '',
       required: true
     }
   },
@@ -71,13 +70,26 @@ export default {
   methods: {
     toggleCollapsed () {
       this.isCollapsed = !this.isCollapsed
+    },
+    perkChange (perk) {
+      for (let i = 0; i < this.perks.length; i++) {
+        if (perk.index === this.perks[i].index) {
+          this.perks[i].checked = perk.checked
+          this.$emit('change', this.type)
+          return
+        }
+      }
     }
   }
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
     @import "../design/main";
+
+    a {
+        color:white;
+    }
 
     .perk-overview {
         margin-bottom: 30px;
