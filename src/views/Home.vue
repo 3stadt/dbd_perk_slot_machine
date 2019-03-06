@@ -112,6 +112,7 @@ export default {
         }
       }
     }
+    document.getElementsByTagName('body')[0].setAttribute('style', 'overflow-y: scroll;')
   },
   data () {
     return {
@@ -123,9 +124,3 @@ export default {
   }
 }
 </script>
-
-<style>
-    body {
-        overflow-y:scroll;
-    }
-</style>

@@ -102,6 +102,7 @@ export default {
         this.randomize()
       }, as)
     }
+    document.getElementsByTagName('body')[0].removeAttribute('style')
   }
 }
 </script>
