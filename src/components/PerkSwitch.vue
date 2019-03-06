@@ -60,9 +60,9 @@ export default {
   },
 
   methods: {
-    // @TODO: Just a workaround to check checkbox when clicking whole box
     onClickPerk () {
       this.currentPerk.checked = !this.currentPerk.checked
+      this.$emit('change', this.currentPerk)
     }
   }
 }

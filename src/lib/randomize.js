@@ -5,7 +5,7 @@ export default {
     let n = nOrg
     if (!recursion) recursion = 0
     if (limitIds) {
-      avPerks = limitIds.split(',').map(function (item) {
+      avPerks = limitIds.map(function (item) {
         return parseInt(item, 10)
       })
     }

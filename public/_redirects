@@ -1,0 +1,7 @@
+/survivors.html* sids=:sids kids=:kids    /survivor?sids=:sids&kids=:kids 301
+/survivors.html* sids=:sids    /survivor?sids=:sids 301
+/survivors.html* kids=:kids    /survivor?kids=:kids 301
+/killers.html*  sids=:sids kids=:kids  /killer?sids=:sids&kids=:kids 301
+/killers.html*  kids=:kids  /killer?kids=:kids 301
+/killers.html*  sids=:sids  /killer?sids=:sids 301
+/*    /index.html   200
