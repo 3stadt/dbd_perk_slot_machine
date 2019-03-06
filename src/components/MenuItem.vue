@@ -8,11 +8,13 @@
         </h2>
         <transition name="fade">
             <div v-if="perkCondition" class="perk-overview__grid">
-                <a href="#" @click.stop.prevent="$emit('resetPerks', type)">Switch all Perks on/off</a>
-                <PerkSwitch :key="perk.index" @change="perkChange" v-for="perk in perks" :perk="perk" :type="type" />
+                <div @click.stop.prevent="$emit('resetPerks', type)">
+                    <GlobalSelectionSwitch />
+                </div>
+                <PerkSwitch :key="perk.index" @change="perkChange" v-for="perk in perks" :perk="perk" :type="type"/>
             </div>
             <div v-if="infoCondition" class="perk-overview__box">
-                <InfoText />
+                <InfoText/>
             </div>
         </transition>
     </div>
@@ -20,6 +22,7 @@
 
 <script>
 import PerkSwitch from './PerkSwitch.vue'
+import GlobalSelectionSwitch from './GlobalSelectionSwitch.vue'
 import InfoText from './InfoText.vue'
 
 export default {
@@ -50,13 +53,20 @@ export default {
 
   components: {
     PerkSwitch,
-    InfoText
+    InfoText,
+    GlobalSelectionSwitch
   },
 
   computed: {
     classes () {
       return {
         'is--collapsed': this.isCollapsed
+      }
+    },
+    cssProps () {
+      let idx = this.perk.index
+      return {
+        '--slotBg': `url('/img/${this.imageFileName}') 0 ${idx === 0 ? 0 : (128 * idx * -1) + 'px'}`
       }
     },
     perkCondition () {
@@ -88,7 +98,40 @@ export default {
     @import "../design/main";
 
     a {
-        color:white;
+        color: white;
+    }
+
+    .perk-switch {
+        background-color: rgba(0, 0, 0, 0.2);
+        transition: all .15s ease-in-out;
+        transform: scale(1);
+        padding: 5%;
+        height: 100%;
+
+        @media screen and (min-width: 992px) {
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.4);
+            }
+        }
+
+        .perk-switch__name {
+            position: relative;
+            text-align: center;
+        }
+
+        .perk-switch__image-container {
+            position: relative;
+            height: 128px;
+        }
+
+        .perk-switch__image {
+            position: absolute;
+            left: 50%; /* centers the left edge of the sprite */
+            margin-left: -64px; /* this centers the actual sprite--this is half the sprite-window width. if you don't do this, the left edge will be centered instead of the center of the sprite.  */
+            width: 128px; /* set window to see sprite through */
+            height: 128px; /* set window to see sprite through */
+            background: var(--slotBg); /* custom property is generated in cssProps() and bound in dov with class card*/
+        }
     }
 
     .perk-overview {

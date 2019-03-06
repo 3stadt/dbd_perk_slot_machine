@@ -112,6 +112,7 @@ export default {
         }
       }
     }
+    document.getElementsByTagName('body')[0].setAttribute('style', 'overflow-y: scroll;')
   },
   data () {
     return {

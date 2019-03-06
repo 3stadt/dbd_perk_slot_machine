@@ -127,6 +127,5 @@ export default {
             height: 128px; /* set window to see sprite through */
             background: var(--slotBg); /* custom property is generated in cssProps() and bound in dov with class card*/
         }
-
     }
 </style>
