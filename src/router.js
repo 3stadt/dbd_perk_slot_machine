@@ -8,7 +8,7 @@ import NotFoundComponent from './views/NotFoundComponent.vue'
 Vue.use(Router)
 
 const confParams = (route) => ({
-  col: route.query.color === '1',
+  color: route.query.color === '1',
   sids: route.query.sids ? route.query.sids.split(',') : [],
   kids: route.query.kids ? route.query.kids.split(',') : []
 })

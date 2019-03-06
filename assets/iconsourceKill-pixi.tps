@@ -207,7 +207,9 @@
             <key type="filename">iconsourceKill/IconPerks_bloodWarden.png</key>
             <key type="filename">iconsourceKill/IconPerks_bloodhound.png</key>
             <key type="filename">iconsourceKill/IconPerks_brutalStrength.png</key>
+            <key type="filename">iconsourceKill/IconPerks_corruptIntervention.png</key>
             <key type="filename">iconsourceKill/IconPerks_coulrophobia.png</key>
+            <key type="filename">iconsourceKill/IconPerks_darkDevotion.png</key>
             <key type="filename">iconsourceKill/IconPerks_deerstalker.png</key>
             <key type="filename">iconsourceKill/IconPerks_discordance.png</key>
             <key type="filename">iconsourceKill/IconPerks_distressing.png</key>
@@ -223,6 +225,7 @@
             <key type="filename">iconsourceKill/IconPerks_hexRuin.png</key>
             <key type="filename">iconsourceKill/IconPerks_hexTheThirdSeal.png</key>
             <key type="filename">iconsourceKill/IconPerks_hexThrillOfTheHunt.png</key>
+            <key type="filename">iconsourceKill/IconPerks_infectiousFright.png</key>
             <key type="filename">iconsourceKill/IconPerks_insidious.png</key>
             <key type="filename">iconsourceKill/IconPerks_ironGrasp.png</key>
             <key type="filename">iconsourceKill/IconPerks_ironMaiden.png</key>
