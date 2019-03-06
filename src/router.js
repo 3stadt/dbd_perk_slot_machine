@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Home from './views/Home.vue'
 import Survivor from './views/Survivor.vue'
 import Killer from './views/Killer.vue'
+import NotFoundComponent from './views/NotFoundComponent.vue'
 
 Vue.use(Router)
 
@@ -32,6 +33,7 @@ export default new Router({
       name: 'killer',
       component: Killer,
       props: confParams
-    }
+    },
+    { path: '*', component: NotFoundComponent }
   ]
 })

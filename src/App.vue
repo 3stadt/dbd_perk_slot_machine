@@ -2,7 +2,7 @@
     <div id="app">
         <div class="header">
             <div class="nav container">
-                <template v-if="routerName === 'killer' || routerName === 'survivor'">
+                <template v-if="routerName !== 'home'">
                     <UiButton class="nav__left" :routerLink="{ name: 'home', query: $route.query }">
                         <img src="/img/icon_exit.png" slot="icon" alt="Survivor">
                         Home
