@@ -220,6 +220,7 @@
             <key type="filename">iconsourceSurv/IconPerks_distortion.png</key>
             <key type="filename">iconsourceSurv/IconPerks_diversion.png</key>
             <key type="filename">iconsourceSurv/IconPerks_empathy.png</key>
+            <key type="filename">iconsourceSurv/IconPerks_headOn.png</key>
             <key type="filename">iconsourceSurv/IconPerks_hope.png</key>
             <key type="filename">iconsourceSurv/IconPerks_ironWill.png</key>
             <key type="filename">iconsourceSurv/IconPerks_kindred.png</key>
@@ -233,6 +234,7 @@
             <key type="filename">iconsourceSurv/IconPerks_open-Handed.png</key>
             <key type="filename">iconsourceSurv/IconPerks_pharmacy.png</key>
             <key type="filename">iconsourceSurv/IconPerks_plunderersInstinct.png</key>
+            <key type="filename">iconsourceSurv/IconPerks_poised.png</key>
             <key type="filename">iconsourceSurv/IconPerks_premonition.png</key>
             <key type="filename">iconsourceSurv/IconPerks_proveThyself.png</key>
             <key type="filename">iconsourceSurv/IconPerks_quickAndQuiet.png</key>
@@ -242,6 +244,7 @@
             <key type="filename">iconsourceSurv/IconPerks_slipperyMeat.png</key>
             <key type="filename">iconsourceSurv/IconPerks_smallGame.png</key>
             <key type="filename">iconsourceSurv/IconPerks_soleSurvivor.png</key>
+            <key type="filename">iconsourceSurv/IconPerks_solidarity.png</key>
             <key type="filename">iconsourceSurv/IconPerks_spineChill.png</key>
             <key type="filename">iconsourceSurv/IconPerks_sprintBurst.png</key>
             <key type="filename">iconsourceSurv/IconPerks_stakeOut.png</key>

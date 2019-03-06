@@ -14,6 +14,58 @@
                     allowfullscreen></iframe>
         </div>
         <div class="paragraph">
+            <h2>How does it work?</h2>
+            <p>
+                If you have all perks on one of your characters on the killer and survivor site, just
+                click one of the red buttons on top, click on any perk slot, done.
+                This way four different perks are chosen for you to play with. That's how a perk wheel /
+                slot machine works. Have fun!
+            </p>
+            <h3>...but I don't have ALL THE PERKS!</h3>
+            <p>
+                If you are missing some perks, click on one of the "Configure..." boxes below. Then
+                disable the perks you don't have or want.
+                The perks you've chosen are not saved, but the url is used to determine which perks are
+                active. <br>
+                So configure your perks, create a bookmark for this configuration, done.
+            </p>
+        </div>
+        <div class="paragraph">
+            <h2>How to use this with OBS/XSplit?</h2>
+            <p>
+                There are a number of options you can set via URL. This is explained in-depth in the video above.<br>
+                In short, use the parameters
+                <code>bg=0&header=0&hint=0</code>
+                to only show the perk slots,
+                use e.g.
+                <code>autostart=1000</code>
+                to start a roll 1 second after page load.
+            </p>
+        </div>
+        <div class="paragraph">
+            <h2>The team</h2>
+            <p>This project was brought to life by:</p>
+            <ul>
+                <li>
+                    3stadt
+                    [
+                    <a href="https://steamcommunity.com/id/dreistadt">Steam</a> |
+                    <a href="https://twitter.com/3stadt_com">Twitter</a>
+                    ]
+                </li>
+                <li>
+                    moe_nana
+                    [
+                    <a href="https://steamcommunity.com/id/moe_nana">Steam</a> |
+                    <a href="https://twitter.com/leichteckig">Twitter</a>
+                    ]
+                </li>
+                <li>
+                    Tobbe [<a href="https://github.com/tobiasberge">GitHub</a>]
+                </li>
+            </ul>
+        </div>
+        <div class="paragraph">
             <h2>Attribution</h2>
             <p>The media on this page was not originally created by it's author.</p>
             <ul>
@@ -49,35 +101,6 @@
                 saved on the server.
                 However, this site uses <a href="https://statcounter.com/">statcounter</a> to track how
                 many visitors are using it.
-            </p>
-        </div>
-        <div class="paragraph">
-            <h2>How does it work?</h2>
-            <p>
-                If you have all perks on one of your characters on the killer and survivor site, just
-                click one of the red buttons on top, click randomize, done.
-                This way four different perks are chosen for you to play with. That's how a perk wheel /
-                slot machine works. Have fun!
-            </p>
-            <h3>...but I don't have ALL THE PERKS!</h3>
-            <p>
-                If you are missing some perks, click on one of the "Configure..." boxes below. Then
-                disable the perks you don't have or want.
-                The perks you've chosen are not saved, but the url is used to determine which perks are
-                active. <br>
-                So configure your perks, create a bookmark for this configuration, done.
-            </p>
-        </div>
-        <div class="paragraph">
-            <h2>How to use this with OBS/XSplit?</h2>
-            <p>
-                There are a number of options you can set via URL. This is explained in-depth in the video above.<br>
-                In short, use the parameters
-                <code>bg=0&header=0&hint=0</code>
-                to only show the perk slots,
-                use e.g.
-                <code>autostart=1000</code>
-                to start a roll 1 second after page load.
             </p>
         </div>
     </div>

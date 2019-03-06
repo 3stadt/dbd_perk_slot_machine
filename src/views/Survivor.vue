@@ -5,25 +5,25 @@
                        ref="perkslot0"
                        type="Surv"
                        :elementLength="elementLength"
-                       :colorized="col"
+                       :colorized="color"
             />
             <perkslot1 @reRollRequested="randomize"
                        ref="perkslot1"
                        type="Surv"
                        :elementLength="elementLength"
-                       :colorized="col"
+                       :colorized="color"
             />
             <perkslot2 @reRollRequested="randomize"
                        ref="perkslot2"
                        type="Surv"
                        :elementLength="elementLength"
-                       :colorized="col"
+                       :colorized="color"
             />
             <perkslot3 @reRollRequested="randomize"
                        ref="perkslot3"
                        type="Surv"
                        :elementLength="elementLength"
-                       :colorized="col"
+                       :colorized="color"
             />
         </div>
         <div v-if="hintVisible" class="hint-text">
@@ -47,7 +47,7 @@ export default {
     'perkslot3': PixiPerkSlot
   },
   props: {
-    col: {
+    color: {
       type: Boolean,
       default: false,
       required: false

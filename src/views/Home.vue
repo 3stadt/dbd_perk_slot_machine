@@ -15,7 +15,7 @@ export default {
     MenuItem
   },
   props: {
-    col: {
+    color: {
       type: Boolean,
       default: false,
       required: false
@@ -43,26 +43,26 @@ export default {
             for (let i = 0; i < this.perks.survivors.length; i++) {
               this.perks.survivors[i].checked = true
             }
-            this.$router.push({ path: this.$route.path, query: { kids: this.kids.join(','), col: this.col ? '1' : '0' } })
+            this.$router.push({ path: this.$route.path, query: { kids: this.kids.join(','), color: this.color ? '1' : '0' } })
             return
           }
           for (let i = 0; i < this.perks.survivors.length; i++) {
             this.perks.survivors[i].checked = false
           }
-          this.$router.push({ path: this.$route.path, query: { sids: 'none', kids: this.kids.join(','), col: this.col ? '1' : '0' } })
+          this.$router.push({ path: this.$route.path, query: { sids: 'none', kids: this.kids.join(','), color: this.color ? '1' : '0' } })
           break
         case 'Killer':
           if (this.kids.length > 0 && this.kids[0] === 'none') {
             for (let i = 0; i < this.perks.killers.length; i++) {
               this.perks.killers[i].checked = true
             }
-            this.$router.push({ path: this.$route.path, query: { sids: this.sids.join(','), col: this.col ? '1' : '0' } })
+            this.$router.push({ path: this.$route.path, query: { sids: this.sids.join(','), color: this.color ? '1' : '0' } })
             return
           }
           for (let i = 0; i < this.perks.killers.length; i++) {
             this.perks.killers[i].checked = false
           }
-          this.$router.push({ path: this.$route.path, query: { kids: 'none', sids: this.sids.join(','), col: this.col ? '1' : '0' } })
+          this.$router.push({ path: this.$route.path, query: { kids: 'none', sids: this.sids.join(','), color: this.color ? '1' : '0' } })
           break
       }
     },
@@ -79,7 +79,7 @@ export default {
             perkExclusion = true
           }
           if (!perkExclusion) return
-          this.$router.push({ path: this.$route.path, query: { sids: chosenPerks.join(','), kids: this.kids.join(','), col: this.col ? '1' : '0' } })
+          this.$router.push({ path: this.$route.path, query: { sids: chosenPerks.join(','), kids: this.kids.join(','), color: this.color ? '1' : '0' } })
           break
         case 'Killer':
           for (let i = 0; i < this.perks.killers.length; i++) {
@@ -90,7 +90,7 @@ export default {
             perkExclusion = true
           }
           if (!perkExclusion) return
-          this.$router.push({ path: this.$route.path, query: { sids: this.sids.join(','), kids: chosenPerks.join(','), col: this.col ? '1' : '0' } })
+          this.$router.push({ path: this.$route.path, query: { sids: this.sids.join(','), kids: chosenPerks.join(','), color: this.color ? '1' : '0' } })
           break
         default:
           console.warn(`changes to unknown perk type ${type}`)
