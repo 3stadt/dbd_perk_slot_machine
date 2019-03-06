@@ -35,9 +35,28 @@ export default {
   components: {
     UiButton
   },
+  data: function () {
+    return {
+      removeBackground: this.$route.query.bg === '0',
+      removeHint: this.$route.query.hint === '0',
+      removeHeader: this.$route.query.header === '0'
+    }
+  },
   computed: {
     routerName () {
       return this.$route.name
+    }
+  },
+  mounted: function () {
+    if (this.removeBackground) {
+      document.getElementsByTagName('body')[0].setAttribute('style', 'background:none;padding:0;margin:0')
+    }
+    if (this.removeHint) {
+      document.getElementsByClassName('hint-text')[0].setAttribute('style', 'display:none;')
+    }
+    if (this.removeHeader) {
+      document.getElementsByClassName('container')[1].setAttribute('style', 'padding:0;max-width:none;')
+      document.getElementsByClassName('header')[0].setAttribute('style', 'display:none;')
     }
   }
 }
@@ -55,10 +74,15 @@ export default {
     body {
         font-family: $font-family-default;
         line-height: 1.4;
-        background: $color-background url("../public/img/background_1.jpg") no-repeat center center fixed;
+        background: $color-background url("../public/img/Background-Main.jpg") no-repeat center center fixed;
         background-size: cover;
         color: $color-text;
         top: 0;
+    }
+
+    .hide-bg {
+        background: none;
+        background-size: unset;
     }
 
     #app {

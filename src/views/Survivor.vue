@@ -96,6 +96,12 @@ export default {
         window.location.reload()
       }
     })
+    const as = parseInt(this.$route.query.autostart)
+    if (!isNaN(as) && as > 0) {
+      window.setTimeout(() => {
+        this.randomize()
+      }, as)
+    }
   }
 }
 </script>
