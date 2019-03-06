@@ -1,28 +1,16 @@
 <template>
-    <div :class="['perk-switch-container', {'perk-checked': this.currentPerk.checked}]">
-        <div class="perk-switch" @click="onClickPerk">
-            <UiCheckbox v-model="currentPerk.checked" class="perk-checkbox"
-                        :class="[{'dim-image': !this.currentPerk.checked}]"></UiCheckbox>
-            <div class="perk-switch__image-container">
-                <div class="perk-switch__image" :class="['_'+currentPerk.name, spriteType, {'dim-image': !currentPerk.checked}]"
-                     role="img"></div>
-            </div>
-            <div>
-                <div class="perk-switch__name" :class="[{'dim-image': !this.currentPerk.checked}]">{{ name.toUpperCase() }}</div>
-            </div>
+    <div class="perk-switch-container" @click="onClickPerk">
+        <div class="perk-switch">
+            <div :class="['_'+currentPerk.name, spriteType, 'perk-switch__image']" :style="cssProps"></div>
+            <div :class="[{'perk-checked': currentPerk.checked}]" :style="cssProps"></div>
+            <div class="perk-switch__name" v-html="nameBadge"></div>
         </div>
     </div>
 </template>
 
 <script>
-import UiCheckbox from './UiCheckbox'
-
 export default {
   name: 'PerkSwitch',
-
-  components: {
-    UiCheckbox
-  },
 
   props: {
     name: {
@@ -35,10 +23,14 @@ export default {
         return []
       }
     },
-
     type: {
       type: String,
       default: '',
+      required: true
+    },
+    itemLength: {
+      type: Number,
+      default: 128,
       required: true
     }
   },
@@ -53,12 +45,23 @@ export default {
     this.currentPerk = this.perk
   },
 
+  mounted () {
+    const name = document.getElementById('name_' + this.currentPerk.name)
+    const bb = name.getBBox()
+    if (bb.width <= this.itemLength) return
+    name.parentElement.setAttribute('viewBox', '0 0 ' + bb.width + ' ' + bb.height)
+  },
+
   computed: {
     spriteType: function () {
       return {
         'sprite-survivor': this.type === 'Survivor',
         'sprite-killer': this.type === 'Killer'
       }
+    },
+
+    nameBadge () {
+      return `<svg width="${this.itemLength}" height="26"><text id="${'name_' + this.currentPerk.name}" x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="white">${this.currentPerk.name}</text></svg>`
     }
   },
 
@@ -74,65 +77,55 @@ export default {
 <style lang="scss" scoped>
     @import "../design/main";
 
-    .perk-checkbox {
-        position: absolute;
-    }
-
     .perk-switch-container {
-        border: 10px solid rgba(255, 255, 255, 0.2);
-        border-image: url(/img/border_black.png) 10% round;
+        position: relative;
+        margin: 0 auto;
+        transform: translate(0, 0);
+        background-image: url(/img/perkBg-md.png);
+        background-size: cover;
+        width: var(--elementlength, 128px);
+        height: var(--elementlength, 128px);
 
-        @media screen and (min-width: 992px) {
-            &:hover {
-                transform: scale(1.2);
-                border-image: url(/img/border_red.png) 10% round;
-                cursor: pointer;
+        .perk-switch {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: var(--elementlength, 128px);
+            height: var(--elementlength, 128px);
+            z-index: 100;
+
+            @media screen and (min-width: 992px) {
+                &:not(.perk-checked):hover {
+                    background-image: url(/img/perkswitch_hover-md.png);
+                    background-size: cover;
+                    cursor: pointer;
+                }
             }
         }
-    }
 
-    .dim-image {
-        filter: brightness(0.5);
-    }
-
-    .perk-checked {
-        border-image: url(/img/border_white.png) 10% round;
-    }
-
-    .perk-switch {
-        background-color: rgba(0, 0, 0, 0.2);
-        transition: all .15s ease-in-out;
-        transform: scale(1);
-        padding: 5%;
-        height: 100%;
-        width: 100%;
-        text-align: center;
-
-        @media screen and (min-width: 992px) {
-            &:hover {
-                background-color: rgba(0, 0, 0, 0.4);
-            }
+        .perk-checked {
+            background-image: url(/img/perkswitch_selected-md.png);
+            background-size: cover;
+            width: var(--elementlength, 128px);
+            height: var(--elementlength, 128px);
+            z-index: 150;
         }
 
         .perk-switch__name {
-            position: relative;
-            text-align: center;
-            text-overflow: ellipsis;
-            overflow: hidden;
-            word-wrap: break-word
-        }
-
-        .perk-switch__image-container {
-            position: relative;
-            height: 128px;
+            position: absolute;
+            top: var(--elementlength, 128px);
+            left: 0;
+            width: var(--elementlength, 128px);
+            height: 26px;
         }
 
         .perk-switch__image {
             position: absolute;
-            left: 50%; /* centers the left edge of the sprite */
-            margin-left: -64px; /* this centers the actual sprite--this is half the sprite-window width. if you don't do this, the left edge will be centered instead of the center of the sprite.  */
-            width: 128px; /* set window to see sprite through */
-            height: 128px; /* set window to see sprite through */
+            top: 0;
+            left: 0;
+            width: var(--elementlength, 128px);
+            height: var(--elementlength, 128px);
+            background: var(--slotBg);
         }
     }
 </style>
