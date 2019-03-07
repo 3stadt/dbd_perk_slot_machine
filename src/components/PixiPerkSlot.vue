@@ -8,7 +8,6 @@ import * as PIXI from 'pixi.js'
 export default {
   name: 'PixiPerkSlot',
   data: function () {
-    const perkData = this.type === 'Surv' ? require('./../../public/sprites/surv-hd.json') : require('./../../public/sprites/kill-hd.json')
     let translations = {}
     try {
       translations = require(`./../../assets/translations/perks${this.type}${this.lang}.json`)
@@ -16,7 +15,6 @@ export default {
       console.warn(err)
       translations = require(`./../../assets/translations/perks${this.type}En.json`)
     }
-    const maxId = perkData.length - 1
     return {
       appStage: null,
       loader: null,
@@ -30,8 +28,7 @@ export default {
       bgContainer: null,
       placeholderContainer: null,
       perkTextures: null,
-      maxId: maxId,
-      perkData: Object.keys(perkData.frames),
+      maxId: this.perkData.length - 1,
       perkName: '',
       translations: translations,
       targetPerkId: null
@@ -62,6 +59,10 @@ export default {
     elementLength: {
       type: Number,
       required: true
+    },
+    perkData: {
+      type: Array,
+      required: true
     }
   },
   methods: {
@@ -79,8 +80,6 @@ export default {
       perkText.x = this.reelContainer.width / 2
       perkText.y = this.elementLength * 0.91
       perkText.anchor.x = 0.5
-
-      console.info(perkText.width)
 
       const mask = new PIXI.Graphics({
         height: this.elementLength,

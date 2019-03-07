@@ -1,0 +1,71 @@
+/* -----------------------------------------------------
+   created with https://www.codeandweb.com/texturepacker 
+   -----------------------------------------------------
+   $TexturePacker:SmartUpdate:b4004569ad74d9149cfe17dd87cba4c7:f66898d7a7fb1b09c10446ebfd0d6a1f:55101c531bcde25ac824044e9fe60af8$
+   -----------------------------------------------------
+
+   usage: <span class="{-spritename-} sprite"></span>
+
+   replace {-spritename-} with the sprite you like to use
+
+*/
+
+.sprite-killer {display:inline-block; overflow:hidden; background-repeat: no-repeat;background-image:url(kill-css.png);}
+
+._00_aNursesCalling {width:128px; height:128px; background-position: -1px -1px}
+._01_agitation {width:128px; height:128px; background-position: -131px -1px}
+._02_bamboozle {width:128px; height:128px; background-position: -261px -1px}
+._03_barbecueAndChilli {width:128px; height:128px; background-position: -391px -1px}
+._04_beastOfPrey {width:128px; height:128px; background-position: -521px -1px}
+._05_bitterMurmur {width:128px; height:128px; background-position: -651px -1px}
+._06_bloodWarden {width:128px; height:128px; background-position: -781px -1px}
+._07_bloodhound {width:128px; height:128px; background-position: -911px -1px}
+._08_brutalStrength {width:128px; height:128px; background-position: -1041px -1px}
+._09_corruptIntervention {width:128px; height:128px; background-position: -1171px -1px}
+._10_coulrophobia {width:128px; height:128px; background-position: -1301px -1px}
+._11_darkDevotion {width:128px; height:128px; background-position: -1431px -1px}
+._12_deerstalker {width:128px; height:128px; background-position: -1561px -1px}
+._13_discordance {width:128px; height:128px; background-position: -1691px -1px}
+._14_distressing {width:128px; height:128px; background-position: -1821px -1px}
+._15_dyingLight {width:128px; height:128px; background-position: -1px -131px}
+._16_enduring {width:128px; height:128px; background-position: -131px -131px}
+._17_fireUp {width:128px; height:128px; background-position: -261px -131px}
+._18_franklinsDemise {width:128px; height:128px; background-position: -391px -131px}
+._19_hangmansTrick {width:128px; height:128px; background-position: -521px -131px}
+._20_hexDevourHope {width:128px; height:128px; background-position: -651px -131px}
+._21_hexHauntedGround {width:128px; height:128px; background-position: -781px -131px}
+._22_hexHuntressLullaby {width:128px; height:128px; background-position: -911px -131px}
+._23_hexNoOneEscapesDeath {width:128px; height:128px; background-position: -1041px -131px}
+._24_hexRuin {width:128px; height:128px; background-position: -1171px -131px}
+._25_hexTheThirdSeal {width:128px; height:128px; background-position: -1301px -131px}
+._26_hexThrillOfTheHunt {width:128px; height:128px; background-position: -1431px -131px}
+._27_infectiousFright {width:128px; height:128px; background-position: -1561px -131px}
+._28_insidious {width:128px; height:128px; background-position: -1691px -131px}
+._29_ironGrasp {width:128px; height:128px; background-position: -1821px -131px}
+._30_ironMaiden {width:128px; height:128px; background-position: -1px -261px}
+._31_knockOut {width:128px; height:128px; background-position: -131px -261px}
+._32_lightborn {width:128px; height:128px; background-position: -261px -261px}
+._33_madGrit {width:128px; height:128px; background-position: -391px -261px}
+._34_makeYourChoice {width:128px; height:128px; background-position: -521px -261px}
+._35_monitorAndAbuse {width:128px; height:128px; background-position: -651px -261px}
+._36_monstrousShrine {width:128px; height:128px; background-position: -781px -261px}
+._37_overcharge {width:128px; height:128px; background-position: -911px -261px}
+._38_overwhelmingPresence {width:128px; height:128px; background-position: -1041px -261px}
+._39_playWithYourFood {width:128px; height:128px; background-position: -1171px -261px}
+._40_popGoesTheWeasel {width:128px; height:128px; background-position: -1301px -261px}
+._41_predator {width:128px; height:128px; background-position: -1431px -261px}
+._42_rancor {width:128px; height:128px; background-position: -1561px -261px}
+._43_rememberMe {width:128px; height:128px; background-position: -1691px -261px}
+._44_saveTheBestForLast {width:128px; height:128px; background-position: -1821px -261px}
+._45_shadowborn {width:128px; height:128px; background-position: -1px -391px}
+._46_sloppyButcher {width:128px; height:128px; background-position: -131px -391px}
+._47_spiesFromTheShadows {width:128px; height:128px; background-position: -261px -391px}
+._48_spiritFury {width:128px; height:128px; background-position: -391px -391px}
+._49_stridor {width:128px; height:128px; background-position: -521px -391px}
+._50_surveillance {width:128px; height:128px; background-position: -651px -391px}
+._51_territorialImperative {width:128px; height:128px; background-position: -781px -391px}
+._52_thanatophobia {width:128px; height:128px; background-position: -911px -391px}
+._53_tinkerer {width:128px; height:128px; background-position: -1041px -391px}
+._54_unnervingPresence {width:128px; height:128px; background-position: -1171px -391px}
+._55_unrelenting {width:128px; height:128px; background-position: -1301px -391px}
+._56_whispers {width:128px; height:128px; background-position: -1431px -391px}

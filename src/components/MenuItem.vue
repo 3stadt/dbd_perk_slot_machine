@@ -11,7 +11,7 @@
                 <div @click.stop.prevent="$emit('resetPerks', type)">
                     <GlobalSelectionSwitch />
                 </div>
-                <PerkSwitch :key="perk.index" @change="perkChange" v-for="perk in perks" :perk="perk" :type="type"/>
+                <PerkSwitch :key="perk.index" @change="perkChange" v-for="perk in perks" :perk="perk" :name="translation[perk.name]" :type="type"/>
             </div>
             <div v-if="infoCondition" class="perk-overview__box">
                 <InfoText/>
@@ -29,6 +29,12 @@ export default {
   name: 'MenuItem',
 
   props: {
+    translation: {
+      type: Object,
+      default () {
+        return {}
+      }
+    },
     perks: {
       type: Array,
       default () {

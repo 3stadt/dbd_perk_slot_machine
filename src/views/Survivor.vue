@@ -7,6 +7,7 @@
                        :elementLength="elementLength"
                        :colorized="color"
                        :lang="lang"
+                       :perkData="Object.keys(perksSHD.frames)"
             />
             <perkslot1 @reRollRequested="randomize"
                        ref="perkslot1"
@@ -14,6 +15,7 @@
                        :elementLength="elementLength"
                        :colorized="color"
                        :lang="lang"
+                       :perkData="Object.keys(perksSHD.frames)"
             />
             <perkslot2 @reRollRequested="randomize"
                        ref="perkslot2"
@@ -21,6 +23,7 @@
                        :elementLength="elementLength"
                        :colorized="color"
                        :lang="lang"
+                       :perkData="Object.keys(perksSHD.frames)"
             />
             <perkslot3 @reRollRequested="randomize"
                        ref="perkslot3"
@@ -28,6 +31,7 @@
                        :elementLength="elementLength"
                        :colorized="color"
                        :lang="lang"
+                       :perkData="Object.keys(perksSHD.frames)"
             />
         </div>
         <div v-if="hintVisible" class="hint-text">
@@ -73,11 +77,26 @@ export default {
         return []
       },
       required: false
+    },
+    perksSHD: {
+      type: Object,
+      required: true
     }
   },
   data: function () {
+    let survivorsRaw = Object.keys(this.perksSHD.frames)
+    let survivors = []
+    // make sure array keys match the ids in file name. TODO maybe make sure no key is reassigned because of naming issues
+    for (let i = 0, sLen = survivorsRaw.length; i < sLen; i++) {
+      let s = survivorsRaw[i]
+      let k = Number(s.substr(0, 2))
+      survivors[k] = {
+        'index': i,
+        'name': s
+      }
+    }
     return {
-      perkData: require('./../resources/perks-survivor.json'),
+      perkData: survivors,
       message: 'Click on any perk slot to start',
       hintVisible: true,
       elementLength: vp.getElementLength(),

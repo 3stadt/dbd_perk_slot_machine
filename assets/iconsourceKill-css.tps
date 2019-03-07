@@ -11,24 +11,7 @@
                 <key>scale</key>
                 <double>1</double>
                 <key>extension</key>
-                <string>-hd</string>
-                <key>spriteFilter</key>
                 <string></string>
-                <key>acceptFractionalValues</key>
-                <false/>
-                <key>maxTextureSize</key>
-                <QSize>
-                    <key>width</key>
-                    <int>-1</int>
-                    <key>height</key>
-                    <int>-1</int>
-                </QSize>
-            </struct>
-            <struct type="AutoSDSettings">
-                <key>scale</key>
-                <double>0.5</double>
-                <key>extension</key>
-                <string>-md</string>
                 <key>spriteFilter</key>
                 <string></string>
                 <key>acceptFractionalValues</key>
@@ -43,13 +26,13 @@
             </struct>
         </array>
         <key>allowRotation</key>
-        <true/>
+        <false/>
         <key>shapeDebug</key>
         <false/>
         <key>dpi</key>
         <uint>72</uint>
         <key>dataFormat</key>
-        <string>pixijs4</string>
+        <string>css-simple</string>
         <key>textureFileName</key>
         <filename></filename>
         <key>flipPVR</key>
@@ -149,7 +132,7 @@
             <key>data</key>
             <struct type="DataFile">
                 <key>name</key>
-                <filename>../public/sprites/surv{v}.json</filename>
+                <filename>../public/sprites/kill-css.css</filename>
             </struct>
         </map>
         <key>multiPack</key>
@@ -176,7 +159,7 @@
         <key>globalSpriteSettings</key>
         <struct type="SpriteSettings">
             <key>scale</key>
-            <double>1</double>
+            <double>0.5</double>
             <key>scaleMode</key>
             <enum type="ScaleMode">Smooth</enum>
             <key>extrude</key>
@@ -186,7 +169,7 @@
             <key>trimMargin</key>
             <uint>1</uint>
             <key>trimMode</key>
-            <enum type="SpriteSettings::TrimMode">Trim</enum>
+            <enum type="SpriteSettings::TrimMode">None</enum>
             <key>tracerTolerance</key>
             <int>200</int>
             <key>heuristicMask</key>
@@ -198,68 +181,63 @@
         </struct>
         <key>individualSpriteSettings</key>
         <map type="IndividualSpriteSettingsMap">
-            <key type="filename">iconsourceSurv/00_aceInTheHole.png</key>
-            <key type="filename">iconsourceSurv/01_adrenaline.png</key>
-            <key type="filename">iconsourceSurv/02_aftercare.png</key>
-            <key type="filename">iconsourceSurv/03_alert.png</key>
-            <key type="filename">iconsourceSurv/04_autodidact.png</key>
-            <key type="filename">iconsourceSurv/05_balancedLanding.png</key>
-            <key type="filename">iconsourceSurv/06_boilOver.png</key>
-            <key type="filename">iconsourceSurv/07_bond.png</key>
-            <key type="filename">iconsourceSurv/08_borrowedTime.png</key>
-            <key type="filename">iconsourceSurv/09_botanyKnowledge.png</key>
-            <key type="filename">iconsourceSurv/10_breakdown.png</key>
-            <key type="filename">iconsourceSurv/11_calmSpirit.png</key>
-            <key type="filename">iconsourceSurv/12_danceWithMe.png</key>
-            <key type="filename">iconsourceSurv/13_darkSense.png</key>
-            <key type="filename">iconsourceSurv/14_deadHard.png</key>
-            <key type="filename">iconsourceSurv/15_decisiveStrike.png</key>
-            <key type="filename">iconsourceSurv/16_dejaVu.png</key>
-            <key type="filename">iconsourceSurv/17_deliverance.png</key>
-            <key type="filename">iconsourceSurv/18_detectivesHunch.png</key>
-            <key type="filename">iconsourceSurv/19_distortion.png</key>
-            <key type="filename">iconsourceSurv/20_diversion.png</key>
-            <key type="filename">iconsourceSurv/21_empathy.png</key>
-            <key type="filename">iconsourceSurv/22_headOn.png</key>
-            <key type="filename">iconsourceSurv/23_hope.png</key>
-            <key type="filename">iconsourceSurv/24_ironWill.png</key>
-            <key type="filename">iconsourceSurv/25_kindred.png</key>
-            <key type="filename">iconsourceSurv/26_leader.png</key>
-            <key type="filename">iconsourceSurv/27_leftBehind.png</key>
-            <key type="filename">iconsourceSurv/28_lightweight.png</key>
-            <key type="filename">iconsourceSurv/29_lithe.png</key>
-            <key type="filename">iconsourceSurv/30_noMither.png</key>
-            <key type="filename">iconsourceSurv/31_noOneLeftBehind.png</key>
-            <key type="filename">iconsourceSurv/32_objectOfObsession.png</key>
-            <key type="filename">iconsourceSurv/33_open-Handed.png</key>
-            <key type="filename">iconsourceSurv/34_pharmacy.png</key>
-            <key type="filename">iconsourceSurv/35_plunderersInstinct.png</key>
-            <key type="filename">iconsourceSurv/36_poised.png</key>
-            <key type="filename">iconsourceSurv/37_premonition.png</key>
-            <key type="filename">iconsourceSurv/38_proveThyself.png</key>
-            <key type="filename">iconsourceSurv/39_quickAndQuiet.png</key>
-            <key type="filename">iconsourceSurv/40_resilience.png</key>
-            <key type="filename">iconsourceSurv/41_saboteur.png</key>
-            <key type="filename">iconsourceSurv/42_selfCare.png</key>
-            <key type="filename">iconsourceSurv/43_slipperyMeat.png</key>
-            <key type="filename">iconsourceSurv/44_smallGame.png</key>
-            <key type="filename">iconsourceSurv/45_soleSurvivor.png</key>
-            <key type="filename">iconsourceSurv/46_solidarity.png</key>
-            <key type="filename">iconsourceSurv/47_spineChill.png</key>
-            <key type="filename">iconsourceSurv/48_sprintBurst.png</key>
-            <key type="filename">iconsourceSurv/49_stakeOut.png</key>
-            <key type="filename">iconsourceSurv/50_streetwise.png</key>
-            <key type="filename">iconsourceSurv/51_technician.png</key>
-            <key type="filename">iconsourceSurv/52_tenacity.png</key>
-            <key type="filename">iconsourceSurv/53_thisIsNotHappening.png</key>
-            <key type="filename">iconsourceSurv/54_unbreakable.png</key>
-            <key type="filename">iconsourceSurv/55_upTheAnte.png</key>
-            <key type="filename">iconsourceSurv/56_urbanEvasion.png</key>
-            <key type="filename">iconsourceSurv/57_vigil.png</key>
-            <key type="filename">iconsourceSurv/58_wakeUp.png</key>
-            <key type="filename">iconsourceSurv/59_wellMakeIt.png</key>
-            <key type="filename">iconsourceSurv/60_wereGonnaLiveForever.png</key>
-            <key type="filename">iconsourceSurv/61_windowsOfOpportunity.png</key>
+            <key type="filename">iconsourceKill/00_aNursesCalling.png</key>
+            <key type="filename">iconsourceKill/01_agitation.png</key>
+            <key type="filename">iconsourceKill/02_bamboozle.png</key>
+            <key type="filename">iconsourceKill/03_barbecueAndChilli.png</key>
+            <key type="filename">iconsourceKill/04_beastOfPrey.png</key>
+            <key type="filename">iconsourceKill/05_bitterMurmur.png</key>
+            <key type="filename">iconsourceKill/06_bloodWarden.png</key>
+            <key type="filename">iconsourceKill/07_bloodhound.png</key>
+            <key type="filename">iconsourceKill/08_brutalStrength.png</key>
+            <key type="filename">iconsourceKill/09_corruptIntervention.png</key>
+            <key type="filename">iconsourceKill/10_coulrophobia.png</key>
+            <key type="filename">iconsourceKill/11_darkDevotion.png</key>
+            <key type="filename">iconsourceKill/12_deerstalker.png</key>
+            <key type="filename">iconsourceKill/13_discordance.png</key>
+            <key type="filename">iconsourceKill/14_distressing.png</key>
+            <key type="filename">iconsourceKill/15_dyingLight.png</key>
+            <key type="filename">iconsourceKill/16_enduring.png</key>
+            <key type="filename">iconsourceKill/17_fireUp.png</key>
+            <key type="filename">iconsourceKill/18_franklinsDemise.png</key>
+            <key type="filename">iconsourceKill/19_hangmansTrick.png</key>
+            <key type="filename">iconsourceKill/20_hexDevourHope.png</key>
+            <key type="filename">iconsourceKill/21_hexHauntedGround.png</key>
+            <key type="filename">iconsourceKill/22_hexHuntressLullaby.png</key>
+            <key type="filename">iconsourceKill/23_hexNoOneEscapesDeath.png</key>
+            <key type="filename">iconsourceKill/24_hexRuin.png</key>
+            <key type="filename">iconsourceKill/25_hexTheThirdSeal.png</key>
+            <key type="filename">iconsourceKill/26_hexThrillOfTheHunt.png</key>
+            <key type="filename">iconsourceKill/27_infectiousFright.png</key>
+            <key type="filename">iconsourceKill/28_insidious.png</key>
+            <key type="filename">iconsourceKill/29_ironGrasp.png</key>
+            <key type="filename">iconsourceKill/30_ironMaiden.png</key>
+            <key type="filename">iconsourceKill/31_knockOut.png</key>
+            <key type="filename">iconsourceKill/32_lightborn.png</key>
+            <key type="filename">iconsourceKill/33_madGrit.png</key>
+            <key type="filename">iconsourceKill/34_makeYourChoice.png</key>
+            <key type="filename">iconsourceKill/35_monitorAndAbuse.png</key>
+            <key type="filename">iconsourceKill/36_monstrousShrine.png</key>
+            <key type="filename">iconsourceKill/37_overcharge.png</key>
+            <key type="filename">iconsourceKill/38_overwhelmingPresence.png</key>
+            <key type="filename">iconsourceKill/39_playWithYourFood.png</key>
+            <key type="filename">iconsourceKill/40_popGoesTheWeasel.png</key>
+            <key type="filename">iconsourceKill/41_predator.png</key>
+            <key type="filename">iconsourceKill/42_rancor.png</key>
+            <key type="filename">iconsourceKill/43_rememberMe.png</key>
+            <key type="filename">iconsourceKill/44_saveTheBestForLast.png</key>
+            <key type="filename">iconsourceKill/45_shadowborn.png</key>
+            <key type="filename">iconsourceKill/46_sloppyButcher.png</key>
+            <key type="filename">iconsourceKill/47_spiesFromTheShadows.png</key>
+            <key type="filename">iconsourceKill/48_spiritFury.png</key>
+            <key type="filename">iconsourceKill/49_stridor.png</key>
+            <key type="filename">iconsourceKill/50_surveillance.png</key>
+            <key type="filename">iconsourceKill/51_territorialImperative.png</key>
+            <key type="filename">iconsourceKill/52_thanatophobia.png</key>
+            <key type="filename">iconsourceKill/53_tinkerer.png</key>
+            <key type="filename">iconsourceKill/54_unnervingPresence.png</key>
+            <key type="filename">iconsourceKill/55_unrelenting.png</key>
+            <key type="filename">iconsourceKill/56_whispers.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0,0</point_f>
@@ -275,7 +253,7 @@
         </map>
         <key>fileList</key>
         <array>
-            <filename>iconsourceSurv</filename>
+            <filename>iconsourceKill</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>
