@@ -6,24 +6,28 @@
                        type="Kill"
                        :elementLength="elementLength"
                        :colorized="color"
+                       :lang="lang"
             />
             <perkslot1 @reRollRequested="randomize"
                        ref="perkslot1"
                        type="Kill"
                        :elementLength="elementLength"
                        :colorized="color"
+                       :lang="lang"
             />
             <perkslot2 @reRollRequested="randomize"
                        ref="perkslot2"
                        type="Kill"
                        :elementLength="elementLength"
                        :colorized="color"
+                       :lang="lang"
             />
             <perkslot3 @reRollRequested="randomize"
                        ref="perkslot3"
                        type="Kill"
                        :elementLength="elementLength"
                        :colorized="color"
+                       :lang="lang"
             />
         </div>
         <div v-if="hintVisible" class="hint-text">
@@ -47,6 +51,10 @@ export default {
     'perkslot3': PixiPerkSlot
   },
   props: {
+    lang: {
+      type: String,
+      required: true
+    },
     color: {
       type: Boolean,
       default: false,

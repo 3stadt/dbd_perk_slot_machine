@@ -10,7 +10,8 @@ Vue.use(Router)
 const confParams = (route) => ({
   color: route.query.color === '1',
   sids: route.query.sids ? route.query.sids.split(',') : [],
-  kids: route.query.kids ? route.query.kids.split(',') : []
+  kids: route.query.kids ? route.query.kids.split(',') : [],
+  lang: route.query.lang ? route.query.lang.charAt(0).toUpperCase() + route.query.lang.toLowerCase().slice(1) : 'En'
 })
 
 export default new Router({
