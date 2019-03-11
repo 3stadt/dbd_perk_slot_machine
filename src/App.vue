@@ -2,22 +2,22 @@
     <div id="app">
         <div class="header">
             <div class="nav container">
-                <template v-if="routerName !== 'home'">
-                    <UiButton class="nav__left" :routerLink="{ name: 'home', query: $route.query }">
-                        <img src="/img/icon_exit.png" slot="icon" alt="Home">
+                <div class="">
+                    <BackButton v-if="routerName !== 'home'" class="nav-button nav__left" :routerLink="{ name: 'home', query: $route.query }">
+                        <img src="/img/icon_exit.png" slot="icon" alt="Survivor" class="ui-mobile-icon">
                         {{ $t('snippets.buttonHome') }}
-                    </UiButton>
-                </template>
-                <UiButton v-if="routerName !== 'killer'  && routerName === 'home'" class="nav__left" :routerLink="{ name: 'killer', query: $route.query }">
-                    <img src="/img/icon_killer.png" slot="icon" alt="Killer">
+                    </BackButton>
+                </div>
+                <UiButton v-if="routerName !== 'killer'  && routerName === 'home'" class="nav-button nav__left" direction="left" :routerLink="{ name: 'killer', query: $route.query }">
+                    <img src="/img/icon_killer.png" slot="icon" alt="Killer" class="ui-mobile-icon">
                     {{ $t('snippets.buttonKillRoulette') }}
                 </UiButton>
-                <UiButton v-if="routerName !== 'killer' && routerName !== 'home'" class="nav__right" :routerLink="{ name: 'killer', query: $route.query }">
-                    <img src="/img/icon_killer.png" slot="icon" alt="Killer">
+                <UiButton v-if="routerName !== 'killer' && routerName !== 'home'" class="nav-button nav__right" direction="right" :routerLink="{ name: 'killer', query: $route.query }">
+                    <img src="/img/icon_killer.png" slot="icon" alt="Killer" class="ui-mobile-icon">
                     {{ $t('snippets.buttonKillRoulette') }}
                 </UiButton>
-                <UiButton v-if="routerName !== 'survivor'" class="nav__right" :routerLink="{ name: 'survivor', query: $route.query }">
-                    <img src="/img/icon_survivor.png" slot="icon" alt="Survivor">
+                <UiButton v-if="routerName !== 'survivor'" class="nav-button nav__right" direction="right" :routerLink="{ name: 'survivor', query: $route.query }">
+                    <img src="/img/icon_survivor.png" slot="icon" alt="Survivor"  class="ui-mobile-icon">
                     {{ $t('snippets.buttonSurvRoulette') }}
                 </UiButton>
             </div>
@@ -41,10 +41,12 @@
 
 <script>
 import UiButton from './components/UiButton'
+import BackButton from './components/BackButton'
 
 export default {
   components: {
-    UiButton
+    UiButton,
+    BackButton
   },
   computed: {
     routerName () {
@@ -90,39 +92,49 @@ export default {
         position: fixed;
         width: 100%;
 
-        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-        background-color: rgba(0, 0, 0, 0.5);
+        background-image: url(/img/background-nav.png);
+        background-size: cover;
+        background-repeat: repeat;
+        background-position: center;
     }
 
     .container {
         max-width: 1024px;
         margin: 0 auto;
-
+        right: 0;
         padding: 105px 0;
         z-index: 50;
 
-        @media screen and (max-width: 650px) {
-            padding: 175px 0;
+        .nav__right {
+            margin-left: auto;
+            display: flex;
+
+            .nav-button {
+                display: inline-block;
+            }
         }
-    }
 
-    .nav {
-        padding: 10px 0;
-        display: flex;
+        .nav__left {
+            display: flex;
 
-        @media screen and (max-width: 650px) {
-            display: block;
-            padding: 0 30px;
-
-            .ui-button {
-                margin: 15px 0;
-                width: 100%;
+            .nav-button {
+                display: inline-block;
             }
         }
     }
 
-    .nav__right {
-        margin-left: auto;
+    .ui-mobile-icon {
+        height: 40px;
+        width: 40px
+    }
+
+    .nav {
+        padding: 10px 0 10px 0;
+        display: flex;
+
+        @media screen and (max-width: 650px) {
+            padding: 10px 30px;
+        }
     }
 
     .github-svg {
@@ -133,6 +145,10 @@ export default {
         top: 0;
         border: 0;
         right: 0;
+
+        @media screen and (max-width: 1150px) {
+            visibility:hidden
+        }
     }
 
     .github-corner:hover .octo-arm {
