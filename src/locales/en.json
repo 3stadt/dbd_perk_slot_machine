@@ -1,0 +1,67 @@
+{
+  "snippets": {
+    "info": "Info",
+    "survPerkConfig": "Survivor perk configuration",
+    "killPerkConfig": "Killer perk configuration",
+    "globalSwitchText": "Toggle all",
+    "startPerkRoll": "Click on any perk slot to start",
+    "buttonHome": "Home",
+    "buttonKillRoulette": "Killer Roulette",
+    "buttonSurvRoulette": "Survivor Roulette"
+  },
+  "about": {
+    "header": "What is this about?",
+    "description": "This site is a perk wheel for use with the game {url}. To be precise, there is no wheel, but a slot machine. Works the same, looks better. Here, have a video containing everything you need to know:",
+    "videoUrl": "https://www.youtube-nocookie.com/embed/vSaUjJC68Kc"
+  },
+  "howItWorks": {
+    "header": "How does it work?",
+    "description": "If you have all perks on one of your characters on the killer and survivor site, just click one of the red buttons on top, click on any perk slot, done. This way four different perks are chosen for you to play with. That's how a perk wheel/slot machine works. Have fun!",
+    "missingPerks": {
+      "header": "...but I don't have ALL THE PERKS!",
+      "description": "If you are missing some perks, click on one of the \"... configuration\" boxes below. Then disable the perks you don't have or want. The perks you've chosen are not saved, but the url is used to determine which perks are active. So configure your perks, create a bookmark for this configuration, done."
+    }
+  },
+  "streaming": {
+    "header": "How to use this with OBS/XSplit?",
+    "description": "There are a number of options you can set via URL. This is explained in-depth in the video above.",
+    "options": {
+      "description": "In short, use the parameters {transparent} to only show the perk slots, use e.g. {autostart} to start a roll 1 second after page load.",
+      "transparent": "bg=0&header=0&hint=0",
+      "autostart": "autostart=1000"
+    }
+  },
+  "team": {
+    "header": "The team",
+    "description": "This project was brought to life by:"
+  },
+  "attribution": {
+    "header": "Attribution",
+    "description": "Most media on this page was not originally created by it's authors.",
+    "wiki": {
+      "description": "Most Images were taken from the awesome {wikiUrl}.The content of that wiki is licensed under the Creative Commons \"{licenseUrl}\" license.",
+      "wikiUrlText": "official Dead by Daylight wiki",
+      "wikiUrl": "https://deadbydaylight.gamepedia.com/Dead_by_Daylight_Wiki",
+      "licenseUrlText": "Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0)",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/"
+    },
+    "happyclown": {
+      "description": "The colored Icons (special beta mode, change color=0 to color=1 in URL) were made by {profile} and there is even a {group} for them. Go check it out!",
+      "groupText": "steam group"
+    },
+    "rocketleaguecat": {
+      "description": "The {bgImage} was made by the imgur user {profile}.",
+      "bgImageText": "background image"
+    },
+    "bhvr": {
+      "description": "The perks, background images and other game related content are property of and originally made by {bhvr} for {dbd}."
+    },
+    "freepik": {
+      "description": "Language icons made by {freepik} from {flaticon} are licensed by {licenseUrl}"
+    }
+  },
+  "disclaimer": {
+    "header": "Disclaimer",
+    "description": "This site is not associated with, endorsed by, or in any other form connected with any company. It's a fan project. If anything is wrong, feel free to contact the author via e-mail at {email}. There are no warranties whatsoever. Use at your own risk. Good news are, this site does not use cookies and is running in your browser, no data is saved on the server. However, this site uses {statcounter} to track how many visitors are using it."
+  }
+}

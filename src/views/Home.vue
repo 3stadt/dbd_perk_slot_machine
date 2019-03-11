@@ -1,8 +1,12 @@
 <template>
     <div class="perk-config home">
-        <MenuItem type="Info" title="/ Attribution" />
-        <MenuItem :perks="perks.survivors" :translation="perks.translationsSurv" @resetPerks="resetPerks" @change="change" type="Survivor" title="Perk Configuration" />
-        <MenuItem :perks="perks.killers" :translation="perks.translationsKill" @resetPerks="resetPerks" @change="change" type="Killer" title="Perk Configuration" />
+        <div class="language-switch">
+            <img @click="changeLang('de')" src="img/flags/germany.svg" width="32" height="32" alt="deutsch" style="margin-right: 1rem">
+            <img @click="changeLang('en')" src="img/flags/united-kingdom.svg" width="32" height="32" alt="english">
+        </div>
+        <MenuItem type="Info" :title="$t('snippets.info')" />
+        <MenuItem :perks="perks.survivors" :translation="perks.translationsSurv" @resetPerks="resetPerks" @change="change" type="Survivor" :title="$t('snippets.survPerkConfig')" />
+        <MenuItem :perks="perks.killers" :translation="perks.translationsKill" @resetPerks="resetPerks" @change="change" type="Killer" :title="$t('snippets.killPerkConfig')" />
     </div>
 </template>
 
@@ -48,44 +52,55 @@ export default {
     }
   },
   methods: {
+    changeLang (lang) {
+      let { ...q } = this.$route.query
+      q.lang = lang
+      this.$i18n.locale = lang
+      this.$router.push({ path: this.$route.path, query: q })
+    },
     resetPerks (type) {
+      const { ...query } = this.$route.query
       switch (type) {
         case 'Survivor':
           if (this.sids.length > 0 && this.sids[0] === 'none') {
             for (let i = 0; i < this.perks.survivors.length; i++) {
               this.perks.survivors[i].checked = true
             }
-            this.$router.push({ path: this.$route.path, query: { kids: this.kids.join(','), color: this.color ? '1' : '0', lang: this.lang } })
+            delete query.sids
+            this.$router.push({ path: this.$route.path, query: query })
             return
           }
           for (let i = 0; i < this.perks.survivors.length; i++) {
             this.perks.survivors[i].checked = false
           }
-          this.$router.push({ path: this.$route.path, query: { sids: 'none', kids: this.kids.join(','), color: this.color ? '1' : '0', lang: this.lang } })
+          query.sids = 'none'
+          this.$router.push({ path: this.$route.path, query: query })
           break
         case 'Killer':
           if (this.kids.length > 0 && this.kids[0] === 'none') {
             for (let i = 0; i < this.perks.killers.length; i++) {
               this.perks.killers[i].checked = true
             }
-            this.$router.push({ path: this.$route.path, query: { sids: this.sids.join(','), color: this.color ? '1' : '0', lang: this.lang } })
+            delete query.kids
+            this.$router.push({ path: this.$route.path, query: query })
             return
           }
           for (let i = 0; i < this.perks.killers.length; i++) {
             this.perks.killers[i].checked = false
           }
-          this.$router.push({ path: this.$route.path, query: { kids: 'none', sids: this.sids.join(','), color: this.color ? '1' : '0', lang: this.lang } })
+          query.kids = 'none'
+          this.$router.push({ path: this.$route.path, query: query })
           break
       }
     },
     change (type) {
       let perkExclusion = false
-      let params = { color: this.color ? '1' : '0', lang: this.lang }
+      const { ...query } = this.$route.query
       const chosenPerks = []
       switch (type) {
         case 'Survivor':
           if (this.kids.length > 0) {
-            params.kids = this.kids.join(',')
+            query.kids = this.kids.join(',')
           }
           for (let i = 0; i < this.perks.survivors.length; i++) {
             if (this.perks.survivors[i].checked) {
@@ -95,15 +110,15 @@ export default {
             perkExclusion = true
           }
           if (!perkExclusion) {
-            this.$router.push({ path: this.$route.path, query: params })
+            this.$router.push({ path: this.$route.path, query: query })
             return
           }
-          params.sids = chosenPerks.join(',')
-          this.$router.push({ path: this.$route.path, query: params })
+          query.sids = chosenPerks.join(',')
+          this.$router.push({ path: this.$route.path, query: query })
           break
         case 'Killer':
           if (this.sids.length > 0) {
-            params.sids = this.sids.join(',')
+            query.sids = this.sids.join(',')
           }
           for (let i = 0; i < this.perks.killers.length; i++) {
             if (this.perks.killers[i].checked) {
@@ -113,11 +128,11 @@ export default {
             perkExclusion = true
           }
           if (!perkExclusion) {
-            this.$router.push({ path: this.$route.path, query: params })
+            this.$router.push({ path: this.$route.path, query: query })
             return
           }
-          params.kids = chosenPerks.join(',')
-          this.$router.push({ path: this.$route.path, query: params })
+          query.kids = chosenPerks.join(',')
+          this.$router.push({ path: this.$route.path, query: query })
           break
         default:
           console.warn(`changes to unknown perk type ${type}`)
@@ -182,6 +197,7 @@ export default {
       }
     }
     return {
+      langs: ['en', 'de'],
       perks: {
         survivors: survivors,
         killers: killers,

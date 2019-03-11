@@ -36,7 +36,7 @@
         </div>
         <div v-if="hintVisible" class="hint-text">
             <img src="/img/icon_shortinfo.png" slot="icon" alt="Survivor" class="info-icon">
-            <span>{{ message }}</span>
+            <span>{{ $t('snippets.startPerkRoll') }}</span>
         </div>
     </div>
 </template>
@@ -97,7 +97,6 @@ export default {
     }
     return {
       perkData: killers,
-      message: 'Click on any perk slot to start',
       hintVisible: true,
       elementLength: vp.getElementLength(),
       lastRoll: null

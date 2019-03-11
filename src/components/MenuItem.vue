@@ -4,7 +4,7 @@
             <span class="perk-overview__icon-holder">
                 <img :src="`/img/icon_${type.toLowerCase()}.png`" :alt="type">
             </span>
-            <span class="perk-overview__title">{{type}} {{title}}</span>
+            <span class="perk-overview__title">{{title}}</span>
         </h2>
         <transition name="fade">
             <div v-if="perkCondition" class="perk-overview__grid">

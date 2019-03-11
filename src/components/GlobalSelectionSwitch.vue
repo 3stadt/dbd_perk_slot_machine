@@ -5,7 +5,7 @@
                 <div class="perk-switch__image"
                      role="img"></div>
             </div>
-            <div class="perk-switch__name">{{ globalSwitchText }}</div>
+            <div class="perk-switch__name">{{ $t("snippets.globalSwitchText").toUpperCase() }}</div>
         </div>
     </div>
 </template>
@@ -13,12 +13,6 @@
 <script>
 export default {
   name: 'GlobalSelectionSwitch',
-
-  data () {
-    return {
-      globalSwitchText: 'SWITCH ALL PERKS ON / OFF'
-    }
-  },
 
   computed: {
     cssProps () {

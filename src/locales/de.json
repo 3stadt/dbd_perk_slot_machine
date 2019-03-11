@@ -1,0 +1,67 @@
+{
+  "snippets": {
+    "info": "Info",
+    "survPerkConfig": "Überlebenden-Perks konfigurieren",
+    "killPerkConfig": "Killer-Perks konfigurieren",
+    "globalSwitchText": "Alle umschalten",
+    "startPerkRoll": "Klicke zum Starten auf einen Perkslot",
+    "buttonHome": "Startseite",
+    "buttonKillRoulette": "Killer-Roulette",
+    "buttonSurvRoulette": "Überlebenden-Roulette"
+  },
+  "about": {
+    "header": "Worum geht es hier?",
+    "description": "Diese Seite ist ein Perk-Roulette für das Spiel {url}. Um genau zu sein ist es kein Roulette, sondern eine Slot-Maschine, wie ein Glücksspieleautomat. In diesem Video erfährst Du alles, was Du wissen musst:",
+    "videoUrl": "https://www.youtube-nocookie.com/embed/vSaUjJC68Kc"
+  },
+  "howItWorks": {
+    "header": "Wie funktioniert das?",
+    "description": "Falls Du alle Perks die es gibt für einen Überlebenden oder Killer hast, klicke einfach auf einen der roten Buttons oben, klicke auf einen der Perk-Slots, fertig. Daraufhin werden vier zufällige Perks für Dich ausgewählt, mit denen Du dann spielst. Genau so funktioniert ein Perk-Roulette. Viel Spaß!",
+    "missingPerks": {
+      "header": "Aber ich habe nicht alle Perks!!1elf",
+      "description": "Falls Dir Perks fehlen, klicke auf eine der \"... konfigurieren\"-Boxen unten. Dann klicke auf die Perks die Du nicht hast oder nicht willst. Dine Auswahl wird nicht auf dem Sevrer gespeichert, sondern eine individuelle URL zusammengebaut, die Du Dir nach dem Konfigurieren in Deinen Lesezeichen speichern kannst. Also Perks konfigurieren, als Lesezeichen speichern, fertig."
+    }
+  },
+  "streaming": {
+    "header": "Wie benutze ich das Teil in OBS/XSplit?",
+    "description": "Du kannst einige Optionen in der URL setzen. Im Detail wird das im Video oben erklärt.",
+    "options": {
+      "description": "Kurz gesagt, nutze die URL-Parameter {transparent} um nur die Slots ohne alles anzuzeigen, nutze dann z.B. {autostart} um eine Sekunde nach dem Seitenstart einen Durchlauf zu starten.",
+      "transparent": "bg=0&header=0&hint=0",
+      "autostart": "autostart=1000"
+    }
+  },
+  "team": {
+    "header": "Das Team",
+    "description": "Dieses Projekt wurde erschaffen von:"
+  },
+  "attribution": {
+    "header": "Attribuierung",
+    "description": "Die meisten Medien auf dieser Seite wurden nicht von den Autoren der Seite erschaffen.",
+    "wiki": {
+      "description": "Die meisten Bilder stammen aus dem wunderbaren {wikiUrl}. Die Inhalte dieses Wikis sind unter der Creative Commons \"{licenseUrl}\" lizensiert.",
+      "wikiUrlText": "offiziellen Dead by Daylight Wiki",
+      "wikiUrl": "https://deadbydaylight-de.gamepedia.com/Dead_by_Daylight_Wiki",
+      "licenseUrlText": "Namensnennung - Nicht-kommerziell - Weitergabe unter gleichen Bedingungen 3.0 Unported (CC BY-NC-SA 3.0)",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/deed.de"
+    },
+    "happyclown": {
+      "description": "Die farbigen Icons (spezieller Beta-Modus, ändere color=0 zu color=1 in der URL) wurden von {profile} gemacht, es gibt sogar eine {group} dafür. Schau sie Dir am besten gleich an!",
+      "groupText": "Steamgruppe"
+    },
+    "rocketleaguecat": {
+      "description": "Das {bgImage} wurde von dem imgur Nutzer {profile} erstellt.",
+      "bgImageText": "Hintergrundbild"
+    },
+    "bhvr": {
+      "description": "Die Perk- sowie Hintergrundbilder und anderer spielbezogener Inhalt ist Eigentum von und wurde erstellt durch {bhvr} für das Spiel {dbd}"
+    },
+    "freepik": {
+      "description": "Sprachen-Icons wurden erstellt von {freepik} über {flaticon} und sind als {licenseUrl} lizensiert"
+    }
+  },
+  "disclaimer": {
+    "header": "Haftungsausschluss",
+    "description": "Diese Seite steht weder in Verbindung mit einem Unternehmen, noch wird sie unterstützt oder ist in irgendeiner Form mit einem Unternehmen verbunden. Sie ist ein privates Fanprojekt. Bei Fragen, Fehlern oder anderen Anliegen kontaktiere den Autor bitte per E-Mail unter {email}. Es gibt keine Garantien beim Benutzen dieser Seite. Du benutzt sie auf eigenes Risiko. Die Gute Nachricht ist, diese Seite speichert nichts auf dem Server und läuft komplett in Deinem Browser. Allerdings nutzt diese Seite {statcounter} um zu zählen, wieviele Besucher die Seite nutzen."
+  }
+}

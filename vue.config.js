@@ -8,5 +8,14 @@ module.exports = {
       .loader('preprocess-loader')
       .options({ DEBUG: false })
       .end()
+  },
+
+  pluginOptions: {
+    i18n: {
+      locale: 'en',
+      fallbackLocale: 'en',
+      localeDir: 'locales',
+      enableInSFC: false
+    }
   }
 }
