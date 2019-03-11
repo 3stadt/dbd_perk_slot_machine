@@ -8,13 +8,6 @@ import * as PIXI from 'pixi.js'
 export default {
   name: 'PixiPerkSlot',
   data: function () {
-    let translations = {}
-    try {
-      translations = require(`./../../assets/translations/perks${this.type}${this.lang}.json`)
-    } catch (err) {
-      console.warn(err)
-      translations = require(`./../../assets/translations/perks${this.type}En.json`)
-    }
     return {
       appStage: null,
       loader: null,
@@ -30,7 +23,6 @@ export default {
       perkTextures: null,
       maxId: this.perkData.length - 1,
       perkName: '',
-      translations: translations,
       targetPerkId: null
     }
   },
@@ -75,7 +67,7 @@ export default {
       const textBoxWidth = this.elementLength * 0.967
       const textBoxHeight = this.elementLength * 0.1
 
-      const perkText = this._generateTextBoxContent(this.translations[this.perkData[this.targetPerkId]].toUpperCase(), textBoxWidth)
+      const perkText = this._generateTextBoxContent(this.$t(`perks.${this.type === 'Surv' ? 'survivor' : 'killer'}.${this.perkData[this.targetPerkId]}`).toUpperCase(), textBoxWidth)
 
       perkText.x = this.reelContainer.width / 2
       perkText.y = this.elementLength * 0.91

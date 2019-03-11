@@ -5,8 +5,8 @@
             <img @click="changeLang('en')" src="img/flags/united-kingdom.svg" width="32" height="32" alt="english">
         </div>
         <MenuItem type="Info" :title="$t('snippets.info')" />
-        <MenuItem :perks="perks.survivors" :translation="perks.translationsSurv" @resetPerks="resetPerks" @change="change" type="Survivor" :title="$t('snippets.survPerkConfig')" />
-        <MenuItem :perks="perks.killers" :translation="perks.translationsKill" @resetPerks="resetPerks" @change="change" type="Killer" :title="$t('snippets.killPerkConfig')" />
+        <MenuItem :perks="perks.survivors" @resetPerks="resetPerks" @change="change" type="Survivor" :title="$t('snippets.survPerkConfig')" />
+        <MenuItem :perks="perks.killers" @resetPerks="resetPerks" @change="change" type="Killer" :title="$t('snippets.killPerkConfig')" />
     </div>
 </template>
 
@@ -157,20 +157,6 @@ export default {
     document.getElementsByTagName('body')[0].setAttribute('style', 'overflow-y: scroll;')
   },
   data () {
-    let translationsKill = {}
-    let translationsSurv = {}
-    try {
-      translationsKill = require(`./../../assets/translations/perksKill${this.lang}.json`)
-    } catch (err) {
-      console.warn(err)
-      translationsKill = require(`./../../assets/translations/perksKillEn.json`)
-    }
-    try {
-      translationsSurv = require(`./../../assets/translations/perksSurv${this.lang}.json`)
-    } catch (err) {
-      console.warn(err)
-      translationsSurv = require(`./../../assets/translations/perksSurvEn.json`)
-    }
     let survivorsRaw = Object.keys(this.perksSHD.frames)
     let survivors = []
     // make sure array keys match the ids in file name. TODO maybe make sure no key is reassigned because of naming issues
@@ -200,9 +186,7 @@ export default {
       langs: ['en', 'de'],
       perks: {
         survivors: survivors,
-        killers: killers,
-        translationsKill: translationsKill,
-        translationsSurv: translationsSurv
+        killers: killers
       }
     }
   }
