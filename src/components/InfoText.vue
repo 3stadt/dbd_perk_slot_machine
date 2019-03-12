@@ -97,6 +97,14 @@ export default {
 }
 </script>
 
+<style lang="scss" scoped>
+    .e-mail:before {
+        content: attr(data-website) "\0040" attr(data-user);
+        unicode-bidi: bidi-override;
+        direction: rtl;
+    }
+</style>
+
 <style lang="scss">
     @import "../design/main";
     @import "../design/typography";

@@ -88,11 +88,11 @@ export default {
     let killers = []
     // make sure array keys match the ids in file name. TODO maybe make sure no key is reassigned because of naming issues
     for (let i = 0, kLen = killersRaw.length; i < kLen; i++) {
-      let s = killersRaw[i]
-      let k = Number(s.substr(0, 2))
-      killers[k] = {
-        'index': i,
-        'name': s
+      let perkFileName = killersRaw[i]
+      let key = Number(perkFileName.substr(0, 2))
+      killers[key] = {
+        'index': key,
+        'name': perkFileName
       }
     }
     return {

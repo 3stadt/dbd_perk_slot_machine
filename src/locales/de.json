@@ -11,15 +11,15 @@
   },
   "about": {
     "header": "Worum geht es hier?",
-    "description": "Diese Seite ist ein Perk-Roulette für das Spiel {url}. Um genau zu sein ist es kein Roulette, sondern eine Slot-Maschine, wie ein Glücksspieleautomat. In diesem Video erfährst Du alles, was Du wissen musst:",
+    "description": "Diese Seite ist ein Perk-Roulette für das Spiel {url}. Um genau zu sein ist es kein Roulette, sondern eine Slot-Maschine, wie ein Glücksspielautomat. In diesem Video erfährst Du alles, was Du wissen musst:",
     "videoUrl": "https://www.youtube-nocookie.com/embed/vSaUjJC68Kc"
   },
   "howItWorks": {
     "header": "Wie funktioniert das?",
-    "description": "Falls Du alle Perks die es gibt für einen Überlebenden oder Killer hast, klicke einfach auf einen der roten Buttons oben, klicke auf einen der Perk-Slots, fertig. Daraufhin werden vier zufällige Perks für Dich ausgewählt, mit denen Du dann spielst. Genau so funktioniert ein Perk-Roulette. Viel Spaß!",
+    "description": "Falls Du alle Perks für einen Überlebenden oder Killer hast,die es gibt: Klicke einfach auf einen der roten Buttons oben, klicke auf einen der Perk-Slots, fertig. Daraufhin werden vier zufällige Perks für Dich ausgewählt, mit denen Du dann spielst. Genau so funktioniert ein Perk-Roulette. Viel Spaß!",
     "missingPerks": {
       "header": "Aber ich habe nicht alle Perks!!1elf",
-      "description": "Falls Dir Perks fehlen, klicke auf eine der \"... konfigurieren\"-Boxen unten. Dann klicke auf die Perks die Du nicht hast oder nicht willst. Dine Auswahl wird nicht auf dem Sevrer gespeichert, sondern eine individuelle URL zusammengebaut, die Du Dir nach dem Konfigurieren in Deinen Lesezeichen speichern kannst. Also Perks konfigurieren, als Lesezeichen speichern, fertig."
+      "description": "Falls Dir Perks fehlen, klicke auf eine der \"... konfigurieren\"-Boxen unten. Dann klicke auf die Perks die Du nicht hast oder nicht willst. Deine Auswahl wird nicht auf dem Server gespeichert: Es wird eine individuelle URL zusammengebaut, die Du Dir nach dem Konfigurieren in Deinen Lesezeichen speichern kannst. Also Perks konfigurieren, als Lesezeichen speichern, fertig."
     }
   },
   "streaming": {
@@ -37,7 +37,7 @@
   },
   "attribution": {
     "header": "Attribuierung",
-    "description": "Die meisten Medien auf dieser Seite wurden nicht von den Autoren der Seite erschaffen.",
+    "description": "Die meisten Medien auf dieser Seite wurden nicht von den Autoren der Seite erstellt.",
     "wiki": {
       "description": "Die meisten Bilder stammen aus dem wunderbaren {wikiUrl}. Die Inhalte dieses Wikis sind unter der Creative Commons \"{licenseUrl}\" lizensiert.",
       "wikiUrlText": "offiziellen Dead by Daylight Wiki",
@@ -62,7 +62,7 @@
   },
   "disclaimer": {
     "header": "Haftungsausschluss",
-    "description": "Diese Seite steht weder in Verbindung mit einem Unternehmen, noch wird sie unterstützt oder ist in irgendeiner Form mit einem Unternehmen verbunden. Sie ist ein privates Fanprojekt. Bei Fragen, Fehlern oder anderen Anliegen kontaktiere den Autor bitte per E-Mail unter {email}. Es gibt keine Garantien beim Benutzen dieser Seite. Du benutzt sie auf eigenes Risiko. Die Gute Nachricht ist, diese Seite speichert nichts auf dem Server und läuft komplett in Deinem Browser. Allerdings nutzt diese Seite {statcounter} um zu zählen, wieviele Besucher die Seite nutzen."
+    "description": "Diese Seite steht weder in Verbindung mit einem Unternehmen, noch wird sie unterstützt oder ist in irgendeiner Form mit einem Unternehmen verbunden. Sie ist ein privates Fanprojekt. Bei Fragen, Fehlern oder anderen Anliegen kontaktiere den Autor bitte per E-Mail unter {email}. Es gibt keine Garantien beim Benutzen dieser Seite. Du benutzt sie auf eigenes Risiko. Die gute Nachricht ist, diese Seite speichert nichts auf dem Server und läuft komplett in Deinem Browser. Allerdings nutzt diese Seite {statcounter} um zu zählen, wieviele Besucher die Seite nutzen."
   },
   "perks": {
     "killer": {

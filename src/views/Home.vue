@@ -1,8 +1,8 @@
 <template>
     <div class="perk-config home">
         <div class="language-switch">
-            <img @click="changeLang('de')" src="img/flags/germany.svg" width="32" height="32" alt="deutsch" style="margin-right: 1rem">
-            <img @click="changeLang('en')" src="img/flags/united-kingdom.svg" width="32" height="32" alt="english">
+            <img @click="changeLang('de')" src="img/flags/germany.svg" width="32" height="32" alt="deutsch" class="flag">
+            <img @click="changeLang('en')" src="img/flags/united-kingdom.svg" width="32" height="32" alt="english" class="flag">
         </div>
         <MenuItem type="Info" :title="$t('snippets.info')" />
         <MenuItem :perks="perks.survivors" @resetPerks="resetPerks" @change="change" type="Survivor" :title="$t('snippets.survPerkConfig')" />
@@ -53,7 +53,7 @@ export default {
   },
   methods: {
     changeLang (lang) {
-      let { ...q } = this.$route.query
+      const { ...q } = this.$route.query
       q.lang = lang
       this.$i18n.locale = lang
       this.$router.push({ path: this.$route.path, query: q })
@@ -99,9 +99,6 @@ export default {
       const chosenPerks = []
       switch (type) {
         case 'Survivor':
-          if (this.kids.length > 0) {
-            query.kids = this.kids.join(',')
-          }
           for (let i = 0; i < this.perks.survivors.length; i++) {
             if (this.perks.survivors[i].checked) {
               chosenPerks.push(this.perks.survivors[i].index)
@@ -117,9 +114,6 @@ export default {
           this.$router.push({ path: this.$route.path, query: query })
           break
         case 'Killer':
-          if (this.sids.length > 0) {
-            query.sids = this.sids.join(',')
-          }
           for (let i = 0; i < this.perks.killers.length; i++) {
             if (this.perks.killers[i].checked) {
               chosenPerks.push(this.perks.killers[i].index)
@@ -161,11 +155,11 @@ export default {
     let survivors = []
     // make sure array keys match the ids in file name. TODO maybe make sure no key is reassigned because of naming issues
     for (let i = 0, sLen = survivorsRaw.length; i < sLen; i++) {
-      let s = survivorsRaw[i]
-      let k = Number(s.substr(0, 2))
-      survivors[k] = {
-        'index': i,
-        'name': s,
+      let perkFileName = survivorsRaw[i]
+      let key = Number(perkFileName.substr(0, 2))
+      survivors[key] = {
+        'index': key,
+        'name': perkFileName,
         'checked': true
       }
     }
@@ -174,11 +168,11 @@ export default {
     let killers = []
     // make sure array keys match the ids in file name. TODO maybe make sure no key is reassigned because of naming issues
     for (let i = 0, kLen = killersRaw.length; i < kLen; i++) {
-      let s = killersRaw[i]
-      let k = Number(s.substr(0, 2))
-      killers[k] = {
-        'index': i,
-        'name': s,
+      let perkFileName = killersRaw[i]
+      let key = Number(perkFileName.substr(0, 2))
+      killers[key] = {
+        'index': key,
+        'name': perkFileName,
         'checked': true
       }
     }
@@ -192,6 +186,21 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+    .language-switch {
+        .flag {
+            margin-right: 1rem;
+        }
+    }
+
+    @media screen and (max-width: 1055px) {
+        .language-switch {
+            margin-left: 1rem;
+        }
+    }
+
+</style>
 
 <style lang="scss">
     @import "../../public/sprites/surv-css.css";
