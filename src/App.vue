@@ -4,21 +4,21 @@
             <div class="nav container">
                 <template v-if="routerName !== 'home'">
                     <UiButton class="nav__left" :routerLink="{ name: 'home', query: $route.query }">
-                        <img src="/img/icon_exit.png" slot="icon" alt="Survivor">
-                        Home
+                        <img src="/img/icon_exit.png" slot="icon" alt="Home">
+                        {{ $t('snippets.buttonHome') }}
                     </UiButton>
                 </template>
                 <UiButton v-if="routerName !== 'killer'  && routerName === 'home'" class="nav__left" :routerLink="{ name: 'killer', query: $route.query }">
                     <img src="/img/icon_killer.png" slot="icon" alt="Killer">
-                    Killer Roulette
+                    {{ $t('snippets.buttonKillRoulette') }}
                 </UiButton>
                 <UiButton v-if="routerName !== 'killer' && routerName !== 'home'" class="nav__right" :routerLink="{ name: 'killer', query: $route.query }">
                     <img src="/img/icon_killer.png" slot="icon" alt="Killer">
-                    Killer Roulette
+                    {{ $t('snippets.buttonKillRoulette') }}
                 </UiButton>
                 <UiButton v-if="routerName !== 'survivor'" class="nav__right" :routerLink="{ name: 'survivor', query: $route.query }">
                     <img src="/img/icon_survivor.png" slot="icon" alt="Survivor">
-                    Survivor Roulette
+                    {{ $t('snippets.buttonSurvRoulette') }}
                 </UiButton>
             </div>
         </div>
@@ -59,6 +59,7 @@ export default {
     }
   },
   mounted: function () {
+    this.$i18n.locale = this.$route.query.lang ? this.$route.query.lang.toLowerCase() : 'en'
     if (this.removeBackground) {
       document.getElementsByTagName('body')[0].setAttribute('style', 'background:none;padding:0;margin:0')
     }

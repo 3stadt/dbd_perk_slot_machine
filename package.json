@@ -10,6 +10,7 @@
   "dependencies": {
     "pixi.js": "^4.8.6",
     "vue": "^2.5.22",
+    "vue-i18n": "^8.0.0",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {
@@ -23,6 +24,7 @@
     "node-sass": "^4.9.0",
     "preprocess-loader": "^0.3.0",
     "sass-loader": "^7.1.0",
+    "vue-cli-plugin-i18n": "^0.5.2",
     "vue-template-compiler": "^2.5.21"
   }
 }

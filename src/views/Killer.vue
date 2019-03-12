@@ -6,29 +6,37 @@
                        type="Kill"
                        :elementLength="elementLength"
                        :colorized="color"
+                       :lang="lang"
+                       :perkData="Object.keys(perksKHD.frames)"
             />
             <perkslot1 @reRollRequested="randomize"
                        ref="perkslot1"
                        type="Kill"
                        :elementLength="elementLength"
                        :colorized="color"
+                       :lang="lang"
+                       :perkData="Object.keys(perksKHD.frames)"
             />
             <perkslot2 @reRollRequested="randomize"
                        ref="perkslot2"
                        type="Kill"
                        :elementLength="elementLength"
                        :colorized="color"
+                       :lang="lang"
+                       :perkData="Object.keys(perksKHD.frames)"
             />
             <perkslot3 @reRollRequested="randomize"
                        ref="perkslot3"
                        type="Kill"
                        :elementLength="elementLength"
                        :colorized="color"
+                       :lang="lang"
+                       :perkData="Object.keys(perksKHD.frames)"
             />
         </div>
         <div v-if="hintVisible" class="hint-text">
             <img src="/img/icon_shortinfo.png" slot="icon" alt="Survivor" class="info-icon">
-            <span>{{ message }}</span>
+            <span>{{ $t('snippets.startPerkRoll') }}</span>
         </div>
     </div>
 </template>
@@ -47,6 +55,10 @@ export default {
     'perkslot3': PixiPerkSlot
   },
   props: {
+    lang: {
+      type: String,
+      required: true
+    },
     color: {
       type: Boolean,
       default: false,
@@ -65,12 +77,26 @@ export default {
         return []
       },
       required: false
+    },
+    perksKHD: {
+      type: Object,
+      required: true
     }
   },
   data: function () {
+    let killersRaw = Object.keys(this.perksKHD.frames)
+    let killers = []
+    // make sure array keys match the ids in file name. TODO maybe make sure no key is reassigned because of naming issues
+    for (let i = 0, kLen = killersRaw.length; i < kLen; i++) {
+      let perkFileName = killersRaw[i]
+      let key = Number(perkFileName.substr(0, 2))
+      killers[key] = {
+        'index': key,
+        'name': perkFileName
+      }
+    }
     return {
-      perkData: require('./../resources/perks-killer.json'),
-      message: 'Click on any perk slot to start',
+      perkData: killers,
       hintVisible: true,
       elementLength: vp.getElementLength(),
       lastRoll: null

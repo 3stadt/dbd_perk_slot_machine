@@ -11,24 +11,7 @@
                 <key>scale</key>
                 <double>1</double>
                 <key>extension</key>
-                <string>-hd</string>
-                <key>spriteFilter</key>
                 <string></string>
-                <key>acceptFractionalValues</key>
-                <false/>
-                <key>maxTextureSize</key>
-                <QSize>
-                    <key>width</key>
-                    <int>-1</int>
-                    <key>height</key>
-                    <int>-1</int>
-                </QSize>
-            </struct>
-            <struct type="AutoSDSettings">
-                <key>scale</key>
-                <double>0.5</double>
-                <key>extension</key>
-                <string>-md</string>
                 <key>spriteFilter</key>
                 <string></string>
                 <key>acceptFractionalValues</key>
@@ -43,13 +26,13 @@
             </struct>
         </array>
         <key>allowRotation</key>
-        <true/>
+        <false/>
         <key>shapeDebug</key>
         <false/>
         <key>dpi</key>
         <uint>72</uint>
         <key>dataFormat</key>
-        <string>pixijs4</string>
+        <string>css-simple</string>
         <key>textureFileName</key>
         <filename></filename>
         <key>flipPVR</key>
@@ -149,7 +132,7 @@
             <key>data</key>
             <struct type="DataFile">
                 <key>name</key>
-                <filename>../public/sprites/surv{v}.json</filename>
+                <filename>../public/sprites/surv-css.css</filename>
             </struct>
         </map>
         <key>multiPack</key>
@@ -176,7 +159,7 @@
         <key>globalSpriteSettings</key>
         <struct type="SpriteSettings">
             <key>scale</key>
-            <double>1</double>
+            <double>0.5</double>
             <key>scaleMode</key>
             <enum type="ScaleMode">Smooth</enum>
             <key>extrude</key>
@@ -186,7 +169,7 @@
             <key>trimMargin</key>
             <uint>1</uint>
             <key>trimMode</key>
-            <enum type="SpriteSettings::TrimMode">Trim</enum>
+            <enum type="SpriteSettings::TrimMode">None</enum>
             <key>tracerTolerance</key>
             <int>200</int>
             <key>heuristicMask</key>

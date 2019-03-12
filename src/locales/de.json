@@ -1,0 +1,192 @@
+{
+  "snippets": {
+    "info": "Info",
+    "survPerkConfig": "Überlebenden-Perks konfigurieren",
+    "killPerkConfig": "Killer-Perks konfigurieren",
+    "globalSwitchText": "Alle an/aus",
+    "startPerkRoll": "Klicke zum Starten auf einen Perkslot",
+    "buttonHome": "Startseite",
+    "buttonKillRoulette": "Killer-Roulette",
+    "buttonSurvRoulette": "Überlebenden-Roulette"
+  },
+  "about": {
+    "header": "Worum geht es hier?",
+    "description": "Diese Seite ist ein Perk-Roulette für das Spiel {url}. Um genau zu sein ist es kein Roulette, sondern eine Slot-Maschine, wie ein Glücksspielautomat. In diesem Video erfährst Du alles, was Du wissen musst:",
+    "videoUrl": "https://www.youtube-nocookie.com/embed/vSaUjJC68Kc"
+  },
+  "howItWorks": {
+    "header": "Wie funktioniert das?",
+    "description": "Falls Du alle Perks für einen Überlebenden oder Killer hast,die es gibt: Klicke einfach auf einen der roten Buttons oben, klicke auf einen der Perk-Slots, fertig. Daraufhin werden vier zufällige Perks für Dich ausgewählt, mit denen Du dann spielst. Genau so funktioniert ein Perk-Roulette. Viel Spaß!",
+    "missingPerks": {
+      "header": "Aber ich habe nicht alle Perks!!1elf",
+      "description": "Falls Dir Perks fehlen, klicke auf eine der \"... konfigurieren\"-Boxen unten. Dann klicke auf die Perks die Du nicht hast oder nicht willst. Deine Auswahl wird nicht auf dem Server gespeichert: Es wird eine individuelle URL zusammengebaut, die Du Dir nach dem Konfigurieren in Deinen Lesezeichen speichern kannst. Also Perks konfigurieren, als Lesezeichen speichern, fertig."
+    }
+  },
+  "streaming": {
+    "header": "Wie benutze ich das Teil in OBS/XSplit?",
+    "description": "Du kannst einige Optionen in der URL setzen. Im Detail wird das im Video oben erklärt.",
+    "options": {
+      "description": "Kurz gesagt, nutze die URL-Parameter {transparent} um nur die Slots ohne alles anzuzeigen, nutze dann z.B. {autostart} um eine Sekunde nach dem Seitenstart einen Durchlauf zu starten.",
+      "transparent": "bg=0&header=0&hint=0",
+      "autostart": "autostart=1000"
+    }
+  },
+  "team": {
+    "header": "Das Team",
+    "description": "Dieses Projekt wurde erschaffen von:"
+  },
+  "attribution": {
+    "header": "Attribuierung",
+    "description": "Die meisten Medien auf dieser Seite wurden nicht von den Autoren der Seite erstellt.",
+    "wiki": {
+      "description": "Die meisten Bilder stammen aus dem wunderbaren {wikiUrl}. Die Inhalte dieses Wikis sind unter der Creative Commons \"{licenseUrl}\" lizensiert.",
+      "wikiUrlText": "offiziellen Dead by Daylight Wiki",
+      "wikiUrl": "https://deadbydaylight-de.gamepedia.com/Dead_by_Daylight_Wiki",
+      "licenseUrlText": "Namensnennung - Nicht-kommerziell - Weitergabe unter gleichen Bedingungen 3.0 Unported (CC BY-NC-SA 3.0)",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/deed.de"
+    },
+    "happyclown": {
+      "description": "Die farbigen Icons (spezieller Beta-Modus, ändere color=0 zu color=1 in der URL) wurden von {profile} gemacht, es gibt sogar eine {group} dafür. Schau sie Dir am besten gleich an!",
+      "groupText": "Steamgruppe"
+    },
+    "rocketleaguecat": {
+      "description": "Das {bgImage} wurde von dem imgur Nutzer {profile} erstellt.",
+      "bgImageText": "Hintergrundbild"
+    },
+    "bhvr": {
+      "description": "Die Perk- sowie Hintergrundbilder und anderer spielbezogener Inhalt ist Eigentum von und wurde erstellt durch {bhvr} für das Spiel {dbd}"
+    },
+    "freepik": {
+      "description": "Sprachen-Icons wurden erstellt von {freepik} über {flaticon} und sind als {licenseUrl} lizensiert"
+    }
+  },
+  "disclaimer": {
+    "header": "Haftungsausschluss",
+    "description": "Diese Seite steht weder in Verbindung mit einem Unternehmen, noch wird sie unterstützt oder ist in irgendeiner Form mit einem Unternehmen verbunden. Sie ist ein privates Fanprojekt. Bei Fragen, Fehlern oder anderen Anliegen kontaktiere den Autor bitte per E-Mail unter {email}. Es gibt keine Garantien beim Benutzen dieser Seite. Du benutzt sie auf eigenes Risiko. Die gute Nachricht ist, diese Seite speichert nichts auf dem Server und läuft komplett in Deinem Browser. Allerdings nutzt diese Seite {statcounter} um zu zählen, wieviele Besucher die Seite nutzen."
+  },
+  "perks": {
+    "killer": {
+      "00_aNursesCalling": "Der Ruf einer Krankenschwester",
+      "01_agitation": "Erregung",
+      "02_bamboozle": "Verblüffen",
+      "03_barbecueAndChilli": "Barbecue und Chili",
+      "04_beastOfPrey": "Raubtier",
+      "05_bitterMurmur": "Verbittertes Gemurmel",
+      "06_bloodWarden": "Blutwächter",
+      "07_bloodhound": "Bluthund",
+      "08_brutalStrength": "Brutale Stärke",
+      "09_corruptIntervention": "Korrupte Intervention",
+      "10_coulrophobia": "Coulrophobie",
+      "11_darkDevotion": "Dunkle Hingabe",
+      "12_deerstalker": "Pirscher",
+      "13_discordance": "Uneinigkeit",
+      "14_distressing": "Verstört",
+      "15_dyingLight": "Erlischendes Licht",
+      "16_enduring": "Beständig",
+      "17_fireUp": "Einheizen",
+      "18_franklinsDemise": "Franklins Niedergang",
+      "19_hangmansTrick": "Henkerstreich",
+      "20_hexDevourHope": "Aufgezehrte Hoffnung",
+      "21_hexHauntedGround": "Heimgesuchter Boden",
+      "22_hexHuntressLullaby": "Wiegenlied der Jägerin",
+      "23_hexNoOneEscapesDeath": "Niemand entrinnt dem Tod",
+      "24_hexRuin": "Ruin",
+      "25_hexTheThirdSeal": "Das dritte Siegel",
+      "26_hexThrillOfTheHunt": "Nervenkitzel der Jagd",
+      "27_infectiousFright": "Ansteckende Furcht",
+      "28_insidious": "Heimtückisch",
+      "29_ironGrasp": "Eiserner Griff",
+      "30_ironMaiden": "Eiserne Jungfrau",
+      "31_knockOut": "K.O.",
+      "32_lightborn": "Lichtgeborener",
+      "33_madGrit": "Irrer Mut",
+      "34_makeYourChoice": "Triff deine Wahl",
+      "35_monitorAndAbuse": "Beobachten und Zuschlagen",
+      "36_monstrousShrine": "Monströser Schrein",
+      "37_overcharge": "Überladen",
+      "38_overwhelmingPresence": "Erdrückende Präsenz",
+      "39_playWithYourFood": "Spiele mit deinem Essen",
+      "40_popGoesTheWeasel": "Pop Goes the Weasel",
+      "41_predator": "Räuber",
+      "42_rancor": "Hass",
+      "43_rememberMe": "Vergissmeinnicht",
+      "44_saveTheBestForLast": "Das Beste kommt zum Schluss",
+      "45_shadowborn": "Schattengeborener",
+      "46_sloppyButcher": "Schlampiger Schlachter",
+      "47_spiesFromTheShadows": "Spione des Schattens",
+      "48_spiritFury": "Zorn des Gespensts",
+      "49_stridor": "Stridor",
+      "50_surveillance": "Überwachung",
+      "51_territorialImperative": "Gebietszwang",
+      "52_thanatophobia": "Thanatophobia",
+      "53_tinkerer": "Tüftler",
+      "54_unnervingPresence": "Zermürbende Präsenz",
+      "55_unrelenting": "Unerbittlich",
+      "56_whispers": "Geflüster"
+    },
+    "survivor": {
+      "00_aceInTheHole": "Ass im Ärmel",
+      "01_adrenaline": "Adrenalin",
+      "02_aftercare": "Nachsorge",
+      "03_alert": "Wachsam",
+      "04_autodidact": "Autodidakt",
+      "05_balancedLanding": "Ausgewogene Landung",
+      "06_boilOver": "Wildpferd",
+      "07_bond": "Bindung",
+      "08_borrowedTime": "Geliehene Zeit",
+      "09_botanyKnowledge": "Botanisches Wissen",
+      "10_breakdown": "Zerlegen",
+      "11_calmSpirit": "Seelenruhe",
+      "12_danceWithMe": "Tanz mit mir",
+      "13_darkSense": "Dunkle Wahrnehmung",
+      "14_deadHard": "Hart im Nehmen",
+      "15_decisiveStrike": "Entscheidungsschlag",
+      "16_dejaVu": "Déjà-Vu-Erlebnis",
+      "17_deliverance": "Befreiung",
+      "18_detectivesHunch": "Tapps Verdacht",
+      "19_distortion": "Verzerrung",
+      "20_diversion": "Ablenkung",
+      "21_empathy": "Einfühlungsvermögen",
+      "22_headOn": "Kopfstoss",
+      "23_hope": "Hoffnung",
+      "24_ironWill": "Eiserner Wille",
+      "25_kindred": "Verwandt",
+      "26_leader": "Anführer",
+      "27_leftBehind": "Zurückgelassen",
+      "28_lightweight": "Leichtgewicht",
+      "29_lithe": "Flink",
+      "30_noMither": "Kein Gejammer",
+      "31_noOneLeftBehind": "Niemand wird Zurückgelassen",
+      "32_objectOfObsession": "Objekt der Besessenheit",
+      "33_open-Handed": "Mit offener Hand",
+      "34_pharmacy": "Apotheke",
+      "35_plunderersInstinct": "Plündererspürsinn",
+      "36_poised": "Selbsticher",
+      "37_premonition": "Vorwarnung",
+      "38_proveThyself": "Beweise dich",
+      "39_quickAndQuiet": "Schnell & Leise",
+      "40_resilience": "Widerstandsfähigkeit",
+      "41_saboteur": "Saboteur",
+      "42_selfCare": "Selbstfürsorge",
+      "43_slipperyMeat": "Gerissenes Fleisch",
+      "44_smallGame": "Niederwild",
+      "45_soleSurvivor": "Einziger Überlebender",
+      "46_solidarity": "Schulterschluss",
+      "47_spineChill": "Kalter Rückenschauer",
+      "48_sprintBurst": "Sprintboost",
+      "49_stakeOut": "Observierung",
+      "50_streetwise": "Gewieft",
+      "51_technician": "Technikerin",
+      "52_tenacity": "Beharrlichkeit",
+      "53_thisIsNotHappening": "Das geschieht nicht",
+      "54_unbreakable": "Unbeugsam",
+      "55_upTheAnte": "Erhöhe den Einsatz",
+      "56_urbanEvasion": "Städtische Invasion",
+      "57_vigil": "Nachtwache",
+      "58_wakeUp": "Aufwachen!",
+      "59_wellMakeIt": "Wir schaffen das!",
+      "60_wereGonnaLiveForever": "Wir werden ewig Leben",
+      "61_windowsOfOpportunity": "Gelegenheit nutzen"
+    }
+  }
+}

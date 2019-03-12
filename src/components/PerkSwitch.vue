@@ -1,12 +1,15 @@
 <template>
-    <div :class="['perk-switch-container', {'perk-checked': this.currentPerk.checked}]" :style="cssProps">
-        <div class="perk-switch" @click="onClickPerk" :style="cssProps">
-            <UiCheckbox v-model="currentPerk.checked" class="perk-checkbox" :class="[{'dim-image': !this.currentPerk.checked}]"></UiCheckbox>
+    <div :class="['perk-switch-container', {'perk-checked': this.currentPerk.checked}]">
+        <div class="perk-switch" @click="onClickPerk">
+            <UiCheckbox v-model="currentPerk.checked" class="perk-checkbox"
+                        :class="[{'dim-image': !this.currentPerk.checked}]"></UiCheckbox>
             <div class="perk-switch__image-container">
-                <div class="perk-switch__image" :class="[currentPerk.cls, {'dim-image': !this.currentPerk.checked}]"
+                <div class="perk-switch__image" :class="['_'+currentPerk.name, spriteType, {'dim-image': !currentPerk.checked}]"
                      role="img"></div>
             </div>
-            <div class="perk-switch__name" :class="[{'dim-image': !this.currentPerk.checked}]">{{ currentPerk.name }}</div>
+            <div>
+                <div class="perk-switch__name" :class="[{'dim-image': !this.currentPerk.checked}]">{{ name.toUpperCase() }}</div>
+            </div>
         </div>
     </div>
 </template>
@@ -22,6 +25,10 @@ export default {
   },
 
   props: {
+    name: {
+      type: String,
+      required: true
+    },
     perk: {
       type: Object,
       default () {
@@ -47,14 +54,10 @@ export default {
   },
 
   computed: {
-    imageFileName () {
-      return this.type === 'Survivor' ? 'perkslotsSurvSmall.png' : 'perkslotsKillSmall.png'
-    },
-
-    cssProps () {
-      let idx = this.perk.index
+    spriteType: function () {
       return {
-        '--slotBg': `url('/img/${this.imageFileName}') 0 ${idx === 0 ? 0 : (128 * idx * -1) + 'px'}`
+        'sprite-survivor': this.type === 'Survivor',
+        'sprite-killer': this.type === 'Killer'
       }
     }
   },
@@ -102,6 +105,8 @@ export default {
         transform: scale(1);
         padding: 5%;
         height: 100%;
+        width: 100%;
+        text-align: center;
 
         @media screen and (min-width: 992px) {
             &:hover {
@@ -112,6 +117,9 @@ export default {
         .perk-switch__name {
             position: relative;
             text-align: center;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            word-wrap: break-word
         }
 
         .perk-switch__image-container {
@@ -125,7 +133,6 @@ export default {
             margin-left: -64px; /* this centers the actual sprite--this is half the sprite-window width. if you don't do this, the left edge will be centered instead of the center of the sprite.  */
             width: 128px; /* set window to see sprite through */
             height: 128px; /* set window to see sprite through */
-            background: var(--slotBg); /* custom property is generated in cssProps() and bound in dov with class card*/
         }
     }
 </style>

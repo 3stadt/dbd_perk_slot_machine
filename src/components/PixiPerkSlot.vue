@@ -8,8 +8,6 @@ import * as PIXI from 'pixi.js'
 export default {
   name: 'PixiPerkSlot',
   data: function () {
-    const perkData = this.type === 'Surv' ? require('./../resources/perks-survivor.json') : require('./../resources/perks-killer.json')
-    const maxId = perkData.length - 1
     return {
       appStage: null,
       loader: null,
@@ -23,8 +21,7 @@ export default {
       bgContainer: null,
       placeholderContainer: null,
       perkTextures: null,
-      maxId: maxId,
-      perkData: perkData,
+      maxId: this.perkData.length - 1,
       perkName: '',
       targetPerkId: null
     }
@@ -38,6 +35,10 @@ export default {
     }
   },
   props: {
+    lang: {
+      type: String,
+      required: true
+    },
     type: {
       type: String,
       required: true
@@ -50,32 +51,28 @@ export default {
     elementLength: {
       type: Number,
       required: true
+    },
+    perkData: {
+      type: Array,
+      required: true
     }
   },
   methods: {
     _reelComplete: function () {
       this.active = false
-      const style = new PIXI.TextStyle({
-        fontWeight: 'bold',
-        fontSize: 16 * (1 / (256 / this.elementLength)),
-        fontFamily: 'Arial',
-        fill: '#FFFFFF',
-        align: 'center',
-        wordWrap: true,
-        wordWrapWidth: this.elementLength * 0.967
-      })
 
       const tCont = new this.Container({ height: this.elementLength, width: this.elementLength })
-
-      const perkText = new this.Text(this.targetPerkId.name, style)
-      perkText.x = this.reelContainer.width / 2
-      perkText.y = this.elementLength * 0.91
-      perkText.anchor.x = 0.5
-
       const textBoxBorder = this.elementLength * 0.012
       const textBoxY = this.elementLength * 0.9
       const textBoxWidth = this.elementLength * 0.967
       const textBoxHeight = this.elementLength * 0.1
+
+      const perkText = this._generateTextBoxContent(this.$t(`perks.${this.type === 'Surv' ? 'survivor' : 'killer'}.${this.perkData[this.targetPerkId]}`).toUpperCase(), textBoxWidth)
+
+      perkText.x = this.reelContainer.width / 2
+      perkText.y = this.elementLength * 0.91
+      perkText.anchor.x = 0.5
+
       const mask = new PIXI.Graphics({
         height: this.elementLength,
         width: this.elementLength
@@ -89,7 +86,7 @@ export default {
     },
     rollWheel: function (targetId) {
       if (this.active) return
-      this.targetPerkId = targetId
+      this.targetPerkId = targetId.index
       this.placeholderContainer.visible = false
       this.reelContainer.visible = true
       this.tweening = []
@@ -98,7 +95,7 @@ export default {
       this._tweenTo({
         object: this.reel,
         property: 'position',
-        target: (this.perkData.length + 1) - targetId.index,
+        target: (this.perkData.length + 1) - this.targetPerkId,
         time: 4000,
         easing: this.backout(0.6),
         onchange: null,
@@ -106,6 +103,24 @@ export default {
       })
 
       return true
+    },
+    _generateTextBoxContent: function gts (text, maxWidth, fontSize, me) {
+      if (!fontSize) fontSize = 16
+      if (!me) me = this
+      const style = new PIXI.TextStyle({
+        fontWeight: 'bold',
+        fontSize: fontSize * (1 / (256 / me.elementLength)),
+        fontFamily: 'Arial',
+        fill: '#FFFFFF',
+        align: 'center',
+        wordWrap: false
+      })
+      const textbox = new me.Text(text, style)
+      if (textbox.width > maxWidth && textbox.width > 0) {
+        fontSize--
+        return gts(text, maxWidth, fontSize, me)
+      }
+      return textbox
     },
     lerp: function (a1, a2, t) {
       return a1 * (1 - t) + a2 * t

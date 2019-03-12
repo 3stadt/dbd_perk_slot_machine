@@ -1,142 +1,142 @@
 {"frames": {
 
-"IconPerks_aceInTheHole":
+"00_aceInTheHole":
 {
-	"frame": {"x":1400,"y":507,"w":148,"h":140},
-	"rotated": true,
+	"frame": {"x":190,"y":831,"w":148,"h":140},
+	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":59,"y":59,"w":148,"h":140},
 	"sourceSize": {"w":256,"h":256}
 },
-"IconPerks_adrenaline":
+"01_adrenaline":
 {
-	"frame": {"x":1169,"y":876,"w":161,"h":142},
-	"rotated": false,
+	"frame": {"x":1287,"y":377,"w":161,"h":142},
+	"rotated": true,
 	"trimmed": true,
 	"spriteSourceSize": {"x":58,"y":59,"w":161,"h":142},
 	"sourceSize": {"w":256,"h":256}
 },
-"IconPerks_aftercare":
+"02_aftercare":
 {
-	"frame": {"x":116,"y":239,"w":213,"h":160},
+	"frame": {"x":1,"y":636,"w":213,"h":160},
 	"rotated": true,
 	"trimmed": true,
 	"spriteSourceSize": {"x":21,"y":33,"w":213,"h":160},
 	"sourceSize": {"w":256,"h":256}
 },
-"IconPerks_alert":
+"03_alert":
 {
-	"frame": {"x":419,"y":387,"w":189,"h":185},
-	"rotated": true,
+	"frame": {"x":377,"y":1,"w":189,"h":185},
+	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":20,"y":43,"w":189,"h":185},
 	"sourceSize": {"w":256,"h":256}
 },
-"IconPerks_autodidact":
+"04_autodidact":
 {
-	"frame": {"x":540,"y":578,"w":185,"h":155},
-	"rotated": true,
+	"frame": {"x":1570,"y":1,"w":185,"h":155},
+	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":38,"y":53,"w":185,"h":155},
 	"sourceSize": {"w":256,"h":256}
 },
-"IconPerks_balancedLanding":
+"05_balancedLanding":
 {
-	"frame": {"x":1,"y":473,"w":174,"h":213},
+	"frame": {"x":201,"y":1,"w":174,"h":213},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":41,"y":27,"w":174,"h":213},
 	"sourceSize": {"w":256,"h":256}
 },
-"IconPerks_boilOver":
+"06_boilOver":
 {
-	"frame": {"x":1183,"y":1,"w":124,"h":170},
+	"frame": {"x":1431,"y":421,"w":124,"h":170},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":63,"y":45,"w":124,"h":170},
 	"sourceSize": {"w":256,"h":256}
 },
-"IconPerks_bond":
+"07_bond":
 {
-	"frame": {"x":201,"y":1,"w":208,"h":132},
-	"rotated": true,
+	"frame": {"x":1162,"y":1,"w":208,"h":132},
+	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":42,"y":69,"w":208,"h":132},
 	"sourceSize": {"w":256,"h":256}
 },
-"IconPerks_borrowedTime":
+"08_borrowedTime":
 {
-	"frame": {"x":1046,"y":1,"w":135,"h":176},
+	"frame": {"x":458,"y":643,"w":135,"h":176},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":79,"y":41,"w":135,"h":176},
 	"sourceSize": {"w":256,"h":256}
 },
-"IconPerks_botanyKnowledge":
+"09_botanyKnowledge":
 {
-	"frame": {"x":1462,"y":166,"w":166,"h":127},
+	"frame": {"x":1170,"y":805,"w":166,"h":127},
 	"rotated": true,
 	"trimmed": true,
 	"spriteSourceSize": {"x":49,"y":67,"w":166,"h":127},
 	"sourceSize": {"w":256,"h":256}
 },
-"IconPerks_breakdown":
+"10_breakdown":
 {
-	"frame": {"x":820,"y":187,"w":159,"h":180},
-	"rotated": false,
+	"frame": {"x":382,"y":342,"w":159,"h":180},
+	"rotated": true,
 	"trimmed": true,
 	"spriteSourceSize": {"x":44,"y":37,"w":159,"h":180},
 	"sourceSize": {"w":256,"h":256}
 },
-"IconPerks_calmSpirit":
+"11_calmSpirit":
 {
-	"frame": {"x":1250,"y":521,"w":148,"h":166},
+	"frame": {"x":1299,"y":805,"w":148,"h":166},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":52,"y":39,"w":148,"h":166},
 	"sourceSize": {"w":256,"h":256}
 },
-"IconPerks_danceWithMe":
+"12_danceWithMe":
 {
-	"frame": {"x":1398,"y":341,"w":153,"h":164},
-	"rotated": false,
+	"frame": {"x":1211,"y":650,"w":153,"h":164},
+	"rotated": true,
 	"trimmed": true,
 	"spriteSourceSize": {"x":41,"y":39,"w":153,"h":164},
 	"sourceSize": {"w":256,"h":256}
 },
-"IconPerks_darkSense":
+"13_darkSense":
 {
-	"frame": {"x":305,"y":409,"w":190,"h":112},
-	"rotated": true,
+	"frame": {"x":1114,"y":263,"w":190,"h":112},
+	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":43,"y":77,"w":190,"h":112},
 	"sourceSize": {"w":256,"h":256}
 },
-"IconPerks_deadHard":
+"14_deadHard":
 {
-	"frame": {"x":854,"y":560,"w":124,"h":178},
+	"frame": {"x":595,"y":643,"w":124,"h":178},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":76,"y":26,"w":124,"h":178},
 	"sourceSize": {"w":256,"h":256}
 },
-"IconPerks_decisiveStrike":
+"15_decisiveStrike":
 {
-	"frame": {"x":1,"y":894,"w":161,"h":129},
+	"frame": {"x":1557,"y":557,"w":161,"h":129},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":46,"y":58,"w":161,"h":129},
 	"sourceSize": {"w":256,"h":256}
 },
-"IconPerks_dejaVu":
+"16_dejaVu":
 {
-	"frame": {"x":410,"y":195,"w":190,"h":112},
-	"rotated": true,
+	"frame": {"x":190,"y":346,"w":190,"h":112},
+	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":47,"y":69,"w":190,"h":112},
 	"sourceSize": {"w":256,"h":256}
 },
-"IconPerks_deliverance":
+"17_deliverance":
 {
 	"frame": {"x":1,"y":1,"w":198,"h":236},
 	"rotated": false,
@@ -144,330 +144,354 @@
 	"spriteSourceSize": {"x":28,"y":8,"w":198,"h":236},
 	"sourceSize": {"w":256,"h":256}
 },
-"IconPerks_detectivesHunch":
+"18_detectivesHunch":
 {
-	"frame": {"x":914,"y":369,"w":157,"h":176},
-	"rotated": false,
+	"frame": {"x":1109,"y":377,"w":157,"h":176},
+	"rotated": true,
 	"trimmed": true,
 	"spriteSourceSize": {"x":50,"y":40,"w":157,"h":176},
 	"sourceSize": {"w":256,"h":256}
 },
-"IconPerks_distortion":
+"19_distortion":
 {
-	"frame": {"x":473,"y":767,"w":115,"h":181},
+	"frame": {"x":1372,"y":133,"w":115,"h":181},
 	"rotated": true,
 	"trimmed": true,
 	"spriteSourceSize": {"x":66,"y":30,"w":115,"h":181},
 	"sourceSize": {"w":256,"h":256}
 },
-"IconPerks_diversion":
+"20_diversion":
 {
-	"frame": {"x":1,"y":239,"w":232,"h":113},
-	"rotated": true,
+	"frame": {"x":928,"y":1,"w":232,"h":113},
+	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":14,"y":76,"w":232,"h":113},
 	"sourceSize": {"w":256,"h":256}
 },
-"IconPerks_empathy":
+"21_empathy":
 {
-	"frame": {"x":1309,"y":1,"w":161,"h":150},
-	"rotated": true,
+	"frame": {"x":1557,"y":405,"w":161,"h":150},
+	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":49,"y":39,"w":161,"h":150},
 	"sourceSize": {"w":256,"h":256}
 },
-"IconPerks_hope":
+"22_headOn":
 {
-	"frame": {"x":868,"y":876,"w":133,"h":143},
+	"frame": {"x":564,"y":336,"w":161,"h":177},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":43,"y":58,"w":161,"h":177},
+	"sourceSize": {"w":256,"h":256}
+},
+"23_hope":
+{
+	"frame": {"x":1593,"y":800,"w":133,"h":143},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":63,"y":61,"w":133,"h":143},
 	"sourceSize": {"w":256,"h":256}
 },
-"IconPerks_ironWill":
+"24_ironWill":
 {
-	"frame": {"x":530,"y":884,"w":175,"h":139},
+	"frame": {"x":1555,"y":264,"w":175,"h":139},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":45,"y":65,"w":175,"h":139},
 	"sourceSize": {"w":256,"h":256}
 },
-"IconPerks_kindred":
+"25_kindred":
 {
-	"frame": {"x":481,"y":1,"w":190,"h":112},
-	"rotated": true,
+	"frame": {"x":872,"y":528,"w":190,"h":112},
+	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":48,"y":69,"w":190,"h":112},
 	"sourceSize": {"w":256,"h":256}
 },
-"IconPerks_leader":
+"26_leader":
 {
-	"frame": {"x":1332,"y":854,"w":153,"h":138},
-	"rotated": true,
+	"frame": {"x":546,"y":503,"w":153,"h":138},
+	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":53,"y":78,"w":153,"h":138},
 	"sourceSize": {"w":256,"h":256}
 },
-"IconPerks_leftBehind":
+"27_leftBehind":
 {
-	"frame": {"x":656,"y":765,"w":110,"h":168},
+	"frame": {"x":1540,"y":688,"w":110,"h":168},
 	"rotated": true,
 	"trimmed": true,
 	"spriteSourceSize": {"x":75,"y":39,"w":110,"h":168},
 	"sourceSize": {"w":256,"h":256}
 },
-"IconPerks_lightweight":
+"28_lightweight":
 {
-	"frame": {"x":305,"y":793,"w":166,"h":95},
+	"frame": {"x":1256,"y":540,"w":166,"h":95},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":43,"y":84,"w":166,"h":95},
 	"sourceSize": {"w":256,"h":256}
 },
-"IconPerks_lithe":
+"29_lithe":
 {
-	"frame": {"x":1133,"y":179,"w":164,"h":171},
+	"frame": {"x":292,"y":643,"w":164,"h":171},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":43,"y":58,"w":164,"h":171},
 	"sourceSize": {"w":256,"h":256}
 },
-"IconPerks_noMither":
+"30_noMither":
 {
-	"frame": {"x":606,"y":382,"w":152,"h":185},
-	"rotated": false,
+	"frame": {"x":377,"y":188,"w":152,"h":185},
+	"rotated": true,
 	"trimmed": true,
 	"spriteSourceSize": {"x":54,"y":26,"w":152,"h":185},
 	"sourceSize": {"w":256,"h":256}
 },
-"IconPerks_noOneLeftBehind":
+"31_noOneLeftBehind":
 {
-	"frame": {"x":826,"y":752,"w":122,"h":169},
-	"rotated": true,
+	"frame": {"x":1431,"y":250,"w":122,"h":169},
+	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":67,"y":39,"w":122,"h":169},
 	"sourceSize": {"w":256,"h":256}
 },
-"IconPerks_objectOfObsession":
+"32_objectOfObsession":
 {
-	"frame": {"x":305,"y":601,"w":190,"h":112},
-	"rotated": true,
+	"frame": {"x":1064,"y":536,"w":190,"h":112},
+	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":51,"y":69,"w":190,"h":112},
 	"sourceSize": {"w":256,"h":256}
 },
-"IconPerks_open-Handed":
+"33_open-Handed":
 {
-	"frame": {"x":981,"y":183,"w":150,"h":176},
+	"frame": {"x":721,"y":643,"w":150,"h":176},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":46,"y":49,"w":150,"h":176},
 	"sourceSize": {"w":256,"h":256}
 },
-"IconPerks_pharmacy":
+"34_pharmacy":
 {
-	"frame": {"x":997,"y":725,"w":149,"h":172},
+	"frame": {"x":340,"y":823,"w":149,"h":172},
 	"rotated": true,
 	"trimmed": true,
 	"spriteSourceSize": {"x":53,"y":39,"w":149,"h":172},
 	"sourceSize": {"w":256,"h":256}
 },
-"IconPerks_plunderersInstinct":
+"35_plunderersInstinct":
 {
-	"frame": {"x":1003,"y":876,"w":164,"h":142},
-	"rotated": false,
+	"frame": {"x":1449,"y":805,"w":164,"h":142},
+	"rotated": true,
 	"trimmed": true,
 	"spriteSourceSize": {"x":43,"y":65,"w":164,"h":142},
 	"sourceSize": {"w":256,"h":256}
 },
-"IconPerks_premonition":
+"36_poised":
 {
-	"frame": {"x":1,"y":688,"w":187,"h":204},
+	"frame": {"x":1,"y":445,"w":186,"h":189},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":29,"y":23,"w":186,"h":189},
+	"sourceSize": {"w":256,"h":256}
+},
+"37_premonition":
+{
+	"frame": {"x":1,"y":239,"w":187,"h":204},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":35,"y":34,"w":187,"h":204},
 	"sourceSize": {"w":256,"h":256}
 },
-"IconPerks_proveThyself":
+"38_proveThyself":
 {
-	"frame": {"x":359,"y":890,"w":133,"h":169},
+	"frame": {"x":701,"y":508,"w":133,"h":169},
 	"rotated": true,
 	"trimmed": true,
 	"spriteSourceSize": {"x":62,"y":47,"w":133,"h":169},
 	"sourceSize": {"w":256,"h":256}
 },
-"IconPerks_quickAndQuiet":
+"39_quickAndQuiet":
 {
-	"frame": {"x":595,"y":1,"w":169,"h":187},
+	"frame": {"x":757,"y":1,"w":169,"h":187},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":17,"y":38,"w":169,"h":187},
 	"sourceSize": {"w":256,"h":256}
 },
-"IconPerks_resilience":
+"40_resilience":
 {
-	"frame": {"x":713,"y":190,"w":105,"h":185},
-	"rotated": false,
+	"frame": {"x":190,"y":239,"w":105,"h":185},
+	"rotated": true,
 	"trimmed": true,
 	"spriteSourceSize": {"x":76,"y":32,"w":105,"h":185},
 	"sourceSize": {"w":256,"h":256}
 },
-"IconPerks_saboteur":
+"41_saboteur":
 {
-	"frame": {"x":1299,"y":173,"w":161,"h":166},
+	"frame": {"x":1377,"y":637,"w":161,"h":166},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":48,"y":44,"w":161,"h":166},
 	"sourceSize": {"w":256,"h":256}
 },
-"IconPerks_selfCare":
+"42_selfCare":
 {
-	"frame": {"x":760,"y":377,"w":152,"h":181},
-	"rotated": false,
+	"frame": {"x":743,"y":354,"w":152,"h":181},
+	"rotated": true,
 	"trimmed": true,
 	"spriteSourceSize": {"x":67,"y":43,"w":152,"h":181},
 	"sourceSize": {"w":256,"h":256}
 },
-"IconPerks_slipperyMeat":
+"43_slipperyMeat":
 {
-	"frame": {"x":707,"y":877,"w":159,"h":146},
+	"frame": {"x":683,"y":823,"w":159,"h":146},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":48,"y":67,"w":159,"h":146},
 	"sourceSize": {"w":256,"h":256}
 },
-"IconPerks_smallGame":
+"44_smallGame":
 {
-	"frame": {"x":1086,"y":536,"w":162,"h":168},
-	"rotated": false,
+	"frame": {"x":758,"y":190,"w":162,"h":168},
+	"rotated": true,
 	"trimmed": true,
 	"spriteSourceSize": {"x":39,"y":53,"w":162,"h":168},
 	"sourceSize": {"w":256,"h":256}
 },
-"IconPerks_soleSurvivor":
+"45_soleSurvivor":
 {
-	"frame": {"x":697,"y":569,"w":181,"h":155},
-	"rotated": true,
+	"frame": {"x":926,"y":371,"w":181,"h":155},
+	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":36,"y":56,"w":181,"h":155},
 	"sourceSize": {"w":256,"h":256}
 },
-"IconPerks_spineChill":
+"46_solidarity":
 {
-	"frame": {"x":980,"y":547,"w":104,"h":176},
+	"frame": {"x":873,"y":642,"w":167,"h":165},
 	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":50,"y":50,"w":167,"h":165},
+	"sourceSize": {"w":256,"h":256}
+},
+"47_spineChill":
+{
+	"frame": {"x":1555,"y":158,"w":104,"h":176},
+	"rotated": true,
 	"trimmed": true,
 	"spriteSourceSize": {"x":82,"y":40,"w":104,"h":176},
 	"sourceSize": {"w":256,"h":256}
 },
-"IconPerks_sprintBurst":
+"48_sprintBurst":
 {
-	"frame": {"x":1247,"y":352,"w":149,"h":167},
-	"rotated": false,
+	"frame": {"x":514,"y":823,"w":149,"h":167},
+	"rotated": true,
 	"trimmed": true,
 	"spriteSourceSize": {"x":49,"y":47,"w":149,"h":167},
 	"sourceSize": {"w":256,"h":256}
 },
-"IconPerks_stakeOut":
+"49_stakeOut":
 {
-	"frame": {"x":1073,"y":361,"w":173,"h":172},
-	"rotated": true,
+	"frame": {"x":189,"y":460,"w":173,"h":172},
+	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":52,"y":55,"w":173,"h":172},
 	"sourceSize": {"w":256,"h":256}
 },
-"IconPerks_streetwise":
+"50_streetwise":
 {
-	"frame": {"x":190,"y":656,"w":200,"h":113},
-	"rotated": true,
+	"frame": {"x":928,"y":116,"w":200,"h":113},
+	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":25,"y":67,"w":200,"h":113},
 	"sourceSize": {"w":256,"h":256}
 },
-"IconPerks_technician":
+"51_technician":
 {
-	"frame": {"x":524,"y":193,"w":187,"h":187},
+	"frame": {"x":568,"y":1,"w":187,"h":187},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":43,"y":47,"w":187,"h":187},
 	"sourceSize": {"w":256,"h":256}
 },
-"IconPerks_tenacity":
+"52_tenacity":
 {
-	"frame": {"x":906,"y":1,"w":138,"h":180},
-	"rotated": false,
+	"frame": {"x":364,"y":503,"w":138,"h":180},
+	"rotated": true,
 	"trimmed": true,
 	"spriteSourceSize": {"x":47,"y":43,"w":138,"h":180},
 	"sourceSize": {"w":256,"h":256}
 },
-"IconPerks_thisIsNotHappening":
+"53_thisIsNotHappening":
 {
-	"frame": {"x":1171,"y":706,"w":167,"h":153},
-	"rotated": true,
+	"frame": {"x":1042,"y":650,"w":167,"h":153},
+	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":45,"y":40,"w":167,"h":153},
 	"sourceSize": {"w":256,"h":256}
 },
-"IconPerks_unbreakable":
+"54_unbreakable":
 {
-	"frame": {"x":419,"y":578,"w":119,"h":187},
-	"rotated": false,
+	"frame": {"x":1,"y":851,"w":119,"h":187},
+	"rotated": true,
 	"trimmed": true,
 	"spriteSourceSize": {"x":61,"y":41,"w":119,"h":187},
 	"sourceSize": {"w":256,"h":256}
 },
-"IconPerks_upTheAnte":
+"55_upTheAnte":
 {
-	"frame": {"x":164,"y":894,"w":127,"h":193},
-	"rotated": true,
+	"frame": {"x":163,"y":636,"w":127,"h":193},
+	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":70,"y":25,"w":127,"h":193},
 	"sourceSize": {"w":256,"h":256}
 },
-"IconPerks_urbanEvasion":
+"56_urbanEvasion":
 {
-	"frame": {"x":335,"y":1,"w":192,"h":144},
-	"rotated": true,
+	"frame": {"x":564,"y":190,"w":192,"h":144},
+	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":19,"y":62,"w":192,"h":144},
 	"sourceSize": {"w":256,"h":256}
 },
-"IconPerks_vigil":
+"57_vigil":
 {
-	"frame": {"x":1326,"y":689,"w":163,"h":162},
+	"frame": {"x":873,"y":809,"w":163,"h":162},
 	"rotated": true,
 	"trimmed": true,
 	"spriteSourceSize": {"x":54,"y":40,"w":163,"h":162},
 	"sourceSize": {"w":256,"h":256}
 },
-"IconPerks_wakeUp":
+"58_wakeUp":
 {
-	"frame": {"x":766,"y":1,"w":184,"h":138},
-	"rotated": true,
+	"frame": {"x":928,"y":231,"w":184,"h":138},
+	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":37,"y":57,"w":184,"h":138},
 	"sourceSize": {"w":256,"h":256}
 },
-"IconPerks_wellMakeIt":
+"59_wellMakeIt":
 {
-	"frame": {"x":1462,"y":1,"w":131,"h":163},
+	"frame": {"x":1037,"y":809,"w":131,"h":163},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":64,"y":40,"w":131,"h":163},
 	"sourceSize": {"w":256,"h":256}
 },
-"IconPerks_wereGonnaLiveForever":
+"60_wereGonnaLiveForever":
 {
-	"frame": {"x":278,"y":211,"w":130,"h":196},
-	"rotated": false,
+	"frame": {"x":1372,"y":1,"w":130,"h":196},
+	"rotated": true,
 	"trimmed": true,
 	"spriteSourceSize": {"x":67,"y":25,"w":130,"h":196},
 	"sourceSize": {"w":256,"h":256}
 },
-"IconPerks_windowsOfOpportunity":
+"61_windowsOfOpportunity":
 {
-	"frame": {"x":177,"y":454,"w":200,"h":126},
-	"rotated": true,
+	"frame": {"x":1130,"y":135,"w":200,"h":126},
+	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":24,"y":69,"w":200,"h":126},
 	"sourceSize": {"w":256,"h":256}
@@ -477,8 +501,8 @@
 	"version": "1.0",
 	"image": "survcolor-hd.png",
 	"format": "RGBA8888",
-	"size": {"w":1594,"h":1024},
+	"size": {"w":1756,"h":973},
 	"scale": "1",
-	"smartupdate": "$TexturePacker:SmartUpdate:3de0492bb18143b15089d8c651c1b6b1:9bdd57065f27e535ee8c6f49c3da4dac:3280ff41a555028592a07a284e5870a9$"
+	"smartupdate": "$TexturePacker:SmartUpdate:8a60d07b681b818866c9519aa18e7047:28e016ed08737f111cc076978c323b66:b79a218aa7e319e96df98cca44712fdd$"
 }
 }

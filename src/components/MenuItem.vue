@@ -4,14 +4,14 @@
             <span class="perk-overview__icon-holder">
                 <img :src="`/img/icon_${type.toLowerCase()}.png`" :alt="type">
             </span>
-            <span class="perk-overview__title">{{type}} {{title}}</span>
+            <span class="perk-overview__title">{{title}}</span>
         </h2>
         <transition name="fade">
             <div v-if="perkCondition" class="perk-overview__grid">
                 <div @click.stop.prevent="$emit('resetPerks', type)">
                     <GlobalSelectionSwitch />
                 </div>
-                <PerkSwitch :key="perk.index" @change="perkChange" v-for="perk in perks" :perk="perk" :type="type"/>
+                <PerkSwitch :key="perk.index" @change="perkChange" v-for="perk in perks" :perk="perk" :name="translate(perk.name)" :type="type"/>
             </div>
             <div v-if="infoCondition" class="perk-overview__box">
                 <InfoText/>
@@ -78,6 +78,9 @@ export default {
   },
 
   methods: {
+    translate (name) {
+      return this.$t(`perks.${this.type.toLowerCase()}.${name}`)
+    },
     toggleCollapsed () {
       this.isCollapsed = !this.isCollapsed
     },
