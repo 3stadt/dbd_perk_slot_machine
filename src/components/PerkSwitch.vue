@@ -3,7 +3,9 @@
         <div class="perk-switch">
             <div :class="['_'+currentPerk.name, spriteType, 'perk-switch__image']"></div>
             <div :class="[{'perk-checked': currentPerk.checked}]"></div>
-            <div class="perk-switch__name" v-html="nameBadge"></div>
+            <div class="perk-switch__name">
+                <svg :width="itemLength" ref="svg" height="26"><text ref="svgText" :id="'name_' + currentPerk.name" x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="white">{{ name }}</text></svg>
+            </div>
         </div>
     </div>
 </template>
@@ -44,10 +46,13 @@ export default {
   },
 
   mounted () {
-    const name = document.getElementById('name_' + this.currentPerk.name)
-    const bb = name.getBBox()
-    if (bb.width <= this.itemLength) return
-    name.parentElement.setAttribute('viewBox', '0 0 ' + bb.width + ' ' + bb.height)
+    this.calcSvgViewBox()
+  },
+
+  watch: {
+    name: function () {
+      this.calcSvgViewBox()
+    }
   },
 
   computed: {
@@ -56,14 +61,21 @@ export default {
         'sprite-survivor': this.type === 'Survivor',
         'sprite-killer': this.type === 'Killer'
       }
-    },
-
-    nameBadge () {
-      return `<svg width="${this.itemLength}" height="26"><text id="${'name_' + this.currentPerk.name}" x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="white">${this.name}</text></svg>`
     }
   },
 
   methods: {
+    calcSvgViewBox () {
+      // Animation frames are necessary because otherwise the width is calculated before the text has changed
+      window.requestAnimationFrame(() => {
+        this.$refs.svg.removeAttribute('viewBox')
+      })
+      window.requestAnimationFrame(() => {
+        const bb = this.$refs.svgText.getBBox()
+        if (bb.width <= this.itemLength) return
+        this.$refs.svg.setAttribute('viewBox', '0 0 ' + bb.width + ' ' + bb.height)
+      })
+    },
     onClickPerk () {
       this.currentPerk.checked = !this.currentPerk.checked
       this.$emit('change', this.currentPerk)
