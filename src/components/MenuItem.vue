@@ -89,7 +89,6 @@ export default {
       this.isCollapsed = !this.isCollapsed
     },
     perkChange (perk) {
-      console.log(this.elementLength)
       for (let i = 0; i < this.perks.length; i++) {
         if (perk.index === this.perks[i].index) {
           this.perks[i].checked = perk.checked
