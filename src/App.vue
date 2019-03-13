@@ -46,13 +46,6 @@ export default {
   components: {
     UiButton
   },
-  data: function () {
-    return {
-      removeBackground: this.$route.query.bg === '0',
-      removeHint: this.$route.query.hint === '0',
-      removeHeader: this.$route.query.header === '0'
-    }
-  },
   computed: {
     routerName () {
       return this.$route.name
@@ -60,16 +53,6 @@ export default {
   },
   mounted: function () {
     this.$i18n.locale = this.$route.query.lang ? this.$route.query.lang.toLowerCase() : 'en'
-    if (this.removeBackground) {
-      document.getElementsByTagName('body')[0].setAttribute('style', 'background:none;padding:0;margin:0')
-    }
-    if (this.removeHint) {
-      document.getElementsByClassName('hint-text')[0].setAttribute('style', 'display:none;')
-    }
-    if (this.removeHeader) {
-      document.getElementsByClassName('container')[1].setAttribute('style', 'padding:0;max-width:none;')
-      document.getElementsByClassName('header')[0].setAttribute('style', 'display:none;')
-    }
   }
 }
 </script>
