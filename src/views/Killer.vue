@@ -116,19 +116,51 @@ export default {
     }
   },
   mounted: function () {
+    if (this.$route.query.streammode === '1') {
+      document.getElementsByTagName('body')[0].setAttribute('style', 'background:none;padding:0;margin:0')
+      const hints = document.getElementsByClassName('hint-text')
+      if (hints.length > 0) {
+        hints[0].setAttribute('style', 'display:none;')
+      }
+      const containers = document.getElementsByClassName('container')
+      if (containers.length > 1) {
+        containers[1].setAttribute('style', 'padding:0;max-width:none;')
+      }
+      const headers = document.getElementsByClassName('header')
+      if (headers.length > 0) {
+        headers[0].setAttribute('style', 'display:none;')
+      }
+      const corners = document.getElementsByClassName('github-corner')
+      if (corners.length > 0) {
+        corners[0].setAttribute('style', 'display:none;')
+      }
+    }
+    const obs = this.$route.query.obs
+    let as = parseInt(this.$route.query.autostart)
+    if (!isNaN(as) && as > 0 && obs !== '1') {
+      window.setTimeout(() => {
+        this.randomize()
+      }, as)
+    }
+    if (obs === '1' && window.obsstudio) {
+      const delayedRand = (visible) => {
+        if (!visible) return
+        window.setTimeout(() => {
+          this.randomize()
+        }, !isNaN(as) && as > 0 ? as : 1000)
+      }
+      if (window.obsstudio.linuxbrowser || Number(window.obsstudio.pluginVersion.slice(0, 4)) > 1.29) {
+        window.obsstudio.onActiveChange = delayedRand
+      } else {
+        window.obsstudio.onVisibilityChange = delayedRand
+      }
+    }
     window.addEventListener('orientationchange', function () {
       let o = window.orientation
       if (o === 90 || o === -90 || o === 0) {
         window.location.reload()
       }
     })
-    const as = parseInt(this.$route.query.autostart)
-    if (!isNaN(as) && as > 0) {
-      window.setTimeout(() => {
-        this.randomize()
-      }, as)
-    }
-    document.getElementsByTagName('body')[0].removeAttribute('style')
   }
 }
 </script>
