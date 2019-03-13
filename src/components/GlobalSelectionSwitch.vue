@@ -4,7 +4,9 @@
             <div class="perk-switch__image-container"></div>
             <div class="perk-switch__image"></div>
             <div class="perk-switch__name">
-                <svg ref="svg" :width="itemLength" height="26"><text ref="svgText" :id="'name_' + type" x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="white">{{ text }}</text></svg>
+                <svg ref="svg" :width="itemLength" height="26">
+                    <text ref="svgText" :id="'name_' + type" x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="white">{{ text }}</text>
+                </svg>
             </div>
         </div>
     </div>
@@ -25,16 +27,6 @@ export default {
     }
   },
 
-  mounted () {
-    this.calcSvgViewBox()
-  },
-
-  watch: {
-    text: function () {
-      this.calcSvgViewBox()
-    }
-  },
-
   computed: {
     cssProps () {
       return {
@@ -44,20 +36,6 @@ export default {
     },
     text () {
       return this.$t('snippets.globalSwitchText').toUpperCase()
-    }
-  },
-
-  methods: {
-    calcSvgViewBox () {
-      // Animation frames are necessary because otherwise the width is calculated before the text has changed
-      window.requestAnimationFrame(() => {
-        this.$refs.svg.removeAttribute('viewBox')
-      })
-      window.requestAnimationFrame(() => {
-        const bb = this.$refs.svgText.getBBox()
-        if (bb.width <= this.itemLength) return
-        this.$refs.svg.setAttribute('viewBox', '0 0 ' + bb.width + ' ' + bb.height)
-      })
     }
   }
 }

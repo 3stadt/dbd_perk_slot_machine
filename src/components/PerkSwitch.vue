@@ -4,7 +4,9 @@
             <div :class="['_'+currentPerk.name, spriteType, 'perk-switch__image']"></div>
             <div :class="[{'perk-checked': currentPerk.checked}]"></div>
             <div class="perk-switch__name">
-                <svg :width="itemLength" ref="svg" height="26"><text ref="svgText" :id="'name_' + currentPerk.name" x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="white">{{ name }}</text></svg>
+                <svg :width="itemLength" ref="svg" height="52">
+                    <text ref="svgText" :id="'name_' + currentPerk.name" x="50%" y="50%" dy="-0.5rem" text-anchor="middle" fill="white" v-html="text"></text>
+                </svg>
             </div>
         </div>
     </div>
@@ -50,7 +52,7 @@ export default {
   },
 
   watch: {
-    name: function () {
+    text: function () {
       this.calcSvgViewBox()
     }
   },
@@ -61,6 +63,11 @@ export default {
         'sprite-survivor': this.type === 'Survivor',
         'sprite-killer': this.type === 'Killer'
       }
+    },
+    text () {
+      // split at whitespace after 10 chars
+      let text = this.name.replace(/.{10}\S*\s+/g, '$&@').split(/\s+@/)
+      return `<tspan x="50%">${text.join('</tspan> <tspan x="50%" dy="1rem">')}</tspan>`
     }
   },
 
@@ -89,7 +96,7 @@ export default {
 
     .perk-switch-container {
         position: relative;
-        margin: 0 auto;
+        margin: 0 auto 0.7rem 0;
         transform: translate(0, 0);
         background-image: url(/img/perkBg-md.png);
         background-size: cover;
