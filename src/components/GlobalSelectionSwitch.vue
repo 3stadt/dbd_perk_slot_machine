@@ -1,11 +1,9 @@
 <template>
     <div class="perk-switch-container" :style="cssProps">
         <div class="perk-switch">
-            <div class="perk-switch__image-container">
-                <div class="perk-switch__image"
-                     role="img"></div>
-            </div>
-            <div class="perk-switch__name">{{ $t("snippets.globalSwitchText").toUpperCase() }}</div>
+            <div class="perk-switch__image-container"></div>
+            <div class="perk-switch__image"></div>
+            <div class="perk-switch__name" v-html="switchText"></div>
         </div>
     </div>
 </template>
@@ -14,11 +12,33 @@
 export default {
   name: 'GlobalSelectionSwitch',
 
+  props: {
+    itemLength: {
+      type: Number,
+      required: true
+    },
+    type: {
+      type: String,
+      required: true
+    }
+  },
+
+  mounted () {
+    const name = document.getElementById('name_' + this.type)
+    const bb = name.getBBox()
+    if (bb.width <= this.itemLength) return
+    name.parentElement.setAttribute('viewBox', '0 0 ' + bb.width + ' ' + bb.height)
+  },
+
   computed: {
     cssProps () {
       return {
-        '--slotBg': `url('/img/icon_haste.png') 0 ${(128 * -1) + 'px'}`
+        '--slotBg': `url('/img/icon_perk.png') 0 ${(128 * -1) + 'px'}`,
+        '--elementlength': this.itemLength + 'px'
       }
+    },
+    switchText () {
+      return `<svg width="${this.itemLength}" height="26"><text id="${'name_' + this.type}" x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="white">${this.$t('snippets.globalSwitchText').toUpperCase()}</text></svg>`
     }
   }
 }
@@ -28,43 +48,49 @@ export default {
     @import "../design/main";
 
     .perk-switch-container {
-        padding: 5%;
-    }
+        position: relative;
+        margin: 0 auto;
+        width: var(--elementlength, 128px);
+        height: var(--elementlength, 128px);
 
-    .perk-switch {
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        background-color: rgba(0, 0, 0, 0.2);
-        background-image: url(/img/img_blood.png);
-        transition: all .15s ease-in-out;
-        transform: scale(1);
-        padding: 5%;
-        height: 100%;
-        background-size: cover;
+        .perk-switch {
+            position: absolute;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            background-color: rgba(0, 0, 0, 0.2);
+            background-image: url(/img/img_blood.png);
+            transition: all .15s ease-in-out;
+            transform: scale(1);
+            background-size: cover;
+            width: var(--elementlength, 128px);
+            height: var(--elementlength, 128px);
 
-        @media screen and (min-width: 992px) {
-            &:hover {
-                background-color: rgba(0, 0, 0, 0.4);
+            @media screen and (min-width: 992px) {
+                &:hover {
+                    background-color: rgba(0, 0, 0, 0.4);
+                }
+            }
+
+            .perk-switch__name {
+                position: absolute;
+                top: var(--elementlength, 128px);
+                width: var(--elementlength, 128px);
+                height: 26px;
+            }
+
+            .perk-switch__image-container {
+                top: 0;
+                position: relative;
+                width: var(--elementlength, 128px);
+                height: var(--elementlength, 128px);
+            }
+
+            .perk-switch__image {
+                position: absolute;
+                top: 0;
+                width: var(--elementlength, 100px);
+                height: var(--elementlength, 100px);
+                background: var(--slotBg);
             }
         }
-
-        .perk-switch__name {
-            position: relative;
-            text-align: center;
-        }
-
-        .perk-switch__image-container {
-            position: relative;
-            height: 128px;
-        }
-
-        .perk-switch__image {
-            position: absolute;
-            left: 50%; /* centers the left edge of the sprite */
-            margin-left: -64px; /* this centers the actual sprite--this is half the sprite-window width. if you don't do this, the left edge will be centered instead of the center of the sprite.  */
-            width: 128px; /* set window to see sprite through */
-            height: 128px; /* set window to see sprite through */
-            background: var(--slotBg); /* custom property is generated in cssProps() and bound in dov with class card*/
-        }
-
     }
 </style>
