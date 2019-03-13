@@ -1,8 +1,8 @@
 <template>
     <div class="perk-switch-container" @click="onClickPerk">
         <div class="perk-switch">
-            <div :class="['_'+currentPerk.name, spriteType, 'perk-switch__image']" :style="cssProps"></div>
-            <div :class="[{'perk-checked': currentPerk.checked}]" :style="cssProps"></div>
+            <div :class="['_'+currentPerk.name, spriteType, 'perk-switch__image']"></div>
+            <div :class="[{'perk-checked': currentPerk.checked}]"></div>
             <div class="perk-switch__name" v-html="nameBadge"></div>
         </div>
     </div>
@@ -25,12 +25,10 @@ export default {
     },
     type: {
       type: String,
-      default: '',
       required: true
     },
     itemLength: {
       type: Number,
-      default: 128,
       required: true
     }
   },
@@ -61,7 +59,7 @@ export default {
     },
 
     nameBadge () {
-      return `<svg width="${this.itemLength}" height="26"><text id="${'name_' + this.currentPerk.name}" x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="white">${this.currentPerk.name}</text></svg>`
+      return `<svg width="${this.itemLength}" height="26"><text id="${'name_' + this.currentPerk.name}" x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="white">${this.name}</text></svg>`
     }
   },
 
@@ -125,7 +123,6 @@ export default {
             left: 0;
             width: var(--elementlength, 128px);
             height: var(--elementlength, 128px);
-            background: var(--slotBg);
         }
     }
 </style>

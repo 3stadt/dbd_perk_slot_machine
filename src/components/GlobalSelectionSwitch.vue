@@ -13,6 +13,10 @@ export default {
   name: 'GlobalSelectionSwitch',
 
   props: {
+    itemLength: {
+      type: Number,
+      required: true
+    },
     type: {
       type: String,
       required: true
