@@ -3,7 +3,11 @@
         <div class="perk-switch">
             <div class="perk-switch__image-container"></div>
             <div class="perk-switch__image"></div>
-            <div class="perk-switch__name" v-html="switchText"></div>
+            <div class="perk-switch__name">
+                <svg ref="svg" :width="itemLength" height="26">
+                    <text ref="svgText" :id="'name_' + type" x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="white">{{ text }}</text>
+                </svg>
+            </div>
         </div>
     </div>
 </template>
@@ -23,13 +27,6 @@ export default {
     }
   },
 
-  mounted () {
-    const name = document.getElementById('name_' + this.type)
-    const bb = name.getBBox()
-    if (bb.width <= this.itemLength) return
-    name.parentElement.setAttribute('viewBox', '0 0 ' + bb.width + ' ' + bb.height)
-  },
-
   computed: {
     cssProps () {
       return {
@@ -37,8 +34,8 @@ export default {
         '--elementlength': this.itemLength + 'px'
       }
     },
-    switchText () {
-      return `<svg width="${this.itemLength}" height="26"><text id="${'name_' + this.type}" x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="white">${this.$t('snippets.globalSwitchText').toUpperCase()}</text></svg>`
+    text () {
+      return this.$t('snippets.globalSwitchText').toUpperCase()
     }
   }
 }
