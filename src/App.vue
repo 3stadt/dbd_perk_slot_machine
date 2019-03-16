@@ -105,9 +105,13 @@ export default {
         padding: 105px 0;
         z-index: 50;
 
+        .nav__left,
+        .nav__right {
+            display: flex;
+        }
+
         .nav__right {
             margin-left: auto;
-            display: flex;
 
             .nav-button {
                 display: inline-block;
@@ -115,8 +119,6 @@ export default {
         }
 
         .nav__left {
-            display: flex;
-
             .nav-button {
                 display: inline-block;
             }
@@ -129,7 +131,7 @@ export default {
     }
 
     .nav {
-        padding: 10px 0 10px 0;
+        padding: 10px 0 40px 0;
         display: flex;
 
         @media screen and (max-width: 650px) {

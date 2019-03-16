@@ -96,7 +96,7 @@ export default {
 
     .perk-switch-container {
         position: relative;
-        margin: 0 auto 0.7rem 0;
+        margin: 0 auto 0.7rem auto;
         transform: translate(0, 0);
         background-image: url(/img/perkBg-md.png);
         background-size: cover;

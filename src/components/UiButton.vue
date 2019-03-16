@@ -1,12 +1,10 @@
 <template>
     <router-link class="ui-button" :class="classes" v-if="routerLink" :to="routerLink">
-        <div :class="'ui-blood--' + this.direction">
-            <div :class="'ui-button__limiter--' + this.direction">
-
+        <div :class="'ui-blood--' + direction">
+            <div :class="'ui-button__limiter--' + direction">
                 <span v-if="hasIconSlot" class="ui-icon">
                     <slot name="icon"></slot>
                 </span>
-
                 <span class="ui-text">
                     <slot></slot>
                 </span>
@@ -14,12 +12,11 @@
         </div>
     </router-link>
     <button v-else class="ui-button" :class="classes">
-        <div :class="'ui-blood--' + this.direction">
-            <div :class="'ui-button__limiter--' + this.direction">
+        <div :class="'ui-blood--' + direction">
+            <div :class="'ui-button__limiter--' + direction">
                 <span v-if="hasIconSlot" class="ui-icon">
                     <slot name="icon"></slot>
                 </span>
-
                 <span class="ui-text">
                     <slot></slot>
                 </span>
@@ -29,39 +26,38 @@
 </template>
 
 <script>
-  export default {
-    name: 'UiButton',
+export default {
+  name: 'UiButton',
 
-    props: {
-      routerLink: {
-        type: Object,
-        default () {
-          return {}
-        },
-        required: false
+  props: {
+    routerLink: {
+      type: Object,
+      default () {
+        return {}
       },
-      direction: {
-        type: String,
-        default: 'left',
-        required: true
+      required: false
+    },
+    direction: {
+      type: String,
+      default: 'left',
+      required: true
+    }
+  },
+
+  computed: {
+    classes () {
+      return {
+        'ui-button--icon': this.hasIconSlot,
+        'ui-direction--right': this.direction === 'right',
+        'ui-direction--left': this.direction === 'left'
       }
     },
 
-    computed: {
-      classes () {
-        console.log(this.direction)
-        return {
-          'ui-button--icon': this.hasIconSlot,
-          'ui-direction--right': this.direction === 'right',
-          'ui-direction--left': this.direction === 'left'
-        }
-      },
-
-      hasIconSlot () {
-        return !!this.$slots.icon
-      }
+    hasIconSlot () {
+      return !!this.$slots.icon
     }
   }
+}
 </script>
 
 <style lang="scss" scoped>
@@ -71,11 +67,11 @@
         display: inline-block;
         color: $color-text;
         right: 0;
-        width: 250px;
+        width: 290px;
         padding: 7px 2px;
-        background-size: 250px;
+        background-size: contain;
         background-repeat: no-repeat;
-        background-position: center var(--elementlength);
+        background-position: center right;
         flex-shrink: 0;
         position: relative;
         text-decoration: none;
@@ -83,25 +79,26 @@
         @media screen and (max-width: 650px) {
             width: 75px;
             height: 75px;
+            background-position: center left;
         }
 
         .ui-icon {
             display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -20px;
+            margin-left: -20px;
 
             @media screen and (max-width: 650px) {
                 display: inline-block;
-                position: absolute;
-                top: 45%;
-                left: 50%;
-                margin-top: -20px;
-                margin-left: -20px;
+
             }
         }
     }
 
     .ui-button__limiter--left,
     .ui-button__limiter--right {
-        left: 0;
         margin: 3px 10px;
         background-image: url(/img/button_main_limiter_nav.png);
         background-size: contain;
@@ -114,16 +111,13 @@
         }
     }
 
-    .ui-button__limiter--right {
-        background-position: center right;
-    }
-
-    .ui-direction--right {
-        right:0;
-    }
-
-    .ui-direction--left {
+    .ui-button__limiter--left {
         left: 0;
+    }
+
+    .ui-button__limiter--right {
+        right: 0;
+        background-position: center right;
     }
 
     .ui-direction--right {
@@ -140,8 +134,7 @@
             text-transform: uppercase;
             overflow: hidden;
             white-space: nowrap;
-            text-overflow: ellipsis;
-            width: 200px;
+            width: 250px;
 
             @media screen and (max-width: 650px) {
                 display: none;
@@ -156,8 +149,6 @@
     }
 
     .ui-blood--right {
-        margin-left: auto;
-
         @media screen and (min-width: 650px) {
             &:hover {
                 background-image: url(/img/blood_mark.png);
@@ -170,6 +161,7 @@
 
     .ui-direction--left {
         background-image: url(/img/button_background_nav_reverse.png);
+        background-position: center left;
 
         .ui-text {
             margin-left: 15px;

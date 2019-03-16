@@ -73,8 +73,6 @@
         position: relative;
         text-decoration: none;
 
-        border: 0 none;
-
         @media screen and (max-width: 650px) {
             background-image: url(/img/icon_menu.png);
             background-size: contain;
@@ -114,6 +112,8 @@
         }
 
         .ui-blood {
+            left: 0;
+
             @media screen and (min-width: 650px) {
                 &:hover {
                     background-image: url(/img/blood_mark.png);
@@ -127,7 +127,6 @@
         &.ui-button--icon {
             display: flex;
             align-items: center;
-            padding-left: 15px;
 
             .ui-button__icon {
                 margin-right: 15px;
@@ -137,7 +136,7 @@
 
     .ui-button__limiter {
         left: 0;
-        margin: 4px;
+        margin: 3px 10px;
         background-image: url(/img/back-icon.png);
         background-size: contain;
         background-repeat: no-repeat;
@@ -145,6 +144,7 @@
 
         @media screen and (max-width: 650px) {
             background: 0 none;
+            margin: 0;
         }
     }
 </style>
