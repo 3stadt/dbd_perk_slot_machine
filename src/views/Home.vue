@@ -1,6 +1,6 @@
 <template>
     <div class="perk-config home">
-        <div class="language-switch">
+        <div class="language-switch overview__box">
             <img @click="changeLang('de')" src="img/flags/germany.svg" width="32" height="32" alt="deutsch" class="flag">
             <img @click="changeLang('en')" src="img/flags/united-kingdom.svg" width="32" height="32" alt="english" class="flag">
         </div>
@@ -190,8 +190,15 @@ export default {
 <style lang="scss" scoped>
     .language-switch {
         .flag {
-            margin-right: 1rem;
+            margin: 0 0.3rem;
         }
+
+        padding: 0.3rem 0.15rem 0 0.15rem;
+        margin: 0.5rem 0;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        background-color: rgba(0, 0, 0, 0.2);
+        display: inline-block;
+        align-items: center;
     }
 
     @media screen and (max-width: 1055px) {
