@@ -1,9 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from './views/Home.vue'
-import Survivor from './views/Survivor.vue'
-import Killer from './views/Killer.vue'
-import NotFoundComponent from './views/NotFoundComponent.vue'
+import Home from './views/Home/Home.vue'
+import Survivor from './views/Survivor/Survivor.vue'
+import Killer from './views/Killer/Killer.vue'
+import NotFoundComponent from './views/NotFound/NotFoundComponent.vue'
 
 Vue.use(Router)
 

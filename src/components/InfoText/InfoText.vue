@@ -85,65 +85,6 @@
     </div>
 </template>
 
-<script>
-export default {
-  name: 'InfoText',
+<script src="./infoText.js"></script>
 
-  props: {
-    value: {
-      required: false
-    }
-  }
-}
-</script>
-
-<style lang="scss" scoped>
-    .e-mail:before {
-        content: attr(data-website) "\0040" attr(data-user);
-        unicode-bidi: bidi-override;
-        direction: rtl;
-    }
-</style>
-
-<style lang="scss">
-    @import "../design/main";
-    @import "../design/typography";
-
-    .paragraph {
-        padding: 10px;
-
-        a {
-            color: $color-primary;
-            text-decoration: none;
-        }
-
-        h3 {
-            margin-top: 10px
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        a:active {
-            color: black;
-        }
-
-        a:visited {
-            color: darkgrey;
-        }
-    }
-
-    li {
-        margin-left: 20px;
-    }
-
-    .video {
-        min-height: 315px;
-        width: 100%;
-        height: 100%;
-        max-width: 1024px;
-        margin: 0 auto;
-    }
-
-</style>
+<style lang="scss" src="./infoText.scss" scoped></style>

@@ -1,8 +1,3 @@
-<template>
-    <div class="slot" ref="slot" :style="cssProps"></div>
-</template>
-
-<script>
 import * as PIXI from 'pixi.js'
 
 export default {
@@ -131,11 +126,11 @@ export default {
       }
     },
     /**
-    *
-    * @param config {object, property, target, time, easing, onchange, oncomplete}
-    * @returns {{propertyBeginValue: *, change: *, property: *, start: number, time: *, complete: *, easing: *, object: *, target: *}}
-    * @private
-    */
+     *
+     * @param config {object, property, target, time, easing, onchange, oncomplete}
+     * @returns {{propertyBeginValue: *, change: *, property: *, start: number, time: *, complete: *, easing: *, object: *, target: *}}
+     * @private
+     */
     _tweenTo: function (config) {
       const { object, property, target, time, easing, onchange, oncomplete } = config
       const tween = {
@@ -250,25 +245,3 @@ export default {
     })
   }
 }
-</script>
-
-<style lang="scss" scoped>
-    @import '../design/perkData';
-
-    .slot {
-        height: var(--elementlength)px;
-        width: var(--elementlength)px;
-        position: relative;
-        display: inline-block;
-    }
-
-    .perk {
-        object-fit: none;
-        object-position: 0 0;
-        width: var(--elementlength)px;
-        height: var(--elementlength)px;
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
-</style>

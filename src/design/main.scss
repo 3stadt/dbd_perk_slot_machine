@@ -1,3 +1,28 @@
 @import "colors";
 @import "typography";
 @import "utilities";
+
+.overview__box {
+  margin-top: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+}
+
+.hint-text {
+  margin: 30px 30%;
+  padding: 10px 20px;
+  justify-content: center;
+
+  .info-icon {
+    width: 30px;
+    margin: 0 10px;
+    height: auto;
+  }
+
+  @media screen and (max-width: 650px) {
+    margin: 0 10%;
+  }
+}

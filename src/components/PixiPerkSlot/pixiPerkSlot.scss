@@ -1,0 +1,18 @@
+@import '../../design/perkData';
+
+.slot {
+  height: var(--elementlength)px;
+  width: var(--elementlength)px;
+  position: relative;
+  display: inline-block;
+}
+
+.perk {
+  object-fit: none;
+  object-position: 0 0;
+  width: var(--elementlength)px;
+  height: var(--elementlength)px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}

@@ -1,0 +1,52 @@
+@import "../../design/main";
+
+.perk-switch-container {
+  position: relative;
+  margin: 0 auto 0.7rem 0;
+  transform: translate(0, 0);
+  background-image: url(/img/perkBg-md.png);
+  background-size: cover;
+  width: var(--elementlength, 128px);
+  height: var(--elementlength, 128px);
+
+  .perk-switch {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: var(--elementlength, 128px);
+    height: var(--elementlength, 128px);
+    z-index: 100;
+
+    @media screen and (min-width: 992px) {
+      &:not(.perk-checked):hover {
+        background-image: url(/img/perkswitch_hover-md.png);
+        background-size: cover;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .perk-checked {
+    background-image: url(/img/perkswitch_selected-md.png);
+    background-size: cover;
+    width: var(--elementlength, 128px);
+    height: var(--elementlength, 128px);
+    z-index: 150;
+  }
+
+  .perk-switch__name {
+    position: absolute;
+    top: var(--elementlength, 128px);
+    left: 0;
+    width: var(--elementlength, 128px);
+    height: 26px;
+  }
+
+  .perk-switch__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: var(--elementlength, 128px);
+    height: var(--elementlength, 128px);
+  }
+}

@@ -1,0 +1,104 @@
+@import "../../design/main";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $font-family-default;
+  line-height: 1.4;
+  background: $color-background url("../../../public/img/Background-Main.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: $color-text;
+  top: 0;
+}
+
+.hide-bg {
+  background: none;
+  background-size: unset;
+}
+
+#app {
+  margin: 0 auto;
+  padding: 0.1px;
+}
+
+.header {
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+
+  padding: 105px 0;
+  z-index: 50;
+
+  @media screen and (max-width: 650px) {
+    padding: 175px 0;
+  }
+}
+
+.nav {
+  padding: 10px 0;
+  display: flex;
+
+  @media screen and (max-width: 650px) {
+    display: block;
+    padding: 0 30px;
+
+    .ui-button {
+      margin: 15px 0;
+      width: 100%;
+    }
+  }
+}
+
+.nav__right {
+  margin-left: auto;
+}
+
+.github-svg {
+  z-index: 125;
+  fill: #151513;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  border: 0;
+  right: 0;
+}
+
+.github-corner:hover .octo-arm {
+  z-index: 150;
+  position: fixed;
+  animation: octocat-wave 560ms ease-in-out
+}
+
+@keyframes octocat-wave {
+  0%, 100% {
+    transform: rotate(0)
+  }
+  20%, 60% {
+    transform: rotate(-25deg)
+  }
+  40%, 80% {
+    transform: rotate(10deg)
+  }
+}
+
+@media (max-width: 500px) {
+  .github-corner:hover .octo-arm {
+    animation: none
+  }
+
+  .github-corner .octo-arm {
+    animation: octocat-wave 560ms ease-in-out
+  }
+}

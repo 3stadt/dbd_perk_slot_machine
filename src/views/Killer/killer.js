@@ -1,53 +1,9 @@
-<template>
-    <div>
-        <div>
-            <perkslot0 @reRollRequested="randomize"
-                       ref="perkslot0"
-                       type="Surv"
-                       :elementLength="elementLength"
-                       :colorized="color"
-                       :lang="lang"
-                       :perkData="Object.keys(perksSHD.frames)"
-            />
-            <perkslot1 @reRollRequested="randomize"
-                       ref="perkslot1"
-                       type="Surv"
-                       :elementLength="elementLength"
-                       :colorized="color"
-                       :lang="lang"
-                       :perkData="Object.keys(perksSHD.frames)"
-            />
-            <perkslot2 @reRollRequested="randomize"
-                       ref="perkslot2"
-                       type="Surv"
-                       :elementLength="elementLength"
-                       :colorized="color"
-                       :lang="lang"
-                       :perkData="Object.keys(perksSHD.frames)"
-            />
-            <perkslot3 @reRollRequested="randomize"
-                       ref="perkslot3"
-                       type="Surv"
-                       :elementLength="elementLength"
-                       :colorized="color"
-                       :lang="lang"
-                       :perkData="Object.keys(perksSHD.frames)"
-            />
-        </div>
-        <div v-if="hintVisible" class="hint-text">
-            <img src="/img/icon_shortinfo.png" slot="icon" alt="Survivor" class="info-icon">
-            <span>{{ $t('snippets.startPerkRoll') }}</span>
-        </div>
-    </div>
-</template>
-
-<script>
-import PixiPerkSlot from '../components/PixiPerkSlot'
+import PixiPerkSlot from '../../components/PixiPerkSlot/PixiPerkSlot.vue'
 import rand from '@/lib/randomize'
 import vp from '@/lib/viewport'
 
 export default {
-  name: 'Survivor',
+  name: 'Killer',
   components: {
     'perkslot0': PixiPerkSlot,
     'perkslot1': PixiPerkSlot,
@@ -78,34 +34,34 @@ export default {
       },
       required: false
     },
-    perksSHD: {
+    perksKHD: {
       type: Object,
       required: true
     }
   },
   data: function () {
-    let survivorsRaw = Object.keys(this.perksSHD.frames)
-    let survivors = []
+    let killersRaw = Object.keys(this.perksKHD.frames)
+    let killers = []
     // make sure array keys match the ids in file name. TODO maybe make sure no key is reassigned because of naming issues
-    for (let i = 0, sLen = survivorsRaw.length; i < sLen; i++) {
-      let perkFileName = survivorsRaw[i]
+    for (let i = 0, kLen = killersRaw.length; i < kLen; i++) {
+      let perkFileName = killersRaw[i]
       let key = Number(perkFileName.substr(0, 2))
-      survivors[key] = {
+      killers[key] = {
         'index': key,
         'name': perkFileName
       }
     }
     return {
-      perkData: survivors,
+      perkData: killers,
       hintVisible: true,
       elementLength: vp.getElementLength(),
-      lastRoll: []
+      lastRoll: null
     }
   },
   methods: {
     randomize: function () {
       if (!this.lastRoll) this.lastRoll = [this.perkData[0], this.perkData[0], this.perkData[0], this.perkData[0]]
-      let random = rand.getRandomData(4, this.sids, this.perkData, this.lastRoll)
+      let random = rand.getRandomData(4, this.kids, this.perkData, this.lastRoll)
       this.hintVisible = false
 
       this.lastRoll = random
@@ -136,7 +92,7 @@ export default {
       }
     }
     const obs = this.$route.query.obs
-    const as = parseInt(this.$route.query.autostart)
+    let as = parseInt(this.$route.query.autostart)
     if (!isNaN(as) && as > 0 && obs !== '1') {
       window.setTimeout(() => {
         this.randomize()
@@ -163,26 +119,3 @@ export default {
     })
   }
 }
-</script>
-
-<style lang="scss">
-    .hint-text {
-        margin: 30px 30%;
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        background-color: rgba(0, 0, 0, 0.2);
-        padding: 10px 20px;
-        align-items: center;
-        justify-content: center;
-        display: flex;
-
-        @media screen and (max-width: 650px) {
-            margin: 0 10%;
-        }
-    }
-
-    .info-icon {
-        width: 30px;
-        margin: 0 10px;
-        height: auto;
-    }
-</style>

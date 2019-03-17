@@ -1,17 +1,5 @@
-<template>
-    <div class="perk-config home">
-        <div class="language-switch">
-            <img @click="changeLang('de')" src="img/flags/germany.svg" width="32" height="32" alt="deutsch" class="flag">
-            <img @click="changeLang('en')" src="img/flags/united-kingdom.svg" width="32" height="32" alt="english" class="flag">
-        </div>
-        <MenuItem type="Info" :title="$t('snippets.info')" />
-        <MenuItem :perks="perks.survivors" @resetPerks="resetPerks" @change="change" type="Survivor" :title="$t('snippets.survPerkConfig')" />
-        <MenuItem :perks="perks.killers" @resetPerks="resetPerks" @change="change" type="Killer" :title="$t('snippets.killPerkConfig')" />
-    </div>
-</template>
 
-<script>
-import MenuItem from '../components/MenuItem.vue'
+import MenuItem from '../../components/MenuItem/MenuItem.vue'
 
 export default {
   name: 'home',
@@ -185,24 +173,3 @@ export default {
     }
   }
 }
-</script>
-
-<style lang="scss" scoped>
-    .language-switch {
-        .flag {
-            margin-right: 1rem;
-        }
-    }
-
-    @media screen and (max-width: 1055px) {
-        .language-switch {
-            margin-left: 1rem;
-        }
-    }
-
-</style>
-
-<style lang="scss">
-    @import "../../public/sprites/surv-css.css";
-    @import "../../public/sprites/kill-css.css";
-</style>
