@@ -1,8 +1,8 @@
 <template>
     <div class="perk-config home">
         <div class="language-switch overview__box">
-            <img @click="changeLang('de')" src="img/flags/germany.svg" width="32" height="32" alt="deutsch" class="flag">
             <img @click="changeLang('en')" src="img/flags/united-kingdom.svg" width="32" height="32" alt="english" class="flag">
+            <img @click="changeLang('de')" src="img/flags/germany.svg" width="32" height="32" alt="deutsch" class="flag">
         </div>
         <MenuItem type="Info" :title="$t('snippets.info')" />
         <MenuItem :perks="perks.survivors" @resetPerks="resetPerks" @change="change" type="Survivor" :title="$t('snippets.survPerkConfig')" />
@@ -191,6 +191,7 @@ export default {
     .language-switch {
         .flag {
             margin: 0 0.3rem;
+            cursor: pointer;
         }
 
         padding: 0.3rem 0.15rem 0 0.15rem;

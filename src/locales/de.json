@@ -12,11 +12,11 @@
   "about": {
     "header": "Worum geht es hier?",
     "description": "Diese Seite ist ein Perk-Roulette für das Spiel {url}. Um genau zu sein ist es kein Roulette, sondern eine Slot-Maschine, wie ein Glücksspielautomat. In diesem Video erfährst Du alles, was Du wissen musst:",
-    "videoUrl": "https://www.youtube-nocookie.com/embed/vSaUjJC68Kc"
+    "videoUrl": "https://www.youtube-nocookie.com/embed/JSlwjmBVfKg"
   },
   "howItWorks": {
     "header": "Wie funktioniert das?",
-    "description": "Falls Du alle Perks für einen Überlebenden oder Killer hast,die es gibt: Klicke einfach auf einen der roten Buttons oben, klicke auf einen der Perk-Slots, fertig. Daraufhin werden vier zufällige Perks für Dich ausgewählt, mit denen Du dann spielst. Genau so funktioniert ein Perk-Roulette. Viel Spaß!",
+    "description": "Falls Du alle Perks für einen Überlebenden oder Killer hast,die es gibt: Klicke einfach auf einen der Buttons oben auf der Seite, klicke auf einen der Perk-Slots, fertig. Daraufhin werden vier zufällige Perks für Dich ausgewählt, mit denen Du dann spielst. Genau so funktioniert ein Perk-Roulette. Viel Spaß!",
     "missingPerks": {
       "header": "Aber ich habe nicht alle Perks!!1elf",
       "description": "Falls Dir Perks fehlen, klicke auf eine der \"... konfigurieren\"-Boxen unten. Dann klicke auf die Perks die Du nicht hast oder nicht willst. Deine Auswahl wird nicht auf dem Server gespeichert: Es wird eine individuelle URL zusammengebaut, die Du Dir nach dem Konfigurieren in Deinen Lesezeichen speichern kannst. Also Perks konfigurieren, als Lesezeichen speichern, fertig."
@@ -26,8 +26,8 @@
     "header": "Wie benutze ich das Teil in OBS/XSplit?",
     "description": "Du kannst einige Optionen in der URL setzen. Im Detail wird das im Video oben erklärt.",
     "options": {
-      "description": "Kurz gesagt, nutze die URL-Parameter {transparent} um nur die Slots ohne alles anzuzeigen, nutze dann z.B. {autostart} um eine Sekunde nach dem Seitenstart einen Durchlauf zu starten.",
-      "transparent": "bg=0&header=0&hint=0",
+      "description": "Kurz gesagt, nutze den URL-Parameter {transparent} um nur die Slots ohne alles anzuzeigen, nutze dann z.B. {autostart} um eine Sekunde nach dem Seitenstart einen Durchlauf zu starten.",
+      "transparent": "streammode=1",
       "autostart": "autostart=1000"
     }
   },

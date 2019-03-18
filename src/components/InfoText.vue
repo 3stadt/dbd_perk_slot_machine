@@ -6,8 +6,9 @@
                 <a place="url" href="https://deadbydaylight.com/">Dead by Daylight</a>
             </i18n>
         </div>
-        <div class="paragraph">
-            <iframe class="video" :src="$t('about.videoUrl')" frameborder="0"
+        <div class="paragraph yt">
+            <iframe width="560" height="315" :src="$t('about.videoUrl')"
+                    frameborder="0"
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
         </div>
@@ -131,6 +132,13 @@ export default {
 
         a:visited {
             color: darkgrey;
+        }
+
+        &.yt {
+            iframe {
+                display: block;
+                margin: 0 auto;
+            }
         }
     }
 

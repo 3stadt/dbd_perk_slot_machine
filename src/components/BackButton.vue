@@ -30,31 +30,31 @@
 </template>
 
 <script>
-  export default {
-    name: 'BackButton',
+export default {
+  name: 'BackButton',
 
-    props: {
-      routerLink: {
-        type: Object,
-        default () {
-          return {}
-        },
-        required: false
+  props: {
+    routerLink: {
+      type: Object,
+      default () {
+        return {}
+      },
+      required: false
+    }
+  },
+
+  computed: {
+    classes () {
+      return {
+        'ui-button--icon': this.hasIconSlot
       }
     },
 
-    computed: {
-      classes () {
-        return {
-          'ui-button--icon': this.hasIconSlot
-        }
-      },
-
-      hasIconSlot () {
-        return !!this.$slots.icon
-      }
+    hasIconSlot () {
+      return !!this.$slots.icon
     }
   }
+}
 </script>
 
 <style lang="scss" scoped>
