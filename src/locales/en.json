@@ -12,11 +12,11 @@
   "about": {
     "header": "What is this about?",
     "description": "This site is a perk wheel for use with the game {url}. To be precise, there is no wheel, but a slot machine. Works the same, looks better. Here, have a video containing everything you need to know:",
-    "videoUrl": "https://www.youtube-nocookie.com/embed/vSaUjJC68Kc"
+    "videoUrl": "https://www.youtube-nocookie.com/embed/dRZvzGP_2as"
   },
   "howItWorks": {
     "header": "How does it work?",
-    "description": "If you have all perks on one of your characters on the killer and survivor site, just click one of the red buttons on top, click on any perk slot, done. This way four different perks are chosen for you to play with. That's how a perk wheel/slot machine works. Have fun!",
+    "description": "If you have all perks on one of your characters on the killer and survivor site, just click one of the two buttons at the top of this page, then click on any perk slot, done. This way four different perks are chosen for you to play with. That's how a perk wheel/slot machine works. Have fun!",
     "missingPerks": {
       "header": "...but I don't have ALL THE PERKS!",
       "description": "If you are missing some perks, click on one of the \"... configuration\" boxes below. Then disable the perks you don't have or want. The perks you've chosen are not saved, but the url is used to determine which perks are active. So configure your perks, create a bookmark for this configuration, done."
@@ -26,8 +26,8 @@
     "header": "How to use this with OBS/XSplit?",
     "description": "There are a number of options you can set via URL. This is explained in-depth in the video above.",
     "options": {
-      "description": "In short, use the parameters {transparent} to only show the perk slots, use e.g. {autostart} to start a roll 1 second after page load.",
-      "transparent": "bg=0&header=0&hint=0",
+      "description": "In short, use the parameter {transparent} to only show the perk slots, use e.g. {autostart} to start a roll 1 second after page load.",
+      "transparent": "streammode=1",
       "autostart": "autostart=1000"
     }
   },
