@@ -129,6 +129,7 @@ export default {
           this.$router.push({ path: this.$route.path, query: query })
           break
         default:
+          // eslint-disable-next-line
           console.warn(`changes to unknown perk type ${type}`)
       }
     }
