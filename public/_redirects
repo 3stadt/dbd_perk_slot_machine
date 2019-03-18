@@ -5,3 +5,6 @@
 /killers.html*  kids=:kids  /killer?kids=:kids 301
 /killers.html*  sids=:sids  /killer?sids=:sids 301
 /*    /index.html   200
+
+# Optional: Redirect default Netlify subdomain to primary domain
+https://sad-beaver-ca1140.netlify.com/* https://dpsm.3stadt.com/:splat 301
