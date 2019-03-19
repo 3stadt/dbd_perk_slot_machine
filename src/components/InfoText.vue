@@ -7,7 +7,7 @@
             </i18n>
         </div>
         <div class="paragraph yt">
-            <iframe width="560" height="315" :src="$t('about.videoUrl')"
+            <iframe class="video" :src="$t('about.videoUrl')"
                     frameborder="0"
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
@@ -147,11 +147,13 @@ export default {
     }
 
     .video {
-        min-height: 315px;
-        width: 100%;
-        height: 100%;
-        max-width: 1024px;
-        margin: 0 auto;
+        width: 560px;
+        height: 315px;
+
+        @media screen and (max-width: 650px) {
+            width: 100%;
+            height: 100%;
+        }
     }
 
 </style>
