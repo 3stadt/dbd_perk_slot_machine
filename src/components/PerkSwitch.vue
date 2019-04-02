@@ -5,7 +5,7 @@
             <div :class="[{'perk-checked': currentPerk.checked}]"></div>
             <div class="perk-switch__name">
                 <svg :width="itemLength" ref="svg" height="52">
-                    <text ref="svgText" :id="'name_' + currentPerk.name" x="50%" y="50%" dy="-0.5rem" text-anchor="middle" fill="white" v-html="text"></text>
+                    <text ref="svgText" :id="'name_' + currentPerk.name" x="50%" y="50%" dy="-8px" text-anchor="middle" fill="white" v-html="text"></text>
                 </svg>
             </div>
         </div>
@@ -67,7 +67,7 @@ export default {
     text () {
       // split at whitespace after 10 chars
       let text = this.name.replace(/.{10}\S*\s+/g, '$&@').split(/\s+@/)
-      return `<tspan x="50%">${text.join('</tspan> <tspan x="50%" dy="1rem">')}</tspan>`
+      return `<tspan x="50%">${text.join('</tspan> <tspan x="50%" dy="16px">')}</tspan>`
     }
   },
 
