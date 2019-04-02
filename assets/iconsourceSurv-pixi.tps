@@ -260,6 +260,9 @@
             <key type="filename">iconsourceSurv/59_wellMakeIt.png</key>
             <key type="filename">iconsourceSurv/60_wereGonnaLiveForever.png</key>
             <key type="filename">iconsourceSurv/61_windowsOfOpportunity.png</key>
+            <key type="filename">iconsourceSurv/62_buckleUp.png</key>
+            <key type="filename">iconsourceSurv/63_flipFlop.png</key>
+            <key type="filename">iconsourceSurv/64_mettleOfMan.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0,0</point_f>
