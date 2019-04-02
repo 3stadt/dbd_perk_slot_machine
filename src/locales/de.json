@@ -93,7 +93,7 @@
       "24_hexRuin": "Ruin",
       "25_hexTheThirdSeal": "Das dritte Siegel",
       "26_hexThrillOfTheHunt": "Nervenkitzel der Jagd",
-      "27_infectiousFright": "Ansteckende Furcht",
+      "27_infectiousFright": "Infektiöse Angst",
       "28_insidious": "Heimtückisch",
       "29_ironGrasp": "Eiserner Griff",
       "30_ironMaiden": "Eiserne Jungfrau",
@@ -147,7 +147,7 @@
       "19_distortion": "Verzerrung",
       "20_diversion": "Ablenkung",
       "21_empathy": "Einfühlungsvermögen",
-      "22_headOn": "Kopfstoss",
+      "22_headOn": "Frontal",
       "23_hope": "Hoffnung",
       "24_ironWill": "Eiserner Wille",
       "25_kindred": "Verwandt",
@@ -171,7 +171,7 @@
       "43_slipperyMeat": "Gerissenes Fleisch",
       "44_smallGame": "Niederwild",
       "45_soleSurvivor": "Einziger Überlebender",
-      "46_solidarity": "Schulterschluss",
+      "46_solidarity": "Solidarität",
       "47_spineChill": "Kalter Rückenschauer",
       "48_sprintBurst": "Sprintboost",
       "49_stakeOut": "Observierung",
@@ -187,9 +187,9 @@
       "59_wellMakeIt": "Wir schaffen das!",
       "60_wereGonnaLiveForever": "Wir werden ewig Leben",
       "61_windowsOfOpportunity": "Gelegenheit nutzen",
-      "62_buckleUp": "Buckle Up",
+      "62_buckleUp": "Anschnallen",
       "63_flipFlop": "Flip-Flop",
-      "64_mettleOfMan": "Mettle of Man"
+      "64_mettleOfMan": "Der Eifer der Menschen"
     }
   }
 }
