@@ -3,7 +3,7 @@
     "info": "Info",
     "survPerkConfig": "Überlebenden-Perks konfigurieren",
     "killPerkConfig": "Killer-Perks konfigurieren",
-    "globalSwitchText": "Alle an/aus",
+    "globalSwitchText": "Alle an\/aus",
     "startPerkRoll": "Klicke zum Starten auf einen Perkslot",
     "buttonHome": "Startseite",
     "buttonKillRoulette": "Killer-Roulette",
@@ -12,21 +12,21 @@
   "about": {
     "header": "Worum geht es hier?",
     "description": "Diese Seite ist ein Perk-Roulette für das Spiel {url}. Um genau zu sein ist es kein Roulette, sondern eine Slot-Maschine, wie ein Glücksspielautomat. In diesem Video erfährst Du alles, was Du wissen musst:",
-    "videoUrl": "https://www.youtube-nocookie.com/embed/JSlwjmBVfKg"
+    "videoUrl": "https:\/\/www.youtube-nocookie.com\/embed\/JSlwjmBVfKg"
   },
   "howItWorks": {
     "header": "Wie funktioniert das?",
-    "description": "Falls Du alle Perks für einen Überlebenden oder Killer hast,die es gibt: Klicke einfach auf einen der Buttons oben auf der Seite, klicke auf einen der Perk-Slots, fertig. Daraufhin werden vier zufällige Perks für Dich ausgewählt, mit denen Du dann spielst. Genau so funktioniert ein Perk-Roulette. Viel Spaß!",
+    "description": "Falls Du alle Perks für einen Überlebenden oder Killer hast, die es gibt: Klicke einfach auf einen der Buttons oben auf der Seite, klicke auf einen der Perk-Slots, fertig. Daraufhin werden vier zufällige Perks für Dich ausgewählt, mit denen Du dann spielst. Genau so funktioniert ein Perk-Roulette. Viel Spaß!",
     "missingPerks": {
       "header": "Aber ich habe nicht alle Perks!!1elf",
       "description": "Falls Dir Perks fehlen, klicke auf eine der \"... konfigurieren\"-Boxen unten. Dann klicke auf die Perks die Du nicht hast oder nicht willst. Deine Auswahl wird nicht auf dem Server gespeichert: Es wird eine individuelle URL zusammengebaut, die Du Dir nach dem Konfigurieren in Deinen Lesezeichen speichern kannst. Also Perks konfigurieren, als Lesezeichen speichern, fertig."
     }
   },
   "streaming": {
-    "header": "Wie benutze ich das Teil in OBS/XSplit?",
+    "header": "Wie benutze ich das Teil in OBS\/XSplit?",
     "description": "Du kannst einige Optionen in der URL setzen. Im Detail wird das im Video oben erklärt.",
     "options": {
-      "description": "Kurz gesagt, nutze den URL-Parameter {transparent} um nur die Slots ohne alles anzuzeigen, nutze dann z.B. {autostart} um eine Sekunde nach dem Seitenstart einen Durchlauf zu starten.",
+      "description": "Kurz gesagt, nutze den URL-Parameter {transparent} um nur die Slots ohne alles anzuzeigen, nutze dann z. B. {autostart} um eine Sekunde nach dem Seitenstart einen Durchlauf zu starten.",
       "transparent": "streammode=1",
       "autostart": "autostart=1000"
     }
@@ -39,11 +39,11 @@
     "header": "Attribuierung",
     "description": "Die meisten Medien auf dieser Seite wurden nicht von den Autoren der Seite erstellt.",
     "wiki": {
-      "description": "Die meisten Bilder stammen aus dem wunderbaren {wikiUrl}. Die Inhalte dieses Wikis sind unter der Creative Commons \"{licenseUrl}\" lizensiert.",
+      "description": "Die meisten Bilder stammen aus dem wunderbaren {wikiUrl}. Die Inhalte dieses Wikis sind unter der Creative Commons \"{licenseUrl}\" lizenziert.",
       "wikiUrlText": "offiziellen Dead by Daylight Wiki",
-      "wikiUrl": "https://deadbydaylight-de.gamepedia.com/Dead_by_Daylight_Wiki",
+      "wikiUrl": "https:\/\/deadbydaylight-de.gamepedia.com\/Dead_by_Daylight_Wiki",
       "licenseUrlText": "Namensnennung - Nicht-kommerziell - Weitergabe unter gleichen Bedingungen 3.0 Unported (CC BY-NC-SA 3.0)",
-      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/deed.de"
+      "licenseUrl": "https:\/\/creativecommons.org\/licenses\/by-nc-sa\/3.0\/deed.de"
     },
     "happyclown": {
       "description": "Die farbigen Icons (spezieller Beta-Modus, ändere color=0 zu color=1 in der URL) wurden von {profile} gemacht, es gibt sogar eine {group} dafür. Schau sie Dir am besten gleich an!",
@@ -57,12 +57,12 @@
       "description": "Die Perk- sowie Hintergrundbilder und anderer spielbezogener Inhalt ist Eigentum von und wurde erstellt durch {bhvr} für das Spiel {dbd}"
     },
     "freepik": {
-      "description": "Sprachen-Icons wurden erstellt von {freepik} über {flaticon} und sind als {licenseUrl} lizensiert"
+      "description": "Sprachen-Icons wurden erstellt von {freepik} über {flaticon} und sind als {licenseUrl} lizenziert"
     }
   },
   "disclaimer": {
     "header": "Haftungsausschluss",
-    "description": "Diese Seite steht weder in Verbindung mit einem Unternehmen, noch wird sie unterstützt oder ist in irgendeiner Form mit einem Unternehmen verbunden. Sie ist ein privates Fanprojekt. Bei Fragen, Fehlern oder anderen Anliegen kontaktiere den Autor bitte per E-Mail unter {email}. Es gibt keine Garantien beim Benutzen dieser Seite. Du benutzt sie auf eigenes Risiko. Die gute Nachricht ist, diese Seite speichert nichts auf dem Server und läuft komplett in Deinem Browser. Allerdings nutzt diese Seite {statcounter} um zu zählen, wieviele Besucher die Seite nutzen."
+    "description": "Diese Seite steht weder in Verbindung mit einem Unternehmen, noch wird sie unterstützt oder ist in irgendeiner Form mit einem Unternehmen verbunden. Sie ist ein privates Fanprojekt. Bei Fragen, Fehlern oder anderen Anliegen kontaktiere den Autor bitte per E-Mail unter {email}. Es gibt keine Garantien beim Benutzen dieser Seite. Du benutzt sie auf eigenes Risiko. Die gute Nachricht ist, diese Seite speichert nichts auf dem Server und läuft komplett in Deinem Browser. Allerdings nutzt diese Seite {statcounter}, um zu zählen, wie viele Besucher die Seite nutzen."
   },
   "perks": {
     "killer": {
@@ -114,7 +114,7 @@
       "45_shadowborn": "Schattengeborener",
       "46_sloppyButcher": "Schlampiger Schlachter",
       "47_spiesFromTheShadows": "Spione des Schattens",
-      "48_spiritFury": "Zorn des Gespensts",
+      "48_spiritFury": "Zorn des Gespenstes",
       "49_stridor": "Stridor",
       "50_surveillance": "Überwachung",
       "51_territorialImperative": "Gebietszwang",
@@ -161,7 +161,7 @@
       "33_open-Handed": "Mit offener Hand",
       "34_pharmacy": "Apotheke",
       "35_plunderersInstinct": "Plündererspürsinn",
-      "36_poised": "Selbsticher",
+      "36_poised": "Selbstsicher",
       "37_premonition": "Vorwarnung",
       "38_proveThyself": "Beweise dich",
       "39_quickAndQuiet": "Schnell & Leise",
@@ -175,13 +175,13 @@
       "47_spineChill": "Kalter Rückenschauer",
       "48_sprintBurst": "Sprintboost",
       "49_stakeOut": "Observierung",
-      "50_streetwise": "Gewieft",
+      "50_streetwise": "Pfiffig",
       "51_technician": "Technikerin",
       "52_tenacity": "Beharrlichkeit",
       "53_thisIsNotHappening": "Das geschieht nicht",
       "54_unbreakable": "Unbeugsam",
       "55_upTheAnte": "Erhöhe den Einsatz",
-      "56_urbanEvasion": "Städtische Invasion",
+      "56_urbanEvasion": "Städtische Umgehung",
       "57_vigil": "Nachtwache",
       "58_wakeUp": "Aufwachen!",
       "59_wellMakeIt": "Wir schaffen das!",
