@@ -255,6 +255,9 @@
             <key type="filename">iconsourceKillColor/54_unnervingPresence.png</key>
             <key type="filename">iconsourceKillColor/55_unrelenting.png</key>
             <key type="filename">iconsourceKillColor/56_whispers.png</key>
+            <key type="filename">iconsourceKillColor/57_imAllEars.png</key>
+            <key type="filename">iconsourceKillColor/58_thrillingTremors.png</key>
+            <key type="filename">iconsourceKillColor/59_furtiveChase.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0,0</point_f>
