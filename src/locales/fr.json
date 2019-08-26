@@ -1,0 +1,203 @@
+{
+  "snippets": {
+    "info": "Info",
+    "survPerkConfig": "Configuration des compétences survivant",
+    "killPerkConfig": "Configuration des compétences tueur",
+    "globalSwitchText": "Basculer",
+    "startPerkRoll": "Cliquer sur n'importe quel slot pour commencer",
+    "buttonHome": "Acceuil",
+    "buttonKillRoulette": "Roulette Tueur",
+    "buttonSurvRoulette": "Roulette Survivant"
+  },
+  "about": {
+    "header": "Qu'est-ce que c'est ?",
+    "description": "Ce site est une roulette à compétences à utiliser pour le jeu {url}. Pour être précis il n'y a pas de roulette mais une machine à slots. Cela fonctionne pareil mais ça à l'air mieux. Vous avez ici une video contenant tout ce que vous avez besoin de savoir:",
+    "videoUrl": "https:\/\/www.youtube-nocookie.com\/embed\/dRZvzGP_2as"
+  },
+  "howItWorks": {
+    "header": "Comment ça marche ?",
+    "description": "Si vous avez toute les compétences sur un de vos tueurs et/ou survivants, just cliquez sur un des deux bouttons en haut de la page, ensuite cliquez sur un slot de compétences, et c'est fini. Grâce à cela, quatre compétences seront choisi pour que vous puissiez jouer avec. C'est comme ça que fonctionne une roulette\/slot machine à compétences fonctionne. Amusez vous!",
+    "missingPerks": {
+      "header": "...mais j'ai pas TOUTE LES COMPÉTENCES!",
+      "description": "Si il vous manque quelques compétences, cliquez sur une des cases \"... configuration\" en dessous. Ensuite désactivez les compétences que vous n'avez pas ou ne voulez pas. Les compétences que vous avez choisies ne sont pas enregistrées, mais l'URL est utilisée pour déterminer quelles compétences sont activées. Donc configurez vos compétences, creez un favori pour votre configuration, et c'est prêt."
+    }
+  },
+  "streaming": {
+    "header": "Comment utiliser ça avec OBS\/XSplit?",
+    "description": "Il y a beaucoup d'options vous que vous pouvez modifier via l'URL. Ceci est expliqué en profondeur dans la vidéo au dessus.",
+    "options": {
+      "description": "En bref, utilisez le paramètre {transparent} pour seulement afficher les slots de perks, utilisez par exemple {autostart} pour lancer une roulette 1 seconde après que la page est chargée.",
+      "transparent": "streammode=1",
+      "autostart": "autostart=1000"
+    }
+  },
+  "team": {
+    "header": "L'équipe",
+    "description": "Ce projet a pu prendre vie grâce à:"
+  },
+  "attribution": {
+    "header": "Attributions",
+    "description": "La plupart des médias de ce site n'ont pas été créés par ces auteurs.",
+    "wiki": {
+      "description": "La plupart des images ont été récupérées depuis l'incroyable {wikiUrl}. Le contenu de ce wiki est sous licenses grâce aux Creative Commons \"{licenseUrl}\" License.",
+      "wikiUrlText": "Wiki Officiel Dead By Daylight",
+      "wikiUrl": "https:\/\/deadbydaylight.gamepedia.com\/Dead_by_Daylight_Wiki",
+      "licenseUrlText": "Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0)",
+      "licenseUrl": "https:\/\/creativecommons.org\/licenses\/by-nc-sa\/3.0\/"
+    },
+    "happyclown": {
+      "description": "Les icons colorés (special beta mode, changer color=0 pour color=1 dans l'URL), ont été fait par {profile} et il y a même un groupe {group}. Allez checker!",
+      "groupText": "steam group"
+    },
+    "rocketleaguecat": {
+      "description": "Le {bgImage} a été fait par l'utilisateur imgur {profile}.",
+      "bgImageText": "fond d'écran"
+    },
+    "bhvr": {
+      "description": "Les compétences, fond d'écrans et autres contenu relatifs au jeu appartiennent et ont été fait à l'origine par {bhvr} pour {dbd}."
+    },
+    "freepik": {
+      "description": "Les icons de langages ont été fait par {freepik} depuis {flaticon} et sont sous license par {licenseUrl}"
+    },
+    "translation": {
+      "description": "Traduction française réalisée par {profile}.",
+      "translator": "Chalix",
+      "profileUrl": "https://steamcommunity.com/id/chalix34/"
+    }
+  },
+  "disclaimer": {
+    "header": "Clause de non-responsabilité",
+    "description": "Ce site n'est pas associé, approuvé ou de toute forme relié à quelconque entreprise. C'est un projet de fan. Si quelque soit n'est pas bon, n'hésitez pas à contacter l'auteur par mail à l'adresse {email}. Il n'y a pas de garanties. Utilisez à vos propres risques. Les bonnes nouvelles sont que ce site n'utilise pas de cookies et fonctionne sur votre navigateur, aucune donnée est enregistrées sur le serveur. Cependant, ce site utilise {statcounter} pour savoir combien d'utilisateurs l'utilise."
+  },
+  "perks": {
+    "killer": {
+      "00_aNursesCalling": "Vocation de l'infirmière",
+      "01_agitation": "Agitation",
+      "02_bamboozle": "Déboussoler",
+      "03_barbecueAndChilli": "Chili et barbecue",
+      "04_beastOfPrey": "Prédation",
+      "05_bitterMurmur": "Murmure amer",
+      "06_bloodWarden": "Gardien du sang",
+      "07_bloodhound": "Chien de sang",
+      "08_brutalStrength": "Force brute",
+      "09_corruptIntervention": "Intervention maléfique",
+      "10_coulrophobia": "Clownophobie",
+      "11_darkDevotion": "Sombre Dévotion",
+      "12_deerstalker": "Pisteur",
+      "13_discordance": "Discorde",
+      "14_distressing": "Inquiétant",
+      "15_dyingLight": "Lumière mourrante",
+      "16_enduring": "Tenace",
+      "17_fireUp": "Intensité Ardente",
+      "18_franklinsDemise": "Chute de franklin",
+      "19_hangmansTrick": "Coup du pendu",
+      "20_hexDevourHope": "Mangeur d'espoir",
+      "21_hexHauntedGround": "Terrain hanté",
+      "22_hexHuntressLullaby": "Berceuse de la chasseuse",
+      "23_hexNoOneEscapesDeath": "Personne n'échappe à la mort",
+      "24_hexRuin": "Ruine",
+      "25_hexTheThirdSeal": "Le troisième sceau",
+      "26_hexThrillOfTheHunt": "Euphorie de la chasse",
+      "27_infectiousFright": "Peur contagieuse",
+      "28_insidious": "Insidieux",
+      "29_ironGrasp": "Poigne de fer",
+      "30_ironMaiden": "Vierge de fer",
+      "31_knockOut": "K.O.",
+      "32_lightborn": "Résistance à la lumière",
+      "33_madGrit": "Cran dément",
+      "34_makeYourChoice": "Prise de décision",
+      "35_monitorAndAbuse": "Surveillance et maltraitance",
+      "36_monstrousShrine": "Sanctuaire monstrueux",
+      "37_overcharge": "Surcharge",
+      "38_overwhelmingPresence": "Présence écrasante",
+      "39_playWithYourFood": "Jouer avec la nourriture",
+      "40_popGoesTheWeasel": "Le tour est joué",
+      "41_predator": "Prédateur",
+      "42_rancor": "Rancor",
+      "43_rememberMe": "Souviens-toi de moi",
+      "44_saveTheBestForLast": "Gardons le meilleur pour la fin",
+      "45_shadowborn": "Résistance à l'obscurité",
+      "46_sloppyButcher": "Boucher sadique",
+      "47_spiesFromTheShadows": "Espions de l'ombre",
+      "48_spiritFury": "Fureur de l'esprit",
+      "49_stridor": "Stridor",
+      "50_surveillance": "Surveillance",
+      "51_territorialImperative": "Instinct territorial",
+      "52_thanatophobia": "Thanatophobie",
+      "53_tinkerer": "Réparateur",
+      "54_unnervingPresence": "Présence perturbante",
+      "55_unrelenting": "Implacable",
+      "56_whispers": "Murmures",
+      "57_imAllEars": "Je vous écoute",
+      "58_thrillingTremors": "Frissons palpitants",
+      "59_furtiveChase": "Poursuite furtive"
+    },
+    "survivor": {
+      "00_aceInTheHole": "Un Ace dans la manche",
+      "01_adrenaline": "Adrenaline",
+      "02_aftercare": "Convalescence",
+      "03_alert": "Vigilant",
+      "04_autodidact": "Autodidacte",
+      "05_balancedLanding": "Atterrissage équilibré",
+      "06_boilOver": "Effusion",
+      "07_bond": "Lien",
+      "08_borrowedTime": "Sur la réserve",
+      "09_botanyKnowledge": "Connaissances en botanique",
+      "10_breakdown": "Dépression",
+      "11_calmSpirit": "Esprit calme",
+      "12_danceWithMe": "Dance avec moi",
+      "13_darkSense": "Sentiment obscur",
+      "14_deadHard": "Drôlement dur",
+      "15_decisiveStrike": "Coup décisif",
+      "16_dejaVu": "Déjà Vu",
+      "17_deliverance": "Libération",
+      "18_detectivesHunch": "Intuition de l'inspecteur",
+      "19_distortion": "Distorsion",
+      "20_diversion": "Diversion",
+      "21_empathy": "Empathie",
+      "22_headOn": "De front",
+      "23_hope": "Espoir",
+      "24_ironWill": "Volonté de fer",
+      "25_kindred": "Parenté",
+      "26_leader": "Meneur",
+      "27_leftBehind": "Laissé pour mort",
+      "28_lightweight": "Poids plume",
+      "29_lithe": "Souple",
+      "30_noMither": "Pas envie",
+      "31_noOneLeftBehind": "On n'abandonne personne",
+      "32_objectOfObsession": "Objet d'obession",
+      "33_open-Handed": "Le coeur sur la main",
+      "34_pharmacy": "Pharmacie",
+      "35_plunderersInstinct": "Instinct de pillard",
+      "36_poised": "Assurance",
+      "37_premonition": "Prémonition",
+      "38_proveThyself": "Montrez ce que vous savez faire",
+      "39_quickAndQuiet": "Rapide & silencieux",
+      "40_resilience": "Résistance",
+      "41_saboteur": "Saboteur",
+      "42_selfCare": "Prophylaxie",
+      "43_slipperyMeat": "Viande glissante",
+      "44_smallGame": "Petit gibier",
+      "45_soleSurvivor": "Dernier survivant",
+      "46_solidarity": "Solidarité",
+      "47_spineChill": "Frisson",
+      "48_sprintBurst": "Course effrénée",
+      "49_stakeOut": "En planque",
+      "50_streetwise": "Ad augusta per angusta",
+      "51_technician": "Technicien",
+      "52_tenacity": "Tenacité",
+      "53_thisIsNotHappening": "Ce n'est pas en train d'arriver",
+      "54_unbreakable": "Indefectible",
+      "55_upTheAnte": "Augmenter la mise",
+      "56_urbanEvasion": "Évasion urbaine",
+      "57_vigil": "Vigilant",
+      "58_wakeUp": "Debout!",
+      "59_wellMakeIt": "Nous y arriverons",
+      "60_wereGonnaLiveForever": "Nous vivrons éternellement",
+      "61_windowsOfOpportunity": "Parfaite occasion",
+      "62_buckleUp": "Accrochez-vous",
+      "63_flipFlop": "Gigoteur",
+      "64_mettleOfMan": "Force de caractère"
+    }
+  }
+}
