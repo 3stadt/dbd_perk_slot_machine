@@ -74,6 +74,9 @@
                     <a place="flaticon" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
                     <a place="licenseUrl" href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
                 </i18n>
+                <i18n tag="li" path="attribution.translation.description" v-if="$t('attribution.translation.description') !== 'attribution.translation.description'">
+                  <a place="profile" :href="$t('attribution.translation.profileUrl')" :title="$t('attribution.translation.translator')">{{ $t("attribution.translation.translator") }}</a>
+                </i18n>
             </ul>
         </div>
         <div class="paragraph">

@@ -3,6 +3,7 @@
         <div class="language-switch overview__box">
             <img @click="changeLang('en')" src="img/flags/united-kingdom.svg" width="32" height="32" alt="english" class="flag">
             <img @click="changeLang('de')" src="img/flags/germany.svg" width="32" height="32" alt="deutsch" class="flag">
+            <img @click="changeLang('fr')" src="img/flags/france.svg" width="32" height="32" alt="français" class="flag">
         </div>
         <MenuItem type="Info" :title="$t('snippets.info')" />
         <MenuItem :perks="perks.survivors" @resetPerks="resetPerks" @change="change" type="Survivor" :title="$t('snippets.survPerkConfig')" />
