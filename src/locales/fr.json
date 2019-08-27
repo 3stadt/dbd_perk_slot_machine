@@ -11,22 +11,22 @@
   },
   "about": {
     "header": "Qu'est-ce que c'est ?",
-    "description": "Ce site est une roulette à compétences à utiliser pour le jeu {url}. Pour être précis il n'y a pas de roulette mais une machine à slots. Cela fonctionne pareil mais ça à l'air mieux. Vous avez ici une video contenant tout ce que vous avez besoin de savoir:",
-    "videoUrl": "https:\/\/www.youtube-nocookie.com\/embed\/dRZvzGP_2as"
+    "description": "Ce site est une roulette à compétences à utiliser pour le jeu {url}. Pour être précis ce n'est pas une roulette mais une machine à slots. Cela fonctionne pareil mais c'est plus cool. Vous avez ici une video contenant tout ce que vous avez besoin de savoir:",
+    "videoUrl": "https://www.youtube-nocookie.com/embed/dRZvzGP_2as"
   },
   "howItWorks": {
     "header": "Comment ça marche ?",
-    "description": "Si vous avez toute les compétences sur un de vos tueurs et/ou survivants, just cliquez sur un des deux bouttons en haut de la page, ensuite cliquez sur un slot de compétences, et c'est fini. Grâce à cela, quatre compétences seront choisi pour que vous puissiez jouer avec. C'est comme ça que fonctionne une roulette\/slot machine à compétences fonctionne. Amusez vous!",
+    "description": "Si vous avez toutes les compétences sur un de vos tueurs et/ou survivants, cliquez sur un des deux bouttons en haut de la page, ensuite cliquez sur un slot de compétences, et c'est fini. Grâce à cela, quatre compétences seront choisi pour que vous puissiez jouer avec. C'est comme ça qu'une roulette/slot machine à compétences fonctionne. Amusez vous !",
     "missingPerks": {
-      "header": "...mais j'ai pas TOUTE LES COMPÉTENCES!",
-      "description": "Si il vous manque quelques compétences, cliquez sur une des cases \"... configuration\" en dessous. Ensuite désactivez les compétences que vous n'avez pas ou ne voulez pas. Les compétences que vous avez choisies ne sont pas enregistrées, mais l'URL est utilisée pour déterminer quelles compétences sont activées. Donc configurez vos compétences, creez un favori pour votre configuration, et c'est prêt."
+      "header": "...mais j'ai pas TOUTES LES COMPÉTENCES!",
+      "description": "S'il vous manque quelques compétences, cliquez sur une des cases \"... configuration\" en dessous. Ensuite désactivez les compétences que vous n'avez pas ou ne voulez pas. Les compétences que vous avez choisies ne sont pas enregistrées, cependant, les compétences activées sont stockées dans l'URL. Donc configurez vos compétences une première fois, créez un favori pour votre configuration, et c'est prêt."
     }
   },
   "streaming": {
-    "header": "Comment utiliser ça avec OBS\/XSplit?",
+    "header": "Comment utiliser ça avec OBS/XSplit ?",
     "description": "Il y a beaucoup d'options vous que vous pouvez modifier via l'URL. Ceci est expliqué en profondeur dans la vidéo au dessus.",
     "options": {
-      "description": "En bref, utilisez le paramètre {transparent} pour seulement afficher les slots de perks, utilisez par exemple {autostart} pour lancer une roulette 1 seconde après que la page est chargée.",
+      "description": "En bref, utilisez le paramètre {transparent} pour seulement afficher les slots de perks, et utilisez, par exemple, {autostart} pour lancer une roulette 1 seconde après que la page ait chargée.",
       "transparent": "streammode=1",
       "autostart": "autostart=1000"
     }
@@ -37,37 +37,32 @@
   },
   "attribution": {
     "header": "Attributions",
-    "description": "La plupart des médias de ce site n'ont pas été créés par ces auteurs.",
+    "description": "La plupart des médias de ce site n'ont pas été créés par ses auteurs.",
     "wiki": {
       "description": "La plupart des images ont été récupérées depuis l'incroyable {wikiUrl}. Le contenu de ce wiki est sous licenses grâce aux Creative Commons \"{licenseUrl}\" License.",
       "wikiUrlText": "Wiki Officiel Dead By Daylight",
-      "wikiUrl": "https:\/\/deadbydaylight.gamepedia.com\/Dead_by_Daylight_Wiki",
+      "wikiUrl": "https://deadbydaylight.gamepedia.com/Dead_by_Daylight_Wiki",
       "licenseUrlText": "Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0)",
-      "licenseUrl": "https:\/\/creativecommons.org\/licenses\/by-nc-sa\/3.0\/"
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/"
     },
     "happyclown": {
-      "description": "Les icons colorés (special beta mode, changer color=0 pour color=1 dans l'URL), ont été fait par {profile} et il y a même un groupe {group}. Allez checker!",
-      "groupText": "steam group"
+      "description": "Les icons colorés (special beta mode, changer color=0 pour color=1 dans l'URL), ont été fait par {profile} et il y a même un {group}. Allez checker !",
+      "groupText": "groupe Steam"
     },
     "rocketleaguecat": {
       "description": "Le {bgImage} a été fait par l'utilisateur imgur {profile}.",
       "bgImageText": "fond d'écran"
     },
     "bhvr": {
-      "description": "Les compétences, fond d'écrans et autres contenu relatifs au jeu appartiennent et ont été fait à l'origine par {bhvr} pour {dbd}."
+      "description": "Les compétences, fond d'écrans et autres contenu relatifs au jeu appartiennent et ont été fait par {bhvr} pour {dbd}."
     },
     "freepik": {
       "description": "Les icons de langages ont été fait par {freepik} depuis {flaticon} et sont sous license par {licenseUrl}"
-    },
-    "translation": {
-      "description": "Traduction française réalisée par {profile}.",
-      "translator": "Chalix",
-      "profileUrl": "https://steamcommunity.com/id/chalix34/"
     }
   },
   "disclaimer": {
     "header": "Clause de non-responsabilité",
-    "description": "Ce site n'est pas associé, approuvé ou de toute forme relié à quelconque entreprise. C'est un projet de fan. Si quelque soit n'est pas bon, n'hésitez pas à contacter l'auteur par mail à l'adresse {email}. Il n'y a pas de garanties. Utilisez à vos propres risques. Les bonnes nouvelles sont que ce site n'utilise pas de cookies et fonctionne sur votre navigateur, aucune donnée est enregistrées sur le serveur. Cependant, ce site utilise {statcounter} pour savoir combien d'utilisateurs l'utilise."
+    "description": "Ce site n'est pas associé, approuvé ou de toute forme relié à quelconque entreprise. C'est un projet de fan. Si quelque soit n'est pas bon, n'hésitez pas à contacter l'auteur par mail à l'adresse {email}. Aucun garantie n'est applicable et à utiliser à vos propres risques. Les bonnes nouvelles sont que ce site n'utilise pas de cookies et fonctionne sur votre navigateur, aucune de vos données n'est enregistrées sur le serveur. Cependant, ce site utilise {statcounter} pour savoir combien d'utilisateurs l'utilise."
   },
   "perks": {
     "killer": {
@@ -134,7 +129,7 @@
     },
     "survivor": {
       "00_aceInTheHole": "Un Ace dans la manche",
-      "01_adrenaline": "Adrenaline",
+      "01_adrenaline": "Adrénaline",
       "02_aftercare": "Convalescence",
       "03_alert": "Vigilant",
       "04_autodidact": "Autodidacte",
