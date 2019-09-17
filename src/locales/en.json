@@ -125,7 +125,10 @@
       "56_whispers": "Whispers",
       "57_imAllEars": "I'm All Ears",
       "58_thrillingTremors": "Thrilling Tremors",
-      "59_furtiveChase": "Furtive Chase"
+      "59_furtiveChase": "Furtive Chase",
+      "60_cruelLimits": "Cruel Limits",
+      "61_mindbreaker": "Mindbreaker",
+      "62_surge": "Surge"
     },
     "survivor": {
       "00_aceInTheHole": "Ace in the hole",
@@ -192,7 +195,13 @@
       "61_windowsOfOpportunity": "Windows Of Opportunity",
       "62_buckleUp": "Buckle Up",
       "63_flipFlop": "Flip-Flop",
-      "64_mettleOfMan": "Mettle of Man"
+      "64_mettleOfMan": "Mettle of Man",
+      "65_babySitter": "Baby Sitter",
+      "66_camaraderie": "Camaraderie",
+      "67_secondWind": "Second Wind",
+      "68_betterTogether": "Better Together",
+      "69_fixated": "Fixated",
+      "70_innerStrength": "Inner Strength"
     }
   }
 }

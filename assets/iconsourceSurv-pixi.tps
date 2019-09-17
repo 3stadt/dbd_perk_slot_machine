@@ -4,7 +4,7 @@
         <key>fileFormatVersion</key>
         <int>4</int>
         <key>texturePackerVersion</key>
-        <string>4.10.0</string>
+        <string>5.1.0</string>
         <key>autoSDSettings</key>
         <array>
             <struct type="AutoSDSettings">
@@ -263,6 +263,12 @@
             <key type="filename">iconsourceSurv/62_buckleUp.png</key>
             <key type="filename">iconsourceSurv/63_flipFlop.png</key>
             <key type="filename">iconsourceSurv/64_mettleOfMan.png</key>
+            <key type="filename">iconsourceSurv/65_babySitter.png</key>
+            <key type="filename">iconsourceSurv/66_camaraderie.png</key>
+            <key type="filename">iconsourceSurv/67_secondWind.png</key>
+            <key type="filename">iconsourceSurv/68_betterTogether.png</key>
+            <key type="filename">iconsourceSurv/69_fixated.png</key>
+            <key type="filename">iconsourceSurv/70_innerStrength.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0,0</point_f>

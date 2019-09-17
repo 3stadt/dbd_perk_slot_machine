@@ -125,7 +125,10 @@
       "56_whispers": "Murmures",
       "57_imAllEars": "Je vous écoute",
       "58_thrillingTremors": "Frissons palpitants",
-      "59_furtiveChase": "Poursuite furtive"
+      "59_furtiveChase": "Poursuite furtive",
+      "60_cruelLimits": "Cruel Limits",
+      "61_mindbreaker": "Mindbreaker",
+      "62_surge": "Surge"
     },
     "survivor": {
       "00_aceInTheHole": "Un Ace dans la manche",
@@ -192,7 +195,13 @@
       "61_windowsOfOpportunity": "Parfaite occasion",
       "62_buckleUp": "Accrochez-vous",
       "63_flipFlop": "Gigoteur",
-      "64_mettleOfMan": "Force de caractère"
+      "64_mettleOfMan": "Force de caractère",
+      "65_babySitter": "Baby Sitter",
+      "66_camaraderie": "Camaraderie",
+      "67_secondWind": "Second Wind",
+      "68_betterTogether": "Better Together",
+      "69_fixated": "Fixated",
+      "70_innerStrength": "Inner Strength"
     }
   }
 }
