@@ -123,12 +123,12 @@
       "54_unnervingPresence": "Zermürbende Präsenz",
       "55_unrelenting": "Unerbittlich",
       "56_whispers": "Geflüster",
-      "57_imAllEars": "I'm All Ears",
-      "58_thrillingTremors": "Thrilling Tremors",
-      "59_furtiveChase": "Furtive Chase",
-      "60_cruelLimits": "Cruel Limits",
-      "61_mindbreaker": "Mindbreaker",
-      "62_surge": "Surge"
+      "57_imAllEars": "Ich bin ganz Ohr",
+      "58_thrillingTremors": "Durchdringendes Zittern",
+      "59_furtiveChase": "Heimliche Verfolgungsjagd",
+      "60_cruelLimits": "Grausame Grenzen",
+      "61_mindbreaker": "Seelenbrecher",
+      "62_surge": "Spannungsstoß"
     },
     "survivor": {
       "00_aceInTheHole": "Ass im Ärmel",
@@ -196,12 +196,12 @@
       "62_buckleUp": "Anschnallen",
       "63_flipFlop": "Flip-Flop",
       "64_mettleOfMan": "Der Eifer der Menschen",
-      "65_babySitter": "Baby Sitter",
-      "66_camaraderie": "Camaraderie",
-      "67_secondWind": "Second Wind",
-      "68_betterTogether": "Better Together",
-      "69_fixated": "Fixated",
-      "70_innerStrength": "Inner Strength"
+      "65_babySitter": "Babysitter",
+      "66_camaraderie": "Kameradschaft",
+      "67_secondWind": "Aufschwung",
+      "68_betterTogether": "Besser gemeinsam",
+      "69_fixated": "Fixiert",
+      "70_innerStrength": "Innere Kraft"
     }
   }
 }
