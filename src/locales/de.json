@@ -128,7 +128,10 @@
       "59_furtiveChase": "Heimliche Verfolgungsjagd",
       "60_cruelLimits": "Grausame Grenzen",
       "61_mindbreaker": "Seelenbrecher",
-      "62_surge": "Spannungsstoß"
+      "62_surge": "Spannungsstoß",
+      "63_bloodEcho": "Blood echo",
+      "64_nemesis": "Nemesis",
+      "65_zanshinTactics": "Zanshin tactics"
     },
     "survivor": {
       "00_aceInTheHole": "Ass im Ärmel",
@@ -201,7 +204,10 @@
       "67_secondWind": "Aufschwung",
       "68_betterTogether": "Besser gemeinsam",
       "69_fixated": "Fixiert",
-      "70_innerStrength": "Innere Kraft"
+      "70_innerStrength": "Innere Kraft",
+      "71_breakout": "Breakout",
+      "72_anyMeansNecessary": "Any means necessary",
+      "73_luckyBreak": "Lucky break"
     }
   }
 }

@@ -128,7 +128,10 @@
       "59_furtiveChase": "Poursuite furtive",
       "60_cruelLimits": "Limites cruelles",
       "61_mindbreaker": "Briseur d'esprit",
-      "62_surge": "Surtension"
+      "62_surge": "Surtension",
+      "63_bloodEcho": "Blood echo",
+      "64_nemesis": "Nemesis",
+      "65_zanshinTactics": "Zanshin tactics"
     },
     "survivor": {
       "00_aceInTheHole": "Un Ace dans la manche",
@@ -201,7 +204,10 @@
       "67_secondWind": "Second Souffle",
       "68_betterTogether": "Mieux Ensemble",
       "69_fixated": "Obnubilé",
-      "70_innerStrength": "Force Intérieure"
+      "70_innerStrength": "Force Intérieure",
+      "71_breakout": "Breakout",
+      "72_anyMeansNecessary": "Any means necessary",
+      "73_luckyBreak": "Lucky break"
     }
   }
 }

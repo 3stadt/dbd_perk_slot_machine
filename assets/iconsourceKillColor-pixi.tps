@@ -4,7 +4,7 @@
         <key>fileFormatVersion</key>
         <int>4</int>
         <key>texturePackerVersion</key>
-        <string>5.1.0</string>
+        <string>5.2.0</string>
         <key>autoSDSettings</key>
         <array>
             <struct type="AutoSDSettings">
@@ -261,9 +261,14 @@
             <key type="filename">iconsourceKillColor/60_cruelLimits.png</key>
             <key type="filename">iconsourceKillColor/61_mindbreaker.png</key>
             <key type="filename">iconsourceKillColor/62_surge.png</key>
+            <key type="filename">iconsourceKillColor/63_bloodEcho.png</key>
+            <key type="filename">iconsourceKillColor/64_nemesis.png</key>
+            <key type="filename">iconsourceKillColor/65_zanshinTactics.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0,0</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
                 <key>scale9Enabled</key>
                 <false/>
                 <key>scale9Borders</key>
