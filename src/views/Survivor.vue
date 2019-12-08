@@ -109,10 +109,10 @@ export default {
       this.hintVisible = false
 
       this.lastRoll = random
-      this.$refs.perkslot0.rollWheel(random[0])
-      this.$refs.perkslot1.rollWheel(random[1])
-      this.$refs.perkslot2.rollWheel(random[2])
-      this.$refs.perkslot3.rollWheel(random[3])
+      this.$refs.perkslot0.rollWheel(random[0], this.$t(`perks.survivor.desc.${random[0].name}`))
+      this.$refs.perkslot1.rollWheel(random[1], this.$t(`perks.survivor.desc.${random[1].name}`))
+      this.$refs.perkslot2.rollWheel(random[2], this.$t(`perks.survivor.desc.${random[2].name}`))
+      this.$refs.perkslot3.rollWheel(random[3], this.$t(`perks.survivor.desc.${random[3].name}`))
     }
   },
   mounted: function () {

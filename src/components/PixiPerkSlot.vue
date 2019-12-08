@@ -1,12 +1,27 @@
 <template>
-    <div class="slot" ref="slot" :style="cssProps"></div>
+  <popper
+    ref="perkDescPopup"
+    trigger="hover"
+    :disabled="popupDisabled"
+    :options="{
+      placement: 'bottom',
+      modifiers: { offset: { offset: '0,10px' } }
+    }" class="slot-container">
+    <div class="popper" v-html="perkDescription">
+    </div>
+    <div slot="reference" class="slot" ref="slot" :style="cssProps"></div>
+  </popper>
 </template>
 
 <script>
 import * as PIXI from 'pixi.js'
+import Popper from 'vue-popperjs'
 
 export default {
   name: 'PixiPerkSlot',
+  components: {
+    'popper': Popper
+  },
   data: function () {
     return {
       appStage: null,
@@ -23,7 +38,10 @@ export default {
       perkTextures: null,
       maxId: this.perkData.length - 1,
       perkName: '',
-      targetPerkId: null
+      targetPerkId: null,
+      popupDisabled: true,
+      perkDescription: '',
+      newPerkDescription: ''
     }
   },
   computed: {
@@ -83,9 +101,16 @@ export default {
 
       this.perkName = tCont
       this.reelContainer.addChild(this.perkName)
+      this.perkDescription = this.newPerkDescription
+      if (this.perkDescription && this.perkDescription.length > 0) {
+        this.popupDisabled = false
+      }
     },
-    rollWheel: function (targetId) {
+    rollWheel: function (targetId, newPerkDescription) {
       if (this.active) return
+      this.perkDescription = ''
+      this.newPerkDescription = newPerkDescription
+      this.popupDisabled = true
       this.targetPerkId = targetId.index
       this.placeholderContainer.visible = false
       this.reelContainer.visible = true
@@ -254,12 +279,31 @@ export default {
 
 <style lang="scss" scoped>
     @import '../design/perkData';
+    @import '~vue-popperjs/dist/vue-popper.min.css';
+
+    .popper {
+      background-color: #151513;
+      text-align: left;
+      padding: 0.4rem;
+      color: white;
+      width: 512px;
+    }
+
+    .slot-container {
+      max-width: var(--elementlength)px;
+      display: inline-block;
+      position: relative;
+      padding: 0;
+      margin: 0;
+    }
 
     .slot {
         height: var(--elementlength)px;
         width: var(--elementlength)px;
         position: relative;
         display: inline-block;
+        padding: 0;
+        margin: 0;
     }
 
     .perk {
