@@ -1,7 +1,7 @@
 /* -----------------------------------------------------
    created with https://www.codeandweb.com/texturepacker 
    -----------------------------------------------------
-   $TexturePacker:SmartUpdate:93e5f106a259d3ccb599d1fe98b35507:3a0087cf98b5f931897ae67a8aeb82b9:55101c531bcde25ac824044e9fe60af8$
+   $TexturePacker:SmartUpdate:69fc3a693497a73e929fef0de048e594:b925838fb9d7ed82b8b4c14b2c48aea8:55101c531bcde25ac824044e9fe60af8$
    -----------------------------------------------------
 
    usage: <span class="{-spritename-} sprite"></span>
@@ -78,3 +78,6 @@
 ._63_bloodEcho {width:128px; height:128px; background-position: -1px -1171px}
 ._64_nemesis {width:128px; height:128px; background-position: -131px -1171px}
 ._65_zanshinTactics {width:128px; height:128px; background-position: -261px -1171px}
+._66_gearhead {width:128px; height:128px; background-position: -391px -1171px}
+._67_deadMansSwitch {width:128px; height:128px; background-position: -521px -1171px}
+._68_hexRetribution {width:128px; height:128px; background-position: -651px -1171px}

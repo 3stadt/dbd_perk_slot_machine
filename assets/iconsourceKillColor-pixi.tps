@@ -264,6 +264,9 @@
             <key type="filename">iconsourceKillColor/63_bloodEcho.png</key>
             <key type="filename">iconsourceKillColor/64_nemesis.png</key>
             <key type="filename">iconsourceKillColor/65_zanshinTactics.png</key>
+            <key type="filename">iconsourceKillColor/66_gearhead.png</key>
+            <key type="filename">iconsourceKillColor/67_deadMansSwitch.png</key>
+            <key type="filename">iconsourceKillColor/68_hexRetribution.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0,0</point_f>

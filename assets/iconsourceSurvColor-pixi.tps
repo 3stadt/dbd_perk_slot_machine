@@ -272,6 +272,9 @@
             <key type="filename">iconsourceSurvColor/71_breakout.png</key>
             <key type="filename">iconsourceSurvColor/72_anyMeansNecessary.png</key>
             <key type="filename">iconsourceSurvColor/73_luckyBreak.png</key>
+            <key type="filename">iconsourceSurvColor/74_offTheRecord.png</key>
+            <key type="filename">iconsourceSurvColor/75_redHerring.png</key>
+            <key type="filename">iconsourceSurvColor/76_forThePeople.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0,0</point_f>
