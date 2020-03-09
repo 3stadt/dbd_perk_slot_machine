@@ -1,8 +1,8 @@
 {
   "snippets": {
     "info": "Info",
-    "survPerkConfig": "Configuración de perk del Survivor",
-    "killPerkConfig": "Configuración de perk del Killer",
+    "survPerkConfig": "Configuración de Habilidades Survivor",
+    "killPerkConfig": "Configuración de Habilidades Killer",
     "globalSwitchText": "Alternar todo",
     "startPerkRoll": "Hacer clic en cualquier perk para comenzar",
     "buttonHome": "Home",
@@ -11,22 +11,22 @@
   },
   "about": {
     "header": "¿De qué trata esto?",
-    "description": "Este sitio es una ruleta de perks para usar con el juego {url}. Para ser precisos, no hay ruleta or rueda, sino una máquina tragamonedas. Funciona igual, se ve mejor. Aquí, dejamos un video en inglés que contiene todo lo que necesitas saber:",
+    "description": "Este sitio es una ruleta de Habilidades para usar con el juego {url}. Para ser precisos, no hay una ruleta or rueda, sino una máquina tragamonedas. Funciona igual y se ve mejor que la rueda tradicional. Aquí, dejamos un video en inglés que contiene todo lo que necesitas saber:",
     "videoUrl": "https:\/\/www.youtube-nocookie.com\/embed\/dRZvzGP_2as"
   },
   "howItWorks": {
     "header": "¿Cómo funciona la Ruleta?",
-    "description": "Si tiene todas las perks de uno de sus personajes en el sitio del asesino y del sobreviviente, simplemente haz clic en uno de los dos botones en la parte superior de esta página, luego haz clic en cualquier perk y listo. De esta forma, se eligen cuatro ventajas diferentes para que juegues. Así es como la ruleta de perks\/máquina tragamonedas,funciona. ¡Que te diviertas!",
+    "description": "Si tiene todas las Habilidades de los personajes como asesino o como superviviente, simplemente haz clic en uno de los dos botones en la parte superior de esta página, luego haz clic en cualquier Habilidad y listo. De esta forma, se eligen aleatoriamente cuatro diferentes por tipo de juego y así comenzar una partida con lo seleccionado. Es así como funciona la ruleta de Habilidades\/máquina tragamonedas. ¡Que te diviertas!",
     "missingPerks": {
-      "header": "...pero si no tengo TODAS LAS PERKS!",
-      "description": "Si te faltan algunas perks, haz clic en uno de los cuadros de \"... configuración\" a continuación. Luego deshabilita las perks que no tienes o no quieres. Las perks que haz elegido no se guardan, pero la URL se usa para determinar qué perks están activas. Configura tus perks, crea un marcador para esta configuración y listo."
+      "header": "...pero si no tengo TODAS LAS HABILIDADES!",
+      "description": "Si te faltan algunas Habilidades, haz clic en uno de los cuadros de \"... configuración\" a continuación. Luego deshabilita las Habilidades que no tienes o no quieras. Las Habilidades que haz elegido no se guardan, pero la URL se usa para determinar qué Habilidades estén activas. Configura tus Habilidades, vuelve a darle clic a configuración y listo. Comienza a usar la ruleta en el menú de arriba para asesino o sobreviviente"
     }
   },
   "streaming": {
     "header": "¿Cómo usar esto con el OBS\/XSplit?",
-    "description": "Hay una serie de opciones que puedes configurar a través de URL. Esto se explica en profundidad en el video de arriba.",
+    "description": "Hay una serie de opciones que puedes configurar a través de la URL. Esto se explica en profundidad en el video de arriba luego de la parte de cómo usar la ruleta.",
     "options": {
-      "description": "En resumen, usa el parámetro {transparent} para mostrar solo las perks, por ejemplo. {autostart} para iniciar un roll 1 segundo después de cargar la página.",
+      "description": "En resumen, usa el parámetro {transparent} para mostrar solo las Habilidades, por ejemplo. {autostart} para iniciar un roll 1 segundo después de cargar la página.",
       "transparent": "streammode=1",
       "autostart": "autostart=1000"
     }
@@ -37,9 +37,9 @@
   },
   "attribution": {
     "header": "Atribuciones",
-    "description": "La mayoría de los medios en esta página no fueron creados originalmente por sus autores.",
+    "description": "La mayoría de los medios usados en esta página no fueron creados originalmente por sus autores.",
     "wiki": {
-      "description": "La mayoría de las imágenes fueron tomadas de la increíble {wikiUrl}. El contenido de esa wiki está licenciado por Creative Commons \"{licenseUrl}\" bajo licencia.",
+      "description": "Casi todas las imágenes fueron tomadas de la increíble web {wikiUrl}. El contenido de esa wiki está licenciado por Creative Commons \"{licenseUrl}\" bajo licencia.",
       "wikiUrlText": "official Dead by Daylight wiki",
       "wikiUrl": "https:\/\/deadbydaylight.gamepedia.com\/Dead_by_Daylight_Wiki",
       "licenseUrlText": "Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0)",
@@ -54,21 +54,21 @@
       "bgImageText": "background image"
     },
     "bhvr": {
-      "description": "Las perks, las imágenes de fondo y otro contenido relacionado con el juego son propiedad de {bhvr} para {dbd}."
+      "description": "En las Habilidades, las imágenes de fondo y otro contenido relacionado con el juego son propiedad de {bhvr} para {dbd}."
     },
     "freepik": {
-      "description": "El idioma de los íconos fueron creados por {freepik} de {flaticon} están licenciados por {licenseUrl}"
+      "description": "El estilo de los íconos fueron creados por {freepik} de {flaticon} están licenciados por {licenseUrl}"
     }
   },
   "disclaimer": {
     "header": "Manifiesto",
-    "description": "Este sitio no está asociado, respaldado o de ninguna otra forma relacionado con ninguna compañía. Es un proyecto de fanáticos. Si algo está mal, no dude en contactar al autor por correo electrónico a {email}. No hay garantías de ningún tipo. Úselo bajo su propio riesgo. La buena noticia es que este sitio no utiliza cookies y se ejecuta en su navegador, sin guardar datos en el servidor. Sin embargo, este sitio usa {statcounter} para rastrear cuántos visitantes lo están usando."
+    "description": "Este sitio no está asociado, respaldado o de ninguna otra forma relacionado, con ninguna compañía. Es un proyecto de fanáticos. Si algo está mal, no dude en contactar al autor por correo electrónico a {email}. No hay garantías de ningún tipo. Úselo bajo su propio riesgo. La buena noticia es que este sitio no utiliza cookies y se ejecuta en su navegador, sin guardar datos en el servidor. Sin embargo, este sitio usa {statcounter} para rastrear cuántos visitantes lo están usando."
   },
   "perks": {
     "killer": {
       "00_aNursesCalling": "Vocación de Enfermera",
       "01_agitation": "Agitación",
-      "02_bamboozle": "Desoncierto",
+      "02_bamboozle": "Desconcierto",
       "03_barbecueAndChilli": "Barbacoa y Chile",
       "04_beastOfPrey": "Bestia de Presa",
       "05_bitterMurmur": "Murmullo Amargo",
@@ -208,7 +208,7 @@
       "03_alert": "Alerta",
       "04_autodidact": "Autodidacta",
       "05_balancedLanding": "Caída Equilibrada",
-      "06_boilOver": "Arebato",
+      "06_boilOver": "Arrebato",
       "07_bond": "Vínculo",
       "08_borrowedTime": "Tiempo Prestado",
       "09_botanyKnowledge": "Experto en Botánica",
@@ -222,7 +222,7 @@
       "17_deliverance": "Liberación",
       "18_detectivesHunch": "Intuición de Detective",
       "19_distortion": "Distorsión",
-      "20_diversion": "Diversión",
+      "20_diversion": "Distracción",
       "21_empathy": "Empatía",
       "22_headOn": "De Frente",
       "23_hope": "Esperanza",
@@ -256,7 +256,7 @@
       "51_technician": "Técnico",
       "52_tenacity": "Tenacidad",
       "53_thisIsNotHappening": "Esto no puede estar Pasando",
-      "54_unbreakable": "Esto no puede estar Pasando",
+      "54_unbreakable": "Irrompible",
       "55_upTheAnte": "Subir la Apuesta",
       "56_urbanEvasion": "Evasión Urbana",
       "57_vigil": "Vigilia",
