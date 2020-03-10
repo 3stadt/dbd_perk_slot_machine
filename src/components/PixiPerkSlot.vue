@@ -199,8 +199,8 @@ export default {
       this.placeholderContainer.on('pointerdown', () => {
         this.$emit('reRollRequested')
       })
-      this.reelContainer.on('pointerdown', () => {
-        this.$emit('reRollRequested')
+      this.reelContainer.on('pointerdown', (pixiEvent) => {
+        this.$emit('reRollRequested', this, pixiEvent)
       })
 
       const reel = {

@@ -264,6 +264,9 @@
             <key type="filename">iconsourceKill/63_bloodEcho.png</key>
             <key type="filename">iconsourceKill/64_nemesis.png</key>
             <key type="filename">iconsourceKill/65_zanshinTactics.png</key>
+            <key type="filename">iconsourceKill/66_gearhead.png</key>
+            <key type="filename">iconsourceKill/67_deadMansSwitch.png</key>
+            <key type="filename">iconsourceKill/68_hexRetribution.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0,0</point_f>
