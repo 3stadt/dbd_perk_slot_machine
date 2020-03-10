@@ -4,7 +4,7 @@
     "survPerkConfig": "Survivor perk configuration",
     "killPerkConfig": "Killer perk configuration",
     "globalSwitchText": "Toggle all",
-    "startPerkRoll": "Click on any perk slot to start",
+    "startPerkRoll": "Click on any perk slot to start.<br>Shift-click to re-roll a single perk slot.",
     "buttonHome": "Home",
     "buttonKillRoulette": "Killer Roulette",
     "buttonSurvRoulette": "Survivor Roulette"

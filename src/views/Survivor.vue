@@ -36,7 +36,7 @@
         </div>
         <div v-if="hintVisible" class="hint-text">
             <img src="/img/icon_shortinfo.png" slot="icon" alt="Survivor" class="info-icon">
-            <span>{{ $t('snippets.startPerkRoll') }}</span>
+            <span v-html="$t('snippets.startPerkRoll')"></span>
         </div>
     </div>
 </template>
@@ -103,7 +103,24 @@ export default {
     }
   },
   methods: {
-    randomize: function () {
+    randomize: function (el, ev) {
+      // if shift is pressed, only randomize the perk that was clicked
+      if (el && ev.data.originalEvent.shiftKey && (this.sids.length > 4 || this.sids.length === 0)) {
+        let randomSingle = rand.getRandomData(1, this.sids, this.perkData, this.lastRoll)
+        let counter = 0
+        // while the perk is in the last roll, get a new random perk, give up after 10 tries
+        while (this.lastRoll.map((e, i) => e.name === randomSingle[0].name ? i : '').filter(String).length > 0) {
+          if (counter > 10) return
+          randomSingle = rand.getRandomData(1, this.sids, this.perkData, this.lastRoll)
+          counter++
+        }
+        // update the lastroll with the new perk, using the component tag (e.g. 'perkslot0') to get the index
+        let replaceIndex = parseInt(el.$options._componentTag.slice(-1))
+        this.lastRoll[replaceIndex] = randomSingle[0]
+        // actually roll the slot to the new perk
+        el.rollWheel(randomSingle[0], this.$t(`perks.survivor.desc.${randomSingle[0].name}`))
+        return
+      }
       if (!this.lastRoll) this.lastRoll = [this.perkData[0], this.perkData[0], this.perkData[0], this.perkData[0]]
       let random = rand.getRandomData(4, this.sids, this.perkData, this.lastRoll)
       this.hintVisible = false

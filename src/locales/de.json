@@ -4,7 +4,7 @@
     "survPerkConfig": "Überlebenden-Perks konfigurieren",
     "killPerkConfig": "Killer-Perks konfigurieren",
     "globalSwitchText": "Alle an\/aus",
-    "startPerkRoll": "Klicke zum Starten auf einen Perkslot",
+    "startPerkRoll": "Klicke zum Starten auf einen Perkslot.<br>Shift-Klick um einzelne Slots neu zu starten.",
     "buttonHome": "Startseite",
     "buttonKillRoulette": "Killer-Roulette",
     "buttonSurvRoulette": "Überlebenden-Roulette"
