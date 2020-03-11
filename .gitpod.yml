@@ -1,0 +1,6 @@
+tasks:
+  - init: npm install
+
+vscode:
+  extensions:
+    - octref.vetur@0.23.0:TEzauMObB6f3i2JqlvrOpA==
