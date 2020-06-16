@@ -1,3 +1,5 @@
+[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/3stadt/dbd_perk_slot_machine) 
+
 # dbd_perk_slot_machine
 
 ## Project setup
