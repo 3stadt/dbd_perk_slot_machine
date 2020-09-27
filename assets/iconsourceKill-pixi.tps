@@ -4,7 +4,7 @@
         <key>fileFormatVersion</key>
         <int>4</int>
         <key>texturePackerVersion</key>
-        <string>5.3.0</string>
+        <string>5.4.0</string>
         <key>autoSDSettings</key>
         <array>
             <struct type="AutoSDSettings">
@@ -270,6 +270,9 @@
             <key type="filename">iconsourceKill/69_forcedPenance.png</key>
             <key type="filename">iconsourceKill/70_trailOfTorment.png</key>
             <key type="filename">iconsourceKill/71_deathbound.png</key>
+            <key type="filename">iconsourceKill/72_hexBloodFavour.png</key>
+            <key type="filename">iconsourceKill/73_hexUndying.png</key>
+            <key type="filename">iconsourceKill/74_dragonsGrip.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0,0</point_f>

@@ -4,7 +4,7 @@
         <key>fileFormatVersion</key>
         <int>4</int>
         <key>texturePackerVersion</key>
-        <string>5.3.0</string>
+        <string>5.4.0</string>
         <key>autoSDSettings</key>
         <array>
             <struct type="AutoSDSettings">
@@ -261,6 +261,9 @@
             <key type="filename">iconsourceSurv/77_soulGuard.png</key>
             <key type="filename">iconsourceSurv/78_bloodPact.png</key>
             <key type="filename">iconsourceSurv/79_repressedAlliance.png</key>
+            <key type="filename">iconsourceSurv/80_desperateMeasures.png</key>
+            <key type="filename">iconsourceSurv/81_builtToLast.png</key>
+            <key type="filename">iconsourceSurv/82_visionary.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0,0</point_f>

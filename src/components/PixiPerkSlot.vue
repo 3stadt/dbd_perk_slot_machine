@@ -109,7 +109,7 @@ export default {
     rollWheel: function (targetId, newPerkDescription) {
       if (this.active) return
       this.perkDescription = ''
-      this.newPerkDescription = newPerkDescription
+      if (!newPerkDescription.startsWith('perks.')) this.newPerkDescription = newPerkDescription
       this.popupDisabled = true
       this.targetPerkId = targetId.index
       this.placeholderContainer.visible = false
