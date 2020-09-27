@@ -138,9 +138,9 @@
         "69_forcedPenance": "Erzwungene Buße",
         "70_trailOfTorment": "Pfad der Folter",
         "71_deathbound": "Todgeweiht",
-        "72_hexBloodFavour": "Blood Favour",
-        "73_hexUndying":"Undying",
-        "74_dragonsGrip":"Dragon's Grip",
+        "72_hexBloodFavour": "Blutgunst",
+        "73_hexUndying":"Unsterblich",
+        "74_dragonsGrip":"Drachengriff",
       "desc": {
       }
     },
@@ -225,9 +225,9 @@
         "77_soulGuard": "Seelenwächter",
         "78_bloodPact": "Blutpakt",
         "79_repressedAlliance": "Verdrängtes Bündnis",
-        "80_desperateMeasures": "Desperate Measures",
-        "81_builtToLast": "Built To Last",
-        "82_visionary": "Visionary",
+        "80_desperateMeasures": "Verzweifelte Maßnahmen",
+        "81_builtToLast": "Gebaut für die Ewigkeit",
+        "82_visionary": "Visionär",
       "desc": {
       }
     }
