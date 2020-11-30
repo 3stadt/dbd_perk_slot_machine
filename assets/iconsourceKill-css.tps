@@ -256,6 +256,9 @@
             <key type="filename">iconsourceKill/72_hexBloodFavour.png</key>
             <key type="filename">iconsourceKill/73_hexUndying.png</key>
             <key type="filename">iconsourceKill/74_dragonsGrip.png</key>
+            <key type="filename">iconsourceKill/75_hoarder.png</key>
+            <key type="filename">iconsourceKill/76_oppression.png</key>
+            <key type="filename">iconsourceKill/77_coupDeGrace.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0,0</point_f>

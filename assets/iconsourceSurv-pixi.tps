@@ -281,6 +281,9 @@
             <key type="filename">iconsourceSurv/80_desperateMeasures.png</key>
             <key type="filename">iconsourceSurv/81_builtToLast.png</key>
             <key type="filename">iconsourceSurv/82_visionary.png</key>
+            <key type="filename">iconsourceSurv/83_appraisal.png</key>
+            <key type="filename">iconsourceSurv/84_deception.png</key>
+            <key type="filename">iconsourceSurv/85_powerStruggle.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0,0</point_f>

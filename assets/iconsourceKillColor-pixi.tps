@@ -273,6 +273,9 @@
             <key type="filename">iconsourceKillColor/72_hexBloodFavour.png</key>
             <key type="filename">iconsourceKillColor/73_hexUndying.png</key>
             <key type="filename">iconsourceKillColor/74_dragonsGrip.png</key>
+            <key type="filename">iconsourceKillColor/83_appraisal.png</key>
+            <key type="filename">iconsourceKillColor/84_deception.png</key>
+            <key type="filename">iconsourceKillColor/85_powerStruggle.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0,0</point_f>

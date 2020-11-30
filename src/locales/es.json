@@ -141,6 +141,9 @@
         "72_hexBloodFavour": "Favor de Sangre",
         "73_hexUndying":"Inmortal",
         "74_dragonsGrip":"Agarre del Dragón",
+        "75_hoarder": "Hoarder",
+        "76_oppression": "Oppression",
+        "77_coupDeGrace": "Coup De Grâce",
       "desc": {
       }
     },
@@ -228,6 +231,9 @@
         "80_desperateMeasures": "Medidas Desesperadas",
         "81_builtToLast": "Construcción Duradera",
         "82_visionary": "Visión de Futuro",
+        "83_appraisal": "Appraisal",
+        "84_deception": "Deception",
+        "85_powerStruggle": "Power Struggle",
       "desc": {
       }
     }
