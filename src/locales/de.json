@@ -141,6 +141,9 @@
         "72_hexBloodFavour": "Blutgunst",
         "73_hexUndying":"Unsterblich",
         "74_dragonsGrip":"Drachengriff",
+        "75_hoarder": "Hoarder",
+        "76_oppression": "Oppression",
+        "77_coupDeGrace": "Coup De Grâce",
       "desc": {
       }
     },
@@ -228,6 +231,9 @@
         "80_desperateMeasures": "Verzweifelte Maßnahmen",
         "81_builtToLast": "Gebaut für die Ewigkeit",
         "82_visionary": "Visionär",
+        "83_appraisal": "Appraisal",
+        "84_deception": "Deception",
+        "85_powerStruggle": "Power Struggle",
       "desc": {
       }
     }
