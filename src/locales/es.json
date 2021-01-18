@@ -46,12 +46,12 @@
       "licenseUrl": "https:\/\/creativecommons.org\/licenses\/by-nc-sa\/3.0\/"
     },
     "happyclown": {
-      "description": "Los colores de los íconos (modo beta especial, cambio de color=0 a color=1 en la URL) fueron realizadas por {profile} incluso hay un {group} para ellos. Ve y conócelos!",
-      "groupText": "steam group"
+      "description": "Los colores de los iconos (modo beta especial, cambio de color=0 a color=1 en la URL) fueron realizadas por {profile}. Incluso hay un {group} para ellos. Ve y conócelos!",
+      "groupText": "Grupo de Steam"
     },
     "rocketleaguecat": {
       "description": "El {bgImage} fue realizado con el usuario {profile} en imgur.",
-      "bgImageText": "background image"
+      "bgImageText": "Imagen de fondo"
     },
     "bhvr": {
       "description": "En las Habilidades, las imágenes de fondo y otro contenido relacionado con el juego son propiedad de {bhvr} para {dbd}."
@@ -141,9 +141,9 @@
         "72_hexBloodFavour": "Favor de Sangre",
         "73_hexUndying":"Inmortal",
         "74_dragonsGrip":"Agarre del Dragón",
-        "75_hoarder": "Hoarder",
-        "76_oppression": "Oppression",
-        "77_coupDeGrace": "Coup De Grâce",
+        "75_hoarder": "Acaparador",
+        "76_oppression": "Opresión",
+        "77_coupDeGrace": "Golpe de Gracia",
       "desc": {
       }
     },
@@ -231,9 +231,9 @@
         "80_desperateMeasures": "Medidas Desesperadas",
         "81_builtToLast": "Construcción Duradera",
         "82_visionary": "Visión de Futuro",
-        "83_appraisal": "Appraisal",
-        "84_deception": "Deception",
-        "85_powerStruggle": "Power Struggle",
+        "83_appraisal": "Evaluación",
+        "84_deception": "Engaño",
+        "85_powerStruggle": "Lucha intensa",
       "desc": {
       }
     }
