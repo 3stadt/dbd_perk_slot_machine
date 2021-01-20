@@ -134,7 +134,6 @@ export default {
   },
   mounted: function () {
     if (this.$route.query.streammode === '1') {
-      document.getElementsByTagName('body')[0].setAttribute('style', 'background:none;padding:0;margin:0')
       const hints = document.getElementsByClassName('hint-text')
       if (hints.length > 0) {
         hints[0].setAttribute('style', 'display:none;')
@@ -151,6 +150,8 @@ export default {
       if (corners.length > 0) {
         corners[0].setAttribute('style', 'display:none;')
       }
+    } else {
+      document.getElementsByTagName('body')[0].removeAttribute('style')
     }
     const obs = this.$route.query.obs
     const as = parseInt(this.$route.query.autostart)
