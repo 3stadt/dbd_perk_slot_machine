@@ -5,6 +5,7 @@
             <img @click="changeLang('de')" src="img/flags/germany.svg" width="32" height="32" alt="deutsch" class="flag">
             <img @click="changeLang('fr')" src="img/flags/france.svg" width="32" height="32" alt="français" class="flag">
             <img @click="changeLang('es')" src="img/flags/spain.svg" width="32" height="32" alt="español" class="flag">
+            <img @click="changeLang('ja')" src="img/flags/japan.svg" width="32" height="32" alt="日本語" class="flag">
         </div>
         <MenuItem type="Info" :title="$t('snippets.info')" />
         <MenuItem :perks="perks.survivors" @resetPerks="resetPerks" @change="change" type="Survivor" :title="$t('snippets.survPerkConfig')" />
