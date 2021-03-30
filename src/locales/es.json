@@ -144,6 +144,9 @@
         "75_hoarder": "Acaparador",
         "76_oppression": "Opresión",
         "77_coupDeGrace": "Golpe de Gracia",
+        "78_starStruck": "Star Struck",
+        "79_hexCrowdControl": "Crowd Control",
+        "80_noWayOut": "No way out",
       "desc": {
       }
     },
@@ -234,6 +237,9 @@
         "83_appraisal": "Evaluación",
         "84_deception": "Engaño",
         "85_powerStruggle": "Lucha intensa",
+        "86_fastTrack": "Fast Track",
+        "87_selfPreservation": "Self Preservation",
+        "88_smashHit": "Smash Hit",
       "desc": {
       }
     }

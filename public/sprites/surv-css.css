@@ -1,7 +1,7 @@
 /* -----------------------------------------------------
    created with https://www.codeandweb.com/texturepacker 
    -----------------------------------------------------
-   $TexturePacker:SmartUpdate:61eb596863a36927f1dd93c842a94227:99246ebefcb4b3952005b1bdcf36dc98:e5bd633e660673a85abe99cc533d2bc5$
+   $TexturePacker:SmartUpdate:613d0c880d409b11b4458413e200d6b0:9b1de410ee451aef177c4ba077699c93:e5bd633e660673a85abe99cc533d2bc5$
    -----------------------------------------------------
 
    usage: <span class="{-spritename-} sprite"></span>
@@ -98,3 +98,6 @@
 ._83_appraisal {width:128px; height:128px; background-position: -1041px -651px}
 ._84_deception {width:128px; height:128px; background-position: -1171px -651px}
 ._85_powerStruggle {width:128px; height:128px; background-position: -1301px -651px}
+._86_fastTrack {width:128px; height:128px; background-position: -1431px -651px}
+._87_selfPreservation {width:128px; height:128px; background-position: -1561px -651px}
+._88_smashHit {width:128px; height:128px; background-position: -1691px -651px}
