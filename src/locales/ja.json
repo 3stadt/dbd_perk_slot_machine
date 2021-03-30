@@ -144,6 +144,9 @@
         "75_hoarder": "溜め込み屋",
         "76_oppression": "迫害",
         "77_coupDeGrace": "とどめの一撃",
+        "78_starStruck": "Star Struck",
+        "79_hexCrowdControl": "Crowd Control",
+        "80_noWayOut": "No way out",
       "desc": {
       }
     },
@@ -234,6 +237,9 @@
         "83_appraisal": "査定",
         "84_deception": "欺き",
         "85_powerStruggle": "勢力争い",
+        "86_fastTrack": "Fast Track",
+        "87_selfPreservation": "Self Preservation",
+        "88_smashHit": "Smash Hit",
       "desc": {
       }
     }

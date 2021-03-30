@@ -144,6 +144,9 @@
         "75_hoarder": "Hoarder",
         "76_oppression": "Oppression",
         "77_coupDeGrace": "Coup De Grâce",
+        "78_starStruck": "Star Struck",
+        "79_hexCrowdControl": "Crowd Control",
+        "80_noWayOut": "No way out",
       "desc": {
       }
     },
@@ -234,6 +237,9 @@
         "83_appraisal": "Appraisal",
         "84_deception": "Deception",
         "85_powerStruggle": "Power Struggle",
+        "86_fastTrack": "Fast Track",
+        "87_selfPreservation": "Self Preservation",
+        "88_smashHit": "Smash Hit",
       "desc": {
       }
     }
