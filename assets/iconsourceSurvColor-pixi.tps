@@ -287,6 +287,12 @@
             <key type="filename">iconsourceSurvColor/86_fastTrack.png</key>
             <key type="filename">iconsourceSurvColor/87_selfPreservation.png</key>
             <key type="filename">iconsourceSurvColor/88_smashHit.png</key>
+            <key type="filename">iconsourceSurvColor/89_BiteTheBullet.png</key>
+            <key type="filename">iconsourceSurvColor/90_blastMine.png</key>
+            <key type="filename">iconsourceSurvColor/91_Counterforce.png</key>
+            <key type="filename">iconsourceSurvColor/92_Flashbang.png</key>
+            <key type="filename">iconsourceSurvColor/93_Resurgence.png</key>
+            <key type="filename">iconsourceSurvColor/94_RookieSpirit.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0,0</point_f>
