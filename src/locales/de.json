@@ -141,12 +141,12 @@
         "72_hexBloodFavour": "Blutgunst",
         "73_hexUndying":"Unsterblich",
         "74_dragonsGrip":"Drachengriff",
-        "75_hoarder": "Hoarder",
-        "76_oppression": "Oppression",
-        "77_coupDeGrace": "Coup De Grâce",
-        "78_starstruck": "Starstruck",
-        "79_hexCrowdControl": "Crowd Control",
-        "80_noWayOut": "No way out",
+        "75_hoarder": "Horter",
+        "76_oppression": "Unterdrückung",
+        "77_coupDeGrace": "Gnadenstoß",
+        "78_starstruck": "Groupie",
+        "79_hexCrowdControl": "Publikumskontrolle",
+        "80_noWayOut": "Kein Ausweg",
       "desc": {
       }
     },
@@ -234,12 +234,12 @@
         "80_desperateMeasures": "Verzweifelte Maßnahmen",
         "81_builtToLast": "Gebaut für die Ewigkeit",
         "82_visionary": "Visionär",
-        "83_appraisal": "Appraisal",
-        "84_deception": "Deception",
-        "85_powerStruggle": "Power Struggle",
-        "86_fastTrack": "Fast Track",
-        "87_selfPreservation": "Self Preservation",
-        "88_smashHit": "Smash Hit",
+        "83_appraisal": "Einschätzung",
+        "84_deception": "Täuschung",
+        "85_powerStruggle": "Wildes Herauswinden",
+        "86_fastTrack": "Überholspur",
+        "87_selfPreservation": "Selbstschutz",
+        "88_smashHit": "Superhit",
       "desc": {
       }
     }

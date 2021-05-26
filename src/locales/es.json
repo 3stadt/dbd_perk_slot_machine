@@ -144,9 +144,9 @@
         "75_hoarder": "Acaparador",
         "76_oppression": "Opresión",
         "77_coupDeGrace": "Golpe de Gracia",
-        "78_starstruck": "Starstruck",
-        "79_hexCrowdControl": "Crowd Control",
-        "80_noWayOut": "No way out",
+        "78_starstruck": "Deslumbrado",
+        "79_hexCrowdControl": "Control de Masas",
+        "80_noWayOut": "Sin Escapatoria",
       "desc": {
       }
     },
@@ -237,9 +237,9 @@
         "83_appraisal": "Evaluación",
         "84_deception": "Engaño",
         "85_powerStruggle": "Lucha intensa",
-        "86_fastTrack": "Fast Track",
-        "87_selfPreservation": "Self Preservation",
-        "88_smashHit": "Smash Hit",
+        "86_fastTrack": "Primera Línea",
+        "87_selfPreservation": "Autoconservación",
+        "88_smashHit": "Éxito Aplastante",
       "desc": {
       }
     }
