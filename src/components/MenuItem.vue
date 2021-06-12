@@ -25,7 +25,6 @@ import vp from '@/lib/viewport'
 import PerkSwitch from './PerkSwitch.vue'
 import GlobalSelectionSwitch from './GlobalSelectionSwitch.vue'
 import InfoText from './InfoText.vue'
-import orderBy from 'lodash/orderBy'
 
 export default {
   name: 'MenuItem',
@@ -81,7 +80,17 @@ export default {
       return this.type === 'Info' && this.isCollapsed
     },
     orderedPerks () {
-      return orderBy(this.perks, [perk => this.translate(perk.name)])
+      let me = this
+      return me.perks.sort((a, b) => {
+        let nameA = me.translate(a.name).toLowerCase()
+        let nameB = me.translate(b.name).toLowerCase()
+        if (nameA === nameB) {
+          return 0
+        } else if (nameA === null || nameB === null) {
+          return nameA ? -1 : 1
+        }
+        return nameA.localeCompare(nameB)
+      })
     }
   },
 
