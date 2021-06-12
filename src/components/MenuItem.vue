@@ -11,7 +11,7 @@
                 <div @click.stop.prevent="$emit('resetPerks', type)">
                     <GlobalSelectionSwitch :itemLength="elementLength" :type="type" />
                 </div>
-                <PerkSwitch :itemLength="elementLength" :key="perk.index" @change="perkChange" v-for="perk in perks" :perk="perk" :name="translate(perk.name)" :type="type"/>
+                <PerkSwitch :itemLength="elementLength" :key="perk.index" @change="perkChange" v-for="perk in orderedPerks" :perk="perk" :name="translate(perk.name)" :type="type"/>
             </div>
             <div v-if="infoCondition" class="perk-overview__box">
                 <InfoText/>
@@ -25,6 +25,7 @@ import vp from '@/lib/viewport'
 import PerkSwitch from './PerkSwitch.vue'
 import GlobalSelectionSwitch from './GlobalSelectionSwitch.vue'
 import InfoText from './InfoText.vue'
+import orderBy from 'lodash/orderBy'
 
 export default {
   name: 'MenuItem',
@@ -78,6 +79,9 @@ export default {
     },
     infoCondition () {
       return this.type === 'Info' && this.isCollapsed
+    },
+    orderedPerks () {
+      return orderBy(this.perks, [perk => this.translate(perk.name)])
     }
   },
 
