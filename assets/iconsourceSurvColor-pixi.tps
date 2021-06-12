@@ -208,7 +208,6 @@
             <key type="filename">iconsourceSurvColor/07_bond.png</key>
             <key type="filename">iconsourceSurvColor/08_borrowedTime.png</key>
             <key type="filename">iconsourceSurvColor/09_botanyKnowledge.png</key>
-            <key type="filename">iconsourceSurvColor/1.png</key>
             <key type="filename">iconsourceSurvColor/10_breakdown.png</key>
             <key type="filename">iconsourceSurvColor/11_calmSpirit.png</key>
             <key type="filename">iconsourceSurvColor/12_danceWithMe.png</key>
