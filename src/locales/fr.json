@@ -147,6 +147,9 @@
         "78_starstruck": "Intimidé",
         "79_hexCrowdControl": "Contrôle des Foules",
         "80_noWayOut": "Aucune Issue",
+        "81_eruption": "Éruption",
+        "82_hysteria": "Hystérie",
+        "83_lethalPursuer": "Poursuivant meurtrier",
       "desc": {
       }
     },
@@ -240,6 +243,12 @@
         "86_fastTrack": "Voie rapide",
         "87_selfPreservation": "Instinct de survie",
         "88_smashHit": "Coup écrasant",
+        "89_BiteTheBullet": "Serrer les dents",
+        "90_blastMine": "Mine explosive",
+        "91_Counterforce": "Contre-Force",
+        "92_Flashbang": "Grenade aveuglante",
+        "93_Resurgence": "Renaissance",
+        "94_RookieSpirit": "Esprit de bleusaille",
       "desc": {
       }
     }

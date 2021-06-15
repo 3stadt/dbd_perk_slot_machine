@@ -147,6 +147,9 @@
         "78_starstruck": "Deslumbrado",
         "79_hexCrowdControl": "Control de Masas",
         "80_noWayOut": "Sin Escapatoria",
+        "81_eruption": "Erupción",
+        "82_hysteria": "Histeria",
+        "83_lethalPursuer": "Acecho Letal",
       "desc": {
       }
     },
@@ -240,6 +243,12 @@
         "86_fastTrack": "Primera Línea",
         "87_selfPreservation": "Autoconservación",
         "88_smashHit": "Éxito Aplastante",
+        "89_BiteTheBullet": "De Tripas Corazón",
+        "90_blastMine": "Mina explosiva",
+        "91_Counterforce": "Contrafuerza",
+        "92_Flashbang": "Granada a Turdidora",
+        "93_Resurgence": "Resurgimiento",
+        "94_RookieSpirit": "Espíritu de Navato",
       "desc": {
       }
     }

@@ -147,6 +147,9 @@
         "78_starstruck": "Groupie",
         "79_hexCrowdControl": "Publikumskontrolle",
         "80_noWayOut": "Kein Ausweg",
+        "81_eruption": "Ausbruch",
+        "82_hysteria": "Hysterie",
+        "83_lethalPursuer": "Tödlicher Verfolger",
       "desc": {
       }
     },
@@ -240,6 +243,12 @@
         "86_fastTrack": "Überholspur",
         "87_selfPreservation": "Selbstschutz",
         "88_smashHit": "Superhit",
+        "89_BiteTheBullet": "Zähne zusammenbeißen",
+        "90_blastMine": "Sprengfalle",
+        "91_Counterforce": "Gegengewalt",
+        "92_Flashbang": "Blendgranate",
+        "93_Resurgence": "Wiederaufleben",
+        "94_RookieSpirit": "Entschlossener Anfänger",
       "desc": {
       }
     }

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div>
+        <div id="perkSlotContainerInner">
             <perkslot0 @reRollRequested="randomize"
                        ref="perkslot0"
                        type="Surv"
@@ -8,6 +8,7 @@
                        :colorized="color"
                        :lang="lang"
                        :perkData="Object.keys(perksSHD.frames)"
+                       v-if="renderSlot"
             />
             <perkslot1 @reRollRequested="randomize"
                        ref="perkslot1"
@@ -16,6 +17,7 @@
                        :colorized="color"
                        :lang="lang"
                        :perkData="Object.keys(perksSHD.frames)"
+                       v-if="renderSlot"
             />
             <perkslot2 @reRollRequested="randomize"
                        ref="perkslot2"
@@ -24,6 +26,7 @@
                        :colorized="color"
                        :lang="lang"
                        :perkData="Object.keys(perksSHD.frames)"
+                       v-if="renderSlot"
             />
             <perkslot3 @reRollRequested="randomize"
                        ref="perkslot3"
@@ -32,6 +35,7 @@
                        :colorized="color"
                        :lang="lang"
                        :perkData="Object.keys(perksSHD.frames)"
+                       v-if="renderSlot"
             />
         </div>
         <div v-if="hintVisible" class="hint-text">
@@ -98,8 +102,14 @@ export default {
     return {
       perkData: survivors,
       hintVisible: true,
-      elementLength: vp.getElementLength(),
-      lastRoll: []
+      lastRoll: [],
+      initialElLen: null,
+      renderSlot: true
+    }
+  },
+  computed: {
+    elementLength () {
+      return this.initialElLen || vp.getElementLength()
     }
   },
   methods: {
@@ -133,6 +143,28 @@ export default {
     }
   },
   mounted: function () {
+    // Hacky way to re-calculate width and re-render slots after page load
+    // Neccessary because transparent scroll bars on mobile are included in innerWidth,
+    // causing the perk slots to be rendered to big and not two side-by-side on mobile devices
+
+    // Get the floating point value of the available render space
+    let docWidth = document.getElementById('perkSlotContainerInner').getBoundingClientRect().width
+
+    // Check if all four slots fit side-by side
+    if (vp.getElementLength() * 4 > docWidth && screen.availHeight > screen.availWidth) { // we are in portrait mode, create 2x2
+      this.initialElLen = Math.floor(docWidth / 2)
+      this.renderSlot = false
+      this.$nextTick(() => {
+        this.renderSlot = true
+      })
+    } else if (vp.getElementLength() * 4 > docWidth && screen.availHeight < screen.availWidth) { // we are in landscape, create 4x1
+      this.initialElLen = Math.floor(docWidth / 4)
+      this.renderSlot = false
+      this.$nextTick(() => {
+        this.renderSlot = true
+      })
+    }
+
     if (this.$route.query.streammode === '1') {
       const hints = document.getElementsByClassName('hint-text')
       if (hints.length > 0) {

@@ -262,6 +262,9 @@
             <key type="filename">iconsourceKill/78_starstruck.png</key>
             <key type="filename">iconsourceKill/79_hexCrowdControl.png</key>
             <key type="filename">iconsourceKill/80_noWayOut.png</key>
+            <key type="filename">iconsourceKill/81_eruption.png</key>
+            <key type="filename">iconsourceKill/82_hysteria.png</key>
+            <key type="filename">iconsourceKill/83_lethalPursuer.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0,0</point_f>
