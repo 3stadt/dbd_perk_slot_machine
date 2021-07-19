@@ -11,20 +11,20 @@
   },
   "about": {
     "header": "¿De qué trata esto?",
-    "description": "Este sitio es una ruleta de Habilidades para usar con el juego {url}. Para ser precisos, no hay una ruleta o rueda, sino una máquina tragamonedas. Funciona igual y se ve mejor que la rueda tradicional. Aquí, dejamos un video en inglés que contiene todo lo que necesitas saber:",
+    "description": "Este sitio es una ruleta de Habilidades para usar con el juego {url}. Para ser precisos, no hay ruleta, sino una especie de máquina tragaperras. Funciona igual; se ve mejor. Aquí, dejamos un video en inglés que contiene todo lo que necesitas saber:",
     "videoUrl": "https:\/\/www.youtube-nocookie.com\/embed\/dRZvzGP_2as"
   },
   "howItWorks": {
     "header": "¿Cómo funciona la Ruleta?",
-    "description": "Si tienes todas las Habilidades de los personajes como asesino o como superviviente, simplemente haz clic en uno de los dos botones en la parte superior de esta página, luego haz clic en cualquier Habilidad y listo. De esta forma, se eligen aleatoriamente cuatro diferentes por tipo de juego y así comenzar una partida con lo seleccionado. Es así como funciona la ruleta de Habilidades\/máquina tragamonedas. ¡Que te diviertas!",
+    "description": "Si tienes todas las Habilidades de los personajes como asesino o como superviviente, simplemente haz clic en uno de los dos botones en la parte superior de esta página, luego haz clic en cualquier Habilidad y listo. De esta forma, se eligen aleatoriamente cuatro diferentes por tipo de juego y así comenzar una partida con lo seleccionado. ¡Que te diviertas!",
     "missingPerks": {
       "header": "...pero si no tengo TODAS LAS HABILIDADES!",
-      "description": "Si te faltan algunas Habilidades, haz clic en uno de los cuadros de \"... configuración\" a continuación. Luego deshabilita las Habilidades que no tienes o no quieras. Las Habilidades que haz elegido no se guardan, pero la URL se usa para determinar qué Habilidades estén activas. Configura tus Habilidades, vuelve a darle clic a configuración y listo. Comienza a usar la ruleta en el menú de arriba para asesino o sobreviviente"
+      "description": "Si te faltan algunas Habilidades, haz clic en uno de los cuadros de \"... configuración\" a continuación. Luego deshabilita las Habilidades que no tienes o no quieras. Las Habilidades que has elegido no se guardan, pero la URL se usa para determinar qué Habilidades están activas. Configura tus Habilidades, vuelve a darle clic a configuración y listo. Comienza a usar la ruleta en el menú de arriba para asesino o superviviente"
     }
   },
   "streaming": {
     "header": "¿Cómo usar esto con el OBS\/XSplit?",
-    "description": "Hay una serie de opciones que puedes configurar a través de la URL. Esto se explica en profundidad en el video de arriba luego de la parte de cómo usar la ruleta.",
+    "description": "Hay una serie de opciones que puedes configurar a través de la URL. Esto se explica en profundidad en el video de arriba justo debajo de la parte de cómo usar la ruleta.",
     "options": {
       "description": "En resumen, usa el parámetro {transparent} para mostrar solo las Habilidades, por ejemplo. {autostart} para iniciar un roll 1 segundo después de cargar la página.",
       "transparent": "streammode=1",
@@ -37,10 +37,10 @@
   },
   "attribution": {
     "header": "Atribuciones",
-    "description": "La mayoría de los medios usados en esta página no fueron creados originalmente por sus autores.",
+    "description": "La mayoría del contenido multimedia usado no ha sido creado originalmente por los autores de esta página.",
     "wiki": {
       "description": "Casi todas las imágenes fueron tomadas de la increíble web {wikiUrl}. El contenido de esa wiki está licenciado por Creative Commons \"{licenseUrl}\" bajo sus licencias.",
-      "wikiUrlText": "official Dead by Daylight wiki",
+      "wikiUrlText": "Wiki Oficial de Dead by Daylight",
       "wikiUrl": "https:\/\/deadbydaylight.gamepedia.com\/Dead_by_Daylight_Wiki",
       "licenseUrlText": "Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0)",
       "licenseUrl": "https:\/\/creativecommons.org\/licenses\/by-nc-sa\/3.0\/"
@@ -57,12 +57,12 @@
       "description": "En las Habilidades, las imágenes de fondo y otro contenido relacionado con el juego son propiedad de {bhvr} para {dbd}."
     },
     "freepik": {
-      "description": "El estilo de los íconos fueron creados por {freepik} de {flaticon} están licenciados por {licenseUrl}"
+      "description": "El estilo de los iconos fueron creados por {freepik} de {flaticon} y están licenciados por {licenseUrl}"
     }
   },
   "disclaimer": {
     "header": "Manifiesto",
-    "description": "Este sitio no está asociado, respaldado o de ninguna otra forma relacionado, con ninguna compañía. Es un proyecto de fanáticos. Si algo está mal, no dude en contactar al autor por correo electrónico a {email}. No hay garantías de ningún tipo. Úselo bajo su propio riesgo. La buena noticia es que este sitio no utiliza cookies y se ejecuta en su navegador, sin guardar datos en el servidor. Sin embargo, este sitio usa {statcounter} para rastrear cuántos visitantes lo están usando."
+    "description": "Este sitio no está asociado, respaldado o de ninguna otra forma relacionado con ninguna compañía. Es un proyecto de fans. Si algo está mal, no dude en contactar al autor por correo electrónico a {email}. No hay garantías de ningún tipo. Úselo bajo su propio riesgo. La buena noticia es que este sitio no utiliza cookies y se ejecuta en su navegador, sin guardar datos en el servidor. Sin embargo, este sitio usa {statcounter} para rastrear cuántos visitantes lo están usando."
   },
   "perks": {
     "killer": {
@@ -246,9 +246,9 @@
         "89_BiteTheBullet": "De Tripas Corazón",
         "90_blastMine": "Mina explosiva",
         "91_Counterforce": "Contrafuerza",
-        "92_Flashbang": "Granada a Turdidora",
+        "92_Flashbang": "Granada Aturdidora",
         "93_Resurgence": "Resurgimiento",
-        "94_RookieSpirit": "Espíritu de Navato",
+        "94_RookieSpirit": "Espíritu de Novato",
       "desc": {
       }
     }
