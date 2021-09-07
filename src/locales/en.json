@@ -7,7 +7,8 @@
     "startPerkRoll": "Click on any perk slot to start.<br>Shift-click to re-roll a single perk slot.",
     "buttonHome": "Home",
     "buttonKillRoulette": "Killer Roulette",
-    "buttonSurvRoulette": "Survivor Roulette"
+    "buttonSurvRoulette": "Survivor Roulette",
+    "update": "Current Update: Hellraiser Chapter"
   },
   "about": {
     "header": "What is this about?",
@@ -150,6 +151,9 @@
         "81_eruption": "Eruption",
         "82_hysteria": "Hysteria",
         "83_lethalPursuer": "Lethal Pursuer",
+        "84_Deadlock": "Deadlock",
+        "85_HexPlaything": "Plaything",
+        "86_ScourgeHookGiftOfPain": "Scourge Hook Gift Of Pain",
       "desc": {
       }
     },

@@ -7,6 +7,7 @@
             <img @click="changeLang('es')" src="img/flags/spain.svg" width="32" height="32" alt="español" class="flag">
             <img @click="changeLang('ja')" src="img/flags/japan.svg" width="32" height="32" alt="日本語" class="flag">
         </div>
+        <div class="latest-update">{{ $t('snippets.update') }}</div>
         <MenuItem type="Info" :title="$t('snippets.info')" />
         <MenuItem :perks="perks.survivors" @resetPerks="resetPerks" @change="change" type="Survivor" :title="$t('snippets.survPerkConfig')" />
         <MenuItem :perks="perks.killers" @resetPerks="resetPerks" @change="change" type="Killer" :title="$t('snippets.killPerkConfig')" />
@@ -204,6 +205,16 @@ export default {
         background-color: rgba(0, 0, 0, 0.2);
         display: inline-block;
         align-items: center;
+    }
+
+    .latest-update {
+        padding: 0.3rem;
+        margin: 0.5rem 1rem;
+        display: inline-block;
+        background-color: rgba(255, 0, 0, 0.5);
+        border: 3px solid rgba(255, 255, 255, 0.5);
+        color: white;
+        transform: rotate(-5deg);
     }
 
     @media screen and (max-width: 1055px) {

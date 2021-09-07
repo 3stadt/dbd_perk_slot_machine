@@ -7,7 +7,8 @@
     "startPerkRoll": "Klicke zum Starten auf einen Perkslot.<br>Shift-Klick um einzelne Slots neu zu starten.",
     "buttonHome": "Startseite",
     "buttonKillRoulette": "Killer-Roulette",
-    "buttonSurvRoulette": "Überlebenden-Roulette"
+    "buttonSurvRoulette": "Überlebenden-Roulette",
+    "update": "Aktuelles Update: Hellraiser Kapitel"
   },
   "about": {
     "header": "Worum geht es hier?",
@@ -150,6 +151,9 @@
         "81_eruption": "Ausbruch",
         "82_hysteria": "Hysterie",
         "83_lethalPursuer": "Tödlicher Verfolger",
+        "84_Deadlock": "Sackgasse",
+        "85_HexPlaything": "Spielzeug",
+        "86_ScourgeHookGiftOfPain": "Geisselhaken: Gabe des Schmerzes",
       "desc": {
       }
     },
