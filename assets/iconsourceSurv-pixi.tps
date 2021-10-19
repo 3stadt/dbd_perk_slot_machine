@@ -293,6 +293,9 @@
             <key type="filename">iconsourceSurv/92_Flashbang.png</key>
             <key type="filename">iconsourceSurv/93_Resurgence.png</key>
             <key type="filename">iconsourceSurv/94_RookieSpirit.png</key>
+            <key type="filename">iconsourceSurv/95_CircleOfHealing.png</key>
+            <key type="filename">iconsourceSurv/96_ShadowStep.png</key>
+            <key type="filename">iconsourceSurv/97_Clairvoyance.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0,0</point_f>
