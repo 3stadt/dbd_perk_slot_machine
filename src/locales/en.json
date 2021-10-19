@@ -8,7 +8,7 @@
     "buttonHome": "Home",
     "buttonKillRoulette": "Killer Roulette",
     "buttonSurvRoulette": "Survivor Roulette",
-    "update": "Current Update: Hellraiser Chapter"
+    "update": "Current Update: Hour of the Witch"
   },
   "about": {
     "header": "What is this about?",
@@ -253,6 +253,9 @@
         "92_Flashbang": "Flashbang",
         "93_Resurgence": "Resurgence",
         "94_RookieSpirit": "Rookie Spirit",
+        "95_CircleOfHealing": "Circle of healing",
+        "96_ShadowStep": "Shadow step",
+        "97_Clairvoyance": "Clairvoyance",
       "desc": {
       }
     }

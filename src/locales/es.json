@@ -7,7 +7,8 @@
     "startPerkRoll": "Hacer clic en cualquier perk para comenzar",
     "buttonHome": "Home",
     "buttonKillRoulette": "Ruleta para Killer",
-    "buttonSurvRoulette": "Ruleta para Survivor"
+    "buttonSurvRoulette": "Ruleta para Survivor",
+    "update": "Current Update: Hour of the Witch"
   },
   "about": {
     "header": "¿De qué trata esto?",
@@ -252,6 +253,9 @@
         "92_Flashbang": "Granada aturdidora",
         "93_Resurgence": "Resurgimiento",
         "94_RookieSpirit": "Espíritu de novato",
+        "95_CircleOfHealing": "Circle of healing",
+        "96_ShadowStep": "Shadow step",
+        "97_Clairvoyance": "Clairvoyance",
       "desc": {
       }
     }

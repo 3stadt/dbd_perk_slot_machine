@@ -8,7 +8,7 @@
     "buttonHome": "Startseite",
     "buttonKillRoulette": "Killer-Roulette",
     "buttonSurvRoulette": "Überlebenden-Roulette",
-    "update": "Aktuelles Update: Hellraiser Kapitel"
+    "update": "Aktuelles Update: Hour of the Witch"
   },
   "about": {
     "header": "Worum geht es hier?",
@@ -253,6 +253,9 @@
         "92_Flashbang": "Blendgranate",
         "93_Resurgence": "Wiederaufleben",
         "94_RookieSpirit": "Entschlossener Anfänger",
+        "95_CircleOfHealing": "Circle of healing",
+        "96_ShadowStep": "Shadow step",
+        "97_Clairvoyance": "Clairvoyance",
       "desc": {
       }
     }

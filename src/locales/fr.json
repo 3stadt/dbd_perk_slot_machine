@@ -7,7 +7,8 @@
     "startPerkRoll": "Cliquer sur n'importe quel slot pour commencer",
     "buttonHome": "Accueil",
     "buttonKillRoulette": "Roulette Tueur",
-    "buttonSurvRoulette": "Roulette Survivant"
+    "buttonSurvRoulette": "Roulette Survivant",
+    "update": "Current Update: Hour of the Witch"
   },
   "about": {
     "header": "Qu'est-ce que c'est ?",
@@ -252,6 +253,9 @@
         "92_Flashbang": "Grenade aveuglante",
         "93_Resurgence": "Renaissance",
         "94_RookieSpirit": "Esprit de bleusaille",
+        "95_CircleOfHealing": "Circle of healing",
+        "96_ShadowStep": "Shadow step",
+        "97_Clairvoyance": "Clairvoyance",
       "desc": {
       }
     }

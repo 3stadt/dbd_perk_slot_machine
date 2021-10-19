@@ -7,7 +7,8 @@
     "startPerkRoll": "スロットをクリックするとルーレットを開始します。<br>Shiftキーを押しながらクリックすると、クリックしたパークだけ再抽選します。",
     "buttonHome": "Home",
     "buttonKillRoulette": "キラールーレット",
-    "buttonSurvRoulette": "サバイバールーレット"
+    "buttonSurvRoulette": "サバイバールーレット",
+    "update": "Current Update: Hour of the Witch"
   },
   "about": {
     "header": "What is this about?",
@@ -252,6 +253,9 @@
         "92_Flashbang": "スタングレネード",
         "93_Resurgence": "起死回生",
         "94_RookieSpirit": "新人魂",
+        "95_CircleOfHealing": "Circle of healing",
+        "96_ShadowStep": "Shadow step",
+        "97_Clairvoyance": "Clairvoyance",
       "desc": {
       }
     }
