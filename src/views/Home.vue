@@ -227,7 +227,6 @@ export default {
   data () {
     const { ...q } = this.$route.query
     const initialArtistPalette = q.color === '1' ? 'img/artist-palette.svg' : 'img/artist-palette-bw.svg'
-    console.info(initialArtistPalette)
 
     const survivorsRaw = Object.keys(this.perksSHD.frames)
     const survivors = []
