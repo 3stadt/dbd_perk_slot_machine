@@ -126,7 +126,7 @@ export default {
     toggleColoredIcons () {
       const { ...q } = this.$route.query
       q.color = q.color === '1' ? '0' : '1'
-      this.artistPalette = q.color === '0' ? 'img/artist-palette-bw.svg' : 'img/artist-palette.svg'
+      this.artistPalette = q.color === '1' ? 'img/artist-palette.svg' : 'img/artist-palette-bw.svg'
       this.$router.push({ path: this.$route.path, query: q })
     },
     resetPerks (type) {
@@ -226,7 +226,8 @@ export default {
   },
   data () {
     const { ...q } = this.$route.query
-    const initialArtistPalette = q.color === '0' ? 'img/artist-palette-bw.svg' : 'img/artist-palette.svg'
+    const initialArtistPalette = q.color === '1' ? 'img/artist-palette.svg' : 'img/artist-palette-bw.svg'
+    console.info(initialArtistPalette)
 
     const survivorsRaw = Object.keys(this.perksSHD.frames)
     const survivors = []
