@@ -27,6 +27,13 @@
             </i18n>
         </div>
         <div class="paragraph">
+            <h2>{{ $t("attribution.coloredicons.header") }}</h2>
+            <i18n tag="p" path="attribution.coloredicons.description">
+                    <a place="profile" href="https://steamcommunity.com/id/EvaZioN67/">EvaZioN</a>
+                    <a place="group" href="https://steamcommunity.com/groups/Nebula_Perks">{{ $t("attribution.coloredicons.groupText") }}</a>
+                </i18n>
+        </div>
+        <div class="paragraph">
             <h2>{{ $t("team.header") }}</h2>
             <p>{{ $t("team.description") }}</p>
             <ul>
@@ -57,14 +64,10 @@
                     <a place="wikiUrl" :href="$t('attribution.wiki.wikiUrl')">{{ $t('attribution.wiki.wikiUrlText') }}</a>
                     <a place="licenseUrl" :href="$t('attribution.wiki.licenseUrl')">{{ $t('attribution.wiki.licenseUrl') }}</a>
                 </i18n>
-                <i18n tag="li" path="attribution.happyclown.description">
-                    <a place="profile" href="https://steamcommunity.com/profiles/76561198307075794">Happy Clown</a>
-                    <a place="group" href="https://steamcommunity.com/groups/HappyClownsColoredIcons">{{ $t("attribution.happyclown.groupText") }}</a>
-                </i18n>
-                <i18n tag="li" path="attribution.rocketleaguecat.description">
+                <!-- <i18n tag="li" path="attribution.rocketleaguecat.description">
                     <a href="https://imgur.com/gallery/8i5gR" place="bgImage">{{ $t("attribution.rocketleaguecat.bgImageText") }}</a>
                     <a place="profile" href="https://imgur.com/user/rocketleaguecat">rocketleaguecat</a>
-                </i18n>
+                </i18n> -->
                 <i18n tag="li" path="attribution.bhvr.description">
                     <a place="bhvr" href="https://www.bhvr.com/">BHVR</a>
                     <a place="dbd" href="https://deadbydaylight.com">Dead by Daylight</a>
