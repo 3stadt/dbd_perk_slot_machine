@@ -151,9 +151,9 @@
         "81_eruption": "Ausbruch",
         "82_hysteria": "Hysterie",
         "83_lethalPursuer": "Tödlicher Verfolger",
-        "84_Deadlock": "Sackgasse",
-        "85_HexPlaything": "Spielzeug",
-        "86_ScourgeHookGiftOfPain": "Geisselhaken: Gabe des Schmerzes",
+        "84_deadlock": "Sackgasse",
+        "85_hexPlaything": "Spielzeug",
+        "86_scourgeHookGiftOfPain": "Geisselhaken: Gabe des Schmerzes",
       "desc": {
       }
     },
@@ -247,15 +247,15 @@
         "86_fastTrack": "Überholspur",
         "87_selfPreservation": "Selbstschutz",
         "88_smashHit": "Superhit",
-        "89_BiteTheBullet": "Zähne zusammenbeißen",
+        "89_biteTheBullet": "Zähne zusammenbeißen",
         "90_blastMine": "Sprengfalle",
-        "91_Counterforce": "Gegengewalt",
-        "92_Flashbang": "Blendgranate",
-        "93_Resurgence": "Wiederaufleben",
-        "94_RookieSpirit": "Entschlossener Anfänger",
-        "95_CircleOfHealing": "Kreis der Heilung",
-        "96_ShadowStep": "Schattenschritt",
-        "97_Clairvoyance": "Hellsicht",
+        "91_counterforce": "Gegengewalt",
+        "92_flashbang": "Blendgranate",
+        "93_resurgence": "Wiederaufleben",
+        "94_rookieSpirit": "Entschlossener Anfänger",
+        "95_circleOfHealing": "Kreis der Heilung",
+        "96_shadowStep": "Schattenschritt",
+        "97_clairvoyance": "Hellsicht",
       "desc": {
       }
     }

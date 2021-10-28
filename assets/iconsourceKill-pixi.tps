@@ -282,9 +282,9 @@
             <key type="filename">iconsourceKill/81_eruption.png</key>
             <key type="filename">iconsourceKill/82_hysteria.png</key>
             <key type="filename">iconsourceKill/83_lethalPursuer.png</key>
-            <key type="filename">iconsourceKill/84_Deadlock.png</key>
-            <key type="filename">iconsourceKill/85_HexPlaything.png</key>
-            <key type="filename">iconsourceKill/86_ScourgeHookGiftOfPain.png</key>
+            <key type="filename">iconsourceKill/84_deadlock.png</key>
+            <key type="filename">iconsourceKill/85_hexPlaything.png</key>
+            <key type="filename">iconsourceKill/86_scourgeHookGiftOfPain.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0,0</point_f>

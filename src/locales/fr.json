@@ -151,9 +151,9 @@
         "81_eruption": "Éruption",
         "82_hysteria": "Hystérie",
         "83_lethalPursuer": "Poursuivant meurtrier",
-        "84_Deadlock": "Impasse",
-        "85_HexPlaything": "Jouet",
-        "86_ScourgeHookGiftOfPain": "Crochet flagellateur: Don de Souffrance",
+        "84_deadlock": "Impasse",
+        "85_hexPlaything": "Jouet",
+        "86_scourgeHookGiftOfPain": "Crochet flagellateur: Don de Souffrance",
       "desc": {
       }
     },
@@ -247,15 +247,15 @@
         "86_fastTrack": "Voie rapide",
         "87_selfPreservation": "Instinct de survie",
         "88_smashHit": "Coup écrasant",
-        "89_BiteTheBullet": "Serrer les dents",
+        "89_biteTheBullet": "Serrer les dents",
         "90_blastMine": "Mine explosive",
-        "91_Counterforce": "Contre-Force",
-        "92_Flashbang": "Grenade aveuglante",
-        "93_Resurgence": "Renaissance",
-        "94_RookieSpirit": "Esprit de bleusaille",
-        "95_CircleOfHealing": "Cercle de soins",
-        "96_ShadowStep": "Marche de L'ombre",
-        "97_Clairvoyance": "Clairvoyance",
+        "91_counterforce": "Contre-Force",
+        "92_flashbang": "Grenade aveuglante",
+        "93_resurgence": "Renaissance",
+        "94_rookieSpirit": "Esprit de bleusaille",
+        "95_circleOfHealing": "Cercle de soins",
+        "96_shadowStep": "Marche de L'ombre",
+        "97_clairvoyance": "Clairvoyance",
       "desc": {
       }
     }

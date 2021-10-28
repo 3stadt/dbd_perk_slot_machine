@@ -287,15 +287,15 @@
             <key type="filename">iconsourceSurv/86_fastTrack.png</key>
             <key type="filename">iconsourceSurv/87_selfPreservation.png</key>
             <key type="filename">iconsourceSurv/88_smashHit.png</key>
-            <key type="filename">iconsourceSurv/89_BiteTheBullet.png</key>
+            <key type="filename">iconsourceSurv/89_biteTheBullet.png</key>
             <key type="filename">iconsourceSurv/90_blastMine.png</key>
-            <key type="filename">iconsourceSurv/91_Counterforce.png</key>
-            <key type="filename">iconsourceSurv/92_Flashbang.png</key>
-            <key type="filename">iconsourceSurv/93_Resurgence.png</key>
-            <key type="filename">iconsourceSurv/94_RookieSpirit.png</key>
-            <key type="filename">iconsourceSurv/95_CircleOfHealing.png</key>
-            <key type="filename">iconsourceSurv/96_ShadowStep.png</key>
-            <key type="filename">iconsourceSurv/97_Clairvoyance.png</key>
+            <key type="filename">iconsourceSurv/91_counterforce.png</key>
+            <key type="filename">iconsourceSurv/92_flashbang.png</key>
+            <key type="filename">iconsourceSurv/93_resurgence.png</key>
+            <key type="filename">iconsourceSurv/94_rookieSpirit.png</key>
+            <key type="filename">iconsourceSurv/95_circleOfHealing.png</key>
+            <key type="filename">iconsourceSurv/96_shadowStep.png</key>
+            <key type="filename">iconsourceSurv/97_clairvoyance.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0,0</point_f>

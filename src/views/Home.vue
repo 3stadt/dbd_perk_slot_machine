@@ -1,5 +1,8 @@
 <template>
     <div class="perk-config home">
+      <video playsinline autoplay muted loop id="bg-vid">
+  <source src="/splash_bg.mp4" type="video/mp4">
+</video>
         <div class="language-switch overview__box">
             <img @click="changeLang('en')" src="img/flags/united-kingdom.svg" width="32" height="32" alt="english" class="flag">
             <img @click="changeLang('de')" src="img/flags/germany.svg" width="32" height="32" alt="deutsch" class="flag">
@@ -156,29 +159,29 @@ export default {
     document.getElementsByTagName('body')[0].setAttribute('style', 'overflow-y: scroll;')
   },
   data () {
-    let survivorsRaw = Object.keys(this.perksSHD.frames)
-    let survivors = []
+    const survivorsRaw = Object.keys(this.perksSHD.frames)
+    const survivors = []
     // make sure array keys match the ids in file name. TODO maybe make sure no key is reassigned because of naming issues
     for (let i = 0, sLen = survivorsRaw.length; i < sLen; i++) {
-      let perkFileName = survivorsRaw[i]
-      let key = Number(perkFileName.substr(0, 2))
+      const perkFileName = survivorsRaw[i]
+      const key = Number(perkFileName.substr(0, 2))
       survivors[key] = {
-        'index': key,
-        'name': perkFileName,
-        'checked': true
+        index: key,
+        name: perkFileName,
+        checked: true
       }
     }
 
-    let killersRaw = Object.keys(this.perksKHD.frames)
-    let killers = []
+    const killersRaw = Object.keys(this.perksKHD.frames)
+    const killers = []
     // make sure array keys match the ids in file name. TODO maybe make sure no key is reassigned because of naming issues
     for (let i = 0, kLen = killersRaw.length; i < kLen; i++) {
-      let perkFileName = killersRaw[i]
-      let key = Number(perkFileName.substr(0, 2))
+      const perkFileName = killersRaw[i]
+      const key = Number(perkFileName.substr(0, 2))
       killers[key] = {
-        'index': key,
-        'name': perkFileName,
-        'checked': true
+        index: key,
+        name: perkFileName,
+        checked: true
       }
     }
     return {
@@ -193,6 +196,27 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  #bg-vid {
+    display:none;
+  }
+  @media (min-width: 700px) {
+    #bg-vid{
+      display: inherit;
+      position: fixed;
+      z-index: -99;
+      object-fit: cover; // this is the key
+      width:100%;
+      height:100%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      filter: brightness(50%);
+
+      &::-webkit-media-controls {
+        display:none !important;
+      }
+    }
+    }
     .language-switch {
         .flag {
             margin: 0 0.3rem;

@@ -1,34 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title>Dead by Daylight Perk Roulette</title>
-    <meta name="title" content="Dead by Daylight Perk Roulette">
-    <meta name="description" content="Play DbD with style and randomness! Supports choosing the killer/survivor perks to randomize and comes with OBS streamer mode. :)">
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://dpsm.3stadt.com/">
-    <meta property="og:title" content="Dead by Daylight Perk Roulette">
-    <meta property="og:description" content="Play DbD with style and randomness! Supports choosing the killer/survivor perks to randomize and comes with OBS streamer mode. :)">
-    <meta property="og:image" content="https://dpsm.3stadt.com/img/dpsm_sm_prev_20190319.jpg">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <title>Dead by Daylight Perk Roulette</title>
+  <meta name="title" content="Dead by Daylight Perk Roulette">
+  <meta name="description"
+    content="Play DbD with style and randomness! Supports choosing the killer/survivor perks to randomize and comes with OBS streamer mode. :)">
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://dpsm.3stadt.com/">
-    <meta property="twitter:title" content="Dead by Daylight Perk Roulette">
-    <meta property="twitter:creator" content="@3stadt_com">
-    <meta property="twitter:description" content="Play DbD with style and randomness! Supports choosing the killer/survivor perks to randomize and comes with OBS streamer mode. :)">
-    <meta property="twitter:image" content="https://dpsm.3stadt.com/img/dpsm_sm_prev_20190319.jpg">
-  </head>
-  <body style="padding:0;margin:0;background: rgba(0,0,0,0) none;">
-    <noscript>
-      <strong>We're sorry but dbd_perk_slot_machine doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dpsm.3stadt.com/">
+  <meta property="og:title" content="Dead by Daylight Perk Roulette">
+  <meta property="og:description"
+    content="Play DbD with style and randomness! Supports choosing the killer/survivor perks to randomize and comes with OBS streamer mode. :)">
+  <meta property="og:image" content="https://dpsm.3stadt.com/img/dpsm_sm_prev_20190319.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://dpsm.3stadt.com/">
+  <meta property="twitter:title" content="Dead by Daylight Perk Roulette">
+  <meta property="twitter:creator" content="@3stadt_com">
+  <meta property="twitter:description"
+    content="Play DbD with style and randomness! Supports choosing the killer/survivor perks to randomize and comes with OBS streamer mode. :)">
+  <meta property="twitter:image" content="https://dpsm.3stadt.com/img/dpsm_sm_prev_20190319.jpg">
+</head>
+
+<body style="padding:0;margin:0;background: rgba(0,0,0,1) none;">
+  <noscript>
+    <strong>We're sorry but dbd_perk_slot_machine doesn't work properly without JavaScript enabled. Please enable it to
+      continue.</strong>
+  </noscript>
+  <div id="app">
+    <style>
+      body {
+        background-color: black !important;
+      }
+      #loading-wrapper {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+      }
+
+      #loading-text {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        color: rgb(255, 255, 255);
+        width: 100px;
+        height: 30px;
+        margin: -7px 0 0 -45px;
+        text-align: center;
+        font-family: 'PT Sans Narrow', sans-serif;
+        font-size: 20px;
+      }
+
+      #loading-content {
+        display: block;
+        position: relative;
+        left: 50%;
+        top: 50%;
+        width: 170px;
+        height: 170px;
+        margin: -85px 0 0 -85px;
+        border: 3px solid #F00;
+      }
+
+      #loading-content {
+        border: 3px solid transparent;
+        border-top-color: rgb(185, 61, 61);
+        border-bottom-color: rgb(185, 61, 61);
+        border-radius: 50%;
+        -webkit-animation: loader 2s linear infinite;
+        -moz-animation: loader 2s linear infinite;
+        -o-animation: loader 2s linear infinite;
+        animation: loader 2s linear infinite;
+      }
+
+      @keyframes loader {
+        0% {
+          -webkit-transform: rotate(0deg);
+          -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+        }
+
+        100% {
+          -webkit-transform: rotate(360deg);
+          -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+    <div id="loading-wrapper">
+      <div id="loading-text">LOADING</div>
+      <div id="loading-content"></div>
+    </div>
+  </div>
+  <!-- built files will be auto injected -->
+</body>
+
 </html>

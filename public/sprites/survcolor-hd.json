@@ -712,7 +712,7 @@
 	"spriteSourceSize": {"x":29,"y":49,"w":202,"h":158},
 	"sourceSize": {"w":256,"h":256}
 },
-"89_BiteTheBullet":
+"89_biteTheBullet":
 {
 	"frame": {"x":1813,"y":298,"w":169,"h":154},
 	"rotated": false,
@@ -728,7 +728,7 @@
 	"spriteSourceSize": {"x":39,"y":13,"w":197,"h":202},
 	"sourceSize": {"w":256,"h":256}
 },
-"91_Counterforce":
+"91_counterforce":
 {
 	"frame": {"x":1214,"y":1288,"w":181,"h":174},
 	"rotated": true,
@@ -736,7 +736,7 @@
 	"spriteSourceSize": {"x":48,"y":30,"w":181,"h":174},
 	"sourceSize": {"w":256,"h":256}
 },
-"92_Flashbang":
+"92_flashbang":
 {
 	"frame": {"x":631,"y":407,"w":197,"h":141},
 	"rotated": true,
@@ -744,7 +744,7 @@
 	"spriteSourceSize": {"x":25,"y":71,"w":197,"h":141},
 	"sourceSize": {"w":256,"h":256}
 },
-"93_Resurgence":
+"93_resurgence":
 {
 	"frame": {"x":558,"y":1,"w":156,"h":200},
 	"rotated": false,
@@ -752,7 +752,7 @@
 	"spriteSourceSize": {"x":40,"y":33,"w":156,"h":200},
 	"sourceSize": {"w":256,"h":256}
 },
-"94_RookieSpirit":
+"94_rookieSpirit":
 {
 	"frame": {"x":1646,"y":1007,"w":162,"h":157},
 	"rotated": false,
@@ -760,7 +760,7 @@
 	"spriteSourceSize": {"x":42,"y":32,"w":162,"h":157},
 	"sourceSize": {"w":256,"h":256}
 },
-"95_CircleOfHealing":
+"95_circleOfHealing":
 {
 	"frame": {"x":1341,"y":738,"w":168,"h":175},
 	"rotated": false,
@@ -768,7 +768,7 @@
 	"spriteSourceSize": {"x":43,"y":32,"w":168,"h":175},
 	"sourceSize": {"w":256,"h":256}
 },
-"96_ShadowStep":
+"96_shadowStep":
 {
 	"frame": {"x":697,"y":203,"w":159,"h":196},
 	"rotated": false,
@@ -776,7 +776,7 @@
 	"spriteSourceSize": {"x":48,"y":30,"w":159,"h":196},
 	"sourceSize": {"w":256,"h":256}
 },
-"97_Clairvoyance":
+"97_clairvoyance":
 {
 	"frame": {"x":869,"y":1289,"w":187,"h":181},
 	"rotated": true,
@@ -791,6 +791,6 @@
 	"format": "RGBA8888",
 	"size": {"w":1984,"h":1477},
 	"scale": "1",
-	"smartupdate": "$TexturePacker:SmartUpdate:33951305066501cab2ab3126f05f8b8f:b5e07a60ef1a26a62987b4c44984b948:b79a218aa7e319e96df98cca44712fdd$"
+	"smartupdate": "$TexturePacker:SmartUpdate:364621b19368f14a2b2b3970d94f7de2:b5e07a60ef1a26a62987b4c44984b948:b79a218aa7e319e96df98cca44712fdd$"
 }
 }

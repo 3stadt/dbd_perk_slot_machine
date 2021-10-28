@@ -66,7 +66,7 @@ export default {
     },
     text () {
       // split at whitespace after 10 chars
-      let text = this.name.replace(/.{10}\S*\s+/g, '$&@').split(/\s+@/)
+      const text = this.name.replace(/.{10}\S*\s+/g, '$&@').split(/\s+@/)
       return `<tspan x="50%">${text.join('</tspan> <tspan x="50%" dy="16px">')}</tspan>`
     }
   },

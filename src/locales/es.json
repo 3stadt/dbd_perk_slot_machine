@@ -247,15 +247,15 @@
         "86_fastTrack": "Primera línea",
         "87_selfPreservation": "Autoconservación",
         "88_smashHit": "Éxito aplastante",
-        "89_BiteTheBullet": "De tripas corazón",
+        "89_biteTheBullet": "De tripas corazón",
         "90_blastMine": "Mina explosiva",
-        "91_Counterforce": "Contrafuerza",
-        "92_Flashbang": "Granada aturdidora",
-        "93_Resurgence": "Resurgimiento",
-        "94_RookieSpirit": "Espíritu de novato",
-        "95_CircleOfHealing": "Círculo de curación",
-        "96_ShadowStep": "Paso sombrío",
-        "97_Clairvoyance": "Clarividencia",
+        "91_counterforce": "Contrafuerza",
+        "92_flashbang": "Granada aturdidora",
+        "93_resurgence": "Resurgimiento",
+        "94_rookieSpirit": "Espíritu de novato",
+        "95_circleOfHealing": "Círculo de curación",
+        "96_shadowStep": "Paso sombrío",
+        "97_clairvoyance": "Clarividencia",
       "desc": {
       }
     }

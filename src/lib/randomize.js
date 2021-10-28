@@ -9,7 +9,7 @@ export default {
         return parseInt(item, 10)
       })
     }
-    let avLen = avPerks.length
+    const avLen = avPerks.length
     if (avLen >= 4) {
       for (let i = 0, pLen = perkData.length; i < pLen; i++) {
         if (perkData[i].index === i && avPerks.indexOf(i) >= 0) avPerkData.push(perkData[i])
@@ -28,7 +28,7 @@ export default {
     }
 
     while (n--) {
-      let x = Math.floor(Math.random() * len)
+      const x = Math.floor(Math.random() * len)
       result[n] = avPerkData[x in taken ? taken[x] : x]
       taken[x] = --len in taken ? taken[len] : len
     }
