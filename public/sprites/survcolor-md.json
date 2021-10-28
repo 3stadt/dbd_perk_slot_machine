@@ -712,7 +712,7 @@
 	"spriteSourceSize": {"x":14,"y":24,"w":102,"h":80},
 	"sourceSize": {"w":128,"h":128}
 },
-"89_BiteTheBullet":
+"89_biteTheBullet":
 {
 	"frame": {"x":629,"y":374,"w":86,"h":79},
 	"rotated": false,
@@ -728,7 +728,7 @@
 	"spriteSourceSize": {"x":19,"y":6,"w":100,"h":102},
 	"sourceSize": {"w":128,"h":128}
 },
-"91_Counterforce":
+"91_counterforce":
 {
 	"frame": {"x":1124,"y":170,"w":92,"h":88},
 	"rotated": false,
@@ -736,7 +736,7 @@
 	"spriteSourceSize": {"x":23,"y":14,"w":92,"h":88},
 	"sourceSize": {"w":128,"h":128}
 },
-"92_Flashbang":
+"92_flashbang":
 {
 	"frame": {"x":961,"y":82,"w":100,"h":72},
 	"rotated": true,
@@ -744,7 +744,7 @@
 	"spriteSourceSize": {"x":12,"y":35,"w":100,"h":72},
 	"sourceSize": {"w":128,"h":128}
 },
-"93_Resurgence":
+"93_resurgence":
 {
 	"frame": {"x":768,"y":251,"w":80,"h":101},
 	"rotated": false,
@@ -752,7 +752,7 @@
 	"spriteSourceSize": {"x":19,"y":16,"w":80,"h":101},
 	"sourceSize": {"w":128,"h":128}
 },
-"94_RookieSpirit":
+"94_rookieSpirit":
 {
 	"frame": {"x":1384,"y":420,"w":83,"h":79},
 	"rotated": true,
@@ -760,7 +760,7 @@
 	"spriteSourceSize": {"x":20,"y":15,"w":83,"h":79},
 	"sourceSize": {"w":128,"h":128}
 },
-"95_CircleOfHealing":
+"95_circleOfHealing":
 {
 	"frame": {"x":1218,"y":170,"w":85,"h":89},
 	"rotated": false,
@@ -768,7 +768,7 @@
 	"spriteSourceSize": {"x":21,"y":15,"w":85,"h":89},
 	"sourceSize": {"w":128,"h":128}
 },
-"96_ShadowStep":
+"96_shadowStep":
 {
 	"frame": {"x":1108,"y":87,"w":81,"h":100},
 	"rotated": true,
@@ -776,7 +776,7 @@
 	"spriteSourceSize": {"x":23,"y":14,"w":81,"h":100},
 	"sourceSize": {"w":128,"h":128}
 },
-"97_Clairvoyance":
+"97_clairvoyance":
 {
 	"frame": {"x":671,"y":180,"w":95,"h":92},
 	"rotated": true,
@@ -791,6 +791,6 @@
 	"format": "RGBA8888",
 	"size": {"w":1535,"h":504},
 	"scale": "0.5",
-	"smartupdate": "$TexturePacker:SmartUpdate:33951305066501cab2ab3126f05f8b8f:b5e07a60ef1a26a62987b4c44984b948:b79a218aa7e319e96df98cca44712fdd$"
+	"smartupdate": "$TexturePacker:SmartUpdate:364621b19368f14a2b2b3970d94f7de2:b5e07a60ef1a26a62987b4c44984b948:b79a218aa7e319e96df98cca44712fdd$"
 }
 }

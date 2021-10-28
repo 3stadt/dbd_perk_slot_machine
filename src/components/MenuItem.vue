@@ -68,7 +68,7 @@ export default {
       }
     },
     cssProps () {
-      let idx = this.perk.index
+      const idx = this.perk.index
       return {
         '--slotBg': `url('/img/${this.imageFileName}') 0 ${idx === 0 ? 0 : (128 * idx * -1) + 'px'}`
       }
@@ -80,10 +80,10 @@ export default {
       return this.type === 'Info' && this.isCollapsed
     },
     orderedPerks () {
-      let me = this
+      const me = this
       return me.perks.sort((a, b) => {
-        let nameA = me.translate(a.name).toLowerCase()
-        let nameB = me.translate(b.name).toLowerCase()
+        const nameA = me.translate(a.name).toLowerCase()
+        const nameB = me.translate(b.name).toLowerCase()
         if (nameA === nameB) {
           return 0
         } else if (nameA === null || nameB === null) {

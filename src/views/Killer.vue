@@ -53,10 +53,10 @@ import vp from '@/lib/viewport'
 export default {
   name: 'Killer',
   components: {
-    'perkslot0': PixiPerkSlot,
-    'perkslot1': PixiPerkSlot,
-    'perkslot2': PixiPerkSlot,
-    'perkslot3': PixiPerkSlot
+    perkslot0: PixiPerkSlot,
+    perkslot1: PixiPerkSlot,
+    perkslot2: PixiPerkSlot,
+    perkslot3: PixiPerkSlot
   },
   props: {
     lang: {
@@ -88,15 +88,15 @@ export default {
     }
   },
   data: function () {
-    let killersRaw = Object.keys(this.perksKHD.frames)
-    let killers = []
+    const killersRaw = Object.keys(this.perksKHD.frames)
+    const killers = []
     // make sure array keys match the ids in file name. TODO maybe make sure no key is reassigned because of naming issues
     for (let i = 0, kLen = killersRaw.length; i < kLen; i++) {
-      let perkFileName = killersRaw[i]
-      let key = Number(perkFileName.substr(0, 2))
+      const perkFileName = killersRaw[i]
+      const key = Number(perkFileName.substr(0, 2))
       killers[key] = {
-        'index': key,
-        'name': perkFileName
+        index: key,
+        name: perkFileName
       }
     }
     return {
@@ -125,14 +125,14 @@ export default {
           counter++
         }
         // update the lastroll with the new perk, using the component tag (e.g. 'perkslot0') to get the index
-        let replaceIndex = parseInt(el.$options._componentTag.slice(-1))
+        const replaceIndex = parseInt(el.$options._componentTag.slice(-1))
         this.lastRoll[replaceIndex] = randomSingle[0]
         // actually roll the slot to the new perk
         el.rollWheel(randomSingle[0], this.$t(`perks.killer.desc.${randomSingle[0].name}`))
         return
       }
       if (!this.lastRoll) this.lastRoll = [this.perkData[0], this.perkData[0], this.perkData[0], this.perkData[0]]
-      let random = rand.getRandomData(4, this.kids, this.perkData, this.lastRoll)
+      const random = rand.getRandomData(4, this.kids, this.perkData, this.lastRoll)
       this.hintVisible = false
 
       this.lastRoll = random
@@ -148,7 +148,7 @@ export default {
     // causing the perk slots to be rendered to big and not two side-by-side on mobile devices
 
     // Get the floating point value of the available render space
-    let docWidth = document.getElementById('perkSlotContainerInner').getBoundingClientRect().width
+    const docWidth = document.getElementById('perkSlotContainerInner').getBoundingClientRect().width
 
     // Check if all four slots fit side-by side
     if (vp.getElementLength() * 4 > docWidth && screen.availHeight > screen.availWidth) { // we are in portrait mode, create 2x2
@@ -185,7 +185,7 @@ export default {
       document.getElementsByTagName('body')[0].removeAttribute('style')
     }
     const obs = this.$route.query.obs
-    let as = parseInt(this.$route.query.autostart)
+    const as = parseInt(this.$route.query.autostart)
     if (!isNaN(as) && as > 0 && obs !== '1') {
       window.setTimeout(() => {
         this.randomize()
@@ -205,7 +205,7 @@ export default {
       }
     }
     window.addEventListener('orientationchange', function () {
-      let o = window.orientation
+      const o = window.orientation
       if (o === 90 || o === -90 || o === 0) {
         window.location.reload()
       }

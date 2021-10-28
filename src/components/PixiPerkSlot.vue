@@ -20,7 +20,7 @@ import Popper from 'vue-popperjs'
 export default {
   name: 'PixiPerkSlot',
   components: {
-    'popper': Popper
+    popper: Popper
   },
   data: function () {
     return {
@@ -215,7 +215,7 @@ export default {
       this.reelContainer.filters = [reel.blur]
 
       // Build the symbols
-      for (let [name, perk] of Object.entries(this.perkTextures)) {
+      for (const [name, perk] of Object.entries(this.perkTextures)) {
         const symbol = new this.Sprite(perk)
         symbol.width = this.elementLength
         symbol.height = this.elementLength

@@ -672,7 +672,7 @@
 	"spriteSourceSize": {"x":33,"y":38,"w":183,"h":188},
 	"sourceSize": {"w":256,"h":256}
 },
-"84_Deadlock":
+"84_deadlock":
 {
 	"frame": {"x":1219,"y":547,"w":150,"h":186},
 	"rotated": false,
@@ -680,7 +680,7 @@
 	"spriteSourceSize": {"x":55,"y":34,"w":150,"h":186},
 	"sourceSize": {"w":256,"h":256}
 },
-"85_HexPlaything":
+"85_hexPlaything":
 {
 	"frame": {"x":1729,"y":188,"w":145,"h":204},
 	"rotated": false,
@@ -688,7 +688,7 @@
 	"spriteSourceSize": {"x":62,"y":42,"w":145,"h":204},
 	"sourceSize": {"w":256,"h":256}
 },
-"86_ScourgeHookGiftOfPain":
+"86_scourgeHookGiftOfPain":
 {
 	"frame": {"x":227,"y":1,"w":222,"h":204},
 	"rotated": false,
@@ -703,6 +703,6 @@
 	"format": "RGBA8888",
 	"size": {"w":1877,"h":1473},
 	"scale": "1",
-	"smartupdate": "$TexturePacker:SmartUpdate:99fc1e67579e49213e45418a3c680646:4e7731a1d815c4f99d0a1aed1615dd7c:c7b4df0161df714ccaa6c5dcf6c4cd5b$"
+	"smartupdate": "$TexturePacker:SmartUpdate:f995a98a0e47fc420627ab8b813ac8cd:4e7731a1d815c4f99d0a1aed1615dd7c:c7b4df0161df714ccaa6c5dcf6c4cd5b$"
 }
 }

@@ -2,6 +2,8 @@
 
 # dbd_perk_slot_machine
 
+If you are on windows/git bash and get an SSL related error with nodejs 17+ set `export NODE_OPTIONS=--openssl-legacy-provider` in the terminal.
+
 ## Project setup
 ```
 npm install

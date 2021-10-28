@@ -151,9 +151,9 @@
         "81_eruption": "イラプション",
         "82_hysteria": "集団ヒステリー",
         "83_lethalPursuer": "死を呼ぶ追跡者",
-        "84_Deadlock": "デッドロック",
-        "85_HexPlaything": "玩具",
-        "86_ScourgeHookGiftOfPain": "悶絶のフック：苦痛という名の賜り物",
+        "84_deadlock": "デッドロック",
+        "85_hexPlaything": "玩具",
+        "86_scourgeHookGiftOfPain": "悶絶のフック：苦痛という名の賜り物",
       "desc": {
       }
     },
@@ -247,15 +247,15 @@
         "86_fastTrack": "出世街道",
         "87_selfPreservation": "自己防衛",
         "88_smashHit": "大ヒット",
-        "89_BiteTheBullet": "忍苦の時",
+        "89_biteTheBullet": "忍苦の時",
         "90_blastMine": "地雷爆破",
-        "91_Counterforce": "カウンターフォース",
-        "92_Flashbang": "スタングレネード",
-        "93_Resurgence": "起死回生",
-        "94_RookieSpirit": "新人魂",
-        "95_CircleOfHealing": "Circle of healing",
-        "96_ShadowStep": "Shadow step",
-        "97_Clairvoyance": "Clairvoyance",
+        "91_counterforce": "カウンターフォース",
+        "92_flashbang": "スタングレネード",
+        "93_resurgence": "起死回生",
+        "94_rookieSpirit": "新人魂",
+        "95_circleOfHealing": "Circle of healing",
+        "96_shadowStep": "Shadow step",
+        "97_clairvoyance": "Clairvoyance",
       "desc": {
       }
     }
