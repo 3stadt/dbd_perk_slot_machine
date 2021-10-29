@@ -8,7 +8,8 @@
     "buttonHome": "Home",
     "buttonKillRoulette": "Killer Roulette",
     "buttonSurvRoulette": "Survivor Roulette",
-    "update": "Current Update: Hour of the Witch"
+    "update": "Current Update: Hour of the Witch",
+    "toggleColoredIcons": "Toggle colored perk images in the roulette view."
   },
   "about": {
     "header": "What is this about?",
@@ -46,8 +47,9 @@
       "licenseUrlText": "Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0)",
       "licenseUrl": "https:\/\/creativecommons.org\/licenses\/by-nc-sa\/3.0\/"
     },
-    "happyclown": {
-      "description": "The colored Icons (special beta mode, change color=0 to color=1 in URL) were made by {profile} and there is even a {group} for them. Go check it out!",
+    "coloredicons": {
+      "header": "EvaZioN",
+      "description": "The colored Icons were made by {profile} and there is even a {group} for them. Go check it out!",
       "groupText": "steam group"
     },
     "rocketleaguecat": {

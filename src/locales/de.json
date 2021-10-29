@@ -8,7 +8,8 @@
     "buttonHome": "Startseite",
     "buttonKillRoulette": "Killer-Roulette",
     "buttonSurvRoulette": "Überlebenden-Roulette",
-    "update": "Aktuelles Update: Hour of the Witch"
+    "update": "Aktuelles Update: Hour of the Witch",
+    "toggleColoredIcons": "Farbige Perks in der Roulettansicht ein/ausschalten."
   },
   "about": {
     "header": "Worum geht es hier?",
@@ -46,8 +47,9 @@
       "licenseUrlText": "Namensnennung - Nicht-kommerziell - Weitergabe unter gleichen Bedingungen 3.0 Unported (CC BY-NC-SA 3.0)",
       "licenseUrl": "https:\/\/creativecommons.org\/licenses\/by-nc-sa\/3.0\/deed.de"
     },
-    "happyclown": {
-      "description": "Die farbigen Icons (spezieller Beta-Modus, ändere color=0 zu color=1 in der URL) wurden von {profile} gemacht, es gibt sogar eine {group} dafür. Schau sie Dir am besten gleich an!",
+    "coloredicons": {
+      "header": "EvaZioN",
+      "description": "Die farbigen Icons wurden von {profile} gemacht, es gibt sogar eine {group} dafür. Schau sie Dir am besten gleich an!",
       "groupText": "Steamgruppe"
     },
     "rocketleaguecat": {
