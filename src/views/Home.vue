@@ -1,8 +1,5 @@
 <template>
   <div class="perk-config home">
-    <video playsinline autoplay muted loop id="bg-vid">
-      <source src="/splash_bg.mp4" type="video/mp4" />
-    </video>
     <div class="language-switch overview__box">
       <img
         @click="changeLang('en')"
