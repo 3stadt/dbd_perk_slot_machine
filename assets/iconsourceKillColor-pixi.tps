@@ -282,9 +282,12 @@
             <key type="filename">iconsourceKillColor/81_eruption.png</key>
             <key type="filename">iconsourceKillColor/82_hysteria.png</key>
             <key type="filename">iconsourceKillColor/83_lethalPursuer.png</key>
-            <key type="filename">iconsourceKillColor/84_deadlock.png</key>
-            <key type="filename">iconsourceKillColor/85_hexPlaything.png</key>
-            <key type="filename">iconsourceKillColor/86_scourgeHookGiftOfPain.png</key>
+            <key type="filename">iconsourceKillColor/84_Deadlock.png</key>
+            <key type="filename">iconsourceKillColor/85_HexPlaything.png</key>
+            <key type="filename">iconsourceKillColor/86_ScourgeHookGiftOfPain.png</key>
+            <key type="filename">iconsourceKillColor/87_grimEmbrace.png</key>
+            <key type="filename">iconsourceKillColor/88_pentimento.png</key>
+            <key type="filename">iconsourceKillColor/89_painResonance.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0,0</point_f>
