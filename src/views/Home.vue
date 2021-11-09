@@ -230,7 +230,7 @@ export default {
     // make sure array keys match the ids in file name. TODO maybe make sure no key is reassigned because of naming issues
     for (let i = 0, sLen = survivorsRaw.length; i < sLen; i++) {
       const perkFileName = survivorsRaw[i]
-      const key = Number(perkFileName.substr(0, 2))
+      const key = Number(perkFileName.replace(/\D+$/g, ''))
       survivors[key] = {
         index: key,
         name: perkFileName,
@@ -243,7 +243,7 @@ export default {
     // make sure array keys match the ids in file name. TODO maybe make sure no key is reassigned because of naming issues
     for (let i = 0, kLen = killersRaw.length; i < kLen; i++) {
       const perkFileName = killersRaw[i]
-      const key = Number(perkFileName.substr(0, 2))
+      const key = Number(perkFileName.replace(/\D+$/g, ''))
       killers[key] = {
         index: key,
         name: perkFileName,
