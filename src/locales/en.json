@@ -156,6 +156,9 @@
         "84_deadlock": "Deadlock",
         "85_hexPlaything": "Plaything",
         "86_scourgeHookGiftOfPain": "Scourge Hook Gift Of Pain",
+        "87_grimEmbrace": "Grim embrace",
+        "88_pentimento": "Pentimento",
+        "89_painResonance": "Pain resonance",
       "desc": {
       }
     },
@@ -258,6 +261,9 @@
         "95_circleOfHealing": "Circle of healing",
         "96_shadowStep": "Shadow step",
         "97_clairvoyance": "Clairvoyance",
+        "98_exponential": "Exponential",
+        "99_correctiveAction": "Corrective action",
+        "100_overcome": "Overcome",
       "desc": {
       }
     }

@@ -155,7 +155,10 @@
         "83_lethalPursuer": "Tödlicher Verfolger",
         "84_deadlock": "Sackgasse",
         "85_hexPlaything": "Spielzeug",
-        "86_scourgeHookGiftOfPain": "Geisselhaken: Gabe des Schmerzes",
+        "86_scourgeHookGiftOfPain": "Gabe des Schmerzes",
+        "87_grimEmbrace": "Düstere Umarmung",
+        "88_pentimento": "Pentimento",
+        "89_painResonance": "Schmerzensecho",
       "desc": {
       }
     },
@@ -258,6 +261,9 @@
         "95_circleOfHealing": "Kreis der Heilung",
         "96_shadowStep": "Schattenschritt",
         "97_clairvoyance": "Hellsicht",
+        "98_exponential": "Exponentiell",
+        "99_correctiveAction": "Korrekturmaßnahme",
+        "100_overcome": "Bewältigen",
       "desc": {
       }
     }
