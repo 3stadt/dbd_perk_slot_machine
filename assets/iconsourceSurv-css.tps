@@ -191,6 +191,7 @@
             <key type="filename">iconsourceSurv/07_bond.png</key>
             <key type="filename">iconsourceSurv/08_borrowedTime.png</key>
             <key type="filename">iconsourceSurv/09_botanyKnowledge.png</key>
+            <key type="filename">iconsourceSurv/100_overcome.png</key>
             <key type="filename">iconsourceSurv/10_breakdown.png</key>
             <key type="filename">iconsourceSurv/11_calmSpirit.png</key>
             <key type="filename">iconsourceSurv/12_danceWithMe.png</key>
@@ -279,6 +280,8 @@
             <key type="filename">iconsourceSurv/95_circleOfHealing.png</key>
             <key type="filename">iconsourceSurv/96_shadowStep.png</key>
             <key type="filename">iconsourceSurv/97_clairvoyance.png</key>
+            <key type="filename">iconsourceSurv/98_exponential.png</key>
+            <key type="filename">iconsourceSurv/99_correctiveAction.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0,0</point_f>

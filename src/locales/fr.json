@@ -155,7 +155,10 @@
         "83_lethalPursuer": "Poursuivant meurtrier",
         "84_deadlock": "Impasse",
         "85_hexPlaything": "Jouet",
-        "86_scourgeHookGiftOfPain": "Crochet flagellateur: Don de Souffrance",
+        "86_scourgeHookGiftOfPain": "Don de Souffrance",
+        "87_grimEmbrace": "Sombre accolade",
+        "88_pentimento": "Repentir",
+        "89_painResonance": "Echo de douleur",
       "desc": {
       }
     },
@@ -258,6 +261,9 @@
         "95_circleOfHealing": "Cercle de soins",
         "96_shadowStep": "Marche de L'ombre",
         "97_clairvoyance": "Clairvoyance",
+        "98_exponential": "Exponentiel",
+        "99_correctiveAction": "Mesure de correction",
+        "100_overcome": "Surmonter",
       "desc": {
       }
     }

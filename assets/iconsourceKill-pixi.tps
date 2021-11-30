@@ -285,6 +285,9 @@
             <key type="filename">iconsourceKill/84_deadlock.png</key>
             <key type="filename">iconsourceKill/85_hexPlaything.png</key>
             <key type="filename">iconsourceKill/86_scourgeHookGiftOfPain.png</key>
+            <key type="filename">iconsourceKill/87_grimEmbrace.png</key>
+            <key type="filename">iconsourceKill/88_pentimento.png</key>
+            <key type="filename">iconsourceKill/89_painResonance.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0,0</point_f>

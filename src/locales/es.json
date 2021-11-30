@@ -155,7 +155,10 @@
         "83_lethalPursuer": "Acecho letal",
         "84_Deadlock": "Candado",
         "85_HexPlaything": "Juguete",
-        "86_ScourgeHookGiftOfPain": "Gancho flagelante: Obsequio doloroso",
+        "86_ScourgeHookGiftOfPain": "Obsequio doloroso",
+        "87_grimEmbrace": "Acogida nefasta",
+        "88_pentimento": "Pentimento",
+        "89_painResonance": "Dolor retumbante",
       "desc": {
       }
     },
@@ -258,6 +261,9 @@
         "95_circleOfHealing": "Círculo de curación",
         "96_shadowStep": "Paso sombrío",
         "97_clairvoyance": "Clarividencia",
+        "98_exponential": "Exponencial",
+        "99_correctiveAction": "Medida correctiva",
+        "100_overcome": "Sobreponerse",
       "desc": {
       }
     }
