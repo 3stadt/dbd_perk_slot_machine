@@ -156,9 +156,9 @@
         "84_deadlock": "Impasse",
         "85_hexPlaything": "Jouet",
         "86_scourgeHookGiftOfPain": "Don de Souffrance",
-        "87_grimEmbrace": "Sombre accolade",
-        "88_pentimento": "Repentir",
-        "89_painResonance": "Echo de douleur",
+        "90_callOfBrine": "Appel de la mer",
+        "91_floodOfRage": "Flots de rage",
+        "92_mercilessStorm": "Tempête impitoyable",
       "desc": {
       }
     },
@@ -264,9 +264,9 @@
         "98_exponential": "Exponentiel",
         "99_correctiveAction": "Mesure de correction",
         "100_overcome": "Surmonter",
-        "101_darkTheory": "Dark theory",
-        "102_empathicConnection": "Empathic connection",
-        "103_parentalGuidance": "Parental guidance",
+        "101_darkTheory": "Théorie ténébreuse",
+        "102_empathicConnection": "Connexion empathique",
+        "103_parentalGuidance": "Conseils parentaux",
       "desc": {
       }
     }

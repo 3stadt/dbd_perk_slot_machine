@@ -159,9 +159,9 @@
         "87_grimEmbrace": "Acogida nefasta",
         "88_pentimento": "Pentimento",
         "89_painResonance": "Dolor retumbante",
-        "90_callOfBrine": "Call of brine",
-        "91_floodOfRage": "Flood of rage",
-        "92_mercilessStorm": "Merciless storm",
+        "90_callOfBrine": "Salmuera",
+        "91_floodOfRage": "Oleada de ira",
+        "92_mercilessStorm": "Tormenta vil",
       "desc": {
       }
     },
@@ -267,9 +267,9 @@
         "98_exponential": "Exponencial",
         "99_correctiveAction": "Medida correctiva",
         "100_overcome": "Sobreponerse",
-        "101_darkTheory": "Dark theory",
-        "102_empathicConnection": "Empathic connection",
-        "103_parentalGuidance": "Parental guidance",
+        "101_darkTheory": "Teoría oscura",
+        "102_empathicConnection": "Conexión empática",
+        "103_parentalGuidance": "Consejo paterno",
       "desc": {
       }
     }
