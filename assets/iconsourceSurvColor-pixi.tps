@@ -2,9 +2,9 @@
 <data version="1.0">
     <struct type="Settings">
         <key>fileFormatVersion</key>
-        <int>4</int>
+        <int>5</int>
         <key>texturePackerVersion</key>
-        <string>5.5.0</string>
+        <string>6.0.1</string>
         <key>autoSDSettings</key>
         <array>
             <struct type="AutoSDSettings">
@@ -54,16 +54,20 @@
         <filename></filename>
         <key>flipPVR</key>
         <false/>
-        <key>pvrCompressionQuality</key>
-        <enum type="SettingsBase::PvrCompressionQuality">PVR_QUALITY_NORMAL</enum>
+        <key>pvrQualityLevel</key>
+        <uint>3</uint>
+        <key>astcQualityLevel</key>
+        <uint>2</uint>
+        <key>basisUniversalQualityLevel</key>
+        <uint>2</uint>
         <key>atfCompressData</key>
         <false/>
         <key>mipMapMinSize</key>
         <uint>32768</uint>
-        <key>etc1CompressionQuality</key>
-        <enum type="SettingsBase::Etc1CompressionQuality">ETC1_QUALITY_LOW_PERCEPTUAL</enum>
-        <key>etc2CompressionQuality</key>
-        <enum type="SettingsBase::Etc2CompressionQuality">ETC2_QUALITY_LOW_PERCEPTUAL</enum>
+        <key>etc1QualityLevel</key>
+        <uint>40</uint>
+        <key>etc2QualityLevel</key>
+        <uint>40</uint>
         <key>dxtCompressionMode</key>
         <enum type="SettingsBase::DxtCompressionMode">DXT_PERCEPTUAL</enum>
         <key>jxrColorFormat</key>
@@ -209,6 +213,9 @@
             <key type="filename">iconsourceSurvColor/08_borrowedTime.png</key>
             <key type="filename">iconsourceSurvColor/09_botanyKnowledge.png</key>
             <key type="filename">iconsourceSurvColor/100_overcome.png</key>
+            <key type="filename">iconsourceSurvColor/101_darkTheory.png</key>
+            <key type="filename">iconsourceSurvColor/102_empathicConnection.png</key>
+            <key type="filename">iconsourceSurvColor/103_parentalGuidance.png</key>
             <key type="filename">iconsourceSurvColor/10_breakdown.png</key>
             <key type="filename">iconsourceSurvColor/11_calmSpirit.png</key>
             <key type="filename">iconsourceSurvColor/12_danceWithMe.png</key>

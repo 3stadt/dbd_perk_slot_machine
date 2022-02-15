@@ -8,7 +8,7 @@
     "buttonHome": "Accueil",
     "buttonKillRoulette": "Roulette Tueur",
     "buttonSurvRoulette": "Roulette Survivant",
-    "update": "Current Update: The Artist",
+    "update": "Current Update: Sadako Rising",
     "toggleColoredIcons": "Toggle colored perk images in the roulette view."
   },
   "about": {
@@ -264,6 +264,9 @@
         "98_exponential": "Exponentiel",
         "99_correctiveAction": "Mesure de correction",
         "100_overcome": "Surmonter",
+        "101_darkTheory": "Dark theory",
+        "102_empathicConnection": "Empathic connection",
+        "103_parentalGuidance": "Parental guidance",
       "desc": {
       }
     }

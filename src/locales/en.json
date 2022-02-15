@@ -8,7 +8,7 @@
     "buttonHome": "Home",
     "buttonKillRoulette": "Killer Roulette",
     "buttonSurvRoulette": "Survivor Roulette",
-    "update": "Current Update: The Artist",
+    "update": "Current Update: Sadako Rising",
     "toggleColoredIcons": "Toggle colored perk images in the roulette view."
   },
   "about": {
@@ -159,6 +159,9 @@
       "87_grimEmbrace": "Grim embrace",
       "88_pentimento": "Pentimento",
       "89_painResonance": "Pain resonance",
+      "90_callOfBrine": "Call of brine",
+      "91_floodOfRage": "Flood of rage",
+      "92_mercilessStorm": "Merciless storm",
       "desc": {}
     },
     "survivor": {
@@ -263,6 +266,9 @@
       "98_exponential": "Exponential",
       "99_correctiveAction": "Corrective action",
       "100_overcome": "Overcome",
+      "101_darkTheory": "Dark theory",
+      "102_empathicConnection": "Empathic connection",
+      "103_parentalGuidance": "Parental guidance",
       "desc": {}
     }
   }
