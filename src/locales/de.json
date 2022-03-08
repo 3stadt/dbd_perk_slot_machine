@@ -8,7 +8,7 @@
     "buttonHome": "Startseite",
     "buttonKillRoulette": "Killer-Roulette",
     "buttonSurvRoulette": "Überlebenden-Roulette",
-    "update": "Aktuelles Update: The Artist",
+    "update": "Aktuelles Update: Sadako Rising",
     "toggleColoredIcons": "Farbige Perks in der Roulettansicht ein/ausschalten."
   },
   "about": {
@@ -159,6 +159,9 @@
         "87_grimEmbrace": "Düstere Umarmung",
         "88_pentimento": "Pentimento",
         "89_painResonance": "Schmerzensecho",
+        "90_callOfBrine": "Ruf der See",
+        "91_floodOfRage": "Fluten des Zorn",
+        "92_mercilessStorm": "Erbarmungsloser Sturm",
       "desc": {
       }
     },
@@ -264,6 +267,9 @@
         "98_exponential": "Exponentiell",
         "99_correctiveAction": "Korrekturmaßnahme",
         "100_overcome": "Bewältigen",
+        "101_darkTheory": "Dunkle Theorie",
+        "102_empathicConnection": "Empathische Verbindung",
+        "103_parentalGuidance": "Elterliche Fürsorge",
       "desc": {
       }
     }

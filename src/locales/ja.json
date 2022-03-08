@@ -8,7 +8,7 @@
     "buttonHome": "Home",
     "buttonKillRoulette": "キラールーレット",
     "buttonSurvRoulette": "サバイバールーレット",
-    "update": "Current Update: The Artist",
+    "update": "Current Update: Sadako Rising",
     "toggleColoredIcons": "Toggle colored perk images in the roulette view."
   },
   "about": {
@@ -156,6 +156,12 @@
         "84_deadlock": "デッドロック",
         "85_hexPlaything": "玩具",
         "86_scourgeHookGiftOfPain": "悶絶のフック：苦痛という名の賜り物",
+        "87_grimEmbrace": "Grim embrace",
+        "88_pentimento": "Pentimento",
+        "89_painResonance": "Pain resonance",
+        "90_callOfBrine": "Call of brine",
+        "91_floodOfRage": "Flood of rage",
+        "92_mercilessStorm": "Merciless storm",
       "desc": {
       }
     },
@@ -261,6 +267,9 @@
         "98_exponential": "Exponential",
         "99_correctiveAction": "Corrective action",
         "100_overcome": "Overcome",
+        "101_darkTheory": "Dark theory",
+        "102_empathicConnection": "Empathic connection",
+        "103_parentalGuidance": "Parental guidance",
       "desc": {
       }
     }
