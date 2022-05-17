@@ -216,6 +216,9 @@
             <key type="filename">iconsourceSurvColor/101_darkTheory.png</key>
             <key type="filename">iconsourceSurvColor/102_empathicConnection.png</key>
             <key type="filename">iconsourceSurvColor/103_parentalGuidance.png</key>
+            <key type="filename">iconsourceSurvColor/104_innerFocus.png</key>
+            <key type="filename">iconsourceSurvColor/105_residualManifest.png</key>
+            <key type="filename">iconsourceSurvColor/106_overzealous.png</key>
             <key type="filename">iconsourceSurvColor/10_breakdown.png</key>
             <key type="filename">iconsourceSurvColor/11_calmSpirit.png</key>
             <key type="filename">iconsourceSurvColor/12_danceWithMe.png</key>

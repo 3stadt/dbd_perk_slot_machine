@@ -295,6 +295,10 @@
             <key type="filename">iconsourceKill/90_callOfBrine.png</key>
             <key type="filename">iconsourceKill/91_floodOfRage.png</key>
             <key type="filename">iconsourceKill/92_mercilessStorm.png</key>
+            <key type="filename">iconsourceKill/93_dissolution.png</key>
+            <key type="filename">iconsourceKill/94_darknessRevelated.png</key>
+            <key type="filename">iconsourceKill/95_septicTouch.png</key>
+            <key type="filename">iconsourceKill/96_boonDestroyer.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0,0</point_f>
