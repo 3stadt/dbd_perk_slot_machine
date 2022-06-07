@@ -199,6 +199,9 @@
             <key type="filename">iconsourceSurv/101_darkTheory.png</key>
             <key type="filename">iconsourceSurv/102_empathicConnection.png</key>
             <key type="filename">iconsourceSurv/103_parentalGuidance.png</key>
+            <key type="filename">iconsourceSurv/104_innerFocus.png</key>
+            <key type="filename">iconsourceSurv/105_residualManifest.png</key>
+            <key type="filename">iconsourceSurv/106_overzealous.png</key>
             <key type="filename">iconsourceSurv/10_breakdown.png</key>
             <key type="filename">iconsourceSurv/11_calmSpirit.png</key>
             <key type="filename">iconsourceSurv/12_danceWithMe.png</key>

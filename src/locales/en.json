@@ -8,7 +8,7 @@
     "buttonHome": "Home",
     "buttonKillRoulette": "Killer Roulette",
     "buttonSurvRoulette": "Survivor Roulette",
-    "update": "Current Update: Sadako Rising",
+    "update": "Current Update: Roots of Dread",
     "toggleColoredIcons": "Toggle colored perk images in the roulette view."
   },
   "about": {
@@ -162,6 +162,10 @@
       "90_callOfBrine": "Call of brine",
       "91_floodOfRage": "Flood of rage",
       "92_mercilessStorm": "Merciless storm",
+      "93_dissolution": "Dissolution",
+      "94_darknessRevelated": "Darkness revealed",
+      "95_septicTouch": "Septic touch",
+      "96_boonDestroyer": "Shattered hope",
       "desc": {}
     },
     "survivor": {
@@ -269,6 +273,9 @@
       "101_darkTheory": "Dark theory",
       "102_empathicConnection": "Empathic connection",
       "103_parentalGuidance": "Parental guidance",
+      "104_innerFocus": "Inner focus",
+      "105_residualManifest": "Residual manifest",
+      "106_overzealous": "Overzealous",
       "desc": {}
     }
   }
