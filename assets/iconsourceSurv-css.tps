@@ -4,7 +4,7 @@
         <key>fileFormatVersion</key>
         <int>5</int>
         <key>texturePackerVersion</key>
-        <string>6.0.1</string>
+        <string>6.0.2</string>
         <key>autoSDSettings</key>
         <array>
             <struct type="AutoSDSettings">
@@ -43,22 +43,12 @@
         <uint>2</uint>
         <key>basisUniversalQualityLevel</key>
         <uint>2</uint>
-        <key>atfCompressData</key>
-        <false/>
-        <key>mipMapMinSize</key>
-        <uint>32768</uint>
         <key>etc1QualityLevel</key>
         <uint>40</uint>
         <key>etc2QualityLevel</key>
         <uint>40</uint>
         <key>dxtCompressionMode</key>
         <enum type="SettingsBase::DxtCompressionMode">DXT_PERCEPTUAL</enum>
-        <key>jxrColorFormat</key>
-        <enum type="SettingsBase::JpegXrColorMode">JXR_YUV444</enum>
-        <key>jxrTrimFlexBits</key>
-        <uint>0</uint>
-        <key>jxrCompressionLevel</key>
-        <uint>0</uint>
         <key>ditherType</key>
         <enum type="SettingsBase::DitherType">PngQuantLow</enum>
         <key>backgroundColor</key>
@@ -82,8 +72,6 @@
         <key>webpQualityLevel</key>
         <uint>101</uint>
         <key>textureSubPath</key>
-        <string></string>
-        <key>atfFormats</key>
         <string></string>
         <key>textureFormat</key>
         <enum type="SettingsBase::TextureFormat">png8</enum>
@@ -202,7 +190,13 @@
             <key type="filename">iconsourceSurv/104_innerFocus.png</key>
             <key type="filename">iconsourceSurv/105_residualManifest.png</key>
             <key type="filename">iconsourceSurv/106_overzealous.png</key>
+            <key type="filename">iconsourceSurv/107_betterThanNew.png</key>
+            <key type="filename">iconsourceSurv/108_hyperfocus.png</key>
+            <key type="filename">iconsourceSurv/109_lowProfile.png</key>
             <key type="filename">iconsourceSurv/10_breakdown.png</key>
+            <key type="filename">iconsourceSurv/110_reactiveHealing.png</key>
+            <key type="filename">iconsourceSurv/111_reassurance.png</key>
+            <key type="filename">iconsourceSurv/112_wiretap.png</key>
             <key type="filename">iconsourceSurv/11_calmSpirit.png</key>
             <key type="filename">iconsourceSurv/12_danceWithMe.png</key>
             <key type="filename">iconsourceSurv/13_darkSense.png</key>

@@ -299,6 +299,9 @@
             <key type="filename">iconsourceKillColor/94_darknessRevelated.png</key>
             <key type="filename">iconsourceKillColor/95_septicTouch.png</key>
             <key type="filename">iconsourceKillColor/96_boonDestroyer.png</key>
+            <key type="filename">iconsourceKillColor/97_awakenedAwarenesss.png</key>
+            <key type="filename">iconsourceKillColor/98_superiorAnatomy.png</key>
+            <key type="filename">iconsourceKillColor/99_terminus.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0,0</point_f>
