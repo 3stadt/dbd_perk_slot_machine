@@ -166,9 +166,9 @@
       "94_darknessRevelated": "Enthüllte Dunkelheit",
       "95_septicTouch": "Septische Berührung",
       "96_boonDestroyer": "Zerschlagene Hoffnung",
-      "97_awakenedAwarenesss": "Awakened Awareness",
-      "98_superiorAnatomy": "Superior Anatomy",
-      "99_terminus": "Terminus",
+      "97_awakenedAwarenesss": "Verbesserte Wahrnehmung",
+      "98_superiorAnatomy": "Überlegene Anatomie",
+      "99_terminus": "Endstation",
       "desc": {}
     },
     "survivor": {
@@ -279,12 +279,12 @@
       "104_innerFocus": "Innerer Fokus",
       "105_residualManifest": "Manifest der Reste",
       "106_overzealous": "Übereifrig",
-      "107_betterThanNew": "Better than new",
-      "108_hyperfocus": "Hyperfocus",
-      "109_lowProfile": "Low profile",
-      "110_reactiveHealing": "Reactive healing",
-      "111_reassurance": "Reassurance",
-      "112_wiretap": "Wiretap",
+      "107_betterThanNew": "Besser als Neu",
+      "108_hyperfocus": "Hyperfokus",
+      "109_lowProfile": "Unauffällig",
+      "110_reactiveHealing": "Reaktive Heilung",
+      "111_reassurance": "Bestärkung",
+      "112_wiretap": "Verwanzen",
       "desc": {}
     }
   }
