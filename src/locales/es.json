@@ -8,7 +8,7 @@
     "buttonHome": "Home",
     "buttonKillRoulette": "Ruleta para Killer",
     "buttonSurvRoulette": "Ruleta para Survivor",
-    "update": "Current Update: Roots of Dread",
+    "update": "Current Update: Project W",
     "toggleColoredIcons": "Toggle colored perk images in the roulette view."
   },
   "about": {
@@ -166,6 +166,9 @@
       "94_darknessRevelated": "Oscuridad expuesta",
       "95_septicTouch": "Toque séptico",
       "96_boonDestroyer": "Esperanza destruida",
+      "97_awakenedAwarenesss": "Awakened Awareness",
+      "98_superiorAnatomy": "Superior Anatomy",
+      "99_terminus": "Terminus",
       "desc": {}
     },
     "survivor": {
@@ -276,6 +279,12 @@
       "104_innerFocus": "Concentración interna",
       "105_residualManifest": "Manifestación residual",
       "106_overzealous": "Pasión",
+      "107_betterThanNew": "Better than new",
+      "108_hyperfocus": "Hyperfocus",
+      "109_lowProfile": "Low profile",
+      "110_reactiveHealing": "Reactive healing",
+      "111_reassurance": "Reassurance",
+      "112_wiretap": "Wiretap",
       "desc": {}
     }
   }
