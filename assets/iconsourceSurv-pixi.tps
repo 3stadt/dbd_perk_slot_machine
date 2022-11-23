@@ -214,6 +214,9 @@
             <key type="filename">iconsourceSurv/110_reactiveHealing.png</key>
             <key type="filename">iconsourceSurv/111_reassurance.png</key>
             <key type="filename">iconsourceSurv/112_wiretap.png</key>
+            <key type="filename">iconsourceSurv/113_potentialEnergy.png</key>
+            <key type="filename">iconsourceSurv/114_fogwise.png</key>
+            <key type="filename">iconsourceSurv/115_quickGambit.png</key>
             <key type="filename">iconsourceSurv/11_calmSpirit.png</key>
             <key type="filename">iconsourceSurv/12_danceWithMe.png</key>
             <key type="filename">iconsourceSurv/13_darkSense.png</key>

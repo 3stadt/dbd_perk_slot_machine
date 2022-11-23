@@ -8,7 +8,7 @@
     "buttonHome": "Home",
     "buttonKillRoulette": "Killer Roulette",
     "buttonSurvRoulette": "Survivor Roulette",
-    "update": "Current Update: Project W",
+    "update": "Current Update: Forged in Fog",
     "toggleColoredIcons": "Toggle colored perk images in the roulette view."
   },
   "about": {
@@ -169,6 +169,9 @@
       "97_awakenedAwarenesss": "Awakened Awareness",
       "98_superiorAnatomy": "Superior Anatomy",
       "99_terminus": "Terminus",
+      "100_nowhereToHide": "Nowhere To Hide",
+      "101_faceTheDarkness": "Face The Darkness",
+      "102_hubris": "Hubris",
       "desc": {}
     },
     "survivor": {
@@ -285,6 +288,9 @@
       "110_reactiveHealing": "Reactive healing",
       "111_reassurance": "Reassurance",
       "112_wiretap": "Wiretap",
+      "113_potentialEnergy": "Potential Energy",
+      "114_fogwise": "Fogwise",
+      "115_quickGambit": "Quick Gambit",
       "desc": {}
     }
   }

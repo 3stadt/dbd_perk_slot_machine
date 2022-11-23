@@ -8,7 +8,7 @@
     "buttonHome": "Home",
     "buttonKillRoulette": "Ruleta para Killer",
     "buttonSurvRoulette": "Ruleta para Survivor",
-    "update": "Current Update: Project W",
+    "update": "Current Update: Forged in Fog",
     "toggleColoredIcons": "Toggle colored perk images in the roulette view."
   },
   "about": {
@@ -166,9 +166,12 @@
       "94_darknessRevelated": "Oscuridad expuesta",
       "95_septicTouch": "Toque séptico",
       "96_boonDestroyer": "Esperanza destruida",
-      "97_awakenedAwarenesss": "Awakened Awareness",
-      "98_superiorAnatomy": "Superior Anatomy",
-      "99_terminus": "Terminus",
+      "97_awakenedAwarenesss": "Percepciòn activada",
+      "98_superiorAnatomy": "Anatomía superior",
+      "99_terminus": "Terminal",
+      "100_nowhereToHide": "Sin escondite",
+      "101_faceTheDarkness": "Enfréntate a la Oscuridad",
+      "102_hubris": "Soberbia",
       "desc": {}
     },
     "survivor": {
@@ -279,12 +282,15 @@
       "104_innerFocus": "Concentración interna",
       "105_residualManifest": "Manifestación residual",
       "106_overzealous": "Pasión",
-      "107_betterThanNew": "Better than new",
-      "108_hyperfocus": "Hyperfocus",
-      "109_lowProfile": "Low profile",
-      "110_reactiveHealing": "Reactive healing",
-      "111_reassurance": "Reassurance",
-      "112_wiretap": "Wiretap",
+      "107_betterThanNew": "Mejor que nuevo",
+      "108_hyperfocus": "Hiperconcentración",
+      "109_lowProfile": "Perfil bajo",
+      "110_reactiveHealing": "Curación reactiva",
+      "111_reassurance": "Reafirmación",
+      "112_wiretap": "Interceptor",
+      "113_potentialEnergy": "Energía potencial",
+      "114_fogwise": "Neblinoso",
+      "115_quickGambit": "Táctica veloz",
       "desc": {}
     }
   }
