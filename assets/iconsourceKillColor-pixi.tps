@@ -200,6 +200,9 @@
             <key type="filename">iconsourceKillColor/07_bloodhound.png</key>
             <key type="filename">iconsourceKillColor/08_brutalStrength.png</key>
             <key type="filename">iconsourceKillColor/09_corruptIntervention.png</key>
+            <key type="filename">iconsourceKillColor/100_nowhereToHide.png</key>
+            <key type="filename">iconsourceKillColor/101_faceTheDarkness.png</key>
+            <key type="filename">iconsourceKillColor/102_hubris.png</key>
             <key type="filename">iconsourceKillColor/10_coulrophobia.png</key>
             <key type="filename">iconsourceKillColor/11_darkDevotion.png</key>
             <key type="filename">iconsourceKillColor/12_deerstalker.png</key>
