@@ -8,7 +8,7 @@
     "buttonHome": "Home",
     "buttonKillRoulette": "Ruleta para Killer",
     "buttonSurvRoulette": "Ruleta para Survivor",
-    "update": "Current Update: Forged in Fog",
+    "update": "Current Update: Tools of Torment",
     "toggleColoredIcons": "Toggle colored perk images in the roulette view."
   },
   "about": {
@@ -172,6 +172,9 @@
       "100_nowhereToHide": "Sin escondite",
       "101_faceTheDarkness": "Enfréntate a la Oscuridad",
       "102_hubris": "Soberbia",
+      "103_gameAfoot": "Game Afoot",
+      "104_leverage": "Leverage",
+      "105_thwack": "Thwack",
       "desc": {}
     },
     "survivor": {
@@ -291,6 +294,12 @@
       "113_potentialEnergy": "Energía potencial",
       "114_fogwise": "Neblinoso",
       "115_quickGambit": "Táctica veloz",
+      "116_backgroundPlayer": "Background Player",
+      "117_bloodRush": "Blood Rush",
+      "118_cutLoose": "Cut Loose",
+      "119_friendlyCompetition": "Friendly Competition",
+      "120_teamworkCollectiveStealth": "Collective Stealth",
+      "121_teamworkPowerOfTwo": "Power Of Two",
       "desc": {}
     }
   }

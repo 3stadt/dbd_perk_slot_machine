@@ -2,9 +2,9 @@
 <data version="1.0">
     <struct type="Settings">
         <key>fileFormatVersion</key>
-        <int>5</int>
+        <int>6</int>
         <key>texturePackerVersion</key>
-        <string>6.0.2</string>
+        <string>7.0.2</string>
         <key>autoSDSettings</key>
         <array>
             <struct type="AutoSDSettings">
@@ -144,8 +144,8 @@
                 <filename>../public/sprites/survcolor{v}.json</filename>
             </struct>
         </map>
-        <key>multiPack</key>
-        <false/>
+        <key>multiPackMode</key>
+        <enum type="SettingsBase::MultiPackMode">MultiPackOff</enum>
         <key>forceIdenticalLayout</key>
         <false/>
         <key>outputFormat</key>
@@ -217,7 +217,13 @@
             <key type="filename">iconsourceSurvColor/113_potentialEnergy.png</key>
             <key type="filename">iconsourceSurvColor/114_fogwise.png</key>
             <key type="filename">iconsourceSurvColor/115_quickGambit.png</key>
+            <key type="filename">iconsourceSurvColor/116_backgroundPlayer.png</key>
+            <key type="filename">iconsourceSurvColor/117_bloodRush.png</key>
+            <key type="filename">iconsourceSurvColor/118_cutLoose.png</key>
+            <key type="filename">iconsourceSurvColor/119_friendlyCompetition.png</key>
             <key type="filename">iconsourceSurvColor/11_calmSpirit.png</key>
+            <key type="filename">iconsourceSurvColor/120_teamworkCollectiveStealth.png</key>
+            <key type="filename">iconsourceSurvColor/121_teamworkPowerOfTwo.png</key>
             <key type="filename">iconsourceSurvColor/12_danceWithMe.png</key>
             <key type="filename">iconsourceSurvColor/13_darkSense.png</key>
             <key type="filename">iconsourceSurvColor/14_deadHard.png</key>
@@ -321,10 +327,16 @@
                 <false/>
             </struct>
         </map>
-        <key>fileList</key>
-        <array>
-            <filename>iconsourceSurvColor</filename>
-        </array>
+        <key>fileLists</key>
+        <map type="SpriteSheetMap">
+            <key>default</key>
+            <struct type="SpriteSheet">
+                <key>files</key>
+                <array>
+                    <filename>iconsourceSurvColor</filename>
+                </array>
+            </struct>
+        </map>
         <key>ignoreFileList</key>
         <array/>
         <key>replaceList</key>

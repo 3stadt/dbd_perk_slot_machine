@@ -2,9 +2,9 @@
 <data version="1.0">
     <struct type="Settings">
         <key>fileFormatVersion</key>
-        <int>5</int>
+        <int>6</int>
         <key>texturePackerVersion</key>
-        <string>6.0.2</string>
+        <string>7.0.2</string>
         <key>autoSDSettings</key>
         <array>
             <struct type="AutoSDSettings">
@@ -144,8 +144,8 @@
                 <filename>../public/sprites/killcolor{v}.json</filename>
             </struct>
         </map>
-        <key>multiPack</key>
-        <false/>
+        <key>multiPackMode</key>
+        <enum type="SettingsBase::MultiPackMode">MultiPackOff</enum>
         <key>forceIdenticalLayout</key>
         <false/>
         <key>outputFormat</key>
@@ -203,6 +203,9 @@
             <key type="filename">iconsourceKillColor/100_nowhereToHide.png</key>
             <key type="filename">iconsourceKillColor/101_faceTheDarkness.png</key>
             <key type="filename">iconsourceKillColor/102_hubris.png</key>
+            <key type="filename">iconsourceKillColor/103_gameAfoot.png</key>
+            <key type="filename">iconsourceKillColor/104_leverage.png</key>
+            <key type="filename">iconsourceKillColor/105_thwack.png</key>
             <key type="filename">iconsourceKillColor/10_coulrophobia.png</key>
             <key type="filename">iconsourceKillColor/11_darkDevotion.png</key>
             <key type="filename">iconsourceKillColor/12_deerstalker.png</key>
@@ -308,10 +311,16 @@
                 <false/>
             </struct>
         </map>
-        <key>fileList</key>
-        <array>
-            <filename>iconsourceKillColor</filename>
-        </array>
+        <key>fileLists</key>
+        <map type="SpriteSheetMap">
+            <key>default</key>
+            <struct type="SpriteSheet">
+                <key>files</key>
+                <array>
+                    <filename>iconsourceKillColor</filename>
+                </array>
+            </struct>
+        </map>
         <key>ignoreFileList</key>
         <array/>
         <key>replaceList</key>

@@ -8,7 +8,7 @@
     "buttonHome": "Startseite",
     "buttonKillRoulette": "Killer-Roulette",
     "buttonSurvRoulette": "Überlebenden-Roulette",
-    "update": "Aktuelles Update: Forged in Fog",
+    "update": "Aktuelles Update: Tools of Torment",
     "toggleColoredIcons": "Farbige Perks in der Roulettansicht ein/ausschalten."
   },
   "about": {
@@ -172,6 +172,9 @@
       "100_nowhereToHide": "Keine Versteckmöglichkeit",
       "101_faceTheDarkness": "Im Angesicht der Dunkelheit",
       "102_hubris": "Hochmut",
+      "103_gameAfoot": "Game Afoot",
+      "104_leverage": "Leverage",
+      "105_thwack": "Thwack",
       "desc": {}
     },
     "survivor": {
@@ -291,6 +294,12 @@
       "113_potentialEnergy": "Potentielle Energie",
       "114_fogwise": "Nebelerfahren",
       "115_quickGambit": "Schnelles Bauernopfer",
+      "116_backgroundPlayer": "Background Player",
+      "117_bloodRush": "Blood Rush",
+      "118_cutLoose": "Cut Loose",
+      "119_friendlyCompetition": "Friendly Competition",
+      "120_teamworkCollectiveStealth": "Collective Stealth",
+      "121_teamworkPowerOfTwo": "Power Of Two",
       "desc": {}
     }
   }
