@@ -41,7 +41,6 @@
                     3stadt
                     [
                     <a href="https://steamcommunity.com/id/dreistadt">Steam</a> |
-                    <a href="https://twitter.com/3stadt_com">Twitter</a>
                     ]
                 </li>
                 <li>
