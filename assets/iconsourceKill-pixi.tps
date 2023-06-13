@@ -4,7 +4,7 @@
         <key>fileFormatVersion</key>
         <int>6</int>
         <key>texturePackerVersion</key>
-        <string>7.0.2</string>
+        <string>7.0.3</string>
         <key>autoSDSettings</key>
         <array>
             <struct type="AutoSDSettings">
@@ -206,6 +206,9 @@
             <key type="filename">iconsourceKill/103_gameAfoot.png</key>
             <key type="filename">iconsourceKill/104_leverage.png</key>
             <key type="filename">iconsourceKill/105_thwack.png</key>
+            <key type="filename">iconsourceKill/106_forcedHesitation.png</key>
+            <key type="filename">iconsourceKill/107_geneticLimits.png</key>
+            <key type="filename">iconsourceKill/108_machineLearning.png</key>
             <key type="filename">iconsourceKill/10_coulrophobia.png</key>
             <key type="filename">iconsourceKill/11_darkDevotion.png</key>
             <key type="filename">iconsourceKill/12_deerstalker.png</key>
