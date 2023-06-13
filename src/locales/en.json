@@ -8,7 +8,7 @@
     "buttonHome": "Home",
     "buttonKillRoulette": "Killer Roulette",
     "buttonSurvRoulette": "Survivor Roulette",
-    "update": "Current Update: Tools of Torment",
+    "update": "Current Update: End Transmission",
     "toggleColoredIcons": "Toggle colored perk images in the roulette view."
   },
   "about": {
@@ -175,6 +175,9 @@
       "103_gameAfoot": "Game Afoot",
       "104_leverage": "Leverage",
       "105_thwack": "Thwack",
+      "106_forcedHesitation": "Forced Hesitation",
+      "107_geneticLimits": "Genetic Limits",
+      "108_machineLearning": "Machine Learning",
       "desc": {}
     },
     "survivor": {
@@ -300,6 +303,9 @@
       "119_friendlyCompetition": "Friendly Competition",
       "120_teamworkCollectiveStealth": "Collective Stealth",
       "121_teamworkPowerOfTwo": "Power Of Two",
+      "122_madeForThis": "Made For This",
+      "123_scavenger": "Scavenger",
+      "124_troubleshooter": "Troubleshooter",
       "desc": {}
     }
   }

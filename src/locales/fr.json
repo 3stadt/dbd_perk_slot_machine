@@ -8,7 +8,7 @@
     "buttonHome": "Accueil",
     "buttonKillRoulette": "Roulette Tueur",
     "buttonSurvRoulette": "Roulette Survivant",
-    "update": "Dernière mise à jour : Tools of Torment",
+    "update": "Dernière mise à jour : End Transmission",
     "toggleColoredIcons": "Afficher sur la roulette les images colorées des compétences"
   },
   "about": {
@@ -172,6 +172,9 @@
       "103_gameAfoot": "Game Afoot",
       "104_leverage": "Leverage",
       "105_thwack": "Thwack",
+      "106_forcedHesitation": "Forced Hesitation",
+      "107_geneticLimits": "Genetic Limits",
+      "108_machineLearning": "Machine Learning",
       "desc": {}
     },
     "survivor": {
@@ -297,6 +300,9 @@
       "119_friendlyCompetition": "Compétition amicale",
       "120_teamworkCollectiveStealth": "Discrétion collective",
       "121_teamworkPowerOfTwo": "Pouvoir des deux",
+      "122_madeForThis": "Made For This",
+      "123_scavenger": "Scavenger",
+      "124_troubleshooter": "Troubleshooter",
       "desc": {}
     }
   }

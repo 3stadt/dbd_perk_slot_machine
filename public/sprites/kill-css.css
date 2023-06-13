@@ -1,7 +1,7 @@
 /* -----------------------------------------------------
    created with https://www.codeandweb.com/texturepacker 
    -----------------------------------------------------
-   $TexturePacker:SmartUpdate:093e97c515f546688576831ca0e64c2f:9e162aa03cd557a5793a0b79f567ba45:55101c531bcde25ac824044e9fe60af8$
+   $TexturePacker:SmartUpdate:2905f5af14d4cac0a238e9c8b3120da7:577abbd55260e434147e586d59ee8e84:55101c531bcde25ac824044e9fe60af8$
    -----------------------------------------------------
 
    usage: <span class="{-spritename-} sprite"></span>
@@ -28,6 +28,9 @@
 ._103_gameAfoot {width:128px; height:128px; background-position: -651px -1431px}
 ._104_leverage {width:128px; height:128px; background-position: -781px -1431px}
 ._105_thwack {width:128px; height:128px; background-position: -911px -1431px}
+._106_forcedHesitation {width:128px; height:128px; background-position: -651px -1561px}
+._107_geneticLimits {width:128px; height:128px; background-position: -651px -1691px}
+._108_machineLearning {width:128px; height:128px; background-position: -781px -1561px}
 ._10_coulrophobia {width:128px; height:128px; background-position: -261px -131px}
 ._11_darkDevotion {width:128px; height:128px; background-position: -391px -131px}
 ._12_deerstalker {width:128px; height:128px; background-position: -521px -131px}
