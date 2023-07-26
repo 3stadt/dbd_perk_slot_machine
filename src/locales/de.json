@@ -8,7 +8,7 @@
     "buttonHome": "Startseite",
     "buttonKillRoulette": "Killer-Roulette",
     "buttonSurvRoulette": "Überlebenden-Roulette",
-    "update": "Aktuelles Update: End Transmission",
+    "update": "Aktuelles Update: Nicolas Cage",
     "toggleColoredIcons": "Farbige Perks in der Roulettansicht ein/ausschalten."
   },
   "about": {
@@ -306,6 +306,9 @@
       "122_madeForThis": "Made For This",
       "123_scavenger": "Scavenger",
       "124_troubleshooter": "Troubleshooter",
+      "125_dramaturgy": "Dramaturgy",
+      "126_scenePartner": "Scene Partner",
+      "127_plotTwist": "Plot Twist",
       "desc": {}
     }
   }
