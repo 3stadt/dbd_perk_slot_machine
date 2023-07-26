@@ -8,7 +8,7 @@
     "buttonHome": "Home",
     "buttonKillRoulette": "キラールーレット",
     "buttonSurvRoulette": "サバイバールーレット",
-    "update": "Current Update: End Transmission",
+    "update": "Current Update: Nicolas Cage",
     "toggleColoredIcons": "Toggle colored perk images in the roulette view."
   },
   "about": {
@@ -306,6 +306,9 @@
       "122_madeForThis": "Made For This",
       "123_scavenger": "Scavenger",
       "124_troubleshooter": "Troubleshooter",
+      "125_dramaturgy": "Dramaturgy",
+      "126_scenePartner": "Scene Partner",
+      "127_plotTwist": "Plot Twist",
       "desc": {}
     }
   }
