@@ -8,7 +8,7 @@
     "buttonHome": "Accueil",
     "buttonKillRoulette": "Roulette Tueur",
     "buttonSurvRoulette": "Roulette Survivant",
-    "update": "Dernière mise à jour : Nicolas Cage",
+    "update": "Dernière mise à jour: Alien",
     "toggleColoredIcons": "Afficher sur la roulette les images colorées des compétences"
   },
   "about": {
@@ -169,12 +169,15 @@
       "100_nowhereToHide": "Nulle part où se cacher",
       "101_faceTheDarkness": "Affrontez les ténèbres",
       "102_hubris": "Hubris",
-      "103_gameAfoot": "Game Afoot",
-      "104_leverage": "Leverage",
-      "105_thwack": "Thwack",
-      "106_forcedHesitation": "Forced Hesitation",
-      "107_geneticLimits": "Genetic Limits",
-      "108_machineLearning": "Machine Learning",
+      "103_gameAfoot": "Ouverture de la chasse",
+      "104_leverage": "Effet de levier",
+      "105_thwack": "VLAN!",
+      "106_forcedHesitation": "Hésitation forcée",
+      "107_geneticLimits": "Limite génétiques",
+      "108_machineLearning": "Apprentissage automatique",
+      "109_alienInstinct": "Instinct d'alien",
+      "110_rapidBrutality": "Brutalité rapide",
+      "111_ultimateWeapon": "Arme ultime",
       "desc": {}
     },
     "survivor": {
@@ -300,12 +303,15 @@
       "119_friendlyCompetition": "Compétition amicale",
       "120_teamworkCollectiveStealth": "Discrétion collective",
       "121_teamworkPowerOfTwo": "Pouvoir des deux",
-      "122_madeForThis": "Made For This",
-      "123_scavenger": "Scavenger",
-      "124_troubleshooter": "Troubleshooter",
-      "125_dramaturgy": "Dramaturgy",
-      "126_scenePartner": "Scene Partner",
-      "127_plotTwist": "Plot Twist",
+      "122_madeForThis": "Fait pour ça",
+      "123_scavenger": "Récupérateur",
+      "124_troubleshooter": "Expert",
+      "125_dramaturgy": "Dramaturgie",
+      "126_scenePartner": "Partenaire de scène",
+      "127_plotTwist": "Rebondissement",
+      "128_chemicalTrap": "Piège chiminique",
+      "129_light-Footed": "Á pas de chat",
+      "130_luckyStar": "Bonne étoile",
       "desc": {}
     }
   }

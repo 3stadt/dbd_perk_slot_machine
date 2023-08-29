@@ -227,7 +227,13 @@
             <key type="filename">iconsourceSurvColor/122_madeForThis.png</key>
             <key type="filename">iconsourceSurvColor/123_scavenger.png</key>
             <key type="filename">iconsourceSurvColor/124_troubleshooter.png</key>
+            <key type="filename">iconsourceSurvColor/125_dramaturgy.png</key>
+            <key type="filename">iconsourceSurvColor/126_scenePartner.png</key>
+            <key type="filename">iconsourceSurvColor/127_plotTwist.png</key>
+            <key type="filename">iconsourceSurvColor/128_chemicalTrap.png</key>
+            <key type="filename">iconsourceSurvColor/129_light-Footed.png</key>
             <key type="filename">iconsourceSurvColor/12_danceWithMe.png</key>
+            <key type="filename">iconsourceSurvColor/130_luckyStar.png</key>
             <key type="filename">iconsourceSurvColor/13_darkSense.png</key>
             <key type="filename">iconsourceSurvColor/14_deadHard.png</key>
             <key type="filename">iconsourceSurvColor/15_decisiveStrike.png</key>

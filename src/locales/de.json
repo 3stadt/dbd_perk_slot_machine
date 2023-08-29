@@ -8,7 +8,7 @@
     "buttonHome": "Startseite",
     "buttonKillRoulette": "Killer-Roulette",
     "buttonSurvRoulette": "Überlebenden-Roulette",
-    "update": "Aktuelles Update: Nicolas Cage",
+    "update": "Aktuelles Update: Alien",
     "toggleColoredIcons": "Farbige Perks in der Roulettansicht ein/ausschalten."
   },
   "about": {
@@ -178,6 +178,9 @@
       "106_forcedHesitation": "Forced Hesitation",
       "107_geneticLimits": "Genetic Limits",
       "108_machineLearning": "Machine Learning",
+      "109_alienInstinct": "Alieninstinkt",
+      "110_rapidBrutality": "Stürmische Brutalität",
+      "111_ultimateWeapon": "Ultimative Waffe",
       "desc": {}
     },
     "survivor": {
@@ -309,6 +312,9 @@
       "125_dramaturgy": "Dramaturgy",
       "126_scenePartner": "Scene Partner",
       "127_plotTwist": "Plot Twist",
+      "128_chemicalTrap": "Chemische Falle",
+      "129_light-Footed": "Behände",
+      "130_luckyStar": "Glücksstern",
       "desc": {}
     }
   }
