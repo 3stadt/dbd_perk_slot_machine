@@ -8,7 +8,7 @@
     "buttonHome": "Home",
     "buttonKillRoulette": "Killer Roulette",
     "buttonSurvRoulette": "Survivor Roulette",
-    "update": "Current Update: Nicolas Cage",
+    "update": "Current Update: Alien",
     "toggleColoredIcons": "Toggle colored perk images in the roulette view."
   },
   "about": {
@@ -178,6 +178,9 @@
       "106_forcedHesitation": "Forced Hesitation",
       "107_geneticLimits": "Genetic Limits",
       "108_machineLearning": "Machine Learning",
+      "109_alienInstinct": "Alien Instinct",
+      "110_rapidBrutality": "Rapid Brutality",
+      "111_ultimateWeapon": "Ultimate Weapon",
       "desc": {}
     },
     "survivor": {
@@ -309,6 +312,9 @@
       "125_dramaturgy": "Dramaturgy",
       "126_scenePartner": "Scene Partner",
       "127_plotTwist": "Plot Twist",
+      "128_chemicalTrap": "Chemical Trap",
+      "129_light-Footed": "Light-Footed",
+      "130_luckyStar": "Lucky Star",
       "desc": {}
     }
   }

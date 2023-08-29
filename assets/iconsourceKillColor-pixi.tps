@@ -209,7 +209,10 @@
             <key type="filename">iconsourceKillColor/106_forcedHesitation.png</key>
             <key type="filename">iconsourceKillColor/107_geneticLimits.png</key>
             <key type="filename">iconsourceKillColor/108_machineLearning.png</key>
+            <key type="filename">iconsourceKillColor/109_alienInstinct.png</key>
             <key type="filename">iconsourceKillColor/10_coulrophobia.png</key>
+            <key type="filename">iconsourceKillColor/110_rapidBrutality.png</key>
+            <key type="filename">iconsourceKillColor/111_ultimateWeapon.png</key>
             <key type="filename">iconsourceKillColor/11_darkDevotion.png</key>
             <key type="filename">iconsourceKillColor/12_deerstalker.png</key>
             <key type="filename">iconsourceKillColor/13_discordance.png</key>

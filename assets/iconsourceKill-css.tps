@@ -192,7 +192,10 @@
             <key type="filename">iconsourceKill/106_forcedHesitation.png</key>
             <key type="filename">iconsourceKill/107_geneticLimits.png</key>
             <key type="filename">iconsourceKill/108_machineLearning.png</key>
+            <key type="filename">iconsourceKill/109_alienInstinct.png</key>
             <key type="filename">iconsourceKill/10_coulrophobia.png</key>
+            <key type="filename">iconsourceKill/110_rapidBrutality.png</key>
+            <key type="filename">iconsourceKill/111_ultimateWeapon.png</key>
             <key type="filename">iconsourceKill/11_darkDevotion.png</key>
             <key type="filename">iconsourceKill/12_deerstalker.png</key>
             <key type="filename">iconsourceKill/13_discordance.png</key>
@@ -266,9 +269,9 @@
             <key type="filename">iconsourceKill/81_eruption.png</key>
             <key type="filename">iconsourceKill/82_hysteria.png</key>
             <key type="filename">iconsourceKill/83_lethalPursuer.png</key>
-            <key type="filename">iconsourceKill/84_deadlock.png</key>
-            <key type="filename">iconsourceKill/85_hexPlaything.png</key>
-            <key type="filename">iconsourceKill/86_scourgeHookGiftOfPain.png</key>
+            <key type="filename">iconsourceKill/84_Deadlock.png</key>
+            <key type="filename">iconsourceKill/85_HexPlaything.png</key>
+            <key type="filename">iconsourceKill/86_ScourgeHookGiftOfPain.png</key>
             <key type="filename">iconsourceKill/87_grimEmbrace.png</key>
             <key type="filename">iconsourceKill/88_pentimento.png</key>
             <key type="filename">iconsourceKill/89_painResonance.png</key>
