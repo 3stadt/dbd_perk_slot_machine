@@ -8,7 +8,7 @@
     "buttonHome": "Startseite",
     "buttonKillRoulette": "Killer-Roulette",
     "buttonSurvRoulette": "Überlebenden-Roulette",
-    "update": "Aktuelles Update: Alien",
+    "update": "Aktuelles Update: Alan Wake",
     "toggleColoredIcons": "Farbige Perks in der Roulettansicht ein/ausschalten."
   },
   "about": {
@@ -181,6 +181,9 @@
       "109_alienInstinct": "Alieninstinkt",
       "110_rapidBrutality": "Stürmische Brutalität",
       "111_ultimateWeapon": "Ultimative Waffe",
+      "112_batteriesIncluded": "Batteries Included",
+      "113_friendsTilTheEnd": "Friends Til The End",
+      "114_hexTwoCanPlay": "Two Can Play",
       "desc": {}
     },
     "survivor": {
@@ -315,6 +318,9 @@
       "128_chemicalTrap": "Chemische Falle",
       "129_light-Footed": "Behände",
       "130_luckyStar": "Glücksstern",
+      "131_boonIllumination": "Illumination",
+      "132_championOfLight": "Champion Of Light",
+      "133_deadline": "Deadline",
       "desc": {}
     }
   }
