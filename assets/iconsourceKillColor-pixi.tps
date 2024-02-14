@@ -4,7 +4,7 @@
         <key>fileFormatVersion</key>
         <int>6</int>
         <key>texturePackerVersion</key>
-        <string>7.0.3</string>
+        <string>7.1.0</string>
         <key>autoSDSettings</key>
         <array>
             <struct type="AutoSDSettings">
@@ -213,6 +213,9 @@
             <key type="filename">iconsourceKillColor/10_coulrophobia.png</key>
             <key type="filename">iconsourceKillColor/110_rapidBrutality.png</key>
             <key type="filename">iconsourceKillColor/111_ultimateWeapon.png</key>
+            <key type="filename">iconsourceKillColor/112_batteriesIncluded.png</key>
+            <key type="filename">iconsourceKillColor/113_friendsTilTheEnd.png</key>
+            <key type="filename">iconsourceKillColor/114_hexTwoCanPlay.png</key>
             <key type="filename">iconsourceKillColor/11_darkDevotion.png</key>
             <key type="filename">iconsourceKillColor/12_deerstalker.png</key>
             <key type="filename">iconsourceKillColor/13_discordance.png</key>

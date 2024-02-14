@@ -4,7 +4,7 @@
         <key>fileFormatVersion</key>
         <int>6</int>
         <key>texturePackerVersion</key>
-        <string>7.0.3</string>
+        <string>7.1.0</string>
         <key>autoSDSettings</key>
         <array>
             <struct type="AutoSDSettings">
@@ -217,6 +217,9 @@
             <key type="filename">iconsourceSurv/129_light-Footed.png</key>
             <key type="filename">iconsourceSurv/12_danceWithMe.png</key>
             <key type="filename">iconsourceSurv/130_luckyStar.png</key>
+            <key type="filename">iconsourceSurv/131_boonIllumination.png</key>
+            <key type="filename">iconsourceSurv/132_championOfLight.png</key>
+            <key type="filename">iconsourceSurv/133_deadline.png</key>
             <key type="filename">iconsourceSurv/13_darkSense.png</key>
             <key type="filename">iconsourceSurv/14_deadHard.png</key>
             <key type="filename">iconsourceSurv/15_decisiveStrike.png</key>

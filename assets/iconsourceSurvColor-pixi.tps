@@ -4,7 +4,7 @@
         <key>fileFormatVersion</key>
         <int>6</int>
         <key>texturePackerVersion</key>
-        <string>7.0.3</string>
+        <string>7.1.0</string>
         <key>autoSDSettings</key>
         <array>
             <struct type="AutoSDSettings">
@@ -117,7 +117,7 @@
             <key>sizeConstraints</key>
             <enum type="AlgorithmSettings::SizeConstraints">AnySize</enum>
             <key>forceSquared</key>
-            <false/>
+            <true/>
             <key>maxRects</key>
             <struct type="AlgorithmMaxRectsSettings">
                 <key>heuristic</key>
@@ -174,7 +174,7 @@
             <key>extrude</key>
             <uint>1</uint>
             <key>trimThreshold</key>
-            <uint>1</uint>
+            <uint>2</uint>
             <key>trimMargin</key>
             <uint>1</uint>
             <key>trimMode</key>
@@ -234,6 +234,9 @@
             <key type="filename">iconsourceSurvColor/129_light-Footed.png</key>
             <key type="filename">iconsourceSurvColor/12_danceWithMe.png</key>
             <key type="filename">iconsourceSurvColor/130_luckyStar.png</key>
+            <key type="filename">iconsourceSurvColor/131_boonIllumination.png</key>
+            <key type="filename">iconsourceSurvColor/132_championOfLight.png</key>
+            <key type="filename">iconsourceSurvColor/133_deadline.png</key>
             <key type="filename">iconsourceSurvColor/13_darkSense.png</key>
             <key type="filename">iconsourceSurvColor/14_deadHard.png</key>
             <key type="filename">iconsourceSurvColor/15_decisiveStrike.png</key>

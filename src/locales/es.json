@@ -8,7 +8,7 @@
     "buttonHome": "Home",
     "buttonKillRoulette": "Ruleta para Killer",
     "buttonSurvRoulette": "Ruleta para Survivor",
-    "update": "Current Update: Alien",
+    "update": "Current Update: Alan Wake",
     "toggleColoredIcons": "Toggle colored perk images in the roulette view."
   },
   "about": {
@@ -181,6 +181,9 @@
       "109_alienInstinct": "Instinto Alienígena",
       "110_rapidBrutality": "Brutalidad Veloz",
       "111_ultimateWeapon": "Arma definitiva",
+      "112_batteriesIncluded": "Batteries Included",
+      "113_friendsTilTheEnd": "Friends Til The End",
+      "114_hexTwoCanPlay": "Two Can Play",
       "desc": {}
     },
     "survivor": {
@@ -315,6 +318,9 @@
       "128_chemicalTrap": "Trampa química",
       "129_light-Footed": "Ligera de pies",
       "130_luckyStar": "Estrella de la suerte",
+      "131_boonIllumination": "Illumination",
+      "132_championOfLight": "Champion Of Light",
+      "133_deadline": "Deadline",
       "desc": {}
     }
   }
