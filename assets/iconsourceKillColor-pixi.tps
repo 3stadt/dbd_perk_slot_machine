@@ -216,6 +216,9 @@
             <key type="filename">iconsourceKillColor/112_batteriesIncluded.png</key>
             <key type="filename">iconsourceKillColor/113_friendsTilTheEnd.png</key>
             <key type="filename">iconsourceKillColor/114_hexTwoCanPlay.png</key>
+            <key type="filename">iconsourceKillColor/115_unbound.png</key>
+            <key type="filename">iconsourceKillColor/116_undone.png</key>
+            <key type="filename">iconsourceKillColor/117_unforeseen.png</key>
             <key type="filename">iconsourceKillColor/11_darkDevotion.png</key>
             <key type="filename">iconsourceKillColor/12_deerstalker.png</key>
             <key type="filename">iconsourceKillColor/13_discordance.png</key>

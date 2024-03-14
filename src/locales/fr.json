@@ -8,7 +8,7 @@
     "buttonHome": "Accueil",
     "buttonKillRoulette": "Roulette Tueur",
     "buttonSurvRoulette": "Roulette Survivant",
-    "update": "Dernière mise à jour: Alan Wake",
+    "update": "Dernière mise à jour: All things wicked",
     "toggleColoredIcons": "Afficher sur la roulette les images colorées des compétences"
   },
   "about": {
@@ -181,6 +181,9 @@
       "112_batteriesIncluded": "Batteries Included",
       "113_friendsTilTheEnd": "Friends Til The End",
       "114_hexTwoCanPlay": "Two Can Play",
+      "115_unbound": "Unbound",
+      "116_undone": "Undone",
+      "117_unforeseen": "Unforeseen",
       "desc": {}
     },
     "survivor": {
@@ -318,6 +321,9 @@
       "131_boonIllumination": "Illumination",
       "132_championOfLight": "Champion Of Light",
       "133_deadline": "Deadline",
+      "134_invocationWeavingSpiders": "Weaving spiders",
+      "135_strengthInShadows": "Strength in shadows",
+      "136_wicked": "Wicked",
       "desc": {}
     }
   }

@@ -220,6 +220,9 @@
             <key type="filename">iconsourceSurv/131_boonIllumination.png</key>
             <key type="filename">iconsourceSurv/132_championOfLight.png</key>
             <key type="filename">iconsourceSurv/133_deadline.png</key>
+            <key type="filename">iconsourceSurv/134_invocationWeavingSpiders.png</key>
+            <key type="filename">iconsourceSurv/135_strengthInShadows.png</key>
+            <key type="filename">iconsourceSurv/136_wicked.png</key>
             <key type="filename">iconsourceSurv/13_darkSense.png</key>
             <key type="filename">iconsourceSurv/14_deadHard.png</key>
             <key type="filename">iconsourceSurv/15_decisiveStrike.png</key>
