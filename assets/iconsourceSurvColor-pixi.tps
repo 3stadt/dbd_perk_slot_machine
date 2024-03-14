@@ -97,9 +97,9 @@
         <key>maxTextureSize</key>
         <QSize>
             <key>width</key>
-            <int>2048</int>
+            <int>4096</int>
             <key>height</key>
-            <int>2048</int>
+            <int>4096</int>
         </QSize>
         <key>fixedTextureSize</key>
         <QSize>
@@ -237,6 +237,9 @@
             <key type="filename">iconsourceSurvColor/131_boonIllumination.png</key>
             <key type="filename">iconsourceSurvColor/132_championOfLight.png</key>
             <key type="filename">iconsourceSurvColor/133_deadline.png</key>
+            <key type="filename">iconsourceSurvColor/134_invocationWeavingSpiders.png</key>
+            <key type="filename">iconsourceSurvColor/135_strengthInShadows.png</key>
+            <key type="filename">iconsourceSurvColor/136_wicked.png</key>
             <key type="filename">iconsourceSurvColor/13_darkSense.png</key>
             <key type="filename">iconsourceSurvColor/14_deadHard.png</key>
             <key type="filename">iconsourceSurvColor/15_decisiveStrike.png</key>

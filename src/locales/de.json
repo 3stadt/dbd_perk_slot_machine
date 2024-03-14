@@ -8,7 +8,7 @@
     "buttonHome": "Startseite",
     "buttonKillRoulette": "Killer-Roulette",
     "buttonSurvRoulette": "Überlebenden-Roulette",
-    "update": "Aktuelles Update: Alan Wake",
+    "update": "Aktuelles Update: All things wicked",
     "toggleColoredIcons": "Farbige Perks in der Roulettansicht ein/ausschalten."
   },
   "about": {
@@ -184,6 +184,9 @@
       "112_batteriesIncluded": "Batteries Included",
       "113_friendsTilTheEnd": "Friends Til The End",
       "114_hexTwoCanPlay": "Two Can Play",
+      "115_unbound": "Unbound",
+      "116_undone": "Undone",
+      "117_unforeseen": "Unforeseen",
       "desc": {}
     },
     "survivor": {
@@ -321,6 +324,9 @@
       "131_boonIllumination": "Illumination",
       "132_championOfLight": "Champion Of Light",
       "133_deadline": "Deadline",
+      "134_invocationWeavingSpiders": "Weaving spiders",
+      "135_strengthInShadows": "Strength in shadows",
+      "136_wicked": "Wicked",
       "desc": {}
     }
   }
