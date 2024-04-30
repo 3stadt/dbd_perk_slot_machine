@@ -4,7 +4,7 @@
         <key>fileFormatVersion</key>
         <int>6</int>
         <key>texturePackerVersion</key>
-        <string>7.1.0</string>
+        <string>7.3.0</string>
         <key>autoSDSettings</key>
         <array>
             <struct type="AutoSDSettings">
@@ -316,15 +316,15 @@
             <key type="filename">iconsourceSurvColor/86_fastTrack.png</key>
             <key type="filename">iconsourceSurvColor/87_selfPreservation.png</key>
             <key type="filename">iconsourceSurvColor/88_smashHit.png</key>
-            <key type="filename">iconsourceSurvColor/89_BiteTheBullet.png</key>
+            <key type="filename">iconsourceSurvColor/89_biteTheBullet.png</key>
             <key type="filename">iconsourceSurvColor/90_blastMine.png</key>
-            <key type="filename">iconsourceSurvColor/91_Counterforce.png</key>
-            <key type="filename">iconsourceSurvColor/92_Flashbang.png</key>
-            <key type="filename">iconsourceSurvColor/93_Resurgence.png</key>
-            <key type="filename">iconsourceSurvColor/94_RookieSpirit.png</key>
-            <key type="filename">iconsourceSurvColor/95_CircleOfHealing.png</key>
-            <key type="filename">iconsourceSurvColor/96_ShadowStep.png</key>
-            <key type="filename">iconsourceSurvColor/97_Clairvoyance.png</key>
+            <key type="filename">iconsourceSurvColor/91_counterforce.png</key>
+            <key type="filename">iconsourceSurvColor/92_flashbang.png</key>
+            <key type="filename">iconsourceSurvColor/93_resurgence.png</key>
+            <key type="filename">iconsourceSurvColor/94_rookieSpirit.png</key>
+            <key type="filename">iconsourceSurvColor/95_circleOfHealing.png</key>
+            <key type="filename">iconsourceSurvColor/96_shadowStep.png</key>
+            <key type="filename">iconsourceSurvColor/97_clairvoyance.png</key>
             <key type="filename">iconsourceSurvColor/98_exponential.png</key>
             <key type="filename">iconsourceSurvColor/99_correctiveAction.png</key>
             <struct type="IndividualSpriteSettings">
