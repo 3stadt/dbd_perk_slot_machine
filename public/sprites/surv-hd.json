@@ -712,7 +712,7 @@
 	"spriteSourceSize": {"x":29,"y":49,"w":202,"h":158},
 	"sourceSize": {"w":256,"h":256}
 },
-"89_BiteTheBullet":
+"89_biteTheBullet":
 {
 	"frame": {"x":1325,"y":1845,"w":169,"h":154},
 	"rotated": true,
@@ -728,7 +728,7 @@
 	"spriteSourceSize": {"x":39,"y":13,"w":197,"h":202},
 	"sourceSize": {"w":256,"h":256}
 },
-"91_Counterforce":
+"91_counterforce":
 {
 	"frame": {"x":1442,"y":955,"w":181,"h":174},
 	"rotated": false,
@@ -736,7 +736,7 @@
 	"spriteSourceSize": {"x":48,"y":30,"w":181,"h":174},
 	"sourceSize": {"w":256,"h":256}
 },
-"92_Flashbang":
+"92_flashbang":
 {
 	"frame": {"x":191,"y":1540,"w":197,"h":141},
 	"rotated": true,
@@ -744,7 +744,7 @@
 	"spriteSourceSize": {"x":25,"y":71,"w":197,"h":141},
 	"sourceSize": {"w":256,"h":256}
 },
-"93_Resurgence":
+"93_resurgence":
 {
 	"frame": {"x":1100,"y":206,"w":156,"h":200},
 	"rotated": false,
@@ -752,7 +752,7 @@
 	"spriteSourceSize": {"x":40,"y":33,"w":156,"h":200},
 	"sourceSize": {"w":256,"h":256}
 },
-"94_RookieSpirit":
+"94_rookieSpirit":
 {
 	"frame": {"x":1481,"y":1839,"w":162,"h":157},
 	"rotated": true,
@@ -760,7 +760,7 @@
 	"spriteSourceSize": {"x":42,"y":32,"w":162,"h":157},
 	"sourceSize": {"w":256,"h":256}
 },
-"95_CircleOfHealing":
+"95_circleOfHealing":
 {
 	"frame": {"x":1800,"y":1489,"w":168,"h":175},
 	"rotated": true,
@@ -768,7 +768,7 @@
 	"spriteSourceSize": {"x":43,"y":32,"w":168,"h":175},
 	"sourceSize": {"w":256,"h":256}
 },
-"96_ShadowStep":
+"96_shadowStep":
 {
 	"frame": {"x":211,"y":1739,"w":159,"h":196},
 	"rotated": false,
@@ -776,7 +776,7 @@
 	"spriteSourceSize": {"x":48,"y":30,"w":159,"h":196},
 	"sourceSize": {"w":256,"h":256}
 },
-"97_Clairvoyance":
+"97_clairvoyance":
 {
 	"frame": {"x":549,"y":1676,"w":187,"h":181},
 	"rotated": true,
@@ -1103,6 +1103,6 @@
 	"format": "RGBA8888",
 	"size": {"w":1993,"h":2173},
 	"scale": "1",
-	"smartupdate": "$TexturePacker:SmartUpdate:dba1a1037d690e730ae0754231a486cd:454e3c76c80c978e22be5e5af20de02d:0d46a466cc3a768b46eef57583d6a7d6$"
+	"smartupdate": "$TexturePacker:SmartUpdate:ecbf7dba66ead3d5fdd7dfceef76f6c6:454e3c76c80c978e22be5e5af20de02d:0d46a466cc3a768b46eef57583d6a7d6$"
 }
 }

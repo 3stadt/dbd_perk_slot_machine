@@ -4,7 +4,7 @@
         <key>fileFormatVersion</key>
         <int>6</int>
         <key>texturePackerVersion</key>
-        <string>7.1.0</string>
+        <string>7.3.0</string>
         <key>autoSDSettings</key>
         <array>
             <struct type="AutoSDSettings">
@@ -292,9 +292,9 @@
             <key type="filename">iconsourceKill/81_eruption.png</key>
             <key type="filename">iconsourceKill/82_hysteria.png</key>
             <key type="filename">iconsourceKill/83_lethalPursuer.png</key>
-            <key type="filename">iconsourceKill/84_Deadlock.png</key>
-            <key type="filename">iconsourceKill/85_HexPlaything.png</key>
-            <key type="filename">iconsourceKill/86_ScourgeHookGiftOfPain.png</key>
+            <key type="filename">iconsourceKill/84_deadlock.png</key>
+            <key type="filename">iconsourceKill/85_hexPlaything.png</key>
+            <key type="filename">iconsourceKill/86_scourgeHookGiftOfPain.png</key>
             <key type="filename">iconsourceKill/87_grimEmbrace.png</key>
             <key type="filename">iconsourceKill/88_pentimento.png</key>
             <key type="filename">iconsourceKill/89_painResonance.png</key>
