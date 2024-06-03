@@ -8,7 +8,7 @@
     "buttonHome": "Home",
     "buttonKillRoulette": "Ruleta para Killer",
     "buttonSurvRoulette": "Ruleta para Survivor",
-    "update": "Current Update: All things wicked",
+    "update": "Current Update: D&D",
     "toggleColoredIcons": "Toggle colored perk images in the roulette view."
   },
   "about": {
@@ -187,6 +187,9 @@
       "115_unbound": "Unbound",
       "116_undone": "Undone",
       "117_unforeseen": "Unforeseen",
+      "118_darkArrogance": "Dark Arrogance",
+      "119_languidTouch": "Languid Touch",
+      "120_weaveAttunement": "Weave Attunement",
       "desc": {}
     },
     "survivor": {
@@ -327,6 +330,9 @@
       "134_invocationWeavingSpiders": "Weaving spiders",
       "135_strengthInShadows": "Strength in shadows",
       "136_wicked": "Wicked",
+      "137_bardicInspiration": "Bardic Inspiration",
+      "138_mirroredIllusion": "Mirrored Illusion",
+      "139_stillSight": "Still Sight",
       "desc": {}
     }
   }

@@ -8,7 +8,7 @@
     "buttonHome": "Accueil",
     "buttonKillRoulette": "Roulette Tueur",
     "buttonSurvRoulette": "Roulette Survivant",
-    "update": "Dernière mise à jour: All things wicked",
+    "update": "Dernière mise à jour: D&D",
     "toggleColoredIcons": "Afficher sur la roulette les images colorées des compétences"
   },
   "about": {
@@ -184,6 +184,9 @@
       "115_unbound": "Unbound",
       "116_undone": "Undone",
       "117_unforeseen": "Unforeseen",
+      "118_darkArrogance": "Dark Arrogance",
+      "119_languidTouch": "Languid Touch",
+      "120_weaveAttunement": "Weave Attunement",
       "desc": {}
     },
     "survivor": {
@@ -324,6 +327,9 @@
       "134_invocationWeavingSpiders": "Weaving spiders",
       "135_strengthInShadows": "Strength in shadows",
       "136_wicked": "Wicked",
+      "137_bardicInspiration": "Bardic Inspiration",
+      "138_mirroredIllusion": "Mirrored Illusion",
+      "139_stillSight": "Still Sight",
       "desc": {}
     }
   }
