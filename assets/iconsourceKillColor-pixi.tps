@@ -4,7 +4,7 @@
         <key>fileFormatVersion</key>
         <int>6</int>
         <key>texturePackerVersion</key>
-        <string>7.3.0</string>
+        <string>7.4.0</string>
         <key>autoSDSettings</key>
         <array>
             <struct type="AutoSDSettings">
@@ -219,7 +219,10 @@
             <key type="filename">iconsourceKillColor/115_unbound.png</key>
             <key type="filename">iconsourceKillColor/116_undone.png</key>
             <key type="filename">iconsourceKillColor/117_unforeseen.png</key>
+            <key type="filename">iconsourceKillColor/118_darkArrogance.png</key>
+            <key type="filename">iconsourceKillColor/119_languidTouch.png</key>
             <key type="filename">iconsourceKillColor/11_darkDevotion.png</key>
+            <key type="filename">iconsourceKillColor/120_weaveAttunement.png</key>
             <key type="filename">iconsourceKillColor/12_deerstalker.png</key>
             <key type="filename">iconsourceKillColor/13_discordance.png</key>
             <key type="filename">iconsourceKillColor/14_distressing.png</key>
