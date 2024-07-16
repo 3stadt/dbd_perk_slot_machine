@@ -8,7 +8,7 @@
     "buttonHome": "Home",
     "buttonKillRoulette": "Killer Roulette",
     "buttonSurvRoulette": "Survivor Roulette",
-    "update": "Current Update: D&D",
+    "update": "Current Update: Tomb Raider™",
     "toggleColoredIcons": "Toggle colored perk images in the roulette view."
   },
   "about": {
@@ -333,6 +333,9 @@
       "137_bardicInspiration": "Bardic Inspiration",
       "138_mirroredIllusion": "Mirrored Illusion",
       "139_stillSight": "Still Sight",
+      "140_specialist": "Specialist",
+      "141_finesse": "Finesse",
+      "142_hardened": "Hardened",
       "desc": {}
     }
   }
