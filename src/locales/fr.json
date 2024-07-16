@@ -8,7 +8,7 @@
     "buttonHome": "Accueil",
     "buttonKillRoulette": "Roulette Tueur",
     "buttonSurvRoulette": "Roulette Survivant",
-    "update": "Dernière mise à jour: D&D",
+    "update": "Dernière mise à jour: Tomb Raider™",
     "toggleColoredIcons": "Afficher sur la roulette les images colorées des compétences"
   },
   "about": {
@@ -330,6 +330,9 @@
       "137_bardicInspiration": "Bardic Inspiration",
       "138_mirroredIllusion": "Mirrored Illusion",
       "139_stillSight": "Still Sight",
+      "140_specialist": "Specialist",
+      "141_finesse": "Finesse",
+      "142_hardened": "Hardened",
       "desc": {}
     }
   }

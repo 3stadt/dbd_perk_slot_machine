@@ -244,6 +244,9 @@
             <key type="filename">iconsourceSurv/138_mirroredIllusion.png</key>
             <key type="filename">iconsourceSurv/139_stillSight.png</key>
             <key type="filename">iconsourceSurv/13_darkSense.png</key>
+            <key type="filename">iconsourceSurv/140_specialist.png</key>
+            <key type="filename">iconsourceSurv/141_finesse.png</key>
+            <key type="filename">iconsourceSurv/142_hardened.png</key>
             <key type="filename">iconsourceSurv/14_deadHard.png</key>
             <key type="filename">iconsourceSurv/15_decisiveStrike.png</key>
             <key type="filename">iconsourceSurv/16_dejaVu.png</key>
