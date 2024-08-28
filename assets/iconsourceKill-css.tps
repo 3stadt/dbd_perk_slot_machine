@@ -206,6 +206,9 @@
             <key type="filename">iconsourceKill/119_languidTouch.png</key>
             <key type="filename">iconsourceKill/11_darkDevotion.png</key>
             <key type="filename">iconsourceKill/120_weaveAttunement.png</key>
+            <key type="filename">iconsourceKill/121_dominance.png</key>
+            <key type="filename">iconsourceKill/122_hexWretchedFate.png</key>
+            <key type="filename">iconsourceKill/123_humanGreed.png</key>
             <key type="filename">iconsourceKill/12_deerstalker.png</key>
             <key type="filename">iconsourceKill/13_discordance.png</key>
             <key type="filename">iconsourceKill/14_distressing.png</key>

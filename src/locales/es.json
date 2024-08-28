@@ -8,7 +8,7 @@
     "buttonHome": "Home",
     "buttonKillRoulette": "Ruleta para Killer",
     "buttonSurvRoulette": "Ruleta para Survivor",
-    "update": "Current Update: Tomb Raider™",
+    "update": "Current Update: Dracula",
     "toggleColoredIcons": "Toggle colored perk images in the roulette view."
   },
   "about": {
@@ -190,6 +190,9 @@
       "118_darkArrogance": "Dark Arrogance",
       "119_languidTouch": "Languid Touch",
       "120_weaveAttunement": "Weave Attunement",
+      "121_dominance": "Dominance",
+      "122_hexWretchedFate": "Wretched Fate",
+      "123_humanGreed": "Human Greed",
       "desc": {}
     },
     "survivor": {
@@ -336,6 +339,9 @@
       "140_specialist": "Specialist",
       "141_finesse": "Finesse",
       "142_hardened": "Hardened",
+      "143_exultation": "Exultation",
+      "144_eyesOfBelmont": "Eyes of Belmont",
+      "145_momentOfGlory": "Moment of glory",
       "desc": {}
     }
   }

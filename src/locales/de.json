@@ -8,7 +8,7 @@
     "buttonHome": "Startseite",
     "buttonKillRoulette": "Killer-Roulette",
     "buttonSurvRoulette": "Überlebenden-Roulette",
-    "update": "Aktuelles Update: Tomb Raider™",
+    "update": "Aktuelles Update: Dracula",
     "toggleColoredIcons": "Farbige Perks in der Roulettansicht ein/ausschalten."
   },
   "about": {
@@ -190,6 +190,9 @@
       "118_darkArrogance": "Düstere Arroganz",
       "119_languidTouch": "Lähmende Berührung",
       "120_weaveAttunement": "Verwobene Einstimmung",
+      "121_dominance": "Dominanz",
+      "122_hexWretchedFate": "Erbärmliches Schicksal",
+      "123_humanGreed": "Gier der Menschen",
       "desc": {}
     },
     "survivor": {
@@ -336,6 +339,9 @@
       "140_specialist": "Spezialistin",
       "141_finesse": "Gewandtheit",
       "142_hardened": "Abgehärtet",
+      "143_exultation": "Hochgefühl",
+      "144_eyesOfBelmont": "Belmonts Augen",
+      "145_momentOfGlory": "Ruhmreicher Augenblick",
       "desc": {}
     }
   }

@@ -97,9 +97,9 @@
         <key>maxTextureSize</key>
         <QSize>
             <key>width</key>
-            <int>2048</int>
+            <int>4096</int>
             <key>height</key>
-            <int>2048</int>
+            <int>4096</int>
         </QSize>
         <key>fixedTextureSize</key>
         <QSize>
@@ -223,6 +223,9 @@
             <key type="filename">iconsourceKillColor/119_languidTouch.png</key>
             <key type="filename">iconsourceKillColor/11_darkDevotion.png</key>
             <key type="filename">iconsourceKillColor/120_weaveAttunement.png</key>
+            <key type="filename">iconsourceKillColor/121_dominance.png</key>
+            <key type="filename">iconsourceKillColor/122_hexWretchedFate.png</key>
+            <key type="filename">iconsourceKillColor/123_humanGreed.png</key>
             <key type="filename">iconsourceKillColor/12_deerstalker.png</key>
             <key type="filename">iconsourceKillColor/13_discordance.png</key>
             <key type="filename">iconsourceKillColor/14_distressing.png</key>
