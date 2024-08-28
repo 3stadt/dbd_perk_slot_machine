@@ -8,7 +8,7 @@
     "buttonHome": "Accueil",
     "buttonKillRoulette": "Roulette Tueur",
     "buttonSurvRoulette": "Roulette Survivant",
-    "update": "Dernière mise à jour: Tomb Raider™",
+    "update": "Dernière mise à jour: Dracula",
     "toggleColoredIcons": "Afficher sur la roulette les images colorées des compétences"
   },
   "about": {
@@ -187,6 +187,9 @@
       "118_darkArrogance": "Dark Arrogance",
       "119_languidTouch": "Languid Touch",
       "120_weaveAttunement": "Weave Attunement",
+      "121_dominance": "Dominance",
+      "122_hexWretchedFate": "Wretched Fate",
+      "123_humanGreed": "Human Greed",
       "desc": {}
     },
     "survivor": {
@@ -333,6 +336,9 @@
       "140_specialist": "Specialist",
       "141_finesse": "Finesse",
       "142_hardened": "Hardened",
+      "143_exultation": "Exultation",
+      "144_eyesOfBelmont": "Eyes of Belmont",
+      "145_momentOfGlory": "Moment of glory",
       "desc": {}
     }
   }

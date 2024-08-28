@@ -247,6 +247,9 @@
             <key type="filename">iconsourceSurv/140_specialist.png</key>
             <key type="filename">iconsourceSurv/141_finesse.png</key>
             <key type="filename">iconsourceSurv/142_hardened.png</key>
+            <key type="filename">iconsourceSurv/143_exultation.png</key>
+            <key type="filename">iconsourceSurv/144_eyesOfBelmont.png</key>
+            <key type="filename">iconsourceSurv/145_momentOfGlory.png</key>
             <key type="filename">iconsourceSurv/14_deadHard.png</key>
             <key type="filename">iconsourceSurv/15_decisiveStrike.png</key>
             <key type="filename">iconsourceSurv/16_dejaVu.png</key>
