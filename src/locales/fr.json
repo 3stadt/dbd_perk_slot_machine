@@ -8,7 +8,7 @@
     "buttonHome": "Accueil",
     "buttonKillRoulette": "Roulette Tueur",
     "buttonSurvRoulette": "Roulette Survivant",
-    "update": "Dernière mise à jour: Dracula",
+    "update": "Dernière mise à jour: Doomed Course",
     "toggleColoredIcons": "Afficher sur la roulette les images colorées des compétences"
   },
   "about": {
@@ -190,6 +190,9 @@
       "121_dominance": "Dominance",
       "122_hexWretchedFate": "Wretched Fate",
       "123_humanGreed": "Human Greed",
+      "124_allShakingThunder": "Coup de Tonnerre",
+      "125_noQuarter": "Pas de Quartier",
+      "126_jaggedCompass": "Boussole de Douleur",
       "desc": {}
     },
     "survivor": {
@@ -339,6 +342,9 @@
       "143_exultation": "Exultation",
       "144_eyesOfBelmont": "Eyes of Belmont",
       "145_momentOfGlory": "Moment of glory",
+      "146_cleanBreak": "Rupture Nette",
+      "147_treacherousCrows": "Corbeaux Traîtres",
+      "148_shoulderTheBurden": "Endosse le Fardeau",
       "desc": {}
     }
   }
