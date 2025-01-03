@@ -250,6 +250,9 @@
             <key type="filename">iconsourceSurvColor/143_exultation.png</key>
             <key type="filename">iconsourceSurvColor/144_eyesOfBelmont.png</key>
             <key type="filename">iconsourceSurvColor/145_momentOfGlory.png</key>
+            <key type="filename">iconsourceSurvColor/146_cleanBreak.png</key>
+            <key type="filename">iconsourceSurvColor/147_treacherousCrows.png</key>
+            <key type="filename">iconsourceSurvColor/148_shoulderTheBurden.png</key>
             <key type="filename">iconsourceSurvColor/14_deadHard.png</key>
             <key type="filename">iconsourceSurvColor/15_decisiveStrike.png</key>
             <key type="filename">iconsourceSurvColor/16_dejaVu.png</key>

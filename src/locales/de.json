@@ -8,7 +8,7 @@
     "buttonHome": "Startseite",
     "buttonKillRoulette": "Killer-Roulette",
     "buttonSurvRoulette": "Überlebenden-Roulette",
-    "update": "Aktuelles Update: Dracula",
+    "update": "Aktuelles Update: Doomed Course",
     "toggleColoredIcons": "Farbige Perks in der Roulettansicht ein/ausschalten."
   },
   "about": {
@@ -193,6 +193,9 @@
       "121_dominance": "Dominanz",
       "122_hexWretchedFate": "Erbärmliches Schicksal",
       "123_humanGreed": "Gier der Menschen",
+      "124_allShakingThunder": "Alles erschütternder Donner",
+      "125_noQuarter": "Kein Pardon",
+      "126_jaggedCompass": "Gezackter Kompass",
       "desc": {}
     },
     "survivor": {
@@ -342,6 +345,9 @@
       "143_exultation": "Hochgefühl",
       "144_eyesOfBelmont": "Belmonts Augen",
       "145_momentOfGlory": "Ruhmreicher Augenblick",
+      "146_cleanBreak": "Glatter Schnitt",
+      "147_treacherousCrows": "Tückische Krähen",
+      "148_shoulderTheBurden": "Die Last schultern",
       "desc": {}
     }
   }

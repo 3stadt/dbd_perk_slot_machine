@@ -209,6 +209,9 @@
             <key type="filename">iconsourceKill/121_dominance.png</key>
             <key type="filename">iconsourceKill/122_hexWretchedFate.png</key>
             <key type="filename">iconsourceKill/123_humanGreed.png</key>
+            <key type="filename">iconsourceKill/124_allShakingThunder.png</key>
+            <key type="filename">iconsourceKill/125_noQuarter.png</key>
+            <key type="filename">iconsourceKill/126_jaggedCompass.png</key>
             <key type="filename">iconsourceKill/12_deerstalker.png</key>
             <key type="filename">iconsourceKill/13_discordance.png</key>
             <key type="filename">iconsourceKill/14_distressing.png</key>

@@ -8,7 +8,7 @@
     "buttonHome": "Home",
     "buttonKillRoulette": "Ruleta para Killer",
     "buttonSurvRoulette": "Ruleta para Survivor",
-    "update": "Current Update: Dracula",
+    "update": "Current Update: Doomed Course",
     "toggleColoredIcons": "Toggle colored perk images in the roulette view."
   },
   "about": {
@@ -193,6 +193,9 @@
       "121_dominance": "Dominance",
       "122_hexWretchedFate": "Wretched Fate",
       "123_humanGreed": "Human Greed",
+      "124_allShakingThunder": "Trueno Sísmico",
+      "125_noQuarter": "Sin Piedad",
+      "126_jaggedCompass": "Brújula Irregular",
       "desc": {}
     },
     "survivor": {
@@ -342,6 +345,9 @@
       "143_exultation": "Exultation",
       "144_eyesOfBelmont": "Eyes of Belmont",
       "145_momentOfGlory": "Moment of glory",
+      "146_cleanBreak": "Punto y Aparte",
+      "147_treacherousCrows": "Cuervos Traicioneros",
+      "148_shoulderTheBurden": "Cargar a Cuestas",
       "desc": {}
     }
   }

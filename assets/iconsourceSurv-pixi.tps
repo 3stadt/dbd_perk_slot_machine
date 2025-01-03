@@ -250,6 +250,9 @@
             <key type="filename">iconsourceSurv/143_exultation.png</key>
             <key type="filename">iconsourceSurv/144_eyesOfBelmont.png</key>
             <key type="filename">iconsourceSurv/145_momentOfGlory.png</key>
+            <key type="filename">iconsourceSurv/146_cleanBreak.png</key>
+            <key type="filename">iconsourceSurv/147_treacherousCrows.png</key>
+            <key type="filename">iconsourceSurv/148_shoulderTheBurden.png</key>
             <key type="filename">iconsourceSurv/14_deadHard.png</key>
             <key type="filename">iconsourceSurv/15_decisiveStrike.png</key>
             <key type="filename">iconsourceSurv/16_dejaVu.png</key>
