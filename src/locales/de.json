@@ -8,7 +8,7 @@
     "buttonHome": "Startseite",
     "buttonKillRoulette": "Killer-Roulette",
     "buttonSurvRoulette": "Überlebenden-Roulette",
-    "update": "Aktuelles Update: Doomed Course",
+    "update": "Aktuelles Update: Tokyo Ghoul",
     "toggleColoredIcons": "Farbige Perks in der Roulettansicht ein/ausschalten."
   },
   "about": {
@@ -196,6 +196,9 @@
       "124_allShakingThunder": "Alles erschütternder Donner",
       "125_noQuarter": "Kein Pardon",
       "126_jaggedCompass": "Gezackter Kompass",
+      "127_noneAreFree": "Niemand ist frei",
+      "128_foreverEntwined": "Für immer verbunden",
+      "129_nothingButMisery": "Nichts als Leid",
       "desc": {}
     },
     "survivor": {

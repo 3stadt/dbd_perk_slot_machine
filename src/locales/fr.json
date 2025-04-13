@@ -8,7 +8,7 @@
     "buttonHome": "Accueil",
     "buttonKillRoulette": "Roulette Tueur",
     "buttonSurvRoulette": "Roulette Survivant",
-    "update": "Dernière mise à jour: Doomed Course",
+    "update": "Dernière mise à jour: Tokyo Ghoul",
     "toggleColoredIcons": "Afficher sur la roulette les images colorées des compétences"
   },
   "about": {
@@ -193,6 +193,9 @@
       "124_allShakingThunder": "Coup de Tonnerre",
       "125_noQuarter": "Pas de Quartier",
       "126_jaggedCompass": "Boussole de Douleur",
+      "127_noneAreFree": "None Are Free",
+      "128_foreverEntwined": "Forever Entwined",
+      "129_nothingButMisery": "Nothing But Misery",
       "desc": {}
     },
     "survivor": {
