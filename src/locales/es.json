@@ -8,7 +8,7 @@
     "buttonHome": "Home",
     "buttonKillRoulette": "Ruleta para Killer",
     "buttonSurvRoulette": "Ruleta para Survivor",
-    "update": "Current Update: Doomed Course",
+    "update": "Current Update: Tokyo Ghoul",
     "toggleColoredIcons": "Toggle colored perk images in the roulette view."
   },
   "about": {
@@ -196,6 +196,9 @@
       "124_allShakingThunder": "Trueno Sísmico",
       "125_noQuarter": "Sin Piedad",
       "126_jaggedCompass": "Brújula Irregular",
+      "127_noneAreFree": "Nadie es Libre",
+      "128_foreverEntwined": "Unidos por Siempre",
+      "129_nothingButMisery": "Pura Miseria",
       "desc": {}
     },
     "survivor": {
