@@ -4,7 +4,7 @@
         <key>fileFormatVersion</key>
         <int>6</int>
         <key>texturePackerVersion</key>
-        <string>7.4.0</string>
+        <string>7.6.3</string>
         <key>autoSDSettings</key>
         <array>
             <struct type="AutoSDSettings">
@@ -236,7 +236,10 @@
             <key type="filename">iconsourceSurv/146_cleanBreak.png</key>
             <key type="filename">iconsourceSurv/147_treacherousCrows.png</key>
             <key type="filename">iconsourceSurv/148_shoulderTheBurden.png</key>
+            <key type="filename">iconsourceSurv/149_doNoHarm.png</key>
             <key type="filename">iconsourceSurv/14_deadHard.png</key>
+            <key type="filename">iconsourceSurv/150_dutyOfCare.png</key>
+            <key type="filename">iconsourceSurv/151_rapidResponse.png</key>
             <key type="filename">iconsourceSurv/15_decisiveStrike.png</key>
             <key type="filename">iconsourceSurv/16_dejaVu.png</key>
             <key type="filename">iconsourceSurv/17_deliverance.png</key>

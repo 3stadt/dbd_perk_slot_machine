@@ -8,7 +8,7 @@
     "buttonHome": "Startseite",
     "buttonKillRoulette": "Killer-Roulette",
     "buttonSurvRoulette": "Überlebenden-Roulette",
-    "update": "Aktuelles Update: Tokyo Ghoul",
+    "update": "Aktuelles Update: Steady Pulse",
     "toggleColoredIcons": "Farbige Perks in der Roulettansicht ein/ausschalten."
   },
   "about": {
@@ -351,6 +351,9 @@
       "146_cleanBreak": "Glatter Schnitt",
       "147_treacherousCrows": "Tückische Krähen",
       "148_shoulderTheBurden": "Die Last schultern",
+      "149_doNoHarm": "Niemandem schaden",
+      "150_dutyOfCare": "Fürsorgepflicht",
+      "151_rapidResponse": "Schnelles Eingreifen",
       "desc": {}
     }
   }
