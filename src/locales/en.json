@@ -8,7 +8,7 @@
     "buttonHome": "Home",
     "buttonKillRoulette": "Killer Roulette",
     "buttonSurvRoulette": "Survivor Roulette",
-    "update": "Current Update: Tokyo Ghoul",
+    "update": "Current Update: Steady Pulse",
     "toggleColoredIcons": "Toggle colored perk images in the roulette view."
   },
   "about": {
@@ -351,6 +351,9 @@
       "146_cleanBreak": "Clean Break",
       "147_treacherousCrows": "Treacherous Crows",
       "148_shoulderTheBurden": "Shoulder the Burden",
+      "149_doNoHarm": "Do No Harm",
+      "150_dutyOfCare": "Duty of Care",
+      "151_rapidResponse": "Rapid Response",
       "desc": {}
     }
   }
