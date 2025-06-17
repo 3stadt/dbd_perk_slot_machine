@@ -8,7 +8,7 @@
     "buttonHome": "Accueil",
     "buttonKillRoulette": "Roulette Tueur",
     "buttonSurvRoulette": "Roulette Survivant",
-    "update": "Dernière mise à jour: Steady Pulse",
+    "update": "Dernière mise à jour: Five Nights at Freddy's",
     "toggleColoredIcons": "Afficher sur la roulette les images colorées des compétences"
   },
   "about": {
@@ -196,6 +196,9 @@
       "127_noneAreFree": "None Are Free",
       "128_foreverEntwined": "Forever Entwined",
       "129_nothingButMisery": "Nothing But Misery",
+      "130_haywire": "Haywire",
+      "131_helpWanted": "Help Wanted",
+      "132_phantomFear": "Phantom Fear",
       "desc": {}
     },
     "survivor": {
