@@ -4,7 +4,7 @@
         <key>fileFormatVersion</key>
         <int>6</int>
         <key>texturePackerVersion</key>
-        <string>7.6.2</string>
+        <string>7.7.0</string>
         <key>autoSDSettings</key>
         <array>
             <struct type="AutoSDSettings">
@@ -216,6 +216,9 @@
             <key type="filename">iconsourceKill/128_foreverEntwined.png</key>
             <key type="filename">iconsourceKill/129_nothingButMisery.png</key>
             <key type="filename">iconsourceKill/12_deerstalker.png</key>
+            <key type="filename">iconsourceKill/130_haywire.png</key>
+            <key type="filename">iconsourceKill/131_helpWanted.png</key>
+            <key type="filename">iconsourceKill/132_phantomFear.png</key>
             <key type="filename">iconsourceKill/13_discordance.png</key>
             <key type="filename">iconsourceKill/14_distressing.png</key>
             <key type="filename">iconsourceKill/15_dyingLight.png</key>

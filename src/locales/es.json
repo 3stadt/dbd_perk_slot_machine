@@ -8,7 +8,7 @@
     "buttonHome": "Home",
     "buttonKillRoulette": "Ruleta para Killer",
     "buttonSurvRoulette": "Ruleta para Survivor",
-    "update": "Current Update: Steady Pulse",
+    "update": "Current Update: Five Nights at Freddy's",
     "toggleColoredIcons": "Toggle colored perk images in the roulette view."
   },
   "about": {
@@ -199,6 +199,9 @@
       "127_noneAreFree": "Nadie es Libre",
       "128_foreverEntwined": "Unidos por Siempre",
       "129_nothingButMisery": "Pura Miseria",
+      "130_haywire": "Haywire",
+      "131_helpWanted": "Help Wanted",
+      "132_phantomFear": "Phantom Fear",
       "desc": {}
     },
     "survivor": {

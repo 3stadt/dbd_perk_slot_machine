@@ -8,7 +8,7 @@
     "buttonHome": "Startseite",
     "buttonKillRoulette": "Killer-Roulette",
     "buttonSurvRoulette": "Überlebenden-Roulette",
-    "update": "Aktuelles Update: Steady Pulse",
+    "update": "Aktuelles Update: Five Nights at Freddy's",
     "toggleColoredIcons": "Farbige Perks in der Roulettansicht ein/ausschalten."
   },
   "about": {
@@ -199,6 +199,9 @@
       "127_noneAreFree": "Niemand ist frei",
       "128_foreverEntwined": "Für immer verbunden",
       "129_nothingButMisery": "Nichts als Leid",
+      "130_haywire": "Durchgeknallt",
+      "131_helpWanted": "Mitarbeiter gesucht",
+      "132_phantomFear": "Phantomfurcht",
       "desc": {}
     },
     "survivor": {
