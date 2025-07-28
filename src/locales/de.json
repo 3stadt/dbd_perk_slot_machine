@@ -8,7 +8,7 @@
     "buttonHome": "Startseite",
     "buttonKillRoulette": "Killer-Roulette",
     "buttonSurvRoulette": "Überlebenden-Roulette",
-    "update": "Aktuelles Update: Five Nights at Freddy's",
+    "update": "Aktuelles Update: The Walking Dead",
     "toggleColoredIcons": "Farbige Perks in der Roulettansicht ein/ausschalten."
   },
   "about": {
@@ -357,6 +357,12 @@
       "149_doNoHarm": "Niemandem schaden",
       "150_dutyOfCare": "Fürsorgepflicht",
       "151_rapidResponse": "Schnelles Eingreifen",
+      "152_apocalypticIngenuity": "Apokalyptischer Scharfsinn",
+      "153_comeAndGetMe": "Komm und hol mich!",
+      "154_teamworkToughenUp": "Stählen",
+      "155_conviction": "Überzeugung",
+      "156_lastStand": "Letztes Gefecht",
+      "157_teamworkThrowDown": "Hinwerfen",
       "desc": {}
     }
   }

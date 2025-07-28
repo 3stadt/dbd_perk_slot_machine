@@ -8,7 +8,7 @@
     "buttonHome": "Accueil",
     "buttonKillRoulette": "Roulette Tueur",
     "buttonSurvRoulette": "Roulette Survivant",
-    "update": "Dernière mise à jour: Five Nights at Freddy's",
+    "update": "Dernière mise à jour: The Walking Dead",
     "toggleColoredIcons": "Afficher sur la roulette les images colorées des compétences"
   },
   "about": {
@@ -354,6 +354,12 @@
       "149_doNoHarm": "Do No Harm",
       "150_dutyOfCare": "Duty of Care",
       "151_rapidResponse": "Rapid Response",
+      "152_apocalypticIngenuity": "Apocalyptic Ingenuity",
+      "153_comeAndGetMe": "Come and Get Me!",
+      "154_teamworkToughenUp": "Toughen Up",
+      "155_conviction": "Conviction",
+      "156_lastStand": "Last Stand",
+      "157_teamworkThrowDown": "Throw Down",
       "desc": {}
     }
   }
