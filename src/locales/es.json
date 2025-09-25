@@ -8,7 +8,7 @@
     "buttonHome": "Home",
     "buttonKillRoulette": "Ruleta para Killer",
     "buttonSurvRoulette": "Ruleta para Survivor",
-    "update": "Current Update: The Walking Dead",
+    "update": "Current Update: Sinister Grace",
     "toggleColoredIcons": "Toggle colored perk images in the roulette view."
   },
   "about": {
@@ -202,6 +202,9 @@
       "130_haywire": "Haywire",
       "131_helpWanted": "Help Wanted",
       "132_phantomFear": "Phantom Fear",
+      "133_hexOvertureOfDoom": "Overture of Doom",
+      "134_ravenous": "Ravenous",
+      "135_wanderingEye": "Wandering Eye",
       "desc": {}
     },
     "survivor": {
@@ -363,6 +366,9 @@
       "155_conviction": "Conviction",
       "156_lastStand": "Last Stand",
       "157_teamworkThrowDown": "Throw Down",
+      "158_ghostNotes": "Ghost Notes",
+      "159_oneTwoThreeFour": "One-Two-Three-Four!",
+      "160_roadLife": "Road Life",
       "desc": {}
     }
   }
