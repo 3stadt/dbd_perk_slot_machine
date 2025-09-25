@@ -1064,7 +1064,7 @@
 	"spriteSourceSize": {"x":29,"y":13,"w":70,"h":100},
 	"sourceSize": {"w":128,"h":128}
 },
-"133_overtureOfDoom":
+"133_hexOvertureOfDoom":
 {
 	"frame": {"x":2018,"y":1,"w":108,"h":95},
 	"rotated": false,
@@ -1095,6 +1095,6 @@
 	"format": "RGBA8888",
 	"size": {"w":2424,"h":508},
 	"scale": "0.5",
-	"smartupdate": "$TexturePacker:SmartUpdate:f6bb25a598a15ac0374943c7a6aae324:74da10b31a4b23f4a310c2ddc9b24c81:c7b4df0161df714ccaa6c5dcf6c4cd5b$"
+	"smartupdate": "$TexturePacker:SmartUpdate:b67b755e2f9081559afcae1336d1024f:74da10b31a4b23f4a310c2ddc9b24c81:c7b4df0161df714ccaa6c5dcf6c4cd5b$"
 }
 }

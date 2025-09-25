@@ -219,7 +219,7 @@
             <key type="filename">iconsourceKill/130_haywire.png</key>
             <key type="filename">iconsourceKill/131_helpWanted.png</key>
             <key type="filename">iconsourceKill/132_phantomFear.png</key>
-            <key type="filename">iconsourceKill/133_overtureOfDoom.png</key>
+            <key type="filename">iconsourceKill/133_hexOvertureOfDoom.png</key>
             <key type="filename">iconsourceKill/134_ravenous.png</key>
             <key type="filename">iconsourceKill/135_wanderingEye.png</key>
             <key type="filename">iconsourceKill/13_discordance.png</key>
