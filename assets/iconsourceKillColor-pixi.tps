@@ -236,6 +236,9 @@
             <key type="filename">iconsourceKillColor/130_haywire.png</key>
             <key type="filename">iconsourceKillColor/131_helpWanted.png</key>
             <key type="filename">iconsourceKillColor/132_phantomFear.png</key>
+            <key type="filename">iconsourceKillColor/133_hexOvertureOfDoom.png</key>
+            <key type="filename">iconsourceKillColor/134_ravenous.png</key>
+            <key type="filename">iconsourceKillColor/135_wanderingEye.png</key>
             <key type="filename">iconsourceKillColor/13_discordance.png</key>
             <key type="filename">iconsourceKillColor/14_distressing.png</key>
             <key type="filename">iconsourceKillColor/15_dyingLight.png</key>

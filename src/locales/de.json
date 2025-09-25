@@ -8,7 +8,7 @@
     "buttonHome": "Startseite",
     "buttonKillRoulette": "Killer-Roulette",
     "buttonSurvRoulette": "Überlebenden-Roulette",
-    "update": "Aktuelles Update: The Walking Dead",
+    "update": "Aktuelles Update: Sinister Grace",
     "toggleColoredIcons": "Farbige Perks in der Roulettansicht ein/ausschalten."
   },
   "about": {
@@ -202,6 +202,9 @@
       "130_haywire": "Durchgeknallt",
       "131_helpWanted": "Mitarbeiter gesucht",
       "132_phantomFear": "Phantomfurcht",
+      "133_hexOvertureOfDoom": "Verhängnisvolle Ouvertüre",
+      "134_ravenous": "Heißhunger",
+      "135_wanderingEye": "Umherschweifendes Auge",
       "desc": {}
     },
     "survivor": {
@@ -363,6 +366,9 @@
       "155_conviction": "Überzeugung",
       "156_lastStand": "Letztes Gefecht",
       "157_teamworkThrowDown": "Hinwerfen",
+      "158_ghostNotes": "Geisternoten",
+      "159_oneTwoThreeFour": "EINS, ZWEI, DREI, VIER!",
+      "160_roadLife": "Leben auf Tour",
       "desc": {}
     }
   }
