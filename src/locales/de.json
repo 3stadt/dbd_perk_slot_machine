@@ -8,7 +8,7 @@
     "buttonHome": "Startseite",
     "buttonKillRoulette": "Killer-Roulette",
     "buttonSurvRoulette": "Überlebenden-Roulette",
-    "update": "Aktuelles Update: Sinister Grace",
+    "update": "Aktuelles Update: Stranger Things Kapitel 2",
     "toggleColoredIcons": "Farbige Perks in der Roulettansicht ein/ausschalten."
   },
   "about": {
@@ -205,6 +205,9 @@
       "133_hexOvertureOfDoom": "Verhängnisvolle Ouvertüre",
       "134_ravenous": "Heißhunger",
       "135_wanderingEye": "Umherschweifendes Auge",
+      "136_hiveMind": "Hive Mind",
+      "137_secretProject": "Secret Project",
+      "138_turnBackTheClock": "Turn Back The Clock",
       "desc": {}
     },
     "survivor": {
@@ -369,6 +372,12 @@
       "158_ghostNotes": "Geisternoten",
       "159_oneTwoThreeFour": "EINS, ZWEI, DREI, VIER!",
       "160_roadLife": "Leben auf Tour",
+      "161_badaBadaBoom": "Bada Bada Boom",
+      "162_changeOfPlan": "Change Of Plan",
+      "163_teamworkFullCircuit": "Full Circuit",
+      "164_extrasensoryPerception": "Extrasensory Perception",
+      "165_teamworkSoftSpoken": "Soft Spoken",
+      "166_weSeeYou": "We See You",
       "desc": {}
     }
   }

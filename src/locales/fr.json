@@ -8,7 +8,7 @@
     "buttonHome": "Accueil",
     "buttonKillRoulette": "Roulette Tueur",
     "buttonSurvRoulette": "Roulette Survivant",
-    "update": "Dernière mise à jour: Sinister Grace",
+    "update": "Dernière mise à jour: Stranger Things Chapter 2",
     "toggleColoredIcons": "Afficher sur la roulette les images colorées des compétences"
   },
   "about": {
@@ -202,6 +202,9 @@
       "133_hexOvertureOfDoom": "Overture of Doom",
       "134_ravenous": "Ravenous",
       "135_wanderingEye": "Wandering Eye",
+      "136_hiveMind": "Hive Mind",
+      "137_secretProject": "Secret Project",
+      "138_turnBackTheClock": "Turn Back The Clock",
       "desc": {}
     },
     "survivor": {
@@ -366,6 +369,12 @@
       "158_ghostNotes": "Ghost Notes",
       "159_oneTwoThreeFour": "One-Two-Three-Four!",
       "160_roadLife": "Road Life",
+      "161_badaBadaBoom": "Bada Bada Boom",
+      "162_changeOfPlan": "Change Of Plan",
+      "163_teamworkFullCircuit": "Full Circuit",
+      "164_extrasensoryPerception": "Extrasensory Perception",
+      "165_teamworkSoftSpoken": "Soft Spoken",
+      "166_weSeeYou": "We See You",
       "desc": {}
     }
   }
