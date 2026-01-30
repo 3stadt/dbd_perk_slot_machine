@@ -4,7 +4,7 @@
         <key>fileFormatVersion</key>
         <int>6</int>
         <key>texturePackerVersion</key>
-        <string>7.7.0</string>
+        <string>7.11.0</string>
         <key>autoSDSettings</key>
         <array>
             <struct type="AutoSDSettings">
@@ -222,6 +222,9 @@
             <key type="filename">iconsourceKill/133_hexOvertureOfDoom.png</key>
             <key type="filename">iconsourceKill/134_ravenous.png</key>
             <key type="filename">iconsourceKill/135_wanderingEye.png</key>
+            <key type="filename">iconsourceKill/136_hiveMind.png</key>
+            <key type="filename">iconsourceKill/137_secretProject.png</key>
+            <key type="filename">iconsourceKill/138_turnBackTheClock.png</key>
             <key type="filename">iconsourceKill/13_discordance.png</key>
             <key type="filename">iconsourceKill/14_distressing.png</key>
             <key type="filename">iconsourceKill/15_dyingLight.png</key>
