@@ -205,9 +205,9 @@
       "133_hexOvertureOfDoom": "Verhängnisvolle Ouvertüre",
       "134_ravenous": "Heißhunger",
       "135_wanderingEye": "Umherschweifendes Auge",
-      "136_hiveMind": "Hive Mind",
-      "137_secretProject": "Secret Project",
-      "138_turnBackTheClock": "Turn Back The Clock",
+      "136_hiveMind": "Schwarmintelligenz",
+      "137_secretProject": "Geheimprojekt",
+      "138_turnBackTheClock": "Die Uhr zurückdrehen",
       "desc": {}
     },
     "survivor": {
@@ -372,12 +372,12 @@
       "158_ghostNotes": "Geisternoten",
       "159_oneTwoThreeFour": "EINS, ZWEI, DREI, VIER!",
       "160_roadLife": "Leben auf Tour",
-      "161_badaBadaBoom": "Bada Bada Boom",
-      "162_changeOfPlan": "Change Of Plan",
-      "163_teamworkFullCircuit": "Full Circuit",
-      "164_extrasensoryPerception": "Extrasensory Perception",
-      "165_teamworkSoftSpoken": "Soft Spoken",
-      "166_weSeeYou": "We See You",
+      "161_badaBadaBoom": "Bada Bada Bumm",
+      "162_changeOfPlan": "Planänderung",
+      "163_teamworkFullCircuit": "Volle Runde",
+      "164_extrasensoryPerception": "Übersinnliche Wahrnehmung",
+      "165_teamworkSoftSpoken": "Sanfte Töne",
+      "166_weSeeYou": "Wir sehen dich",
       "desc": {}
     }
   }
