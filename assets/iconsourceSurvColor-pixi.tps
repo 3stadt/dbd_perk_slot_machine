@@ -4,7 +4,7 @@
         <key>fileFormatVersion</key>
         <int>6</int>
         <key>texturePackerVersion</key>
-        <string>7.11.0</string>
+        <string>7.7.0</string>
         <key>autoSDSettings</key>
         <array>
             <struct type="AutoSDSettings">
@@ -117,7 +117,7 @@
             <key>sizeConstraints</key>
             <enum type="AlgorithmSettings::SizeConstraints">AnySize</enum>
             <key>forceSquared</key>
-            <true/>
+            <false/>
             <key>maxRects</key>
             <struct type="AlgorithmMaxRectsSettings">
                 <key>heuristic</key>
@@ -174,7 +174,7 @@
             <key>extrude</key>
             <uint>1</uint>
             <key>trimThreshold</key>
-            <uint>2</uint>
+            <uint>1</uint>
             <key>trimMargin</key>
             <uint>1</uint>
             <key>trimMode</key>
@@ -256,18 +256,12 @@
             <key type="filename">iconsourceSurvColor/149_doNoHarm.png</key>
             <key type="filename">iconsourceSurvColor/14_deadHard.png</key>
             <key type="filename">iconsourceSurvColor/150_dutyOfCare.png</key>
-            <key type="filename">iconsourceSurvColor/151_apocalypticIngenuity.png</key>
             <key type="filename">iconsourceSurvColor/151_rapidResponse.png</key>
             <key type="filename">iconsourceSurvColor/152_apocalypticIngenuity.png</key>
-            <key type="filename">iconsourceSurvColor/152_comeAndGetMe.png</key>
             <key type="filename">iconsourceSurvColor/153_comeAndGetMe.png</key>
-            <key type="filename">iconsourceSurvColor/153_conviction.png</key>
-            <key type="filename">iconsourceSurvColor/154_lastStand.png</key>
             <key type="filename">iconsourceSurvColor/154_teamworkToughenUp.png</key>
             <key type="filename">iconsourceSurvColor/155_conviction.png</key>
-            <key type="filename">iconsourceSurvColor/155_teamworkThrowDown.png</key>
             <key type="filename">iconsourceSurvColor/156_lastStand.png</key>
-            <key type="filename">iconsourceSurvColor/156_teamworkToughenUp.png</key>
             <key type="filename">iconsourceSurvColor/157_teamworkThrowDown.png</key>
             <key type="filename">iconsourceSurvColor/158_ghostNotes.png</key>
             <key type="filename">iconsourceSurvColor/159_oneTwoThreeFour.png</key>
