@@ -273,6 +273,9 @@
             <key type="filename">iconsourceSurvColor/164_extrasensoryPerception.png</key>
             <key type="filename">iconsourceSurvColor/165_teamworkSoftSpoken.png</key>
             <key type="filename">iconsourceSurvColor/166_weSeeYou.png</key>
+            <key type="filename">iconsourceSurvColor/167_aPlaceForUs.png</key>
+            <key type="filename">iconsourceSurvColor/168_fiveMovesAhead.png</key>
+            <key type="filename">iconsourceSurvColor/169_flowState.png</key>
             <key type="filename">iconsourceSurvColor/16_dejaVu.png</key>
             <key type="filename">iconsourceSurvColor/17_deliverance.png</key>
             <key type="filename">iconsourceSurvColor/18_detectivesHunch.png</key>

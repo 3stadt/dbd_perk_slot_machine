@@ -8,7 +8,7 @@
     "buttonHome": "Startseite",
     "buttonKillRoulette": "Killer-Roulette",
     "buttonSurvRoulette": "Überlebenden-Roulette",
-    "update": "Aktuelles Update: Stranger Things Kapitel 2",
+    "update": "Aktuelles Update: All-Kill: Comeback",
     "toggleColoredIcons": "Farbige Perks in der Roulettansicht ein/ausschalten."
   },
   "about": {
@@ -378,6 +378,9 @@
       "164_extrasensoryPerception": "Übersinnliche Wahrnehmung",
       "165_teamworkSoftSpoken": "Sanfte Töne",
       "166_weSeeYou": "Wir sehen dich",
+      "167_aPlaceForUs": "Ein Platz für uns",
+      "168_fiveMovesAhead": "Fünf Züge voraus",
+      "169_flowState": "Im Flow",
       "desc": {}
     }
   }
