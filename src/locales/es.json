@@ -8,7 +8,7 @@
     "buttonHome": "Home",
     "buttonKillRoulette": "Ruleta para Killer",
     "buttonSurvRoulette": "Ruleta para Survivor",
-    "update": "Current Update: Stranger Things Chapter 2",
+    "update": "Current Update: All-Kill: Comeback",
     "toggleColoredIcons": "Toggle colored perk images in the roulette view."
   },
   "about": {
@@ -378,6 +378,9 @@
       "164_extrasensoryPerception": "Extrasensory Perception",
       "165_teamworkSoftSpoken": "Soft Spoken",
       "166_weSeeYou": "We See You",
+      "167_aPlaceForUs": "A Place For Us",
+      "168_fiveMovesAhead": "Five Moves Ahead",
+      "169_flowState": "Flow State",
       "desc": {}
     }
   }

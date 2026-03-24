@@ -8,7 +8,7 @@
     "buttonHome": "Accueil",
     "buttonKillRoulette": "Roulette Tueur",
     "buttonSurvRoulette": "Roulette Survivant",
-    "update": "Dernière mise à jour: Stranger Things Chapter 2",
+    "update": "Dernière mise à jour: All-Kill: Comeback",
     "toggleColoredIcons": "Afficher sur la roulette les images colorées des compétences"
   },
   "about": {
@@ -375,6 +375,9 @@
       "164_extrasensoryPerception": "Extrasensory Perception",
       "165_teamworkSoftSpoken": "Soft Spoken",
       "166_weSeeYou": "We See You",
+      "167_aPlaceForUs": "A Place For Us",
+      "168_fiveMovesAhead": "Five Moves Ahead",
+      "169_flowState": "Flow State",
       "desc": {}
     }
   }
