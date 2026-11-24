@@ -8,7 +8,7 @@
     "buttonHome": "Home",
     "buttonKillRoulette": "Ruleta para Killer",
     "buttonSurvRoulette": "Ruleta para Survivor",
-    "update": "Current Update: Chorus Of Sin",
+    "update": "Current Update: Terrifier",
     "toggleColoredIcons": "Toggle colored perk images in the roulette view."
   },
   "about": {
@@ -211,9 +211,12 @@
       "139_rampage": "Rampage",
       "140_scaredToDeath": "Scared To Death",
       "141_silentShadow": "Silent Shadow",
-      "142_layWaste": "Lay Waste",
-      "143_underYourThumb": "Under Your Thumb",
-      "144_celestialWitness": "Celestial Witness",
+      "142_layWaste": "Aniquilación",
+      "143_underYourThumb": "A tu merced",
+      "144_celestialWitness": "Testigo celestial",
+      "145_funnyBusiness": "Funny Business",
+      "146_killSpree": "Kill Spree",
+      "147_laughingstock": "Laughingstock",
       "desc": {}
     },
     "survivor": {
@@ -390,9 +393,12 @@
       "170_crossExamination": "Interrogatorio",
       "171_lendaHand": "Echar una Mano",
       "172_wideOpenThrottle": "Máxima Velocidad",
-      "173_steadfast": "Steadfast",
-      "174_salvationsCry": "Salvation's Cry",
-      "175_fruitsOfYourLabor": "Fruits of Your Labor",
+      "173_steadfast": "Decisión",
+      "174_salvationsCry": "Grito de salvación",
+      "175_fruitsOfYourLabor": "Frutos de tu esfuerzo",
+      "176_bestGiftEver": "Best Gift Ever",
+      "177_sharedTrauma": "Shared Trauma",
+      "178_valkyriesRage": "Valkyrie's Rage",
       "desc": {}
     }
   }

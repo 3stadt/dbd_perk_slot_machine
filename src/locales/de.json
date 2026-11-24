@@ -8,7 +8,7 @@
     "buttonHome": "Startseite",
     "buttonKillRoulette": "Killer-Roulette",
     "buttonSurvRoulette": "Überlebenden-Roulette",
-    "update": "Aktuelles Update: Chorus Of Sin",
+    "update": "Aktuelles Update: Terrifier",
     "toggleColoredIcons": "Farbige Perks in der Roulettansicht ein/ausschalten."
   },
   "about": {
@@ -214,6 +214,9 @@
       "142_layWaste": "Verheeren",
       "143_underYourThumb": "Unter deiner Knute",
       "144_celestialWitness": "Himmlischer Zeuge",
+      "145_funnyBusiness": "Seltsame Machenschaften",
+      "146_killSpree": "Schlachtrausch",
+      "147_laughingstock": "Witzfigur",
       "desc": {}
     },
     "survivor": {
@@ -393,6 +396,9 @@
       "173_steadfast": "Standhaft",
       "174_salvationsCry": "Ruf der Erlösung",
       "175_fruitsOfYourLabor": "Früchte deiner Arbeit",
+      "176_bestGiftEver": "Das allerbeste Geschenk",
+      "177_sharedTrauma": "Gemeinsames Trauma",
+      "178_valkyriesRage": "Zorn der Walküre",
       "desc": {}
     }
   }

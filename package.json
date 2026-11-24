@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "vue": "^3.5.13",
-    "vue-i18n": "^10.0.5",
+    "vue-i18n": "^11.4.23",
     "vue-router": "^4.5.0"
   },
   "devDependencies": {
@@ -34,5 +34,9 @@
     "vitest": "^4.1.8",
     "vue-tsc": "^3.3.4"
   },
-  "type": "module"
+  "type": "module",
+  "allowScripts": {
+    "@parcel/watcher@2.5.6": true,
+    "esbuild@0.27.7": true
+  }
 }

@@ -17,8 +17,6 @@ function loadLocaleMessages (): LocaleMessages {
 }
 
 export default createI18n({
-  // legacy mode keeps the Options API surface (this.$t, this.$i18n.locale)
-  legacy: true,
   locale: 'en',
   fallbackLocale: 'en',
   // vue-i18n 8 didn't warn about HTML in messages; the hint text uses <br>
