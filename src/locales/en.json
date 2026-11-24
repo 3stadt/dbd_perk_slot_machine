@@ -8,7 +8,7 @@
     "buttonHome": "Home",
     "buttonKillRoulette": "Killer Roulette",
     "buttonSurvRoulette": "Survivor Roulette",
-    "update": "Current Update: Chorus Of Sin",
+    "update": "Current Update: Terrifier",
     "toggleColoredIcons": "Toggle colored perk images in the roulette view."
   },
   "about": {
@@ -214,6 +214,9 @@
       "142_layWaste": "Lay Waste",
       "143_underYourThumb": "Under Your Thumb",
       "144_celestialWitness": "Celestial Witness",
+      "145_funnyBusiness": "Funny Business",
+      "146_killSpree": "Kill Spree",
+      "147_laughingstock": "Laughingstock",
       "desc": {}
     },
     "survivor": {
@@ -393,6 +396,9 @@
       "173_steadfast": "Steadfast",
       "174_salvationsCry": "Salvation's Cry",
       "175_fruitsOfYourLabor": "Fruits of Your Labor",
+      "176_bestGiftEver": "Best Gift Ever",
+      "177_sharedTrauma": "Shared Trauma",
+      "178_valkyriesRage": "Valkyrie's Rage",
       "desc": {}
     }
   }

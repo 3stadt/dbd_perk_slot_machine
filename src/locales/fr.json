@@ -8,7 +8,7 @@
     "buttonHome": "Accueil",
     "buttonKillRoulette": "Roulette Tueur",
     "buttonSurvRoulette": "Roulette Survivant",
-    "update": "Dernière mise à jour: Chorus Of Sin",
+    "update": "Dernière mise à jour: Terrifier",
     "toggleColoredIcons": "Afficher sur la roulette les images colorées des compétences"
   },
   "about": {
@@ -208,9 +208,12 @@
       "139_rampage": "Rampage",
       "140_scaredToDeath": "Frayeur Mortelle",
       "141_silentShadow": "Ombre Silencieuse",
-      "142_layWaste": "Lay Waste",
-      "143_underYourThumb": "Under Your Thumb",
-      "144_celestialWitness": "Celestial Witness",
+      "142_layWaste": "Semer la dévastation",
+      "143_underYourThumb": "Sous votre coupe",
+      "144_celestialWitness": "Témoin céleste",
+      "145_funnyBusiness": "Funny Business",
+      "146_killSpree": "Kill Spree",
+      "147_laughingstock": "Laughingstock",
       "desc": {}
     },
     "survivor": {
@@ -387,9 +390,12 @@
       "170_crossExamination": "Cross-Examination",
       "171_lendaHand": "Lend a Hand",
       "172_wideOpenThrottle": "Wide Open Throttle",
-      "173_steadfast": "Steadfast",
-      "174_salvationsCry": "Salvation's Cry",
-      "175_fruitsOfYourLabor": "Fruits of Your Labor",
+      "173_steadfast": "Inébranlable",
+      "174_salvationsCry": "Cri du Salut",
+      "175_fruitsOfYourLabor": "Fruits de votre travail",
+      "176_bestGiftEver": "Best Gift Ever",
+      "177_sharedTrauma": "Shared Trauma",
+      "178_valkyriesRage": "Valkyrie's Rage",
       "desc": {}
     }
   }
